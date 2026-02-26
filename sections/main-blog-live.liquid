@@ -1,0 +1,257 @@
+{%- paginate blog.articles by section.settings.articles_per_page -%}
+  <section class="salt-blog-live">
+    <div class="salt-blog-live__container">
+      <header class="salt-blog-live__header">
+        <p class="salt-blog-live__eyebrow">{{ blog.title | default: 'Blog' }}</p>
+        <h1 class="salt-blog-live__title">{{ blog.title }}</h1>
+        {%- if blog.articles_count > 0 -%}
+          <p class="salt-blog-live__meta">
+            {{ blog.articles_count }} {{ blog.articles_count | pluralize: 'article', 'articles' }}
+          </p>
+        {%- endif -%}
+      </header>
+
+      {%- if blog.articles_count > 0 -%}
+        <div class="salt-blog-live__grid">
+          {%- for article in blog.articles -%}
+            {%- assign article_image_url = blank -%}
+            {%- if article.image != blank -%}
+              {%- assign article_image_url = article.image | image_url: width: 1200 -%}
+            {%- elsif article.content contains '<img' -%}
+              {%- assign img_chunk = article.content | split: '<img' | last -%}
+              {%- if img_chunk contains 'src="' -%}
+                {%- assign article_image_url = img_chunk | split: 'src="' | last | split: '"' | first -%}
+              {%- endif -%}
+            {%- endif -%}
+
+            <article class="salt-blog-live__card">
+              <a class="salt-blog-live__image-link" href="{{ article.url }}">
+                {%- if article_image_url != blank -%}
+                  <img
+                    class="salt-blog-live__image"
+                    src="{{ article_image_url }}"
+                    alt="{{ article.title | escape }}"
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                  >
+                {%- endif -%}
+              </a>
+
+              <div class="salt-blog-live__body">
+                {%- if section.settings.show_date -%}
+                  <p class="salt-blog-live__date">{{ article.published_at | date: "%B %-d, %Y" }}</p>
+                {%- endif -%}
+
+                <h2 class="salt-blog-live__card-title">
+                  <a href="{{ article.url }}">{{ article.title }}</a>
+                </h2>
+
+                {%- if section.settings.show_excerpt -%}
+                  {%- assign preview = article.excerpt_or_content | strip_html | truncate: 170 -%}
+                  {%- if preview != blank -%}
+                    <p class="salt-blog-live__excerpt">{{ preview }}</p>
+                  {%- endif -%}
+                {%- endif -%}
+
+                <div class="salt-blog-live__footer">
+                  {%- if section.settings.show_author and article.author != blank -%}
+                    <span>{{ article.author }}</span>
+                  {%- endif -%}
+                  <a href="{{ article.url }}" class="salt-blog-live__read-more">Read post</a>
+                </div>
+              </div>
+            </article>
+          {%- endfor -%}
+        </div>
+
+        {%- if paginate.pages > 1 -%}
+          <nav class="salt-blog-live__pagination" aria-label="Blog pagination">
+            {%- if paginate.previous -%}
+              <a href="{{ paginate.previous.url }}">Previous</a>
+            {%- endif -%}
+            <span>Page {{ paginate.current_page }} / {{ paginate.pages }}</span>
+            {%- if paginate.next -%}
+              <a href="{{ paginate.next.url }}">Next</a>
+            {%- endif -%}
+          </nav>
+        {%- endif -%}
+      {%- else -%}
+        <div class="salt-blog-live__empty">
+          <h2>No blog posts yet</h2>
+          <p>Publish posts in Shopify and they will appear here automatically.</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </section>
+{%- endpaginate -%}
+
+{% style %}
+  .salt-blog-live {
+    padding: 40px 20px 80px;
+    background: #f8f4ef;
+  }
+  .salt-blog-live__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .salt-blog-live__header {
+    margin-bottom: 24px;
+  }
+  .salt-blog-live__eyebrow {
+    margin: 0 0 8px;
+    color: #cf5f2f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .salt-blog-live__title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+  }
+  .salt-blog-live__meta {
+    margin: 10px 0 0;
+    color: #736c66;
+  }
+  .salt-blog-live__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .salt-blog-live__card {
+    background: #fff;
+    border: 1px solid #eadfd3;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .salt-blog-live__image-link {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background: #f3ece4;
+  }
+  .salt-blog-live__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .salt-blog-live__body {
+    padding: 18px 18px 20px;
+    display: grid;
+    gap: 12px;
+    height: 100%;
+  }
+  .salt-blog-live__date {
+    margin: 0;
+    color: #857b72;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .salt-blog-live__card-title {
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: 1.12;
+  }
+  .salt-blog-live__card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .salt-blog-live__excerpt {
+    margin: 0;
+    color: #625a53;
+    line-height: 1.55;
+  }
+  .salt-blog-live__footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.95rem;
+    color: #665e56;
+  }
+  .salt-blog-live__read-more {
+    color: #cf5f2f;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.8rem;
+  }
+  .salt-blog-live__pagination {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #665e56;
+  }
+  .salt-blog-live__pagination a {
+    color: #cf5f2f;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .salt-blog-live__empty {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #eadfd3;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+  }
+  @media screen and (max-width: 1100px) {
+    .salt-blog-live__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .salt-blog-live {
+      padding: 28px 12px 56px;
+    }
+    .salt-blog-live__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Main Blog Live",
+  "settings": [
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "label": "Articles per page",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "default": 12
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show publish date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
