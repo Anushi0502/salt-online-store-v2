@@ -1,0 +1,13 @@
+<div id="root"></div>
+<script>
+  window.SALT_THEME_ASSETS = {
+    "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
+    "/placeholder.svg": {{ 'placeholder.svg' | asset_url | json }},
+    "/data/products.json": {{ 'data-products.json' | asset_url | json }},
+    "/data/collections.json": {{ 'data-collections.json' | asset_url | json }},
+    "/data/collection-products.json": {{ 'data-collection-products.json' | asset_url | json }},
+    "/data/about.json": {{ 'data-about.json' | asset_url | json }},
+    "/data/blog-posts.json": {{ 'data-blog-posts.json' | asset_url | json }}
+  };
+</script>
+<script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
