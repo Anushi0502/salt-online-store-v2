@@ -128,7 +128,7 @@
       }
       body {
         margin: 0;
-        color: var(--salt-ink);
+        color: hsl(var(--foreground, 40 8% 8%));
         background:
           radial-gradient(circle at 10% 4%, rgba(240, 177, 120, 0.22), transparent 36%),
           radial-gradient(circle at 89% 12%, rgba(141, 175, 146, 0.2), transparent 34%),
@@ -136,6 +136,9 @@
         background-attachment: fixed;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
+      }
+      .dark body {
+        color: hsl(var(--foreground, 42 28% 96%));
       }
       main#main-content {
         position: relative;
