@@ -1,14 +1,223 @@
 <!doctype html>
-<html lang="{{ request.locale.iso_code }}">
+<html lang="{{ request.locale.iso_code }}" class="no-js">
   <head>
+    {%- liquid
+      assign seo_description_text = page_description | default: settings.seo_description | strip
+      assign title_text = page_title | default: shop.name
+      assign template_handle = template.name | default: ''
+      assign page_type_value = request.page_type | default: template_handle
+      assign seo_keywords_text = settings.seo_keywords | default: '' | strip
+      assign brand_tagline_text = settings.brand_tagline | default: 'Curated home and lifestyle essentials with secure checkout and trusted support.'
+      assign should_noindex = false
+      if template_handle == 'cart' or template_handle == 'search'
+        assign should_noindex = true
+      endif
+      if page_image != blank
+        assign social_share_image_url = page_image | image_url: width: 1600
+      elsif settings.social_share_image != blank
+        assign social_share_image_url = settings.social_share_image | image_url: width: 1600
+      else
+        assign social_share_image_url = 'brand-salt-logo.png' | asset_url
+      endif
+      if settings.brand_logo != blank
+        assign organization_logo_url = settings.brand_logo | image_url: width: 420
+      else
+        assign organization_logo_url = 'brand-salt-logo.png' | asset_url
+      endif
+      assign search_target_url = shop.secure_url | append: '/search?q={search_term_string}'
+    -%}
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#d26633">
-    <title>{{ page_title }}</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="{{ settings.theme_color | default: '#d26633' }}">
+
+    {%- if seo_description_text != blank -%}
+      <meta name="description" content="{{ seo_description_text | escape }}">
+    {%- endif -%}
+
+    {%- if should_noindex -%}
+      <meta name="robots" content="noindex,nofollow">
+    {%- else -%}
+      <meta name="robots" content="index,follow">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="dns-prefetch" href="//cdn.shopify.com">
+    <link rel="preload" href="{{ 'salt-app.css' | asset_url }}" as="style">
+    <link rel="preload" href="{{ 'salt-app.js' | asset_url }}" as="script">
+
+    <title>
+      {%- if title_text != blank -%}
+        {{ title_text | escape }}
+      {%- else -%}
+        {{ shop.name | escape }}
+      {%- endif -%}
+      {%- unless page_title contains shop.name -%}
+        · {{ shop.name | escape }}
+      {%- endunless -%}
+    </title>
+
+    <meta property="og:site_name" content="{{ shop.name | escape }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="{{ title_text | escape }}">
+    {%- if seo_description_text != blank -%}
+      <meta property="og:description" content="{{ seo_description_text | escape }}">
+      <meta name="twitter:description" content="{{ seo_description_text | escape }}">
+    {%- endif -%}
+    {%- if seo_keywords_text != blank -%}
+      <meta name="keywords" content="{{ seo_keywords_text | escape }}">
+    {%- endif -%}
+    {%- if social_share_image_url != blank -%}
+      <meta property="og:image" content="{{ social_share_image_url }}">
+      <meta name="twitter:image" content="{{ social_share_image_url }}">
+    {%- endif -%}
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title_text | escape }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.secure_url | json }},
+        "description": {{ brand_tagline_text | json }},
+        "logo": {{ organization_logo_url | json }},
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": {{ settings.support_email | default: 'support@saltonlinestore.com' | json }},
+            "availableLanguage": "English"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.secure_url | json }},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {{ search_target_url | json }},
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
     {{ content_for_header }}
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
+    <script>
+      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.add('js');
+    </script>
+    <style>
+      :root {
+        --salt-ink: #1c1714;
+        --salt-cream: #f8f4ef;
+        --salt-mint: #eaf3ed;
+        --salt-border: #e8dbce;
+      }
+      html,
+      body {
+        min-height: 100%;
+      }
+      body {
+        margin: 0;
+        color: var(--salt-ink);
+        background:
+          radial-gradient(circle at 10% 4%, rgba(240, 177, 120, 0.22), transparent 36%),
+          radial-gradient(circle at 89% 12%, rgba(141, 175, 146, 0.2), transparent 34%),
+          linear-gradient(180deg, #fbf8f3 0%, var(--salt-cream) 42%, var(--salt-mint) 100%);
+        background-attachment: fixed;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      main#main-content {
+        position: relative;
+        isolation: isolate;
+      }
+      .salt-panel-shell,
+      .salt-section-shell,
+      .salt-surface,
+      .salt-surface-strong {
+        backdrop-filter: saturate(130%) blur(8px);
+      }
+      .salt-card-hover {
+        transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+      }
+      .salt-card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 38px -28px rgba(35, 30, 26, 0.75);
+      }
+      .salt-primary-cta,
+      .salt-button-shine {
+        position: relative;
+        overflow: hidden;
+      }
+      .salt-primary-cta::after,
+      .salt-button-shine::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.32) 46%, transparent 100%);
+        transform: translateX(-120%);
+        transition: transform 0.65s ease;
+      }
+      .salt-primary-cta:hover::after,
+      .salt-button-shine:hover::after {
+        transform: translateX(120%);
+      }
+      :focus-visible {
+        outline: 2px solid #d86837;
+        outline-offset: 2px;
+      }
+      ::selection {
+        background: rgba(210, 102, 51, 0.22);
+        color: #231d19;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+      .salt-skip-link {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        transform: translateY(-140%);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        background: #1c1714;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        opacity: 0;
+        z-index: 9999;
+      }
+      .salt-skip-link:focus {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    </style>
   </head>
-  <body>
-    {{ content_for_layout }}
+  <body class="template-{{ template.name | handle }} page-{{ page_type_value | handle }}">
+    <a class="salt-skip-link" href="#main-content">{{ 'accessibility.skip_to_content' | t | default: 'Skip to main content' }}</a>
+    <main id="main-content" role="main">
+      {{ content_for_layout }}
+    </main>
   </body>
 </html>

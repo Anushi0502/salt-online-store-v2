@@ -1,13 +1,314 @@
-<div id="root"></div>
-<script>
-  window.SALT_THEME_ASSETS = {
-    "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
-    "/placeholder.svg": {{ 'placeholder.svg' | asset_url | json }},
-    "/data/products.json": {{ 'data-products.json' | asset_url | json }},
-    "/data/collections.json": {{ 'data-collections.json' | asset_url | json }},
-    "/data/collection-products.json": {{ 'data-collection-products.json' | asset_url | json }},
-    "/data/about.json": {{ 'data-about.json' | asset_url | json }},
-    "/data/blog-posts.json": {{ 'data-blog-posts.json' | asset_url | json }}
-  };
+{%- assign about_handle_value = section.settings.about_page_handle | default: settings.default_about_handle | default: 'about-us' -%}
+{%- assign blog_handle_value = section.settings.blog_handle | default: settings.default_blog_handle | default: 'posts' -%}
+{%- assign loading_title_value = section.settings.loading_title | default: settings.loading_title_default | default: 'Loading SALT catalog' -%}
+{%- assign loading_subtext_value = section.settings.loading_subtext | default: settings.loading_subtext_default | default: 'Preparing products, collections, and featured recommendations.' -%}
+{%- assign support_email_value = section.settings.support_email | default: settings.support_email | default: 'support@saltonlinestore.com' -%}
+{%- assign support_response_window_value = settings.support_response_window | default: 'Within 24 business hours' -%}
+
+<section class="salt-app-shell">
+  <div
+    id="salt-app-root"
+    class="salt-app-shell__root"
+    data-shop-domain="{{ shop.permanent_domain }}"
+    data-shop-name="{{ shop.name | escape }}"
+    data-shop-base-url="{{ shop.secure_url }}"
+    data-currency="{{ shop.currency }}"
+    data-template="{{ template.name }}"
+    data-template-suffix="{{ template.suffix | default: '' }}"
+    data-about-handle="{{ about_handle_value | escape }}"
+    data-blog-handle="{{ blog_handle_value | escape }}"
+    data-support-email="{{ support_email_value | escape }}"
+  >
+    <div id="root" class="salt-app-shell__mount">
+      {%- if section.settings.show_loading_shell -%}
+        <div class="salt-app-shell__loading" aria-live="polite" aria-busy="true">
+          <div class="salt-app-shell__badge">
+            {{ 'brand-salt-logo.png' | asset_url | image_tag: loading: 'eager', alt: shop.name }}
+          </div>
+
+          <h2>{{ loading_title_value }}</h2>
+          <p>{{ loading_subtext_value }}</p>
+
+          <div class="salt-app-shell__chips" aria-hidden="true">
+            <span>Live Shopify sync</span>
+            <span>{{ shop.currency }} checkout</span>
+            <span>{{ support_response_window_value }}</span>
+          </div>
+          <div class="salt-app-shell__status" aria-hidden="true">
+            <span>Catalog integrity check</span>
+            <span>Pricing handshake</span>
+            <span>Secure cart routing</span>
+          </div>
+
+          <div class="salt-app-shell__bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p class="salt-app-shell__footnote">Optimizing your shopping session for speed and stability…</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <noscript>
+    <div class="salt-app-shell__noscript">
+      JavaScript is required to load this storefront experience.
+      <a href="/collections/all">Browse all products</a>
+      <a href="mailto:{{ support_email_value | escape }}">Contact support</a>
+    </div>
+  </noscript>
+</section>
+
+<script id="salt-runtime-context" type="application/json">
+  {
+    "shopDomain": {{ shop.permanent_domain | json }},
+    "shopName": {{ shop.name | json }},
+    "shopBaseUrl": {{ shop.secure_url | json }},
+    "currency": {{ shop.currency | json }},
+    "template": {{ template.name | json }},
+    "templateSuffix": {{ template.suffix | default: '' | json }},
+    "aboutHandle": {{ about_handle_value | json }},
+    "blogHandle": {{ blog_handle_value | json }},
+    "supportEmail": {{ support_email_value | json }}
+  }
 </script>
-<script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
+<script>
+  (function () {
+    try {
+      var runtimeNode = document.getElementById('salt-runtime-context');
+      if (runtimeNode && runtimeNode.textContent) {
+        window.SALT_RUNTIME_CONTEXT = JSON.parse(runtimeNode.textContent);
+      }
+    } catch (error) {
+      window.SALT_RUNTIME_CONTEXT = window.SALT_RUNTIME_CONTEXT || {};
+    }
+  })();
+
+  window.SALT_THEME_ASSETS = Object.assign({}, window.SALT_THEME_ASSETS, {
+    "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
+    "/brand-salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }}
+  });
+</script>
+<script src="{{ 'salt-app.js' | asset_url }}" defer></script>
+
+{% style %}
+  .salt-app-shell {
+    position: relative;
+    min-height: 280px;
+  }
+  .salt-app-shell__root {
+    min-height: inherit;
+  }
+  .salt-app-shell__mount {
+    min-height: inherit;
+  }
+  .salt-app-shell__loading {
+    position: relative;
+    overflow: hidden;
+    max-width: 920px;
+    margin: 36px auto;
+    border: 1px solid #eadfd3;
+    background: linear-gradient(160deg, #fff9f3 0%, #f4f6f3 100%);
+    border-radius: 24px;
+    padding: 34px 22px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(38, 34, 30, 0.06);
+  }
+  .salt-app-shell__loading::before {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -90px;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(208, 102, 55, 0.22) 0%, rgba(208, 102, 55, 0) 70%);
+    pointer-events: none;
+  }
+  .salt-app-shell__loading::after {
+    content: "";
+    position: absolute;
+    left: -70px;
+    bottom: -85px;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(117, 143, 116, 0.22) 0%, rgba(117, 143, 116, 0) 72%);
+    pointer-events: none;
+  }
+  .salt-app-shell__badge {
+    position: relative;
+    z-index: 1;
+    width: 62px;
+    height: 62px;
+    border-radius: 999px;
+    margin: 0 auto 14px;
+    border: 1px solid #ebd8c7;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(120deg, #bf6d3f 0%, #a97f4b 55%, #6f7e62 100%);
+    overflow: hidden;
+  }
+  .salt-app-shell__badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .salt-app-shell__loading h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: #1f1b18;
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    line-height: 1.15;
+  }
+  .salt-app-shell__loading p {
+    position: relative;
+    z-index: 1;
+    margin: 10px auto 0;
+    max-width: 700px;
+    color: #6e645b;
+    line-height: 1.55;
+  }
+  .salt-app-shell__chips {
+    position: relative;
+    z-index: 1;
+    margin: 14px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .salt-app-shell__chips span {
+    border: 1px solid #eadfd3;
+    border-radius: 999px;
+    background: #fffdf9;
+    color: #6a6058;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  .salt-app-shell__status {
+    position: relative;
+    z-index: 1;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .salt-app-shell__status span {
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ebdfd4;
+    color: #776b62;
+    padding: 4px 10px;
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .salt-app-shell__bars {
+    position: relative;
+    z-index: 1;
+    margin: 16px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    max-width: 460px;
+  }
+  .salt-app-shell__bars span {
+    display: block;
+    height: 7px;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #ece5dc 0%, #f7f3ee 50%, #ece5dc 100%);
+    background-size: 200% 100%;
+    animation: salt-shell-shimmer 1.35s linear infinite;
+  }
+  .salt-app-shell__bars span:nth-child(2) {
+    animation-delay: 0.12s;
+  }
+  .salt-app-shell__bars span:nth-child(3) {
+    animation-delay: 0.24s;
+  }
+  .salt-app-shell__footnote {
+    position: relative;
+    z-index: 1;
+    margin: 10px auto 0;
+    color: #7b7066;
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
+  }
+  .salt-app-shell__noscript {
+    margin: 20px auto;
+    max-width: 920px;
+    border-radius: 14px;
+    border: 1px solid #ebd8c7;
+    background: #fff7ef;
+    color: #6f4a32;
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 0.93rem;
+  }
+  .salt-app-shell__noscript a {
+    color: #cf5f2f;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+  .salt-app-shell__noscript a + a {
+    margin-left: 10px;
+  }
+  @keyframes salt-shell-shimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 200% 0;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "SALT App",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_loading_shell",
+      "label": "Show loading shell",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "about_page_handle",
+      "label": "About page handle",
+      "default": "about-us"
+    },
+    {
+      "type": "text",
+      "id": "blog_handle",
+      "label": "Blog handle",
+      "default": "posts"
+    },
+    {
+      "type": "text",
+      "id": "loading_title",
+      "label": "Loading title",
+      "default": "Loading SALT catalog"
+    },
+    {
+      "type": "textarea",
+      "id": "loading_subtext",
+      "label": "Loading description",
+      "default": "Preparing products, collections, and featured recommendations."
+    },
+    {
+      "type": "text",
+      "id": "support_email",
+      "label": "Support email",
+      "default": "support@saltonlinestore.com"
+    }
+  ]
+}
+{% endschema %}

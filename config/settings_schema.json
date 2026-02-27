@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "name": "SALT Theme",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand"
+      },
+      {
+        "type": "image_picker",
+        "id": "brand_logo",
+        "label": "Brand logo (optional override)"
+      },
+      {
+        "type": "image_picker",
+        "id": "social_share_image",
+        "label": "Social share image (fallback)"
+      },
+      {
+        "type": "color",
+        "id": "theme_color",
+        "label": "Browser theme color",
+        "default": "#d26633"
+      },
+      {
+        "type": "text",
+        "id": "brand_tagline",
+        "label": "Brand tagline",
+        "default": "Curated home and lifestyle essentials with secure checkout and trusted support."
+      },
+      {
+        "type": "textarea",
+        "id": "seo_description",
+        "label": "Default meta description",
+        "default": "SALT Online Store offers curated home, lifestyle, apparel, and gifting essentials with secure checkout, clear shipping updates, and trusted support."
+      },
+      {
+        "type": "text",
+        "id": "seo_keywords",
+        "label": "SEO keywords (comma-separated)",
+        "default": "SALT Online Store, home essentials, lifestyle products, secure checkout, online shopping"
+      },
+      {
+        "type": "header",
+        "content": "Live Content Handles"
+      },
+      {
+        "type": "text",
+        "id": "default_about_handle",
+        "label": "About page handle",
+        "default": "about-us"
+      },
+      {
+        "type": "text",
+        "id": "default_blog_handle",
+        "label": "Blog handle",
+        "default": "posts"
+      },
+      {
+        "type": "header",
+        "content": "Loading Experience"
+      },
+      {
+        "type": "text",
+        "id": "loading_title_default",
+        "label": "Default loading title",
+        "default": "Loading SALT catalog"
+      },
+      {
+        "type": "textarea",
+        "id": "loading_subtext_default",
+        "label": "Default loading subtext",
+        "default": "Preparing live products, collections, and recommendations from Shopify."
+      },
+      {
+        "type": "header",
+        "content": "Support"
+      },
+      {
+        "type": "text",
+        "id": "support_email",
+        "label": "Support email",
+        "default": "support@saltonlinestore.com"
+      },
+      {
+        "type": "text",
+        "id": "support_response_window",
+        "label": "Support response window",
+        "default": "Within 24 business hours"
+      }
+    ]
+  }
+]

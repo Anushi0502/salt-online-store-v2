@@ -2,7 +2,14 @@
   "sections": {
     "main": {
       "type": "salt-app",
-      "settings": {}
+      "settings": {
+        "show_loading_shell": false,
+        "about_page_handle": "about-us",
+        "blog_handle": "posts",
+        "loading_title": "Loading storefront",
+        "loading_subtext": "Preparing live navigation routes.",
+        "support_email": "support@saltonlinestore.com"
+      }
     }
   },
   "order": [
