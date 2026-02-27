@@ -1,1 +1,21 @@
-{}
+{
+  "accessibility": {
+    "skip_to_content": "Skip to main content",
+    "open_navigation": "Open navigation",
+    "close_navigation": "Close navigation"
+  },
+  "general": {
+    "loading": "Loading",
+    "retry": "Retry",
+    "read_more": "Read more",
+    "view_all": "View all"
+  },
+  "support": {
+    "contact": "Contact support",
+    "response_window": "Within 24 business hours"
+  },
+  "blog": {
+    "no_posts_title": "No live posts yet",
+    "no_posts_subtitle": "Publish blog posts in Shopify to start showing fresh content here."
+  }
+}

@@ -1,3 +1,14 @@
 {
-  "current": {}
+  "current": {
+    "theme_color": "#d26633",
+    "brand_tagline": "Curated home and lifestyle essentials with secure checkout and trusted support.",
+    "seo_description": "SALT Online Store offers curated home, lifestyle, apparel, and gifting essentials with secure checkout, clear shipping updates, and trusted support.",
+    "seo_keywords": "SALT Online Store, home essentials, lifestyle products, secure checkout, online shopping",
+    "default_about_handle": "about-us",
+    "default_blog_handle": "posts",
+    "loading_title_default": "Loading SALT catalog",
+    "loading_subtext_default": "Preparing live products, collections, and recommendations from Shopify.",
+    "support_email": "support@saltonlinestore.com",
+    "support_response_window": "Within 24 business hours"
+  }
 }

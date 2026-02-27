@@ -1,18 +1,104 @@
 {%- assign hero_image_url = blank -%}
+{%- assign hero_image_alt = article.title | escape -%}
+
 {%- if article.image != blank -%}
   {%- assign hero_image_url = article.image | image_url: width: 2000 -%}
+  {%- assign hero_image_alt = article.image.alt | default: article.title | escape -%}
 {%- elsif article.content contains '<img' -%}
-  {%- assign hero_chunk = article.content | split: '<img' | last -%}
-  {%- if hero_chunk contains 'src="' -%}
-    {%- assign hero_image_url = hero_chunk | split: 'src="' | last | split: '"' | first -%}
+  {%- assign image_chunks = article.content | split: '<img' -%}
+  {%- if image_chunks.size > 1 -%}
+    {%- assign raw_image_chunk = image_chunks[1] | replace: '&amp;', '&' -%}
+    {%- assign raw_image_chunk = raw_image_chunk | replace: '\/', '/' -%}
+    {%- assign raw_image_chunk = raw_image_chunk | replace: "src='", 'src="' -%}
+    {%- assign raw_image_chunk = raw_image_chunk | replace: "srcset='", 'srcset="' -%}
+    {%- assign raw_image_chunk = raw_image_chunk | replace: "data-src='", 'data-src="' -%}
+    {%- assign raw_image_chunk = raw_image_chunk | replace: "data-srcset='", 'data-srcset="' -%}
+    {%- if raw_image_chunk contains 'src="' -%}
+      {%- assign extracted_image_url = raw_image_chunk | split: 'src="' | last | split: '"' | first -%}
+      {%- assign url_head_two = extracted_image_url | slice: 0, 2 -%}
+      {%- assign url_head_one = extracted_image_url | slice: 0, 1 -%}
+      {%- unless extracted_image_url contains 'data:' -%}
+        {%- if url_head_two == '//' -%}
+          {%- assign hero_image_url = 'https:' | append: extracted_image_url -%}
+        {%- elsif url_head_one == '/' -%}
+          {%- assign hero_image_url = shop.secure_url | append: extracted_image_url -%}
+        {%- else -%}
+          {%- assign hero_image_url = extracted_image_url -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- if hero_image_url == blank and raw_image_chunk contains 'data-src="' -%}
+      {%- assign extracted_image_url = raw_image_chunk | split: 'data-src="' | last | split: '"' | first -%}
+      {%- assign url_head_two = extracted_image_url | slice: 0, 2 -%}
+      {%- assign url_head_one = extracted_image_url | slice: 0, 1 -%}
+      {%- unless extracted_image_url contains 'data:' -%}
+        {%- if url_head_two == '//' -%}
+          {%- assign hero_image_url = 'https:' | append: extracted_image_url -%}
+        {%- elsif url_head_one == '/' -%}
+          {%- assign hero_image_url = shop.secure_url | append: extracted_image_url -%}
+        {%- else -%}
+          {%- assign hero_image_url = extracted_image_url -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- if hero_image_url == blank and raw_image_chunk contains 'srcset="' -%}
+      {%- assign extracted_srcset = raw_image_chunk | split: 'srcset="' | last | split: '"' | first -%}
+      {%- assign srcset_first = extracted_srcset | split: ',' | first | split: ' ' | first -%}
+      {%- assign srcset_head_two = srcset_first | slice: 0, 2 -%}
+      {%- assign srcset_head_one = srcset_first | slice: 0, 1 -%}
+      {%- unless srcset_first contains 'data:' -%}
+        {%- if srcset_head_two == '//' -%}
+          {%- assign hero_image_url = 'https:' | append: srcset_first -%}
+        {%- elsif srcset_head_one == '/' -%}
+          {%- assign hero_image_url = shop.secure_url | append: srcset_first -%}
+        {%- else -%}
+          {%- assign hero_image_url = srcset_first -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
+    {%- if hero_image_url == blank and raw_image_chunk contains 'data-srcset="' -%}
+      {%- assign extracted_srcset = raw_image_chunk | split: 'data-srcset="' | last | split: '"' | first -%}
+      {%- assign srcset_first = extracted_srcset | split: ',' | first | split: ' ' | first -%}
+      {%- assign srcset_head_two = srcset_first | slice: 0, 2 -%}
+      {%- assign srcset_head_one = srcset_first | slice: 0, 1 -%}
+      {%- unless srcset_first contains 'data:' -%}
+        {%- if srcset_head_two == '//' -%}
+          {%- assign hero_image_url = 'https:' | append: srcset_first -%}
+        {%- elsif srcset_head_one == '/' -%}
+          {%- assign hero_image_url = shop.secure_url | append: srcset_first -%}
+        {%- else -%}
+          {%- assign hero_image_url = srcset_first -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endif -%}
   {%- endif -%}
 {%- endif -%}
+{%- if hero_image_url contains 'http://' -%}
+  {%- assign hero_image_url = hero_image_url | replace_first: 'http://', 'https://' -%}
+{%- endif -%}
+
+{%- assign words = article.content | strip_html | split: ' ' | size -%}
+{%- assign read_minutes = words | divided_by: 220 -%}
+{%- if read_minutes < 1 -%}
+  {%- assign read_minutes = 1 -%}
+{%- endif -%}
+{%- assign article_path_value = article.url | default: blog.url | default: '/' -%}
+{%- assign article_url_absolute = shop.secure_url | append: article_path_value -%}
+{%- assign share_url = article_url_absolute | url_param_escape -%}
+{%- assign share_title = article.title | url_param_escape -%}
+{%- assign lead_excerpt = article.excerpt | strip_html | strip -%}
+{%- if lead_excerpt == blank -%}
+  {%- assign lead_excerpt = article.excerpt_or_content | strip_html | strip | truncate: 220 -%}
+{%- endif -%}
+{%- assign previous_article = article.previous_article -%}
+{%- assign next_article = article.next_article -%}
 
 <article class="salt-article-live">
   <div class="salt-article-live__container">
     <header class="salt-article-live__header">
       <a class="salt-article-live__back" href="{{ blog.url }}">Back to blog</a>
       <h1>{{ article.title }}</h1>
+
       <div class="salt-article-live__meta">
         {%- if section.settings.show_date -%}
           <span>{{ article.published_at | date: "%B %-d, %Y" }}</span>
@@ -20,33 +106,101 @@
         {%- if section.settings.show_author and article.author != blank -%}
           <span>{{ article.author }}</span>
         {%- endif -%}
+        {%- if section.settings.show_read_time -%}
+          <span>{{ read_minutes }} min read</span>
+        {%- endif -%}
       </div>
+
+      {%- if section.settings.show_excerpt and lead_excerpt != blank -%}
+        <p class="salt-article-live__lead">{{ lead_excerpt }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.show_tags and article.tags.size > 0 -%}
+        <ul class="salt-article-live__tags" aria-label="Article tags">
+          {%- for tag in article.tags limit: 5 -%}
+            <li>{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
     </header>
 
     {%- if hero_image_url != blank -%}
       <div class="salt-article-live__hero">
-        <img src="{{ hero_image_url }}" alt="{{ article.title | escape }}" loading="eager" width="2000" height="1200">
+        <img src="{{ hero_image_url }}" alt="{{ hero_image_alt }}" loading="eager" fetchpriority="high" decoding="async" width="2000" height="1200">
       </div>
     {%- endif -%}
 
     <div class="salt-article-live__content rte">
       {{ article.content }}
     </div>
+
+    {%- if section.settings.show_share -%}
+      <footer class="salt-article-live__share">
+        <span>Share</span>
+        <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_title }}" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="mailto:?subject={{ share_title }}&body={{ share_url }}">Email</a>
+      </footer>
+    {%- endif -%}
+
+    <div class="salt-article-live__commerce">
+      <p>Found this useful? Explore products connected to this topic.</p>
+      <a href="/shop">Continue to Shop</a>
+    </div>
+
+    <div class="salt-article-live__paging">
+      {%- if previous_article -%}
+        <a href="{{ previous_article.url }}" class="salt-article-live__paging-link" rel="prev">
+          ← {{ previous_article.title | truncate: 48 }}
+        </a>
+      {%- endif -%}
+      {%- if next_article -%}
+        <a href="{{ next_article.url }}" class="salt-article-live__paging-link salt-article-live__paging-link--next" rel="next">
+          {{ next_article.title | truncate: 48 }} →
+        </a>
+      {%- endif -%}
+    </div>
   </div>
 </article>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {{ article_url_absolute | json }},
+    "headline": {{ article.title | json }},
+    "description": {{ lead_excerpt | default: article.title | json }},
+    "datePublished": {{ article.published_at | date: '%Y-%m-%d' | json }},
+    "dateModified": {{ article.updated_at | default: article.published_at | date: '%Y-%m-%d' | json }},
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | default: shop.name | json }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ 'brand-salt-logo.png' | asset_url | json }}
+      }
+    }{% if hero_image_url != blank %},
+    "image": {{ hero_image_url | json }}{% endif %}
+  }
+</script>
 
 {% style %}
   .salt-article-live {
     padding: 34px 20px 80px;
-    background: #f8f4ef;
+    background: radial-gradient(circle at 15% 0%, #f7e5d2 0%, #f8f4ef 38%, #eef6f1 100%);
   }
   .salt-article-live__container {
     max-width: 940px;
     margin: 0 auto;
-    background: #fff;
+    background: linear-gradient(180deg, #ffffff 0%, #fffdfa 100%);
     border: 1px solid #eadfd3;
     border-radius: 24px;
     padding: 28px 28px 34px;
+    box-shadow: 0 14px 34px rgba(40, 34, 28, 0.06);
   }
   .salt-article-live__back {
     color: #cf5f2f;
@@ -57,7 +211,7 @@
     letter-spacing: 0.08em;
   }
   .salt-article-live__header h1 {
-    margin: 12px 0 14px;
+    margin: 12px 0 12px;
     font-size: clamp(2rem, 5vw, 3.6rem);
     line-height: 1.08;
   }
@@ -68,9 +222,43 @@
     color: #776d63;
     font-size: 0.93rem;
   }
+  .salt-article-live__meta span {
+    border: 1px solid #eadfd3;
+    border-radius: 999px;
+    background: #fffaf4;
+    padding: 4px 10px;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: #766b61;
+  }
   .salt-article-live__meta span:not(:last-child)::after {
-    content: "•";
-    margin-left: 12px;
+    content: "";
+    margin-left: 0;
+  }
+  .salt-article-live__lead {
+    margin: 14px 0 0;
+    color: #655d55;
+    font-size: 1.07rem;
+    line-height: 1.65;
+  }
+  .salt-article-live__tags {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .salt-article-live__tags li {
+    border: 1px solid #e8dccf;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.72rem;
+    color: #6b6259;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .salt-article-live__hero {
     margin-top: 20px;
@@ -83,6 +271,10 @@
     display: block;
     width: 100%;
     height: auto;
+    transition: transform 0.45s ease;
+  }
+  .salt-article-live__hero:hover img {
+    transform: scale(1.02);
   }
   .salt-article-live__content {
     margin-top: 24px;
@@ -90,10 +282,121 @@
     line-height: 1.72;
     font-size: 1.08rem;
   }
+  .salt-article-live__content h2,
+  .salt-article-live__content h3,
+  .salt-article-live__content h4 {
+    line-height: 1.18;
+    margin-top: 1.4em;
+    margin-bottom: 0.55em;
+    color: #1f1a16;
+  }
+  .salt-article-live__content p {
+    margin-top: 0;
+    margin-bottom: 1.15em;
+  }
+  .salt-article-live__content a {
+    color: #cf5f2f;
+    text-underline-offset: 2px;
+    font-weight: 600;
+  }
+  .salt-article-live__content blockquote {
+    margin: 1.2em 0;
+    border-left: 3px solid #d06a3d;
+    background: #fff7f0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #51473f;
+  }
   .salt-article-live__content img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
+    border: 1px solid #eadfd3;
+  }
+  .salt-article-live__share {
+    margin-top: 26px;
+    border-top: 1px solid #efe4d8;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .salt-article-live__share span {
+    color: #6e645b;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+  }
+  .salt-article-live__share a {
+    color: #cf5f2f;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .salt-article-live__commerce {
+    margin-top: 14px;
+    border: 1px solid #eadfd3;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #fffaf4 0%, #f3f6f3 100%);
+    padding: 12px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .salt-article-live__commerce p {
+    margin: 0;
+    color: #665c53;
+    font-size: 0.88rem;
+  }
+  .salt-article-live__commerce a {
+    border: 1px solid #d16836;
+    border-radius: 999px;
+    background: #d16836;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 8px 12px;
+  }
+  .salt-article-live__commerce a:hover {
+    filter: brightness(1.08);
+  }
+  .salt-article-live__paging {
+    margin-top: 22px;
+    border-top: 1px solid #efe4d8;
+    padding-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .salt-article-live__paging-link {
+    max-width: 100%;
+    border: 1px solid #eadfd3;
+    border-radius: 999px;
+    background: #fffaf4;
+    color: #3e3731;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 8px 12px;
+  }
+  .salt-article-live__paging-link:hover {
+    border-color: #cf5f2f;
+    color: #cf5f2f;
+  }
+  .salt-article-live__paging-link--next {
+    margin-left: auto;
   }
   @media screen and (max-width: 760px) {
     .salt-article-live {
@@ -127,9 +430,27 @@
     },
     {
       "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show lead excerpt",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_time",
+      "label": "Show reading time",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
       "id": "show_share",
       "label": "Show share controls",
-      "default": false
+      "default": true
     }
   ]
 }

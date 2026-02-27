@@ -2,7 +2,14 @@
   "sections": {
     "main": {
       "type": "salt-app",
-      "settings": {}
+      "settings": {
+        "show_loading_shell": true,
+        "about_page_handle": "about-us",
+        "blog_handle": "posts",
+        "loading_title": "Loading collections",
+        "loading_subtext": "Preparing curated collection paths with active inventory.",
+        "support_email": "support@saltonlinestore.com"
+      }
     }
   },
   "order": [

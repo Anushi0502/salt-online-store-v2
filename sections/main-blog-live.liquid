@@ -1,64 +1,168 @@
+{%- assign blog_title_value = blog.title | default: 'Blog' -%}
+{%- assign latest_article = blog.articles.first -%}
 {%- paginate blog.articles by section.settings.articles_per_page -%}
   <section class="salt-blog-live">
     <div class="salt-blog-live__container">
       <header class="salt-blog-live__header">
-        <p class="salt-blog-live__eyebrow">{{ blog.title | default: 'Blog' }}</p>
-        <h1 class="salt-blog-live__title">{{ blog.title }}</h1>
-        {%- if blog.articles_count > 0 -%}
-          <p class="salt-blog-live__meta">
-            {{ blog.articles_count }} {{ blog.articles_count | pluralize: 'article', 'articles' }}
-          </p>
-        {%- endif -%}
+        <p class="salt-blog-live__eyebrow">{{ blog_title_value }}</p>
+        <h1 class="salt-blog-live__title">{{ blog_title_value }}</h1>
+        <p class="salt-blog-live__meta">
+          {{ blog.articles_count }} {{ blog.articles_count | pluralize: 'article', 'articles' }}
+          {%- if latest_article != blank -%}
+            · Updated {{ latest_article.published_at | date: "%B %-d, %Y" }}
+          {%- endif -%}
+        </p>
+        <div class="salt-blog-live__quick">
+          <span>Live Shopify posts</span>
+          <span>Auto-synced images</span>
+          <span>Reader-friendly cards</span>
+        </div>
       </header>
 
       {%- if blog.articles_count > 0 -%}
         <div class="salt-blog-live__grid">
           {%- for article in blog.articles -%}
+            {%- assign article_url_value = article.url | default: blog.url | default: '#' -%}
             {%- assign article_image_url = blank -%}
+            {%- assign article_image_alt = article.title | escape -%}
+
             {%- if article.image != blank -%}
-              {%- assign article_image_url = article.image | image_url: width: 1200 -%}
+              {%- assign article_image_url = article.image | image_url: width: 1400 -%}
+              {%- assign article_image_alt = article.image.alt | default: article.title | escape -%}
             {%- elsif article.content contains '<img' -%}
-              {%- assign img_chunk = article.content | split: '<img' | last -%}
-              {%- if img_chunk contains 'src="' -%}
-                {%- assign article_image_url = img_chunk | split: 'src="' | last | split: '"' | first -%}
+              {%- assign image_chunks = article.content | split: '<img' -%}
+              {%- if image_chunks.size > 1 -%}
+                {%- assign raw_image_chunk = image_chunks[1] | replace: '&amp;', '&' -%}
+                {%- assign raw_image_chunk = raw_image_chunk | replace: '\/', '/' -%}
+                {%- assign raw_image_chunk = raw_image_chunk | replace: "src='", 'src="' -%}
+                {%- assign raw_image_chunk = raw_image_chunk | replace: "srcset='", 'srcset="' -%}
+                {%- assign raw_image_chunk = raw_image_chunk | replace: "data-src='", 'data-src="' -%}
+                {%- assign raw_image_chunk = raw_image_chunk | replace: "data-srcset='", 'data-srcset="' -%}
+                {%- if raw_image_chunk contains 'src="' -%}
+                  {%- assign extracted_image_url = raw_image_chunk | split: 'src="' | last | split: '"' | first -%}
+                  {%- assign url_head_two = extracted_image_url | slice: 0, 2 -%}
+                  {%- assign url_head_one = extracted_image_url | slice: 0, 1 -%}
+                  {%- unless extracted_image_url contains 'data:' -%}
+                    {%- if url_head_two == '//' -%}
+                      {%- assign article_image_url = 'https:' | append: extracted_image_url -%}
+                    {%- elsif url_head_one == '/' -%}
+                      {%- assign article_image_url = shop.secure_url | append: extracted_image_url -%}
+                    {%- else -%}
+                      {%- assign article_image_url = extracted_image_url -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+                {%- endif -%}
+                {%- if article_image_url == blank and raw_image_chunk contains 'data-src="' -%}
+                  {%- assign extracted_image_url = raw_image_chunk | split: 'data-src="' | last | split: '"' | first -%}
+                  {%- assign url_head_two = extracted_image_url | slice: 0, 2 -%}
+                  {%- assign url_head_one = extracted_image_url | slice: 0, 1 -%}
+                  {%- unless extracted_image_url contains 'data:' -%}
+                    {%- if url_head_two == '//' -%}
+                      {%- assign article_image_url = 'https:' | append: extracted_image_url -%}
+                    {%- elsif url_head_one == '/' -%}
+                      {%- assign article_image_url = shop.secure_url | append: extracted_image_url -%}
+                    {%- else -%}
+                      {%- assign article_image_url = extracted_image_url -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+                {%- endif -%}
+                {%- if article_image_url == blank and raw_image_chunk contains 'srcset="' -%}
+                  {%- assign extracted_srcset = raw_image_chunk | split: 'srcset="' | last | split: '"' | first -%}
+                  {%- assign srcset_first = extracted_srcset | split: ',' | first | split: ' ' | first -%}
+                  {%- assign srcset_head_two = srcset_first | slice: 0, 2 -%}
+                  {%- assign srcset_head_one = srcset_first | slice: 0, 1 -%}
+                  {%- unless srcset_first contains 'data:' -%}
+                    {%- if srcset_head_two == '//' -%}
+                      {%- assign article_image_url = 'https:' | append: srcset_first -%}
+                    {%- elsif srcset_head_one == '/' -%}
+                      {%- assign article_image_url = shop.secure_url | append: srcset_first -%}
+                    {%- else -%}
+                      {%- assign article_image_url = srcset_first -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+                {%- endif -%}
+                {%- if article_image_url == blank and raw_image_chunk contains 'data-srcset="' -%}
+                  {%- assign extracted_srcset = raw_image_chunk | split: 'data-srcset="' | last | split: '"' | first -%}
+                  {%- assign srcset_first = extracted_srcset | split: ',' | first | split: ' ' | first -%}
+                  {%- assign srcset_head_two = srcset_first | slice: 0, 2 -%}
+                  {%- assign srcset_head_one = srcset_first | slice: 0, 1 -%}
+                  {%- unless srcset_first contains 'data:' -%}
+                    {%- if srcset_head_two == '//' -%}
+                      {%- assign article_image_url = 'https:' | append: srcset_first -%}
+                    {%- elsif srcset_head_one == '/' -%}
+                      {%- assign article_image_url = shop.secure_url | append: srcset_first -%}
+                    {%- else -%}
+                      {%- assign article_image_url = srcset_first -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+                {%- endif -%}
               {%- endif -%}
             {%- endif -%}
+            {%- if article_image_url contains 'http://' -%}
+              {%- assign article_image_url = article_image_url | replace_first: 'http://', 'https://' -%}
+            {%- endif -%}
 
-            <article class="salt-blog-live__card">
-              <a class="salt-blog-live__image-link" href="{{ article.url }}">
+            {%- assign preview = article.excerpt_or_content | strip_html | strip | truncate: 170 -%}
+            {%- assign words = article.content | strip_html | split: ' ' | size -%}
+            {%- assign read_minutes = words | divided_by: 220 -%}
+            {%- if read_minutes < 1 -%}
+              {%- assign read_minutes = 1 -%}
+            {%- endif -%}
+
+            <article class="salt-blog-live__card{% if forloop.first %} salt-blog-live__card--featured{% endif %}">
+              <a class="salt-blog-live__image-link" href="{{ article_url_value }}" aria-label="{{ article.title | escape }}">
                 {%- if article_image_url != blank -%}
                   <img
                     class="salt-blog-live__image"
                     src="{{ article_image_url }}"
-                    alt="{{ article.title | escape }}"
-                    loading="lazy"
-                    width="1200"
-                    height="800"
+                    alt="{{ article_image_alt }}"
+                    loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                    fetchpriority="{% if forloop.first %}high{% else %}auto{% endif %}"
+                    decoding="async"
+                    width="1400"
+                    height="900"
                   >
+                {%- else -%}
+                  <div class="salt-blog-live__noimage" role="img" aria-label="{{ article_image_alt }}">
+                    <span>Image unavailable</span>
+                  </div>
                 {%- endif -%}
               </a>
 
               <div class="salt-blog-live__body">
+                {%- if forloop.first -%}
+                  <p class="salt-blog-live__featured-label">Featured insight</p>
+                {%- endif -%}
                 {%- if section.settings.show_date -%}
                   <p class="salt-blog-live__date">{{ article.published_at | date: "%B %-d, %Y" }}</p>
                 {%- endif -%}
 
                 <h2 class="salt-blog-live__card-title">
-                  <a href="{{ article.url }}">{{ article.title }}</a>
+                  <a href="{{ article_url_value }}">{{ article.title }}</a>
                 </h2>
 
-                {%- if section.settings.show_excerpt -%}
-                  {%- assign preview = article.excerpt_or_content | strip_html | truncate: 170 -%}
-                  {%- if preview != blank -%}
-                    <p class="salt-blog-live__excerpt">{{ preview }}</p>
-                  {%- endif -%}
+                {%- if section.settings.show_excerpt and preview != blank -%}
+                  <p class="salt-blog-live__excerpt">{{ preview }}</p>
+                {%- endif -%}
+
+                {%- if section.settings.show_tags and article.tags.size > 0 -%}
+                  <ul class="salt-blog-live__tags" aria-label="Article tags">
+                    {%- for tag in article.tags limit: 3 -%}
+                      <li>{{ tag }}</li>
+                    {%- endfor -%}
+                  </ul>
                 {%- endif -%}
 
                 <div class="salt-blog-live__footer">
-                  {%- if section.settings.show_author and article.author != blank -%}
-                    <span>{{ article.author }}</span>
-                  {%- endif -%}
-                  <a href="{{ article.url }}" class="salt-blog-live__read-more">Read post</a>
+                  <div class="salt-blog-live__meta-inline">
+                    {%- if section.settings.show_author and article.author != blank -%}
+                      <span>{{ article.author }}</span>
+                    {%- endif -%}
+                    {%- if section.settings.show_read_time -%}
+                      <span>{{ read_minutes }} min read</span>
+                    {%- endif -%}
+                  </div>
+                  <a href="{{ article_url_value }}" class="salt-blog-live__read-more" aria-label="Read {{ article.title | escape }}">Read post →</a>
                 </div>
               </div>
             </article>
@@ -68,28 +172,52 @@
         {%- if paginate.pages > 1 -%}
           <nav class="salt-blog-live__pagination" aria-label="Blog pagination">
             {%- if paginate.previous -%}
-              <a href="{{ paginate.previous.url }}">Previous</a>
+              <a href="{{ paginate.previous.url }}" aria-label="Previous page">Previous</a>
             {%- endif -%}
-            <span>Page {{ paginate.current_page }} / {{ paginate.pages }}</span>
+            <span>Page {{ paginate.current_page }} of {{ paginate.pages }}</span>
             {%- if paginate.next -%}
-              <a href="{{ paginate.next.url }}">Next</a>
+              <a href="{{ paginate.next.url }}" aria-label="Next page">Next</a>
             {%- endif -%}
           </nav>
         {%- endif -%}
       {%- else -%}
         <div class="salt-blog-live__empty">
-          <h2>No blog posts yet</h2>
-          <p>Publish posts in Shopify and they will appear here automatically.</p>
+          <h2>{{ 'blog.no_posts_title' | t | default: 'No blog posts yet' }}</h2>
+          <p>{{ 'blog.no_posts_subtitle' | t | default: 'Publish posts in Shopify and they will appear here automatically.' }}</p>
         </div>
       {%- endif -%}
     </div>
   </section>
 {%- endpaginate -%}
 
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": {{ blog.title | json }},
+    "url": {{ shop.secure_url | append: blog.url | json }},
+    "description": {{ blog_title_value | append: ' updates from ' | append: shop.name | json }},
+    "blogPost": [
+      {%- for article in blog.articles limit: 12 -%}
+        {
+          "@type": "BlogPosting",
+          "headline": {{ article.title | json }},
+          "url": {{ shop.secure_url | append: article.url | json }},
+          "datePublished": {{ article.published_at | date: '%Y-%m-%d' | json }},
+          "author": {
+            "@type": "Person",
+            "name": {{ article.author | default: shop.name | json }}
+          }
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+</script>
+
 {% style %}
   .salt-blog-live {
     padding: 40px 20px 80px;
-    background: #f8f4ef;
+    background: radial-gradient(circle at 10% 5%, #f7e7d7 0%, #f8f4ef 35%, #eef6f1 100%);
   }
   .salt-blog-live__container {
     max-width: 1240px;
@@ -115,12 +243,31 @@
     margin: 10px 0 0;
     color: #736c66;
   }
+  .salt-blog-live__quick {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .salt-blog-live__quick span {
+    border: 1px solid #eadfd3;
+    border-radius: 999px;
+    background: #fffaf4;
+    color: #6f665d;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+  }
   .salt-blog-live__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
   .salt-blog-live__card {
+    content-visibility: auto;
+    contain-intrinsic-size: 760px;
     background: #fff;
     border: 1px solid #eadfd3;
     border-radius: 22px;
@@ -128,17 +275,63 @@
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    box-shadow: 0 12px 30px rgba(38, 34, 30, 0.06);
+    transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+  }
+  .salt-blog-live__card--featured {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: stretch;
+  }
+  .salt-blog-live__card--featured .salt-blog-live__image-link {
+    aspect-ratio: auto;
+    min-height: 100%;
+  }
+  .salt-blog-live__card--featured .salt-blog-live__body {
+    padding: 24px 24px 22px;
+  }
+  .salt-blog-live__card--featured .salt-blog-live__card-title {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    -webkit-line-clamp: 3;
+  }
+  .salt-blog-live__card:hover {
+    transform: translateY(-4px);
+    border-color: #dbbda6;
+    box-shadow: 0 18px 34px rgba(38, 34, 30, 0.1);
   }
   .salt-blog-live__image-link {
     display: block;
     aspect-ratio: 16 / 9;
     background: #f3ece4;
   }
-  .salt-blog-live__image {
+  .salt-blog-live__image,
+  .salt-blog-live__noimage {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+  }
+  .salt-blog-live__image {
+    object-fit: cover;
+  }
+  .salt-blog-live__noimage {
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at 30% 18%, #f3d8c2 0%, transparent 46%),
+      radial-gradient(circle at 76% 80%, #dce8de 0%, transparent 42%),
+      #f1ece5;
+    padding: 16px;
+  }
+  .salt-blog-live__noimage span {
+    border: 1px solid #eadfd3;
+    border-radius: 999px;
+    background: #fffaf4;
+    color: #7e7268;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 7px 12px;
   }
   .salt-blog-live__body {
     padding: 18px 18px 20px;
@@ -153,19 +346,61 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
+  .salt-blog-live__featured-label {
+    margin: 0;
+    display: inline-flex;
+    width: fit-content;
+    border: 1px solid #ecccb5;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #bf5b31;
+    background: #fff7f0;
+  }
   .salt-blog-live__card-title {
     margin: 0;
     font-size: 1.75rem;
     line-height: 1.12;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .salt-blog-live__card-title a {
     color: inherit;
     text-decoration: none;
   }
+  .salt-blog-live__card-title a:hover {
+    color: #cf5f2f;
+  }
   .salt-blog-live__excerpt {
     margin: 0;
     color: #625a53;
     line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .salt-blog-live__tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .salt-blog-live__tags li {
+    border: 1px solid #e8dccf;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 0.72rem;
+    color: #6b6259;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .salt-blog-live__footer {
     margin-top: auto;
@@ -176,6 +411,15 @@
     font-size: 0.95rem;
     color: #665e56;
   }
+  .salt-blog-live__meta-inline {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .salt-blog-live__meta-inline span:not(:last-child)::after {
+    content: "•";
+    margin-left: 10px;
+  }
   .salt-blog-live__read-more {
     color: #cf5f2f;
     font-weight: 700;
@@ -183,6 +427,7 @@
     text-transform: uppercase;
     letter-spacing: 0.07em;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
   .salt-blog-live__pagination {
     margin-top: 28px;
@@ -209,6 +454,10 @@
     .salt-blog-live__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .salt-blog-live__card--featured {
+      grid-column: span 2;
+      grid-template-columns: 1fr;
+    }
   }
   @media screen and (max-width: 760px) {
     .salt-blog-live {
@@ -217,6 +466,14 @@
     .salt-blog-live__grid {
       grid-template-columns: 1fr;
       gap: 16px;
+    }
+    .salt-blog-live__card--featured {
+      grid-column: span 1;
+    }
+    .salt-blog-live__footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
     }
   }
 {% endstyle %}
@@ -232,7 +489,7 @@
       "min": 4,
       "max": 24,
       "step": 2,
-      "default": 12
+      "default": 10
     },
     {
       "type": "checkbox",
@@ -250,6 +507,18 @@
       "type": "checkbox",
       "id": "show_excerpt",
       "label": "Show excerpt",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_time",
+      "label": "Show reading time",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
       "default": true
     }
   ]

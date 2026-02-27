@@ -1,15 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog",
+      "type": "main-blog-live",
       "settings": {
-        "layout": "grid",
-        "show_image": true,
-        "image_height": "small",
-        "show_date": false,
-        "show_author": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "articles_per_page": 10,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_read_time": true,
+        "show_tags": true
       }
     }
   },
