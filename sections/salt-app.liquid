@@ -4,6 +4,10 @@
 {%- assign loading_subtext_value = section.settings.loading_subtext | default: settings.loading_subtext_default | default: 'Preparing products, collections, and featured recommendations.' -%}
 {%- assign support_email_value = section.settings.support_email | default: settings.support_email | default: 'support@saltonlinestore.com' -%}
 {%- assign support_response_window_value = settings.support_response_window | default: 'Within 24 business hours' -%}
+{%- assign privacy_policy_url_value = shop.privacy_policy.url | default: '/policies/privacy-policy' -%}
+{%- assign refund_policy_url_value = shop.refund_policy.url | default: '/policies/refund-policy' -%}
+{%- assign shipping_policy_url_value = shop.shipping_policy.url | default: '/policies/shipping-policy' -%}
+{%- assign contact_policy_url_value = shop.contact_information.url | default: '/policies/contact-information' -%}
 
 <section class="salt-app-shell">
   <div
@@ -18,6 +22,10 @@
     data-about-handle="{{ about_handle_value | escape }}"
     data-blog-handle="{{ blog_handle_value | escape }}"
     data-support-email="{{ support_email_value | escape }}"
+    data-privacy-policy-url="{{ privacy_policy_url_value | escape }}"
+    data-refund-policy-url="{{ refund_policy_url_value | escape }}"
+    data-shipping-policy-url="{{ shipping_policy_url_value | escape }}"
+    data-contact-policy-url="{{ contact_policy_url_value | escape }}"
   >
     <div id="root" class="salt-app-shell__mount">
       {%- if section.settings.show_loading_shell -%}
@@ -70,7 +78,11 @@
     "templateSuffix": {{ template.suffix | default: '' | json }},
     "aboutHandle": {{ about_handle_value | json }},
     "blogHandle": {{ blog_handle_value | json }},
-    "supportEmail": {{ support_email_value | json }}
+    "supportEmail": {{ support_email_value | json }},
+    "privacyPolicyUrl": {{ privacy_policy_url_value | json }},
+    "refundPolicyUrl": {{ refund_policy_url_value | json }},
+    "shippingPolicyUrl": {{ shipping_policy_url_value | json }},
+    "contactPolicyUrl": {{ contact_policy_url_value | json }}
   }
 </script>
 <script>
