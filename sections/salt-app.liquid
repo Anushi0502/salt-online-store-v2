@@ -8,6 +8,17 @@
 {%- assign refund_policy_url_value = shop.refund_policy.url | default: '/policies/refund-policy' -%}
 {%- assign shipping_policy_url_value = shop.shipping_policy.url | default: '/policies/shipping-policy' -%}
 {%- assign contact_policy_url_value = shop.contact_information.url | default: '/policies/contact-information' -%}
+{%- assign account_url_value = routes.account_url | default: '/account' -%}
+{%- assign account_login_url_value = routes.account_login_url | default: '/account/login' -%}
+{%- assign account_register_url_value = routes.account_register_url | default: '/account/register' -%}
+{%- assign account_logout_url_value = routes.account_logout_url | default: '/account/logout' -%}
+{%- assign account_addresses_url_value = routes.account_addresses_url | default: '/account/addresses' -%}
+{%- assign account_order_history_url_value = routes.account_url | default: '/account' -%}
+{%- assign storefront_login_url_value = routes.storefront_login_url | default: '/account/login' -%}
+{%- assign customer_logged_in_value = false -%}
+{%- if customer -%}
+  {%- assign customer_logged_in_value = true -%}
+{%- endif -%}
 
 <section class="salt-app-shell">
   <div
@@ -16,6 +27,7 @@
     data-shop-domain="{{ shop.permanent_domain }}"
     data-shop-name="{{ shop.name | escape }}"
     data-shop-base-url="{{ shop.secure_url }}"
+    data-shop-app-url="https://shop.app"
     data-currency="{{ shop.currency }}"
     data-template="{{ template.name }}"
     data-template-suffix="{{ template.suffix | default: '' }}"
@@ -26,6 +38,14 @@
     data-refund-policy-url="{{ refund_policy_url_value | escape }}"
     data-shipping-policy-url="{{ shipping_policy_url_value | escape }}"
     data-contact-policy-url="{{ contact_policy_url_value | escape }}"
+    data-customer-logged-in="{{ customer_logged_in_value }}"
+    data-account-url="{{ account_url_value | escape }}"
+    data-account-login-url="{{ account_login_url_value | escape }}"
+    data-account-register-url="{{ account_register_url_value | escape }}"
+    data-account-logout-url="{{ account_logout_url_value | escape }}"
+    data-account-addresses-url="{{ account_addresses_url_value | escape }}"
+    data-account-order-history-url="{{ account_order_history_url_value | escape }}"
+    data-storefront-login-url="{{ storefront_login_url_value | escape }}"
   >
     <div id="root" class="salt-app-shell__mount">
       {%- if section.settings.show_loading_shell -%}
@@ -59,6 +79,10 @@
     </div>
   </div>
 
+  <div id="salt-shop-login-native" class="salt-shop-native-login" hidden aria-hidden="true">
+    {{ shop | login_button }}
+  </div>
+
   <noscript>
     <div class="salt-app-shell__noscript">
       JavaScript is required to load this storefront experience.
@@ -73,6 +97,7 @@
     "shopDomain": {{ shop.permanent_domain | json }},
     "shopName": {{ shop.name | json }},
     "shopBaseUrl": {{ shop.secure_url | json }},
+    "shopAppUrl": "https://shop.app",
     "currency": {{ shop.currency | json }},
     "template": {{ template.name | json }},
     "templateSuffix": {{ template.suffix | default: '' | json }},
@@ -82,7 +107,15 @@
     "privacyPolicyUrl": {{ privacy_policy_url_value | json }},
     "refundPolicyUrl": {{ refund_policy_url_value | json }},
     "shippingPolicyUrl": {{ shipping_policy_url_value | json }},
-    "contactPolicyUrl": {{ contact_policy_url_value | json }}
+    "contactPolicyUrl": {{ contact_policy_url_value | json }},
+    "customerLoggedIn": {{ customer_logged_in_value | json }},
+    "accountUrl": {{ account_url_value | json }},
+    "accountLoginUrl": {{ account_login_url_value | json }},
+    "accountRegisterUrl": {{ account_register_url_value | json }},
+    "accountLogoutUrl": {{ account_logout_url_value | json }},
+    "accountAddressesUrl": {{ account_addresses_url_value | json }},
+    "accountOrderHistoryUrl": {{ account_order_history_url_value | json }},
+    "storefrontLoginUrl": {{ storefront_login_url_value | json }}
   }
 </script>
 <script>
@@ -114,6 +147,11 @@
   }
   .salt-app-shell__mount {
     min-height: inherit;
+  }
+  .salt-shop-native-login {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
   }
   .salt-app-shell__loading {
     position: relative;
