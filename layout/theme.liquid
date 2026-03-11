@@ -24,7 +24,12 @@
       else
         assign organization_logo_url = 'brand-salt-logo.png' | asset_url
       endif
-      assign search_target_url = shop.secure_url | append: '/search?q={search_term_string}'
+      assign search_target_url = shop.secure_url | append: '/shop?q={search_term_string}'
+      assign site_title_default = settings.home_seo_title | default: 'SALT Online Store | Curated Home, Lifestyle, Gifts, and Essentials'
+      assign site_description_default = settings.seo_description | default: 'SALT Online Store offers curated cookware, gifts, apparel, and everyday essentials with secure checkout and fast dispatch.'
+      if request.page_type == 'index'
+        assign title_text = site_title_default
+      endif
     -%}
 
     <meta charset="utf-8">
@@ -32,15 +37,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="{{ settings.theme_color | default: '#d26633' }}">
+    <meta name="application-name" content="SALT Online Store">
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
     {%- if seo_description_text != blank -%}
       <meta name="description" content="{{ seo_description_text | escape }}">
+    {%- else -%}
+      <meta name="description" content="{{ site_description_default | escape }}">
     {%- endif -%}
 
     {%- if should_noindex -%}
       <meta name="robots" content="noindex,nofollow">
     {%- else -%}
-      <meta name="robots" content="index,follow">
+      <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     {%- endif -%}
 
     <link rel="canonical" href="{{ canonical_url }}">
@@ -48,6 +57,14 @@
     <link rel="dns-prefetch" href="//cdn.shopify.com">
     <link rel="preload" href="{{ 'salt-app.css' | asset_url }}" as="style">
     <link rel="preload" href="{{ 'salt-app.js' | asset_url }}" as="script">
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 256 }}" media="(prefers-color-scheme: light)">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- else -%}
+      <link rel="icon" type="image/png" href="{{ 'brand-salt-logo.png' | asset_url }}" media="(prefers-color-scheme: light)">
+      <link rel="apple-touch-icon" href="{{ 'brand-salt-logo.png' | asset_url }}">
+    {%- endif -%}
+    <link rel="icon" type="image/png" href="{{ 'brand-salt-logo-dark.png' | asset_url }}" media="(prefers-color-scheme: dark)">
 
     <title>
       {%- if title_text != blank -%}
@@ -66,6 +83,9 @@
     {%- if seo_description_text != blank -%}
       <meta property="og:description" content="{{ seo_description_text | escape }}">
       <meta name="twitter:description" content="{{ seo_description_text | escape }}">
+    {%- else -%}
+      <meta property="og:description" content="{{ site_description_default | escape }}">
+      <meta name="twitter:description" content="{{ site_description_default | escape }}">
     {%- endif -%}
     {%- if seo_keywords_text != blank -%}
       <meta name="keywords" content="{{ seo_keywords_text | escape }}">
@@ -82,9 +102,15 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": {{ shop.name | json }},
+        "alternateName": ["Saltonlinestore", "Salt Online Store", "SALT Store", "Saltonline store"],
         "url": {{ shop.secure_url | json }},
         "description": {{ brand_tagline_text | json }},
         "logo": {{ organization_logo_url | json }},
+        "sameAs": [
+          "https://www.instagram.com/saltonlinestore",
+          "https://www.facebook.com/people/SALT-online-store/61573199456052/",
+          "https://www.youtube.com/@SALTONLINESTORE"
+        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -99,7 +125,8 @@
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": {{ shop.name | json }},
+        "name": "SALT Online Store",
+        "alternateName": ["Saltonlinestore", "Salt Online Store", "SALT Store"],
         "url": {{ shop.secure_url | json }},
         "potentialAction": {
           "@type": "SearchAction",
