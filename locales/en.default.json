@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "accessibility": {
     "skip_to_content": "Skip to main content",
@@ -17,5 +26,12 @@
   "blog": {
     "no_posts_title": "No live posts yet",
     "no_posts_subtitle": "Publish blog posts in Shopify to start showing fresh content here."
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "page_title": "SALT ONLINE STORE CHECKOUT"
+      }
+    }
   }
 }
