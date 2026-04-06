@@ -38,7 +38,9 @@
         "autocomplete_title": "SALT CHECKOUT",
         "forwarding_indicator": {
           "external_and_new_window": "SALT CHECKOUT"
-        }
+        },
+        "edit_link_label": "SALT ONLINE STORE CHECKOUT",
+        "title": "SALT ONLINE STORE CHECKOUT"
       }
     }
   }
