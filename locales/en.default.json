@@ -30,7 +30,7 @@
   "shopify": {
     "checkout": {
       "general": {
-        "page_title": "SALT ONLE STORE CHECKOUT",
+        "page_title": "SALT ONLINE STORE CHECKOUT",
         "full_title": "SALT ",
         "checkout_context": {
           "step_one": "SALT CHECKOUT"
@@ -40,7 +40,7 @@
           "external_and_new_window": "SALT CHECKOUT"
         },
         "edit_link_label": "SALT ONLINE STORE CHECKOUT",
-        "title": "SALT ONLINE STORE CHECKOUT"
+        "title": "SALT  CHECKOUT"
       }
     }
   }
