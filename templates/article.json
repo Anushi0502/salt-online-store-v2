@@ -1,15 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-article-live",
-      "settings": {
-        "show_author": true,
-        "show_date": true,
-        "show_excerpt": true,
-        "show_read_time": true,
-        "show_tags": true,
-        "show_share": true
-      }
+      "type": "salt-app",
+      "settings": {}
     }
   },
   "order": [

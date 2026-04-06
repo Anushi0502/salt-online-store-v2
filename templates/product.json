@@ -2,14 +2,7 @@
   "sections": {
     "main": {
       "type": "salt-app",
-      "settings": {
-        "show_loading_shell": true,
-        "about_page_handle": "about-us",
-        "blog_handle": "posts",
-        "loading_title": "Loading product details",
-        "loading_subtext": "Fetching variants, pricing, and secure checkout actions from Shopify.",
-        "support_email": "support@saltonlinestore.com"
-      }
+      "settings": {}
     }
   },
   "order": [
