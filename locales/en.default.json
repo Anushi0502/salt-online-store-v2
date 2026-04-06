@@ -34,6 +34,10 @@
         "full_title": "SALT ",
         "checkout_context": {
           "step_one": "SALT CHECKOUT"
+        },
+        "autocomplete_title": "SALT CHECKOUT",
+        "forwarding_indicator": {
+          "external_and_new_window": "SALT CHECKOUT"
         }
       }
     }
