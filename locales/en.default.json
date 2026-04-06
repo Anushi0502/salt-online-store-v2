@@ -31,7 +31,10 @@
     "checkout": {
       "general": {
         "page_title": "SALT ONLINE STORE CHECKOUT",
-        "full_title": "SALT "
+        "full_title": "SALT ",
+        "checkout_context": {
+          "step_one": "SALT CHECKOUT"
+        }
       }
     }
   }
