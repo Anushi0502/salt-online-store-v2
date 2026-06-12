@@ -1,3 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "current": {}
+  "current": {
+    "content_for_index": [],
+    "blocks": {
+      "6544682535036668446": {
+        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
+        "disabled": false,
+        "settings": {}
+      },
+      "11911440746802831544": {
+        "type": "shopify://apps/ez-bundles-discounts/blocks/free-gifts-embed/f569e784-b0ec-437e-a4bc-70c66e94410d",
+        "disabled": false,
+        "settings": {
+          "cart_drawer_position": "afterend",
+          "cart_page_position": "beforebegin",
+          "show_gift_product_early": false,
+          "progress_bar_color": "#22c55e",
+          "progress_bar_bg_color": "#e5e5e5",
+          "text_color": "#000000",
+          "background_color": "",
+          "border_radius": 8,
+          "padding": 12,
+          "font_size": 14,
+          "image_size": 50,
+          "image_border_radius": 50,
+          "product_page_position": "beforebegin",
+          "product_title_text": "🎁 Buy this and get a free gift! 🎁",
+          "product_title_color": "#000000",
+          "product_text_color": "#000000",
+          "product_bg_color": "",
+          "product_border_color": "#e0e0e0",
+          "product_title_size": 16,
+          "product_text_size": 14,
+          "product_border_radius": 8,
+          "product_image_size": 60,
+          "claim_btn_text": "Claim Gift",
+          "claim_btn_bg_color": "#22c55e",
+          "claim_btn_text_color": "#ffffff",
+          "claim_btn_border_radius": 6,
+          "claim_btn_font_size": 14,
+          "modal_title": "Choose your free gift",
+          "modal_claim_btn_text": "Claim my offer",
+          "modal_confirm_btn_text": "Confirm Selection",
+          "modal_btn_bg_color": "#22c55e",
+          "modal_btn_text_color": "#ffffff",
+          "modal_btn_border_radius": 6,
+          "modal_gift_selected_text": "✓ Gift selected"
+        }
+      },
+      "14507061826472784608": {
+        "type": "shopify://apps/moosedesk-ai-chatbot/blocks/md-help-center/93b7f24a-a2e1-418d-ba5c-fd925adb43e1",
+        "disabled": true,
+        "settings": {}
+      },
+      "4096659318022801403": {
+        "type": "shopify://apps/moosedesk-ai-chatbot/blocks/md-help-form-widget/93b7f24a-a2e1-418d-ba5c-fd925adb43e1",
+        "disabled": true,
+        "settings": {}
+      }
+    }
+  }
 }
