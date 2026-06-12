@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "theme_info",
+    "theme_name": "SALT App Theme",
+    "theme_author": "SALT",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://shopify.dev/docs/storefronts/themes",
+    "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name": "SALT App Theme",
+    "settings": []
+  }
+]

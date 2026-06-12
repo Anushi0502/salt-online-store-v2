@@ -2,9 +2,7 @@
   "sections": {
     "main": {
       "type": "salt-app",
-      "settings": {
-        "customer_account_client_id": "f0caed5a1d71d2593375e14ec07b8008"
-      }
+      "settings": {}
     }
   },
   "order": [

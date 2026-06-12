@@ -1,4 +1,4 @@
-const SALT_META_PIXEL_ID = "1617705319275041";
+const SALT_META_PIXEL_ID = "1147374030261395";
 const SHOPIFY_PIXEL_INIT =
   typeof init !== "undefined" && init && typeof init === "object"
     ? init
