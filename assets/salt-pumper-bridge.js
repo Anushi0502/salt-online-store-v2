@@ -63,17 +63,72 @@
     hidden.dispatchEvent(new Event("change", { bubbles: true }));
   };
 
-  const getPumperQuantity = () => {
-    const checked = document.querySelector(
-      '#pumper_bundle_svelte input[type="radio"][name="cb"]:checked',
+  const getPumperRadioInputs = () =>
+    Array.from(document.querySelectorAll('#pumper_bundle_svelte input[type="radio"][name="cb"]'));
+
+  const getPumperRadioLabel = (input) => {
+    if (!(input instanceof HTMLInputElement)) return null;
+
+    const selectors = [];
+    const value = normalizeText(input.value);
+    if (value) selectors.push(`#pumper__label_${value}`);
+    if (input.id) selectors.push(`label[for="${input.id.replaceAll('"', '\\"')}"]`);
+
+    for (const selector of selectors) {
+      const label = document.querySelector(selector);
+      if (label) return label;
+    }
+
+    return input.closest("label") || input.parentElement || null;
+  };
+
+  const extractPumperQuantity = (text) => {
+    const cleaned = normalizeText(text)
+      .replace(/\$\s*[\d,.]+/g, " ")
+      .replace(/\b\d+(?:\.\d+)?%/g, " ");
+
+    const quantityMatch = cleaned.match(/\b(\d+)\b(?=[^\d]*(?:pair|pairs|pack|packs|bundle|bundles|set|sets|piece|pieces|pc|pcs|x)\b)/i);
+    if (quantityMatch) return Number(quantityMatch[1]);
+
+    const fallbackMatch = cleaned.match(/\b(\d+)\b/);
+    return fallbackMatch ? Number(fallbackMatch[1]) : 0;
+  };
+
+  const getPumperOptionQuantity = (input) => {
+    const datasetQuantity = Number(
+      input?.dataset?.quantity ||
+        input?.dataset?.qty ||
+        input?.dataset?.bundleQuantity ||
+        input?.dataset?.minQuantity ||
+        "0",
     );
-    const quantity = Number(checked?.value || "0");
-    return isPositiveNumber(quantity) ? quantity : 0;
+    if (isPositiveNumber(datasetQuantity)) return datasetQuantity;
+
+    const label = getPumperRadioLabel(input);
+    const labelQuantity = extractPumperQuantity(label?.textContent);
+    if (isPositiveNumber(labelQuantity)) return labelQuantity;
+
+    const valueQuantity = Number(input?.value || "0");
+    return isPositiveNumber(valueQuantity) ? valueQuantity : 0;
+  };
+
+  const getPumperOptions = () =>
+    getPumperRadioInputs()
+      .map((input, index) => ({
+        input,
+        index,
+        quantity: getPumperOptionQuantity(input),
+      }))
+      .filter((option) => isPositiveNumber(option.quantity));
+
+  const getPumperQuantity = () => {
+    const checked = getPumperOptions().find((option) => option.input.checked);
+    return checked?.quantity || 0;
   };
 
   const getSelectedPumperIndex = () => {
-    const quantity = getPumperQuantity();
-    return quantity > 0 ? quantity - 1 : -1;
+    const selected = getPumperOptions().find((option) => option.input.checked);
+    return selected ? selected.index : -1;
   };
 
   const getSelectedPumperTotal = () => {
@@ -86,11 +141,7 @@
   };
 
   const getAvailablePumperQuantities = () =>
-    Array.from(
-      document.querySelectorAll('#pumper_bundle_svelte input[type="radio"][name="cb"]'),
-    )
-      .map((input) => Number(input.value || "0"))
-      .filter((quantity) => isPositiveNumber(quantity))
+    Array.from(new Set(getPumperOptions().map((option) => option.quantity)))
       .sort((a, b) => a - b);
 
   const getBestPumperQuantity = (quantity) => {
@@ -110,6 +161,9 @@
 
     return selected;
   };
+
+  const getPumperOptionByQuantity = (quantity) =>
+    getPumperOptions().find((option) => option.quantity === quantity) || null;
 
   const queueThemePumperSync = (delay = 0) => {
     window.clearTimeout(state.themeSyncTimer);
@@ -315,11 +369,11 @@
       return;
     }
 
-    const radio = document.querySelector(
-      `#pumper_bundle_svelte input[type="radio"][name="cb"][value="${target}"]`,
-    );
+    const option = getPumperOptionByQuantity(target);
+    const radio = option?.input || null;
     if (!radio || radio.checked) {
       setHiddenPumperQuantity(target);
+      syncAddToCartLabels();
       return;
     }
 
@@ -334,6 +388,7 @@
       }
 
       setHiddenPumperQuantity(target);
+      syncAddToCartLabels();
     } finally {
       window.setTimeout(() => {
         state.locked = false;
@@ -403,11 +458,12 @@
     if (target > 0) {
       const current = getPumperQuantity();
       if (current !== target) {
-        setPumperQuantity(quantity);
+        window.clearTimeout(state.pumperSyncTimer);
+        state.pumperSyncTimer = window.setTimeout(() => setPumperQuantity(target), 0);
       } else {
         setHiddenPumperQuantity(target);
+        syncAddToCartLabels();
       }
-      syncAddToCartLabels();
       return;
     }
 
