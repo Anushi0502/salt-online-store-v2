@@ -83,6 +83,18 @@
     return total || null;
   };
 
+  const formatMoney = (value) => {
+    const amount = Number(value);
+    if (!Number.isFinite(amount)) return null;
+
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(amount);
+  };
+
   const normalizeHandle = (value) => String(value || "").trim().toLowerCase();
 
   const parseMoney = (value) => {
@@ -293,10 +305,16 @@
   };
 
   const syncAddToCartLabels = () => {
-    const total = getSelectedPumperTotal();
-    if (!total) return;
+    const total = parseMoney(getSelectedPumperTotal());
+    const bundleQuantity = getPumperQuantity();
+    const quantity = getThemeQuantity();
+    if (!isPositiveNumber(total) || !isPositiveNumber(bundleQuantity) || !isPositiveNumber(quantity)) return;
 
-    const label = `Add to cart - ${total}`;
+    const labelTotal = (total / bundleQuantity) * quantity;
+    const labelAmount = formatMoney(labelTotal);
+    if (!labelAmount) return;
+
+    const label = `Add to cart - ${labelAmount}`;
     getAddToCartButtons().forEach((button) => setButtonLabel(button, label));
   };
 
@@ -314,21 +332,14 @@
   const syncPumperFromTheme = () => {
     if (state.locked) return;
 
-    const bundleQuantity = getPumperQuantity();
-    if (bundleQuantity > 0) {
-      const themeQuantity = getThemeQuantity();
-      if (themeQuantity !== bundleQuantity) {
-        window.clearTimeout(state.themeSyncTimer);
-        state.themeSyncTimer = window.setTimeout(() => setThemeQuantity(bundleQuantity), 0);
-      } else {
-        setHiddenPumperQuantity(bundleQuantity);
-      }
-
+    const quantity = getThemeQuantity();
+    if (quantity === 1 || quantity === 2) {
+      window.clearTimeout(state.pumperSyncTimer);
+      state.pumperSyncTimer = window.setTimeout(() => setPumperQuantity(quantity), 0);
       syncAddToCartLabels();
       return;
     }
 
-    const quantity = getThemeQuantity();
     setHiddenPumperQuantity(quantity);
     syncAddToCartLabels();
   };
@@ -346,7 +357,6 @@
   const boot = async () => {
     placeWidgetAboveCheckout();
     await syncThemeFromPumper();
-    syncPumperFromTheme();
     syncAddToCartLabels();
   };
 
@@ -386,15 +396,6 @@
         target.closest('button[aria-label="Increase quantity"]') ||
         target.closest('button[aria-label="Decrease quantity"]')
       ) {
-        const bundleQuantity = getPumperQuantity();
-        if (bundleQuantity > 0) {
-          event.preventDefault();
-          event.stopImmediatePropagation();
-          window.clearTimeout(state.themeSyncTimer);
-          state.themeSyncTimer = window.setTimeout(() => syncThemeFromPumper(), 0);
-          return;
-        }
-
         window.clearTimeout(state.themeSyncTimer);
         state.themeSyncTimer = window.setTimeout(syncPumperFromTheme, 80);
       }
