@@ -1,1 +1,0 @@
-import{r as i,n as f,j as r}from"./index-Due_pCUz.js";const p=({src:n,onError:e,alt:c="",fallback:l=null,...o})=>{const s=i.useMemo(()=>f(n)||"",[n]),[t,a]=i.useState(s);i.useEffect(()=>{a(s)},[s]);const m=u=>{t&&a(""),e==null||e(u)};return t?r.jsx("img",{...o,src:t,alt:c,onError:m}):r.jsx(r.Fragment,{children:l})};export{p as R};
