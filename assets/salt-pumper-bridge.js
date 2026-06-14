@@ -7,6 +7,7 @@
     bootQueued: false,
     themeSyncTimer: 0,
     pumperSyncTimer: 0,
+    cartSyncTimer: 0,
   };
 
   const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
@@ -82,6 +83,127 @@
     return total || null;
   };
 
+  const normalizeHandle = (value) => String(value || "").trim().toLowerCase();
+
+  const parseMoney = (value) => {
+    const cleaned = normalizeText(value).replace(/[^0-9,.-]/g, "");
+    if (!cleaned) return null;
+
+    const lastComma = cleaned.lastIndexOf(",");
+    const lastDot = cleaned.lastIndexOf(".");
+    const decimalSeparator = lastComma > lastDot ? "," : lastDot > lastComma ? "." : null;
+    const normalized =
+      decimalSeparator === ","
+        ? cleaned.replace(/\./g, "").replace(",", ".")
+        : cleaned.replace(/,/g, "");
+
+    const amount = Number(normalized);
+    return Number.isFinite(amount) ? amount : null;
+  };
+
+  const getCurrentProductHandle = () => {
+    const match = window.location.pathname.match(/\/products?\/([^/]+)/i);
+    return match ? decodeURIComponent(match[1]) : "";
+  };
+
+  const getReactFiberRoot = () => {
+    const root = document.getElementById("salt-app-root") || document.getElementById("root");
+    if (!root) return null;
+
+    const fiberKey = Object.keys(root).find(
+      (key) => key.startsWith("__reactFiber$") || key.startsWith("__reactContainer$"),
+    );
+    return fiberKey ? root[fiberKey] : null;
+  };
+
+  const findFiber = (node, predicate) => {
+    const seen = new Set();
+
+    const visit = (current) => {
+      if (!current || seen.has(current)) return null;
+      seen.add(current);
+
+      if (predicate(current)) return current;
+
+      const child = visit(current.child);
+      if (child) return child;
+
+      return visit(current.sibling);
+    };
+
+    return visit(node);
+  };
+
+  const isCartApi = (value) =>
+    value &&
+    typeof value === "object" &&
+    Array.isArray(value.items) &&
+    typeof value.replaceItems === "function" &&
+    typeof value.addItem === "function" &&
+    typeof value.updateQuantity === "function" &&
+    typeof value.openCartDrawer === "function" &&
+    typeof value.closeCartDrawer === "function";
+
+  const getCartApi = () => {
+    const rootFiber = getReactFiberRoot();
+    if (!rootFiber) return null;
+
+    const providerFiber = findFiber(rootFiber, (fiber) => isCartApi(fiber.memoizedProps?.value));
+    return providerFiber?.memoizedProps?.value || null;
+  };
+
+  const getBundlePricingSnapshot = () => {
+    const quantity = getPumperQuantity();
+    const total = parseMoney(getSelectedPumperTotal());
+    const handle = getCurrentProductHandle();
+
+    if (!isPositiveNumber(quantity) || !isPositiveNumber(total) || !handle) return null;
+
+    return {
+      handle: normalizeHandle(handle),
+      quantity,
+      total,
+      unitPrice: total / quantity,
+    };
+  };
+
+  const applyBundlePriceToCart = (snapshot) => {
+    const api = getCartApi();
+    if (!api || typeof api.replaceItems !== "function" || !Array.isArray(api.items)) return false;
+
+    const itemIndex = api.items.findIndex(
+      (item) => normalizeHandle(item.handle) === snapshot.handle,
+    );
+    if (itemIndex < 0) return false;
+
+    const currentItem = api.items[itemIndex];
+    if (Math.abs(Number(currentItem.unitPrice || 0) - snapshot.unitPrice) < 0.001) {
+      return true;
+    }
+
+    const nextItems = api.items.map((item, index) =>
+      index === itemIndex ? { ...item, unitPrice: snapshot.unitPrice } : item,
+    );
+    api.replaceItems(nextItems);
+    return true;
+  };
+
+  const queueCartBundlePriceSync = (snapshot) => {
+    if (!snapshot) return;
+
+    window.clearTimeout(state.cartSyncTimer);
+    const startedAt = Date.now();
+
+    const run = () => {
+      if (applyBundlePriceToCart(snapshot)) return;
+      if (Date.now() - startedAt >= 2000) return;
+
+      state.cartSyncTimer = window.setTimeout(run, 100);
+    };
+
+    state.cartSyncTimer = window.setTimeout(run, 0);
+  };
+
   const clickThemeQuantityButton = async (direction) => {
     const controls = getQuantityControls();
     if (!controls) return false;
@@ -145,6 +267,15 @@
     Array.from(document.querySelectorAll("button.salt-primary-cta")).filter((button) =>
       /add to cart/i.test(normalizeText(button.textContent)),
     );
+
+  const getPrimaryAddToCartButton = (target) => {
+    if (!(target instanceof Element)) return null;
+
+    const button = target.closest("button.salt-primary-cta");
+    if (!button || !getProductAside()?.contains(button)) return null;
+
+    return /add to cart/i.test(normalizeText(button.textContent)) ? button : null;
+  };
 
   const setButtonLabel = (button, label) => {
     const textNode = Array.from(button.childNodes).find(
@@ -249,6 +380,11 @@
       ) {
         window.clearTimeout(state.themeSyncTimer);
         state.themeSyncTimer = window.setTimeout(syncPumperFromTheme, 80);
+      }
+
+      const addToCartButton = getPrimaryAddToCartButton(target);
+      if (addToCartButton) {
+        queueCartBundlePriceSync(getBundlePricingSnapshot());
       }
     },
     true,
