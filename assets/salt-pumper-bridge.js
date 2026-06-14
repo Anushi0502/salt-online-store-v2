@@ -8,6 +8,8 @@
     themeSyncTimer: 0,
     pumperSyncTimer: 0,
     cartSyncTimer: 0,
+    quantityObserver: null,
+    quantityObserverRoot: null,
   };
 
   const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
@@ -81,6 +83,62 @@
     const totalNode = document.getElementById(`pumper_totalAmount_${index}`);
     const total = normalizeText(totalNode?.textContent);
     return total || null;
+  };
+
+  const getAvailablePumperQuantities = () =>
+    Array.from(
+      document.querySelectorAll('#pumper_bundle_svelte input[type="radio"][name="cb"]'),
+    )
+      .map((input) => Number(input.value || "0"))
+      .filter((quantity) => isPositiveNumber(quantity))
+      .sort((a, b) => a - b);
+
+  const getBestPumperQuantity = (quantity) => {
+    const available = getAvailablePumperQuantities();
+    if (!available.length) return 0;
+
+    const target = Math.max(1, Math.floor(quantity || 1));
+    let selected = available[0];
+
+    for (const option of available) {
+      if (target >= option) {
+        selected = option;
+      } else {
+        break;
+      }
+    }
+
+    return selected;
+  };
+
+  const queueThemePumperSync = (delay = 0) => {
+    window.clearTimeout(state.themeSyncTimer);
+    state.themeSyncTimer = window.setTimeout(() => syncPumperFromTheme(), delay);
+  };
+
+  const observeQuantityChanges = () => {
+    const aside = getProductAside();
+    if (!aside) return false;
+
+    if (state.quantityObserverRoot === aside) return true;
+
+    if (state.quantityObserver) {
+      state.quantityObserver.disconnect();
+    }
+
+    state.quantityObserverRoot = aside;
+    state.quantityObserver = new MutationObserver(() => {
+      if (state.locked) return;
+      queueThemePumperSync(0);
+    });
+
+    state.quantityObserver.observe(aside, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    });
+
+    return true;
   };
 
   const formatMoney = (value) => {
@@ -251,9 +309,9 @@
   };
 
   const setPumperQuantity = (quantity) => {
-    const target = Math.max(1, Math.floor(quantity || 1));
-    if (target !== 1 && target !== 2) {
-      setHiddenPumperQuantity(target);
+    const target = getBestPumperQuantity(quantity);
+    if (!target) {
+      setHiddenPumperQuantity(quantity);
       return;
     }
 
@@ -266,13 +324,21 @@
     }
 
     state.locked = true;
-    const label = document.querySelector(`#pumper__label_${target}`) || radio.closest("label") || radio;
-    label.click();
-    setHiddenPumperQuantity(target);
+    try {
+      radio.click();
 
-    window.setTimeout(() => {
-      state.locked = false;
-    }, 250);
+      if (!radio.checked) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event("input", { bubbles: true }));
+        radio.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+
+      setHiddenPumperQuantity(target);
+    } finally {
+      window.setTimeout(() => {
+        state.locked = false;
+      }, 250);
+    }
   };
 
   const getAddToCartButtons = () =>
@@ -333,9 +399,14 @@
     if (state.locked) return;
 
     const quantity = getThemeQuantity();
-    if (quantity === 1 || quantity === 2) {
-      window.clearTimeout(state.pumperSyncTimer);
-      state.pumperSyncTimer = window.setTimeout(() => setPumperQuantity(quantity), 0);
+    const target = getBestPumperQuantity(quantity);
+    if (target > 0) {
+      const current = getPumperQuantity();
+      if (current !== target) {
+        setPumperQuantity(quantity);
+      } else {
+        setHiddenPumperQuantity(target);
+      }
       syncAddToCartLabels();
       return;
     }
@@ -356,6 +427,7 @@
 
   const boot = async () => {
     placeWidgetAboveCheckout();
+    observeQuantityChanges();
     await syncThemeFromPumper();
     syncAddToCartLabels();
   };
@@ -396,8 +468,7 @@
         target.closest('button[aria-label="Increase quantity"]') ||
         target.closest('button[aria-label="Decrease quantity"]')
       ) {
-        window.clearTimeout(state.themeSyncTimer);
-        state.themeSyncTimer = window.setTimeout(syncPumperFromTheme, 80);
+        queueThemePumperSync(220);
       }
 
       const addToCartButton = getPrimaryAddToCartButton(target);
