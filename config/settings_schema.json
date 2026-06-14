@@ -1,6 +1,11 @@
 [
   {
     "name": "SALT App Theme",
-    "settings": []
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "SALT storefront presentation is managed in code."
+      }
+    ]
   }
 ]
