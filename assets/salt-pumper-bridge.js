@@ -314,14 +314,21 @@
   const syncPumperFromTheme = () => {
     if (state.locked) return;
 
-    const quantity = getThemeQuantity();
-    if (quantity === 1 || quantity === 2) {
-      window.clearTimeout(state.pumperSyncTimer);
-      state.pumperSyncTimer = window.setTimeout(() => setPumperQuantity(quantity), 0);
+    const bundleQuantity = getPumperQuantity();
+    if (bundleQuantity > 0) {
+      const themeQuantity = getThemeQuantity();
+      if (themeQuantity !== bundleQuantity) {
+        window.clearTimeout(state.themeSyncTimer);
+        state.themeSyncTimer = window.setTimeout(() => setThemeQuantity(bundleQuantity), 0);
+      } else {
+        setHiddenPumperQuantity(bundleQuantity);
+      }
+
       syncAddToCartLabels();
       return;
     }
 
+    const quantity = getThemeQuantity();
     setHiddenPumperQuantity(quantity);
     syncAddToCartLabels();
   };
@@ -339,6 +346,7 @@
   const boot = async () => {
     placeWidgetAboveCheckout();
     await syncThemeFromPumper();
+    syncPumperFromTheme();
     syncAddToCartLabels();
   };
 
@@ -378,6 +386,15 @@
         target.closest('button[aria-label="Increase quantity"]') ||
         target.closest('button[aria-label="Decrease quantity"]')
       ) {
+        const bundleQuantity = getPumperQuantity();
+        if (bundleQuantity > 0) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          window.clearTimeout(state.themeSyncTimer);
+          state.themeSyncTimer = window.setTimeout(() => syncThemeFromPumper(), 0);
+          return;
+        }
+
         window.clearTimeout(state.themeSyncTimer);
         state.themeSyncTimer = window.setTimeout(syncPumperFromTheme, 80);
       }
