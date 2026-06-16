@@ -30,6 +30,11 @@
         "type": "shopify://apps/air-reviews-1/blocks/app-embed/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
         "disabled": false,
         "settings": {}
+      },
+      "14041968213898805026": {
+        "type": "shopify://apps/aov-ai-free-gift-bxgy/blocks/app-embed-free-gift/de98edfe-90fa-4145-8a57-1055e0058723",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
