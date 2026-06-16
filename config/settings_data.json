@@ -15,6 +15,11 @@
         "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
         "disabled": false,
         "settings": {}
+      },
+      "14020781649437803805": {
+        "type": "shopify://apps/ag-shoppable-video/blocks/app_embed/1216543a-6237-4445-a5f2-61991cd76022",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
