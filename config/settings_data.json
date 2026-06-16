@@ -25,6 +25,11 @@
         "type": "shopify://apps/avada-affiliate-marketing/blocks/avada-affiliate/019d766f-ee92-73f3-9dcc-936a05227dd6",
         "disabled": false,
         "settings": {}
+      },
+      "1248170504956374635": {
+        "type": "shopify://apps/air-reviews-1/blocks/app-embed/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
