@@ -1,3 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "current": {}
+  "current": {
+    "content_for_index": [],
+    "blocks": {
+      "6544682535036668446": {
+        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
+        "disabled": false,
+        "settings": {}
+      },
+      "478144830049398400": {
+        "type": "shopify://apps/storeseo/blocks/store_seo_meta/64b24496-16f9-4afc-a800-84e6acc4a36c",
+        "disabled": false,
+        "settings": {}
+      },
+      "11911440746802831544": {
+        "type": "shopify://apps/ez-bundles-discounts/blocks/free-gifts-embed/f569e784-b0ec-437e-a4bc-70c66e94410d",
+        "disabled": false,
+        "settings": {
+          "cart_drawer_position": "beforebegin",
+          "cart_page_position": "beforebegin",
+          "show_gift_product_early": false,
+          "progress_bar_color": "#22c55e",
+          "progress_bar_bg_color": "#e5e5e5",
+          "text_color": "#000000",
+          "background_color": "",
+          "border_radius": 8,
+          "padding": 12,
+          "font_size": 14,
+          "image_size": 50,
+          "image_border_radius": 50,
+          "product_page_position": "afterend",
+          "product_title_text": "🎁 Buy this and get a free gift! 🎁",
+          "product_title_color": "#000000",
+          "product_text_color": "#000000",
+          "product_bg_color": "",
+          "product_border_color": "#e0e0e0",
+          "product_title_size": 16,
+          "product_text_size": 14,
+          "product_border_radius": 8,
+          "product_image_size": 60,
+          "claim_btn_text": "Claim Gift",
+          "claim_btn_bg_color": "#22c55e",
+          "claim_btn_text_color": "#ffffff",
+          "claim_btn_border_radius": 6,
+          "claim_btn_font_size": 14,
+          "modal_title": "Choose your free gift",
+          "modal_claim_btn_text": "Claim my offer",
+          "modal_confirm_btn_text": "Confirm Selection",
+          "modal_btn_bg_color": "#22c55e",
+          "modal_btn_text_color": "#ffffff",
+          "modal_btn_border_radius": 6,
+          "modal_gift_selected_text": "✓ Gift selected"
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#000000",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "14041968213898805026": {
+        "type": "shopify://apps/aov-ai-free-gift-bxgy/blocks/app-embed-free-gift/de98edfe-90fa-4145-8a57-1055e0058723",
+        "disabled": false,
+        "settings": {}
+      },
+      "4096659318022801403": {
+        "type": "shopify://apps/moosedesk-ai-chatbot/blocks/md-help-form-widget/93b7f24a-a2e1-418d-ba5c-fd925adb43e1",
+        "disabled": false,
+        "settings": {}
+      },
+      "14507061826472784608": {
+        "type": "shopify://apps/moosedesk-ai-chatbot/blocks/md-help-center/93b7f24a-a2e1-418d-ba5c-fd925adb43e1",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
 }
