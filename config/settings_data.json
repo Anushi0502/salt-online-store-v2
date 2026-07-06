@@ -1,2 +1,56 @@
-
-{  "current": {    "content_for_index": [],    "blocks": {      "6544682535036668446": {        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",        "disabled": false,        "settings": {}      },      "6159598353363395418": {        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",        "disabled": false,        "settings": {          "widget_position": "LEFT_BOTTOM",          "side_margin": 36,          "bottom_margin": 36,          "mobile_side_margin": 16,          "mobile_bottom_margin": 46        }      },      "15683396631634586217": {        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",        "disabled": false,        "settings": {          "greeting_message": "",          "background_color": "#FFFFFF",          "font_color": "#000000",          "button_color": "#000000",          "secondary_color": "#FFFFFF",          "ternary_color": "#6A6A6A",          "button_icon": "chat_bubble",          "button_text": "chat_with_us",          "button_horizontal_position": "bottom_right",          "button_vertical_position": "lowest",          "agent_inherit_fonts": true,          "agent_font": "system_ui_n4",          "agent_border_radius": 16        }      },      "14060646107696862457": {        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",        "disabled": false,        "settings": {}      }    }  }}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "content_for_index": [],
+    "blocks": {
+      "6544682535036668446": {
+        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
+        "disabled": false,
+        "settings": {}
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": false,
+        "settings": {
+          "widget_position": "LEFT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "greeting_message": "",
+          "background_color": "#FFFFFF",
+          "font_color": "#000000",
+          "button_color": "#000000",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "agent_inherit_fonts": true,
+          "agent_font": "system_ui_n4",
+          "agent_border_radius": 16
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}
