@@ -12,26 +12,9 @@
     "main": {
       "type": "salt-app",
       "settings": {}
-    },
-    "178334012003a7d399": {
-      "type": "apps",
-      "blocks": {
-        "pumper_bundles_app_block_bundle_gFb3CG": {
-          "type": "shopify://apps/pumper-bundles/blocks/app-block-bundle/0856870d-2aca-4b1e-a662-cf1797f61270",
-          "settings": {
-            "selected_product": "{{product}}",
-            "using_page_builder": false
-          }
-        }
-      },
-      "block_order": [
-        "pumper_bundles_app_block_bundle_gFb3CG"
-      ],
-      "settings": {}
     }
   },
   "order": [
-    "main",
-    "178334012003a7d399"
+    "main"
   ]
 }
