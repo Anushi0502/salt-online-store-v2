@@ -15,6 +15,11 @@
         "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
         "disabled": false,
         "settings": {}
+      },
+      "6986023734925475395": {
+        "type": "shopify://apps/avada-affiliate-marketing/blocks/avada-affiliate/019d766f-ee92-73f3-9dcc-936a05227dd6",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
