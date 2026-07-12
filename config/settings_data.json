@@ -11,13 +11,34 @@
   "current": {
     "content_for_index": [],
     "blocks": {
-      "6544682535036668446": {
-        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
+      "6986023734925475395": {
+        "type": "shopify://apps/avada-affiliate-marketing/blocks/avada-affiliate/019d766f-ee92-73f3-9dcc-936a05227dd6",
         "disabled": false,
         "settings": {}
       },
-      "6986023734925475395": {
-        "type": "shopify://apps/avada-affiliate-marketing/blocks/avada-affiliate/019d766f-ee92-73f3-9dcc-936a05227dd6",
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "greeting_message": "",
+          "show_featured_products": true,
+          "featured_products": [],
+          "background_color": "#FFFFFF",
+          "font_color": "#000000",
+          "button_color": "#000000",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "agent_inherit_fonts": true,
+          "agent_font": "system_ui_n4",
+          "agent_border_radius": 16
+        }
+      },
+      "6544682535036668446": {
+        "type": "shopify://apps/pumper-bundles/blocks/app-embed/0856870d-2aca-4b1e-a662-cf1797f61270",
         "disabled": false,
         "settings": {}
       }
