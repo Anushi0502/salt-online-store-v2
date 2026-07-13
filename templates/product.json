@@ -1,54 +1,11 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "salt-app",
       "settings": {}
-    },
-    "1783945062d07ad076": {
-      "type": "apps",
-      "blocks": {
-        "pumper_bundles_app_block_bundle_G9UabB": {
-          "type": "shopify://apps/pumper-bundles/blocks/app-block-bundle/0856870d-2aca-4b1e-a662-cf1797f61270",
-          "settings": {
-            "selected_product": "{{product}}",
-            "using_page_builder": false
-          }
-        }
-      },
-      "block_order": [
-        "pumper_bundles_app_block_bundle_G9UabB"
-      ],
-      "settings": {}
-    },
-    "17839454105808e3b6": {
-      "type": "apps",
-      "blocks": {
-        "pumper_bundles_app_block_qb_GFMNRr": {
-          "type": "shopify://apps/pumper-bundles/blocks/app-block-qb/0856870d-2aca-4b1e-a662-cf1797f61270",
-          "settings": {
-            "selected_product": "{{product}}",
-            "using_page_builder": false
-          }
-        }
-      },
-      "block_order": [
-        "pumper_bundles_app_block_qb_GFMNRr"
-      ],
-      "settings": {}
     }
   },
   "order": [
-    "main",
-    "1783945062d07ad076",
-    "17839454105808e3b6"
+    "main"
   ]
 }
