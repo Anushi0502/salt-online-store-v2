@@ -12,9 +12,25 @@
     "main": {
       "type": "salt-app",
       "settings": {}
+    },
+    "178394749511266075": {
+      "type": "apps",
+      "blocks": {
+        "ez_bundles_discounts_app_block_3UgRkX": {
+          "type": "shopify://apps/ez-bundles-discounts/blocks/app-block/f569e784-b0ec-437e-a4bc-70c66e94410d",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "ez_bundles_discounts_app_block_3UgRkX"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "178394749511266075"
   ]
 }
