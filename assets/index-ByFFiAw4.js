@@ -265,23 +265,23 @@ Error generating stack: `+i.message+`
     margin-right: `).concat(a,"px ").concat(r,`;
     `),n==="padding"&&"padding-right: ".concat(a,"px ").concat(r,";")].filter(Boolean).join(""),`
   }
-  
+
   .`).concat(ia,` {
     right: `).concat(a,"px ").concat(r,`;
   }
-  
+
   .`).concat(sa,` {
     margin-right: `).concat(a,"px ").concat(r,`;
   }
-  
+
   .`).concat(ia," .").concat(ia,` {
     right: 0 `).concat(r,`;
   }
-  
+
   .`).concat(sa," .").concat(sa,` {
     margin-right: 0 `).concat(r,`;
   }
-  
+
   body[`).concat(po,`] {
     `).concat(D_,": ").concat(a,`px;
   }
