@@ -123,6 +123,24 @@
       })();
     </script>
     {{ content_for_header }}
+    {% if request.page_type == 'product' %}
+      <script>
+        (function () {
+          var match = window.location.pathname.match(/^\/products?\/([^\/?#]+)\/?$/);
+          if (!match) return;
+
+          var handle = decodeURIComponent(match[1]);
+          var url = '/products/' + encodeURIComponent(handle) + '.js';
+          window.__SALT_PRODUCT_PREFETCH__ = {
+            handle: handle.toLowerCase(),
+            payload: fetch(url, { cache: 'default', credentials: 'same-origin' }).then(function (response) {
+              if (!response.ok) throw new Error('Product preload failed (' + response.status + ')');
+              return response.json();
+            }),
+          };
+        })();
+      </script>
+    {% endif %}
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
