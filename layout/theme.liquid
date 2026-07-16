@@ -11,6 +11,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | asset_url }}">
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {% if request.page_type == 'product' and "ProductPage-xZaZoKpI.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-xZaZoKpI.js" | asset_url }}">
+    {% elsif request.page_type == 'index' and "HomePage-BauEpBqF.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-BauEpBqF.js" | asset_url }}">
+    {% endif %}
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
