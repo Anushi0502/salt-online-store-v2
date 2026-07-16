@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | asset_url }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | asset_url }}">
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -124,6 +125,16 @@
     </script>
     {{ content_for_header }}
     {% if request.page_type == 'product' %}
+      {% if product.featured_image %}
+        <link
+          rel="preload"
+          as="image"
+          href="{{ product.featured_image | image_url: width: 960 }}"
+          imagesrcset="{{ product.featured_image | image_url: width: 640 }} 640w, {{ product.featured_image | image_url: width: 960 }} 960w, {{ product.featured_image | image_url: width: 1280 }} 1280w"
+          imagesizes="(min-width: 1024px) 52vw, 100vw"
+          fetchpriority="high"
+        >
+      {% endif %}
       <script>
         (function () {
           var match = window.location.pathname.match(/^\/products?\/([^\/?#]+)\/?$/);
@@ -131,17 +142,21 @@
 
           var handle = decodeURIComponent(match[1]);
           var url = '/products/' + encodeURIComponent(handle) + '.js';
+          var inlineProduct = {{ product | json }};
           window.__SALT_PRODUCT_PREFETCH__ = {
             handle: handle.toLowerCase(),
-            payload: fetch(url, { cache: 'default', credentials: 'same-origin' }).then(function (response) {
-              if (!response.ok) throw new Error('Product preload failed (' + response.status + ')');
-              return response.json();
-            }),
+            payload: inlineProduct && inlineProduct.id
+              ? Promise.resolve(inlineProduct)
+              : fetch(url, { cache: 'default', credentials: 'same-origin' }).then(function (response) {
+                  if (!response.ok) throw new Error('Product preload failed (' + response.status + ')');
+                  return response.json();
+                }),
           };
         })();
       </script>
     {% endif %}
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
+    <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
   </head>
   <body>
     {{ content_for_layout }}
