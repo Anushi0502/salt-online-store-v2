@@ -1,6 +1,14 @@
-<div id="root"></div>
+<div
+  id="root"
+  data-shop-base-url="https://{{ request.host | escape }}"
+  data-shop-domain="{{ shop.permanent_domain | escape }}"
+  data-shop-name="{{ shop.name | escape }}"
+  data-judgeme-shop-domain="{{ shop.permanent_domain | escape }}"
+  data-judgeme-public-token="TQ0rk940ADN89zj_f83SKuTYIfY"
+  data-currency="{{ cart.currency.iso_code | default: shop.currency | escape }}"
+></div>
 <script>
-  window.SALT_THEME_BUILD = "mrnv6qm1";
+  window.SALT_THEME_BUILD = "mrnwb5vd";
   window.SALT_THEME_ASSET_BASE = {{ 'salt-app.js' | asset_url | split: 'salt-app.js' | first | json }};
   window.SALT_THEME_ASSETS = {
     "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
