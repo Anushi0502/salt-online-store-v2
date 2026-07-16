@@ -11,10 +11,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | asset_url }}">
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    {% if request.page_type == 'product' and "ProductPage-CkrsrmN3.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-CkrsrmN3.js" | asset_url }}">
-    {% elsif request.page_type == 'index' and "HomePage-QBuNqeOQ.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-QBuNqeOQ.js" | asset_url }}">
+    {% if request.page_type == 'product' and "ProductPage-CcHeFlmg.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CcHeFlmg.js" | asset_url | split: '?' | first }}">
+    {% elsif request.page_type == 'index' and "HomePage-BDGfY0vs.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-BDGfY0vs.js" | asset_url | split: '?' | first }}">
     {% endif %}
     <script>
       (function () {
@@ -114,6 +114,33 @@
         window.addEventListener('salt:product-media-ready', releasePumper);
 
         if (pending) gatePumper();
+      })();
+    </script>
+    <script>
+      (function () {
+        // Meta's remote structured-signal rules currently mistake Shopify's
+        // Apple Pay JSON blob for a currency code and crawl the full app shell.
+        // Hide only those two selectors from Meta's own call stack; Shopify and
+        // every storefront feature continue to receive the native DOM results.
+        var blockedMetaSelectors = new Set(['#apple-pay-shop-capabilities', '.site-shell']);
+        var nativeQuerySelector = Document.prototype.querySelector;
+        var nativeQuerySelectorAll = Document.prototype.querySelectorAll;
+
+        function isMetaCrawlerCall() {
+          return /(?:connect\.facebook\.net|fbevents)/i.test(String(new Error().stack || ''));
+        }
+
+        Document.prototype.querySelector = function (selector) {
+          if (blockedMetaSelectors.has(String(selector)) && isMetaCrawlerCall()) return null;
+          return nativeQuerySelector.call(this, selector);
+        };
+
+        Document.prototype.querySelectorAll = function (selector) {
+          if (blockedMetaSelectors.has(String(selector)) && isMetaCrawlerCall()) {
+            return document.createDocumentFragment().querySelectorAll('*');
+          }
+          return nativeQuerySelectorAll.call(this, selector);
+        };
       })();
     </script>
     {{ content_for_header }}
