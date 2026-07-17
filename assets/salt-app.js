@@ -1,3 +1,3 @@
 const rawBase = globalThis.SALT_THEME_ASSET_BASE || new URL("./", import.meta.url).href;
 const base = rawBase.startsWith("//") ? window.location.protocol + rawBase : rawBase;
-import(new URL("salt-entry-803059846184.js", base).href);
+import(new URL("salt-entry-916199336e97.js", base).href);
