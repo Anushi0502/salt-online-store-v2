@@ -256,7 +256,11 @@
         })();
       </script>
     {% endif %}
-    <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
+    {% if "salt-entry-803059846184.js" != blank %}
+      <script type="module" src="{{ "salt-entry-803059846184.js" | asset_url | split: '?' | first }}"></script>
+    {% else %}
+      <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
+    {% endif %}
   </head>
   <body>
     {{ content_for_layout }}
