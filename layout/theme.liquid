@@ -12,31 +12,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-4ed6e0ab57a3.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-4ed6e0ab57a3.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-c32511a3cb74.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-c32511a3cb74.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-Vh-sYH4O.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-Vh-sYH4O.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-      <link rel="modulepreload" href="{{ "InnerBreadcrumbs-BZYX0fP9.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "ProductCard-DkdqwDyM.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "Reveal-U7UT8G7D.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "TrustStrip-DWGZX6y1.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "accordion-CxfzWDvB.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "arrow-left-2liG_GTv.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "arrow-up-right-C0g9Ks-Q.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "badge-check-0BlCK4RP.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "circle-check-CFscKREn.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "judgeme-proxy-s7VJd_9i.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "order-history-DBv2MBAP.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "package-check-Dmalp7tC.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "recently-viewed-BcUp-e8f.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "sales-optimization-Y-81yA3W.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "shopify-data-BJuNWpIF.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "sparkles-CsgxV8uY.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "star-CLRthCjw.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "truck-SAsxOqUU.js" | asset_url | split: '?' | first }}">
-    {% elsif request.page_type == 'index' and "HomePage-DZPslrwD.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-DZPslrwD.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-0BJT3eX-.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-0BJT3eX-.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-Q5r9c180.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-Q5r9c180.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -287,55 +269,7 @@
 
           var handle = decodeURIComponent(match[1]);
           var url = '/products/' + encodeURIComponent(handle) + '.js';
-          var liquidProduct = {{ product | json }};
-          var normalizeMoney = function (value) {
-            return (Number(value || 0) / 100).toFixed(2);
-          };
-          var normalizeImage = function (source, index) {
-            if (!source) return null;
-            var src = typeof source === 'string' ? source : source.src;
-            if (!src) return null;
-            return {
-              id: Number(source.id || index + 1),
-              src: src,
-              alt: source.alt || null,
-              width: source.width || undefined,
-              height: source.height || undefined
-            };
-          };
-          var images = liquidProduct && Array.isArray(liquidProduct.images)
-            ? liquidProduct.images.map(normalizeImage).filter(Boolean)
-            : [];
-          var featuredImage = liquidProduct ? normalizeImage(liquidProduct.featured_image, 0) : null;
-          if (featuredImage && !images.length) images.push(featuredImage);
-          var inlineProduct = liquidProduct && liquidProduct.id ? {
-            id: liquidProduct.id,
-            title: liquidProduct.title || '',
-            handle: liquidProduct.handle || handle,
-            body_html: liquidProduct.description || liquidProduct.content || null,
-            vendor: liquidProduct.vendor || '',
-            product_type: liquidProduct.type || '',
-            tags: liquidProduct.tags || [],
-            created_at: liquidProduct.created_at || '',
-            published_at: liquidProduct.published_at || '',
-            updated_at: liquidProduct.updated_at || liquidProduct.published_at || '',
-            variants: (liquidProduct.variants || []).map(function (variant) {
-              return {
-                id: variant.id,
-                title: variant.public_title || variant.title || 'Default Title',
-                price: normalizeMoney(variant.price),
-                compare_at_price: Number(variant.compare_at_price || 0) > Number(variant.price || 0)
-                  ? normalizeMoney(variant.compare_at_price)
-                  : null,
-                available: Boolean(variant.available),
-                sku: variant.sku || '',
-                requires_shipping: Boolean(variant.requires_shipping),
-                featured_image: normalizeImage(variant.featured_image, 0)
-              };
-            }),
-            images: images,
-            image: featuredImage || images[0] || null
-          } : null;
+          var inlineProduct = {{ product | json }};
           window.__SALT_PRODUCT_PREFETCH__ = {
             handle: handle.toLowerCase(),
             raw: inlineProduct && inlineProduct.id ? inlineProduct : null,
@@ -352,37 +286,63 @@
     {% if request.page_type == 'index' %}
       <script>
         (function () {
+          // These rails are evaluated by Shopify on every homepage request.
+          // React therefore receives current collection order, product handles,
+          // prices, images, and availability synchronously from the document.
           function compactProduct(id, title, handle, image, price, compareAtPrice) {
             return { id: id, title: title, handle: handle, image: image, price: price, compareAtPrice: compareAtPrice };
           }
+
           window.__SALT_HOME_PREFETCH__ = {
-            generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }}, source: 'shopify-liquid:home',
-            sources: { bestSellerProducts: 'appplaza-best-sellers', quirkyGiftPicks: 'gifts', everydayEssentialProducts: 'garden-tools' },
+            generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+            source: 'shopify-liquid:home',
+            sources: {
+              bestSellerProducts: 'appplaza-best-sellers',
+              quirkyGiftPicks: 'gifts',
+              everydayEssentialProducts: 'garden-tools'
+            },
             bestSellerProducts: [
               {% for item in collections['appplaza-best-sellers'].products limit: 12 %}
-                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+                compactProduct(
+                  {{ item.id | json }},
+                  {{ item.title | json }},
+                  {{ item.handle | json }},
+                  {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %},
+                  {{ item.price_min | divided_by: 100.0 | json }},
+                  {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}
+                ){% unless forloop.last %},{% endunless %}
               {% endfor %}
             ],
             quirkyGiftPicks: [
               {% for item in collections['gifts'].products limit: 12 %}
-                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+                compactProduct(
+                  {{ item.id | json }},
+                  {{ item.title | json }},
+                  {{ item.handle | json }},
+                  {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %},
+                  {{ item.price_min | divided_by: 100.0 | json }},
+                  {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}
+                ){% unless forloop.last %},{% endunless %}
               {% endfor %}
             ],
             everydayEssentialProducts: [
               {% for item in collections['garden-tools'].products limit: 12 %}
-                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+                compactProduct(
+                  {{ item.id | json }},
+                  {{ item.title | json }},
+                  {{ item.handle | json }},
+                  {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %},
+                  {{ item.price_min | divided_by: 100.0 | json }},
+                  {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}
+                ){% unless forloop.last %},{% endunless %}
               {% endfor %}
             ]
           };
         })();
       </script>
     {% endif %}
-    {% assign salt_active_collection = collection %}
-    {% if request.path == '/shop' %}
-      {% assign salt_active_collection = collections['all-products'] %}
-    {% endif %}
-    {% if salt_active_collection %}
-      {% paginate salt_active_collection.products by 250 %}
+    {% if request.page_type == 'collection' and collection %}
+      {% paginate collection.products by 250 %}
         <script>
           (function () {
             // Shopify renders this payload inside the uploaded theme. It is a
@@ -390,7 +350,7 @@
             // prices, availability, and newly added first-page products before
             // its modules execute and without a storefront API round-trip.
             var liveProducts = [
-              {% for item in salt_active_collection.products limit: 24 %}
+              {% for item in collection.products limit: 24 %}
                 {
                   id: {{ item.id | json }},
                   title: {{ item.title | json }},
@@ -407,8 +367,8 @@
                       {
                         id: {{ variant.id | json }},
                         title: {{ variant.title | json }},
-                        price: {{ variant.price | divided_by: 100.0 | json }},
-                        compare_at_price: {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+                        price: {{ variant.price | json }},
+                        compare_at_price: {% if variant.compare_at_price %}{{ variant.compare_at_price | json }}{% else %}null{% endif %},
                         available: {{ variant.available | json }},
                         sku: {{ variant.sku | json }},
                         requires_shipping: {{ variant.requires_shipping | json }}
@@ -438,13 +398,13 @@
             ];
 
             window.__SALT_COLLECTION_PREFETCH__ = {
-              handle: {{ salt_active_collection.handle | downcase | json }},
+              handle: {{ collection.handle | downcase | json }},
               generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
               complete: {% if paginate.pages == 1 %}true{% else %}false{% endif %},
               currentPage: {{ paginate.current_page | json }},
-              total: {{ salt_active_collection.products_count | json }},
+              total: {{ collection.products_count | json }},
               productIds: [
-                {% for item in salt_active_collection.products %}
+                {% for item in collection.products %}
                   {{ item.id | json }}{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               ],
@@ -454,8 +414,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-4ed6e0ab57a3.js" != blank %}
-      <script type="module" src="{{ "salt-entry-4ed6e0ab57a3.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-c32511a3cb74.js" != blank %}
+      <script type="module" src="{{ "salt-entry-c32511a3cb74.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
