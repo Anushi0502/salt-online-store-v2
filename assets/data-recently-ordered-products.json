@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-07-17T19:12:51.002Z",
+  "source": "shopify-admin-orders",
+  "total": 4,
+  "products": [
+    {
+      "id": "gid://shopify/Product/8052506493027",
+      "title": "Lint Roller Fabric Shaver Dust Removal",
+      "handle": "lint-roller-fabric-shaver-dust-removal-pellet-eliminator-electric-home-pet-hair-remover-removes-lint-from-clothes-take-out",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05d7a7953f8840a2bcfaeb383bcbd9c8L.webp?v=1783070584",
+      "imageAlt": "Lint Roller Fabric Shaver Dust Removal",
+      "price": 34.99
+    },
+    {
+      "id": "gid://shopify/Product/7744557809763",
+      "title": "Rust Remover Kitchen Kitchen Accessories",
+      "handle": "easy-limescale-eraser-stainless-steel-rust-remover-for-kitchen-bathroom",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf19f9bb92861473db7221cdedf9657ab9.webp?v=1746703509",
+      "imageAlt": "Rust Remover Kitchen Kitchen Accessories",
+      "price": 20.99
+    },
+    {
+      "id": "gid://shopify/Product/8051858079843",
+      "title": "50ML Time Reverse Cream Centella Collagen",
+      "handle": "50ml-time-reverse-cream-with-centella-collagen-anti-aging-moisturizer-reduces-wrinkles-firms-hydrates-mature-dry-skin-moisturize",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S01f26af7ee1f477386eaad87b4712f7db.webp?v=1782987340",
+      "imageAlt": "50ML Time Reverse Cream Centella Collagen",
+      "price": 29.99
+    },
+    {
+      "id": "gid://shopify/Product/8051921879139",
+      "title": "1pcs Reusable Puff Powder Subpackage Empty",
+      "handle": "1pcs-reusable-puff-powder-subpackage-empty-loose-powder-jars-white-cap-macaron-dispersion-powder-box-mini-5g-cosmetics-container",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sea662ed066d946deb277d802eb41d974m.webp?v=1782988676",
+      "imageAlt": "1pcs Reusable Puff Powder Subpackage Empty",
+      "price": 11.99
+    }
+  ]
+}
