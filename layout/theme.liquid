@@ -12,31 +12,31 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-5b27f6e6812b.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-5b27f6e6812b.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-4ed6e0ab57a3.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-4ed6e0ab57a3.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-wEMHo7c8.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-wEMHo7c8.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-      <link rel="modulepreload" href="{{ "InnerBreadcrumbs-DvCbYkw7.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "ProductCard-8HZeekuW.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "Reveal-LswdjPcu.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "TrustStrip-DIvrShvf.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "accordion-Bd0Ndgei.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "arrow-left-BpYxca-w.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "arrow-up-right-Bd_RJNzk.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "badge-check-9DW52rBu.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "circle-check-CVq_yTbe.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "judgeme-proxy-0Q2u4eUH.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "order-history-jtkwZe_u.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "package-check-BvEZDTaM.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "recently-viewed-CCcgPPYD.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "sales-optimization-DmY-HvvX.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "shopify-data-DOMhcX-R.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "sparkles-DwxV1bna.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "star-BbNtD7FT.js" | asset_url | split: '?' | first }}">
-      <link rel="modulepreload" href="{{ "truck-BEywA6NL.js" | asset_url | split: '?' | first }}">
-    {% elsif request.page_type == 'index' and "HomePage-CcBmgP3Y.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-CcBmgP3Y.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-Vh-sYH4O.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-Vh-sYH4O.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+      <link rel="modulepreload" href="{{ "InnerBreadcrumbs-BZYX0fP9.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "ProductCard-DkdqwDyM.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "Reveal-U7UT8G7D.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "TrustStrip-DWGZX6y1.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "accordion-CxfzWDvB.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "arrow-left-2liG_GTv.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "arrow-up-right-C0g9Ks-Q.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "badge-check-0BlCK4RP.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "circle-check-CFscKREn.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "judgeme-proxy-s7VJd_9i.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "order-history-DBv2MBAP.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "package-check-Dmalp7tC.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "recently-viewed-BcUp-e8f.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "sales-optimization-Y-81yA3W.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "shopify-data-BJuNWpIF.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "sparkles-CsgxV8uY.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "star-CLRthCjw.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "truck-SAsxOqUU.js" | asset_url | split: '?' | first }}">
+    {% elsif request.page_type == 'index' and "HomePage-DZPslrwD.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DZPslrwD.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -454,8 +454,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-5b27f6e6812b.js" != blank %}
-      <script type="module" src="{{ "salt-entry-5b27f6e6812b.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-4ed6e0ab57a3.js" != blank %}
+      <script type="module" src="{{ "salt-entry-4ed6e0ab57a3.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
