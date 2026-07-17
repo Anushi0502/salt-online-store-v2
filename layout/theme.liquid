@@ -12,13 +12,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-916199336e97.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-916199336e97.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-72563ab05bf8.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-72563ab05bf8.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-g7GiP9A7.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-g7GiP9A7.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-wfrbgs3R.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-wfrbgs3R.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-BllFAbDn.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-BllFAbDn.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-BxGDtOr1.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-BxGDtOr1.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -269,15 +269,92 @@
 
           var handle = decodeURIComponent(match[1]);
           var url = '/products/' + encodeURIComponent(handle) + '.js';
-          var inlineProduct = {{ product | json }};
+          var liquidProduct = {{ product | json }};
+          var normalizeMoney = function (value) {
+            return (Number(value || 0) / 100).toFixed(2);
+          };
+          var normalizeImage = function (source, index) {
+            if (!source) return null;
+            var src = typeof source === 'string' ? source : source.src;
+            if (!src) return null;
+            return {
+              id: Number(source.id || index + 1),
+              src: src,
+              alt: source.alt || null,
+              width: source.width || undefined,
+              height: source.height || undefined
+            };
+          };
+          var images = liquidProduct && Array.isArray(liquidProduct.images)
+            ? liquidProduct.images.map(normalizeImage).filter(Boolean)
+            : [];
+          var featuredImage = liquidProduct ? normalizeImage(liquidProduct.featured_image, 0) : null;
+          if (featuredImage && !images.length) images.push(featuredImage);
+          var inlineProduct = liquidProduct && liquidProduct.id ? {
+            id: liquidProduct.id,
+            title: liquidProduct.title || '',
+            handle: liquidProduct.handle || handle,
+            body_html: liquidProduct.description || liquidProduct.content || null,
+            vendor: liquidProduct.vendor || '',
+            product_type: liquidProduct.type || '',
+            tags: liquidProduct.tags || [],
+            created_at: liquidProduct.created_at || '',
+            published_at: liquidProduct.published_at || '',
+            updated_at: liquidProduct.updated_at || liquidProduct.published_at || '',
+            variants: (liquidProduct.variants || []).map(function (variant) {
+              return {
+                id: variant.id,
+                title: variant.public_title || variant.title || 'Default Title',
+                price: normalizeMoney(variant.price),
+                compare_at_price: Number(variant.compare_at_price || 0) > Number(variant.price || 0)
+                  ? normalizeMoney(variant.compare_at_price)
+                  : null,
+                available: Boolean(variant.available),
+                sku: variant.sku || '',
+                requires_shipping: Boolean(variant.requires_shipping),
+                featured_image: normalizeImage(variant.featured_image, 0)
+              };
+            }),
+            images: images,
+            image: featuredImage || images[0] || null
+          } : null;
           window.__SALT_PRODUCT_PREFETCH__ = {
             handle: handle.toLowerCase(),
+            raw: inlineProduct && inlineProduct.id ? inlineProduct : null,
             payload: inlineProduct && inlineProduct.id
               ? Promise.resolve(inlineProduct)
               : fetch(url, { cache: 'default', credentials: 'same-origin' }).then(function (response) {
                   if (!response.ok) throw new Error('Product preload failed (' + response.status + ')');
                   return response.json();
                 }),
+          };
+        })();
+      </script>
+    {% endif %}
+    {% if request.page_type == 'index' %}
+      <script>
+        (function () {
+          function compactProduct(id, title, handle, image, price, compareAtPrice) {
+            return { id: id, title: title, handle: handle, image: image, price: price, compareAtPrice: compareAtPrice };
+          }
+          window.__SALT_HOME_PREFETCH__ = {
+            generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }}, source: 'shopify-liquid:home',
+            sources: { bestSellerProducts: 'appplaza-best-sellers', quirkyGiftPicks: 'gifts', everydayEssentialProducts: 'garden-tools' },
+            bestSellerProducts: [
+              {% for item in collections['appplaza-best-sellers'].products limit: 12 %}
+                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            quirkyGiftPicks: [
+              {% for item in collections['gifts'].products limit: 12 %}
+                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            everydayEssentialProducts: [
+              {% for item in collections['garden-tools'].products limit: 12 %}
+                compactProduct({{ item.id | json }}, {{ item.title | json }}, {{ item.handle | json }}, {% if item.featured_image %}{{ item.featured_image | image_url: width: 720 | json }}{% else %}''{% endif %}, {{ item.price_min | divided_by: 100.0 | json }}, {% if item.compare_at_price_max > item.price_min %}{{ item.compare_at_price_max | divided_by: 100.0 | json }}{% else %}null{% endif %}){% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ]
           };
         })();
       </script>
@@ -308,8 +385,8 @@
                       {
                         id: {{ variant.id | json }},
                         title: {{ variant.title | json }},
-                        price: {{ variant.price | json }},
-                        compare_at_price: {% if variant.compare_at_price %}{{ variant.compare_at_price | json }}{% else %}null{% endif %},
+                        price: {{ variant.price | divided_by: 100.0 | json }},
+                        compare_at_price: {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
                         available: {{ variant.available | json }},
                         sku: {{ variant.sku | json }},
                         requires_shipping: {{ variant.requires_shipping | json }}
@@ -355,8 +432,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-916199336e97.js" != blank %}
-      <script type="module" src="{{ "salt-entry-916199336e97.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-72563ab05bf8.js" != blank %}
+      <script type="module" src="{{ "salt-entry-72563ab05bf8.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
