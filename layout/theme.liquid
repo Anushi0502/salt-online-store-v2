@@ -188,6 +188,7 @@
         var blockedMetaSelectors = new Set(['#apple-pay-shop-capabilities', '.site-shell']);
         var nativeQuerySelector = Document.prototype.querySelector;
         var nativeQuerySelectorAll = Document.prototype.querySelectorAll;
+        var nativeSendBeacon = Navigator.prototype.sendBeacon;
 
         function isMetaCrawlerCall() {
           return /(?:connect\.facebook\.net|fbevents)/i.test(String(new Error().stack || ''));
@@ -204,6 +205,33 @@
           }
           return nativeQuerySelectorAll.call(this, selector);
         };
+
+        // Meta can exhaust WebKit's shared 64 KB keepalive queue when Shopify
+        // pixels initialize together. Deliver only Meta's tracking endpoint
+        // through a normal non-blocking fetch so events still reach Facebook
+        // without producing a storefront Beacon API error.
+        if (typeof nativeSendBeacon === 'function') {
+          Navigator.prototype.sendBeacon = function (url, data) {
+            var target = String(url || '');
+
+            if (/^https:\/\/(?:www\.)?facebook\.com\/tr\//i.test(target)) {
+              try {
+                window.fetch(target, {
+                  method: 'POST',
+                  body: data == null ? undefined : data,
+                  mode: 'no-cors',
+                  credentials: 'omit',
+                  keepalive: false,
+                }).catch(function () {});
+                return true;
+              } catch (error) {
+                return nativeSendBeacon.call(this, url, data);
+              }
+            }
+
+            return nativeSendBeacon.call(this, url, data);
+          };
+        }
       })();
     </script>
     {{ content_for_header }}
