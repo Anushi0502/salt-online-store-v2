@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T19:12:51.002Z",
+  "generatedAt": "2026-07-18T05:08:22.047Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
@@ -12,28 +12,28 @@
       "price": 34.99
     },
     {
-      "id": "gid://shopify/Product/7744557809763",
-      "title": "Rust Remover Kitchen Kitchen Accessories",
-      "handle": "easy-limescale-eraser-stainless-steel-rust-remover-for-kitchen-bathroom",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf19f9bb92861473db7221cdedf9657ab9.webp?v=1746703509",
-      "imageAlt": "Rust Remover Kitchen Kitchen Accessories",
-      "price": 20.99
+      "id": "gid://shopify/Product/8052545945699",
+      "title": "500ML Lansyade Aha Brightening Body Lotion",
+      "handle": "500ml-lansyade-aha-brightening-body-lotion-arbutin-moisturizing-firming-body-cream-vitamin-c-soften-skin-essence-lotion",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9dbfb9ed6e404934ada54258cfd85972x.webp?v=1783081663",
+      "imageAlt": "500ML Lansyade Aha Brightening Body Lotion",
+      "price": 54.99
     },
     {
-      "id": "gid://shopify/Product/8051858079843",
-      "title": "50ML Time Reverse Cream Centella Collagen",
-      "handle": "50ml-time-reverse-cream-with-centella-collagen-anti-aging-moisturizer-reduces-wrinkles-firms-hydrates-mature-dry-skin-moisturize",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S01f26af7ee1f477386eaad87b4712f7db.webp?v=1782987340",
-      "imageAlt": "50ML Time Reverse Cream Centella Collagen",
-      "price": 29.99
+      "id": "gid://shopify/Product/8051976011875",
+      "title": "Blush Stick Cheek Lip Tinted",
+      "handle": "new-blush-stick-3-in-1-cheek-lip-tinted-moistured-blush-stick-silky-brighten-blush-cream-blusher-cosmetics-tubes-matte-contour",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9884887962644487a2db72fb151408c9h.webp?v=1782992743",
+      "imageAlt": "Blush Stick Cheek Lip Tinted",
+      "price": 34.99
     },
     {
-      "id": "gid://shopify/Product/8051921879139",
-      "title": "1pcs Reusable Puff Powder Subpackage Empty",
-      "handle": "1pcs-reusable-puff-powder-subpackage-empty-loose-powder-jars-white-cap-macaron-dispersion-powder-box-mini-5g-cosmetics-container",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sea662ed066d946deb277d802eb41d974m.webp?v=1782988676",
-      "imageAlt": "1pcs Reusable Puff Powder Subpackage Empty",
-      "price": 11.99
+      "id": "gid://shopify/Product/7767959535715",
+      "title": "Slim Fit Casual Trousers",
+      "handle": "stretch-jean-mens-slim-fit-casual-trousers",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1e4d5c3f954148ada549a3ecb2057339o.webp?v=1744354281",
+      "imageAlt": "Slim Fit Casual Trousers",
+      "price": 64.99
     }
   ]
 }
