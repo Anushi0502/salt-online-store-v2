@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T08:51:49.903Z",
+  "generatedAt": "2026-07-28T09:48:56.398Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
@@ -20,20 +20,20 @@
       "price": 49.99
     },
     {
-      "id": "gid://shopify/Product/8048940646499",
-      "title": "Keratin Protein Hair Straightening Cream Long",
-      "handle": "keratin-protein-hair-straightening-cream-long-lasting-smoothing-effect-for-frizz-control-silky-smooth-hair-hair-care-treatment",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2b786044ece244d1b89de6485b7fe5d5r.webp?v=1782736423",
-      "imageAlt": "Keratin Protein Hair Straightening Cream Long",
-      "price": 69.99
-    },
-    {
       "id": "gid://shopify/Product/8065633452131",
       "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
       "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05b0162e61d24a959ef22563cdfddc05i.webp?v=1784020000",
       "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
       "price": 79.99
+    },
+    {
+      "id": "gid://shopify/Product/8068231463011",
+      "title": "Lunch Box Handle Latch Vintage Metal",
+      "handle": "lunch-box-with-handle-and-latch-vintage-metal-lunchbox-retro-metal-containers-for-office-picnic-hiking-beach",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S55efde6bcabc4bc49567d7d51ab232aaD.webp?v=1784120030",
+      "imageAlt": "Lunch Box Handle Latch Vintage Metal",
+      "price": 99.99
     }
   ]
 }
