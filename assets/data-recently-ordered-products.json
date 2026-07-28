@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-07-27T11:37:12.082Z",
+  "generatedAt": "2026-07-28T06:52:26.031Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
     {
-      "id": "gid://shopify/Product/8058440581219",
-      "title": "Sports Shoes High Top Sneakers Casual",
-      "handle": "sports-shoes-for-men-high-top-sneakers-casual-shoes-running-shoes-men-2026-sneakers-for-men-luxury-sneakers-мужские-кр",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2a02958e15a145248da24c8fcf6cd045x.webp?v=1783500757",
-      "imageAlt": "Sports Shoes High Top Sneakers Casual",
-      "price": 94.99
-    },
-    {
-      "id": "gid://shopify/Product/8065635713123",
-      "title": "Kids Down Jackets For 3 14 Years Autumn Winter Boys Girls Warm Solid",
-      "handle": "kids-down-jackets-for-3-14-years-autumn-winter-boys-girls-warm-solid-down-coats-teens-hooded-zipper-outerwear-children-clothing",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4bad1a9dc8a04b1a9789243e18f21992q.webp?v=1784020012",
-      "imageAlt": "Kids Down Jackets For 3 14 Years Autumn Winter Boys Girls Warm Solid",
-      "price": 54.99
-    },
-    {
-      "id": "gid://shopify/Product/8052541784163",
-      "title": "Colors Eyeshadow Palette Dark Black Grey",
-      "handle": "9-colors-eyeshadow-palette-dark-black-grey-silvery-color-shimmer-matte-glitter-finish-smokey-style",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbc62ea82b74b47368000f950260393e6i.webp?v=1783081140",
-      "imageAlt": "Colors Eyeshadow Palette Dark Black Grey",
+      "id": "gid://shopify/Product/8059448688739",
+      "title": "Mens Moisturizing Body Care Cream Nourishing",
+      "handle": "mens-daily-moisturizing-body-care-cream-nourishing-revitalizing-lotion-for-all-skin-boosts-vitality-body-care-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc9fa095de2984756a6278ecfa343ffc5z.webp?v=1783515534",
+      "imageAlt": "Mens Moisturizing Body Care Cream Nourishing",
       "price": 49.99
     },
     {
-      "id": "gid://shopify/Product/8052508360803",
-      "title": "Rhod Pocket Blush Lip Stick Cheek",
-      "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b6808fecce14339bffe2ebb27a5ccca0_8280bf27-1048-417f-80cc-e1f8c64808bb.webp?v=1783070906",
-      "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
-      "price": 34.99
+      "id": "gid://shopify/Product/8048940646499",
+      "title": "Keratin Protein Hair Straightening Cream Long",
+      "handle": "keratin-protein-hair-straightening-cream-long-lasting-smoothing-effect-for-frizz-control-silky-smooth-hair-hair-care-treatment",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2b786044ece244d1b89de6485b7fe5d5r.webp?v=1782736423",
+      "imageAlt": "Keratin Protein Hair Straightening Cream Long",
+      "price": 69.99
+    },
+    {
+      "id": "gid://shopify/Product/8065633452131",
+      "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
+      "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05b0162e61d24a959ef22563cdfddc05i.webp?v=1784020000",
+      "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
+      "price": 79.99
+    },
+    {
+      "id": "gid://shopify/Product/8068231463011",
+      "title": "Lunch Box Handle Latch Vintage Metal",
+      "handle": "lunch-box-with-handle-and-latch-vintage-metal-lunchbox-retro-metal-containers-for-office-picnic-hiking-beach",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S55efde6bcabc4bc49567d7d51ab232aaD.webp?v=1784120030",
+      "imageAlt": "Lunch Box Handle Latch Vintage Metal",
+      "price": 99.99
     }
   ]
 }
