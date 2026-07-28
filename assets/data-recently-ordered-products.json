@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-28T21:00:45.144Z",
+  "generatedAt": "2026-07-28T22:05:55.848Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8052508360803",
+      "title": "Rhod Pocket Blush Lip Stick Cheek",
+      "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b6808fecce14339bffe2ebb27a5ccca0_8280bf27-1048-417f-80cc-e1f8c64808bb.webp?v=1783070906",
+      "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
+      "price": 34.99
+    },
     {
       "id": "gid://shopify/Product/8060553789539",
       "title": "Electric Smart Shaver Digital Display Waterproof",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
       "imageAlt": "Color Blush Palette Large Size Natural Pack Of 2",
       "price": 40.11
-    },
-    {
-      "id": "gid://shopify/Product/8055589109859",
-      "title": "Chch Shirt Long Sleeve",
-      "handle": "chch-high-quality-men-shirt-long-sleeve-causal-formal-business-shirt-brand-man-dress-shirts",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2fe8e4980b6d4cee961391355cebd5ffj.webp?v=1783412322",
-      "imageAlt": "Chch Shirt Long Sleeve",
-      "price": 149.99
     }
   ]
 }
