@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-07-25T09:37:22.644Z",
+  "generatedAt": "2026-07-27T11:37:12.082Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
     {
-      "id": "gid://shopify/Product/8007252705379",
-      "title": "Hole Balaclava Face Mask Outdoor Sunscreen",
-      "handle": "three-hole-balaclava-face-mask-outdoor-sunscreen-head-cover",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S022dcd64ca114d8896fd35606606b323O.webp?v=1778061813",
-      "imageAlt": "Hole Balaclava Face Mask Outdoor Sunscreen",
-      "price": 39.99
+      "id": "gid://shopify/Product/8058440581219",
+      "title": "Sports Shoes High Top Sneakers Casual",
+      "handle": "sports-shoes-for-men-high-top-sneakers-casual-shoes-running-shoes-men-2026-sneakers-for-men-luxury-sneakers-мужские-кр",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2a02958e15a145248da24c8fcf6cd045x.webp?v=1783500757",
+      "imageAlt": "Sports Shoes High Top Sneakers Casual",
+      "price": 94.99
     },
     {
-      "id": "gid://shopify/Product/8051879805027",
-      "title": "100ML Unisex Citrus Fresh Perfume For Daily Wear And",
-      "handle": "luxury-unisex-perfume-100ml-fresh-elegant-aromatic-citrus-floral-fragrance-long-lasting-smooth-warm-scent-niche-style-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd5de75c209f146bcb8df46fc80e8e8c93.webp?v=1782987596",
-      "imageAlt": "100ML Unisex Citrus Fresh Perfume For Daily Wear And",
-      "price": 129.99
+      "id": "gid://shopify/Product/8065635713123",
+      "title": "Kids Down Jackets For 3 14 Years Autumn Winter Boys Girls Warm Solid",
+      "handle": "kids-down-jackets-for-3-14-years-autumn-winter-boys-girls-warm-solid-down-coats-teens-hooded-zipper-outerwear-children-clothing",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4bad1a9dc8a04b1a9789243e18f21992q.webp?v=1784020012",
+      "imageAlt": "Kids Down Jackets For 3 14 Years Autumn Winter Boys Girls Warm Solid",
+      "price": 54.99
     },
     {
-      "id": "gid://shopify/Product/8059450982499",
-      "title": "1pair Knee Pads Thick Eva Foam",
-      "handle": "1pair-knee-pads-with-thick-eva-foam-padding-for-sports-dance-volleyball-gardening-house-cleaning-construction-work-flooring",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S90d9fe405d8942e19a0720cdc4c1d31bk.webp?v=1783515629",
-      "imageAlt": "1pair Knee Pads Thick Eva Foam",
-      "price": 64.99
+      "id": "gid://shopify/Product/8052541784163",
+      "title": "Colors Eyeshadow Palette Dark Black Grey",
+      "handle": "9-colors-eyeshadow-palette-dark-black-grey-silvery-color-shimmer-matte-glitter-finish-smokey-style",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbc62ea82b74b47368000f950260393e6i.webp?v=1783081140",
+      "imageAlt": "Colors Eyeshadow Palette Dark Black Grey",
+      "price": 49.99
     },
     {
-      "id": "gid://shopify/Product/8055493427299",
-      "title": "Id Credit Card Holder Book Case",
-      "handle": "leather-40-120-180-240-300-cards-id-credit-card-holder-book-case-organizer-business-cards-id-credit-card-holder-case",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seea040b2918042cf83e6c8ffff1235fa0.webp?v=1783409771",
-      "imageAlt": "Id Credit Card Holder Book Case",
-      "price": 44.99
+      "id": "gid://shopify/Product/8052508360803",
+      "title": "Rhod Pocket Blush Lip Stick Cheek",
+      "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b6808fecce14339bffe2ebb27a5ccca0_8280bf27-1048-417f-80cc-e1f8c64808bb.webp?v=1783070906",
+      "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
+      "price": 34.99
     }
   ]
 }

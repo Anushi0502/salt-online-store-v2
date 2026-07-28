@@ -8,7 +8,7 @@
   data-currency="{{ cart.currency.iso_code | default: shop.currency | escape }}"
 ></div>
 <script>
-  window.SALT_THEME_BUILD = "ms06o97z";
+  window.SALT_THEME_BUILD = "ms496tdq";
   window.SALT_THEME_ASSET_BASE = {{ 'salt-app.js' | asset_url | split: 'salt-app.js' | first | json }};
   window.SALT_THEME_ASSETS = {
     "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
@@ -22,6 +22,11 @@
     "/data/collection-products.json": {{ 'data-collection-products.json' | asset_url | json }},
     "/data/about.json": {{ 'data-about.json' | asset_url | json }},
     "/data/blog-posts.json": {{ 'data-blog-posts.json' | asset_url | json }},
-    "/data/shop.json": {{ 'data-shop.json' | asset_url | json }}
+    "/data/shop.json": {{ 'data-shop.json' | asset_url | json }},
+    "/data/products-0001.json": {{ 'data-products-0001.json' | asset_url | json }},
+    "/data/products-0002.json": {{ 'data-products-0002.json' | asset_url | json }},
+    "/data/products-0003.json": {{ 'data-products-0003.json' | asset_url | json }},
+    "/data/products-0004.json": {{ 'data-products-0004.json' | asset_url | json }},
+    "/data/products-0005.json": {{ 'data-products-0005.json' | asset_url | json }}
   };
 </script>
