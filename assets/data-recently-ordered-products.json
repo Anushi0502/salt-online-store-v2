@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-28T07:09:42.467Z",
+  "generatedAt": "2026-07-28T08:51:49.903Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8055589109859",
+      "title": "Chch Shirt Long Sleeve",
+      "handle": "chch-high-quality-men-shirt-long-sleeve-causal-formal-business-shirt-brand-man-dress-shirts",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2fe8e4980b6d4cee961391355cebd5ffj.webp?v=1783412322",
+      "imageAlt": "Chch Shirt Long Sleeve",
+      "price": 149.99
+    },
     {
       "id": "gid://shopify/Product/8059448688739",
       "title": "Mens Moisturizing Body Care Cream Nourishing",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05b0162e61d24a959ef22563cdfddc05i.webp?v=1784020000",
       "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
       "price": 79.99
-    },
-    {
-      "id": "gid://shopify/Product/8068231463011",
-      "title": "Lunch Box Handle Latch Vintage Metal",
-      "handle": "lunch-box-with-handle-and-latch-vintage-metal-lunchbox-retro-metal-containers-for-office-picnic-hiking-beach",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S55efde6bcabc4bc49567d7d51ab232aaD.webp?v=1784120030",
-      "imageAlt": "Lunch Box Handle Latch Vintage Metal",
-      "price": 99.99
     }
   ]
 }
