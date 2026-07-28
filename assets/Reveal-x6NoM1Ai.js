@@ -1,1 +1,0 @@
-import{j as t,a as l}from"./salt-entry-76a8e564abff.js";const r=({children:a,className:s,delayMs:e=0})=>t.jsx("div",{className:l("salt-reveal",s),style:{"--salt-reveal-delay":`${Math.max(0,e)}ms`},children:a});export{r as R};
