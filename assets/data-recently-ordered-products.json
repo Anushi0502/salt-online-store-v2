@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-28T19:35:34.053Z",
+  "generatedAt": "2026-07-28T19:55:56.462Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8051980238947",
+      "title": "Color Blush Palette Large Size Natural Pack Of 2",
+      "handle": "6-color-blush-palette-large-size-natural-contouring-makeup-matte-blush-beauty-palette-long-lasting-coverage",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
+      "imageAlt": "Color Blush Palette Large Size Natural Pack Of 2",
+      "price": 84.99
+    },
     {
       "id": "gid://shopify/Product/8060553789539",
       "title": "Electric Smart Shaver Digital Display Waterproof",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc9fa095de2984756a6278ecfa343ffc5z.webp?v=1783515534",
       "imageAlt": "Mens Moisturizing Body Care Cream Nourishing",
       "price": 49.99
-    },
-    {
-      "id": "gid://shopify/Product/8065633452131",
-      "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
-      "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05b0162e61d24a959ef22563cdfddc05i.webp?v=1784020000",
-      "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
-      "price": 79.99
     }
   ]
 }
