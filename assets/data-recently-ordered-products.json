@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-28T15:29:59.646Z",
+  "generatedAt": "2026-07-28T17:00:00.428Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8060553789539",
+      "title": "Electric Smart Shaver Digital Display Waterproof",
+      "handle": "electric-smart-shaver-digital-display-waterproof-beard-trimmer-for-men-mini-dual-blade-shaver-powerful-beard-trimmer-remover",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1c178344137a490f8afe3ee0bf16cf86u.webp?v=1783586679",
+      "imageAlt": "Electric Smart Shaver Digital Display Waterproof",
+      "price": 49.99
+    },
     {
       "id": "gid://shopify/Product/8055589109859",
       "title": "Chch Shirt Long Sleeve",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05b0162e61d24a959ef22563cdfddc05i.webp?v=1784020000",
       "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
       "price": 79.99
-    },
-    {
-      "id": "gid://shopify/Product/8068231463011",
-      "title": "Lunch Box Handle Latch Vintage Metal",
-      "handle": "lunch-box-with-handle-and-latch-vintage-metal-lunchbox-retro-metal-containers-for-office-picnic-hiking-beach",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S55efde6bcabc4bc49567d7d51ab232aaD.webp?v=1784120030",
-      "imageAlt": "Lunch Box Handle Latch Vintage Metal",
-      "price": 99.99
     }
   ]
 }
