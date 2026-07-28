@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-28T20:46:27.011Z",
+  "generatedAt": "2026-07-28T20:56:54.197Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8060553789539",
+      "title": "Electric Smart Shaver Digital Display Waterproof",
+      "handle": "electric-smart-shaver-digital-display-waterproof-beard-trimmer-for-men-mini-dual-blade-shaver-powerful-beard-trimmer-remover",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S53fd5795cdc9414c8c5387774a7398ee9.webp?v=1783586679",
+      "imageAlt": "Electric Smart Shaver Digital Display Waterproof",
+      "price": 49.99
+    },
     {
       "id": "gid://shopify/Product/8065633452131",
       "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
@@ -18,14 +26,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
       "imageAlt": "Color Blush Palette Large Size Natural Pack Of 2",
       "price": 40.11
-    },
-    {
-      "id": "gid://shopify/Product/8060553789539",
-      "title": "Electric Smart Shaver Digital Display Waterproof",
-      "handle": "electric-smart-shaver-digital-display-waterproof-beard-trimmer-for-men-mini-dual-blade-shaver-powerful-beard-trimmer-remover",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S53fd5795cdc9414c8c5387774a7398ee9.webp?v=1783586679",
-      "imageAlt": "Electric Smart Shaver Digital Display Waterproof",
-      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8055589109859",
