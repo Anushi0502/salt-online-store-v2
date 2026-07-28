@@ -1,15 +1,23 @@
 {
-  "generatedAt": "2026-07-28T20:16:14.126Z",
+  "generatedAt": "2026-07-28T20:46:27.011Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
     {
+      "id": "gid://shopify/Product/8065633452131",
+      "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
+      "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1af2c8f679e5414e8c17dc97ed4d7f3fb.webp?v=1784020001",
+      "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
+      "price": 79.99
+    },
+    {
       "id": "gid://shopify/Product/8051980238947",
-      "title": "Color Blush Palette Large Size Natural Pack Of 2",
+      "title": "Color Blush Palette Large Size Natural",
       "handle": "6-color-blush-palette-large-size-natural-contouring-makeup-matte-blush-beauty-palette-long-lasting-coverage",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
       "imageAlt": "Color Blush Palette Large Size Natural Pack Of 2",
-      "price": 84.99
+      "price": 40.11
     },
     {
       "id": "gid://shopify/Product/8060553789539",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2fe8e4980b6d4cee961391355cebd5ffj.webp?v=1783412322",
       "imageAlt": "Chch Shirt Long Sleeve",
       "price": 149.99
-    },
-    {
-      "id": "gid://shopify/Product/8059448688739",
-      "title": "Mens Moisturizing Body Care Cream Nourishing",
-      "handle": "mens-daily-moisturizing-body-care-cream-nourishing-revitalizing-lotion-for-all-skin-boosts-vitality-body-care-for-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc9fa095de2984756a6278ecfa343ffc5z.webp?v=1783515534",
-      "imageAlt": "Mens Moisturizing Body Care Cream Nourishing",
-      "price": 49.99
     }
   ]
 }
