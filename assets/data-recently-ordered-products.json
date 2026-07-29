@@ -1,8 +1,24 @@
 {
-  "generatedAt": "2026-07-29T00:09:58.027Z",
+  "generatedAt": "2026-07-29T03:35:32.624Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8068254924899",
+      "title": "Protective Case For Wireless Earbuds",
+      "handle": "bow-frog-earbud-case-for-airpods-1-2-3-4-pro-1-2-3-bluetooth-compatible-earphone-charging-case-cover-headphone-protective-shell",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc73c4081c6b04fbb8ab3abffeb8d8d19e.webp?v=1784121546",
+      "imageAlt": "Protective Case For Wireless Earbuds",
+      "price": 44.99
+    },
+    {
+      "id": "gid://shopify/Product/8055559913571",
+      "title": "Mens Key Wallet Multi Functional Holder",
+      "handle": "mens-key-wallet-multi-functional-key-holder-for-coins-keys-cards-mini-purse-organizer",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S937abffbe3a94f3ba765130ed848acacw.webp?v=1783411275",
+      "imageAlt": "Mens Key Wallet Multi Functional Holder",
+      "price": 49.99
+    },
     {
       "id": "gid://shopify/Product/8052508360803",
       "title": "Rhod Pocket Blush Lip Stick Cheek",
@@ -18,22 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S53fd5795cdc9414c8c5387774a7398ee9.webp?v=1783586679",
       "imageAlt": "Electric Smart Shaver Digital Display Waterproof",
       "price": 49.99
-    },
-    {
-      "id": "gid://shopify/Product/8065633452131",
-      "title": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
-      "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1af2c8f679e5414e8c17dc97ed4d7f3fb.webp?v=1784020001",
-      "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
-      "price": 79.99
-    },
-    {
-      "id": "gid://shopify/Product/8051980238947",
-      "title": "Color Blush Palette Large Size Natural",
-      "handle": "6-color-blush-palette-large-size-natural-contouring-makeup-matte-blush-beauty-palette-long-lasting-coverage",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
-      "imageAlt": "Color Blush Palette Large Size Natural Pack Of 2",
-      "price": 40.11
     }
   ]
 }
