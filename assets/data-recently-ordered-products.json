@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-29T22:15:36.787Z",
+  "generatedAt": "2026-07-29T23:16:14.596Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8052508360803",
+      "title": "Rhod Pocket Blush Lip Stick Cheek",
+      "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b6808fecce14339bffe2ebb27a5ccca0_8280bf27-1048-417f-80cc-e1f8c64808bb.webp?v=1783070906",
+      "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
+      "price": 34.99
+    },
     {
       "id": "gid://shopify/Product/8068254924899",
       "title": "Protective Case For Wireless Earbuds",
@@ -18,14 +26,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S937abffbe3a94f3ba765130ed848acacw.webp?v=1783411275",
       "imageAlt": "Mens Key Wallet Multi Functional Holder",
       "price": 49.99
-    },
-    {
-      "id": "gid://shopify/Product/8052508360803",
-      "title": "Rhod Pocket Blush Lip Stick Cheek",
-      "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b6808fecce14339bffe2ebb27a5ccca0_8280bf27-1048-417f-80cc-e1f8c64808bb.webp?v=1783070906",
-      "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
-      "price": 34.99
     },
     {
       "id": "gid://shopify/Product/8060553789539",
