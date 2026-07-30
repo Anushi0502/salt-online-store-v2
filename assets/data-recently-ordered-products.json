@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-07-30T21:40:00.724Z",
+  "generatedAt": "2026-07-30T22:45:39.837Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8052553384035",
+      "title": "Newest Messenger Bag Pu Leather Shoulder",
+      "handle": "newest-man-messenger-bag-men-pu-leather-shoulder-bags-business-crossbody-casual-bag-vintage-handbag-free-shipping",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7a15a89b604e468b8381f6a946c2970aH.webp?v=1783082067",
+      "imageAlt": "Newest Messenger Bag Pu Leather Shoulder",
+      "price": 74.99
+    },
     {
       "id": "gid://shopify/Product/8066249457763",
       "title": "16TB Usb3 2 Flash Drive Metal High Speed Pen Drive 8TB 4TB",
@@ -26,14 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc73c4081c6b04fbb8ab3abffeb8d8d19e.webp?v=1784121546",
       "imageAlt": "Protective Case For Wireless Earbuds",
       "price": 44.99
-    },
-    {
-      "id": "gid://shopify/Product/8055559913571",
-      "title": "Mens Key Wallet Multi Functional Holder",
-      "handle": "mens-key-wallet-multi-functional-key-holder-for-coins-keys-cards-mini-purse-organizer",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S937abffbe3a94f3ba765130ed848acacw.webp?v=1783411275",
-      "imageAlt": "Mens Key Wallet Multi Functional Holder",
-      "price": 49.99
     }
   ]
 }
