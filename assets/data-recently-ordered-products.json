@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-07-31T12:17:18.834Z",
+  "generatedAt": "2026-08-02T09:33:05.646Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
+    {
+      "id": "gid://shopify/Product/8053935472739",
+      "title": "Adjustable Strap Quilted Duffle Bag Large",
+      "handle": "adjustable-strap-quilted-duffle-bag-large-capacity-3d-quilting-craft-travel-duffel-bag-tote-bags-short-distance-handbag",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0fa1311fe5524e91ad771a963050d242K.webp?v=1783326524",
+      "imageAlt": "Adjustable Strap Quilted Duffle Bag Large",
+      "price": 89.99
+    },
+    {
+      "id": "gid://shopify/Product/8060554149987",
+      "title": "Round Tip Beard Tweezers Eyebrow Facial",
+      "handle": "round-tip-beard-tweezers-eyebrow-facial-hair-removal-tool-seamless-grip-precise-trimming-tweezers-durable-beauty-tools-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0959ab0e332a46e7bcc18dfcb2e70d20B.webp?v=1783586687",
+      "imageAlt": "Round Tip Beard Tweezers Eyebrow Facial",
+      "price": 44.99
+    },
+    {
+      "id": "gid://shopify/Product/8059447410787",
+      "title": "Mann Aktiv Creme 50g S Vitality",
+      "handle": "mann-aktiv-creme-50g-men-s-vitality-moisturizing-cream-daily-nourishing-body-lotion-confidence-boost-skin-care-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S04fe02859caa47b58a412a00f3648c2ab.webp?v=1783515503",
+      "imageAlt": "Mann Aktiv Creme 50g S Vitality",
+      "price": 49.99
+    },
     {
       "id": "gid://shopify/Product/8066262663267",
       "title": "Original Xiaomi Charger 120W Fast Turbo Charge Hypercharge Adapter",
@@ -10,30 +34,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc247a2208f534cb0abfad63d6e68c354R.webp?v=1784031781",
       "imageAlt": "Original Xiaomi Charger 120W Fast Turbo Charge Hypercharge Adapter",
       "price": 49.99
-    },
-    {
-      "id": "gid://shopify/Product/8068263444579",
-      "title": "3 Key Programmable Mechanical Macro Keypad With Control Knob",
-      "handle": "3-keys-1-knob-macro-pad-programmable-mechanical-keyboard-rgb-backlit-custom-shortcut-keypad-for-gaming-editing-office-work",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdc892c599f5a4cdb81ad1f8c47c44b20T.webp?v=1784121783",
-      "imageAlt": "3 Key Programmable Mechanical Macro Keypad With Control Knob",
-      "price": 54.99
-    },
-    {
-      "id": "gid://shopify/Product/8068229169251",
-      "title": "Thermal Lunch Box For Adults Kids Stainless Steel Liner 2 Tier Leak",
-      "handle": "thermal-lunch-box-for-adults-kids-stainless-steel-liner-2-tier-leak-proof-bento-meal-prep-container-school-office",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbebdbd87ef7d483d9a3a7c24767e6c4ct.webp?v=1784119948",
-      "imageAlt": "Thermal Lunch Box For Adults Kids Stainless Steel Liner 2 Tier Leak",
-      "price": 44.99
-    },
-    {
-      "id": "gid://shopify/Product/8052553384035",
-      "title": "Newest Messenger Bag Pu Leather Shoulder",
-      "handle": "newest-man-messenger-bag-men-pu-leather-shoulder-bags-business-crossbody-casual-bag-vintage-handbag-free-shipping",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7a15a89b604e468b8381f6a946c2970aH.webp?v=1783082067",
-      "imageAlt": "Newest Messenger Bag Pu Leather Shoulder",
-      "price": 74.99
     }
   ]
 }
