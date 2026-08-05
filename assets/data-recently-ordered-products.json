@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-08-04T11:50:42.307Z",
+  "generatedAt": "2026-08-05T04:47:32.232Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
     {
-      "id": "gid://shopify/Product/8066145484899",
-      "title": "100000MAH Power Bank Pd 100W USB",
-      "handle": "100000mah-power-bank-pd-100w-usb-c-fast-charge-large-capacity-22-5w-with-7-outputs-lcd-display-battery-bank-outdoor-camping",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S62460b5a40d14a049014ce5794a2441fP.webp?v=1784029843",
-      "imageAlt": "100000MAH Power Bank Pd 100W USB",
-      "price": 209.99
+      "id": "gid://shopify/Product/8076870025315",
+      "title": "750ML Gradient Color Bottle Sprunki Incredibox",
+      "handle": "750ml-gradient-color-bottle-sprunki-sprunki-incredibox-sprunki-game-cartoon-drinking-water-cup-kids-birthday-christmas-gift",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc06c08e647c14e55897e555560979fffo.webp?v=1784633465",
+      "imageAlt": "750ML Gradient Color Bottle Sprunki Incredibox",
+      "price": 44.99
     },
     {
-      "id": "gid://shopify/Product/8051167690851",
-      "title": "20pcs Burlap Tote Bags DIY Jute",
-      "handle": "6-20pcs-burlap-tote-bags-diy-jute-bags-with-handles-blank-jute-tote-bridesmaid-gift-bags-for-wedding-bachelorette-beach-party",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1bebc6cdca5c4bcc994d99efcfb509d0Z.webp?v=1782908967",
-      "imageAlt": "20pcs Burlap Tote Bags DIY Jute",
-      "price": 209.99
+      "id": "gid://shopify/Product/8037092982883",
+      "title": "Rolling Teacher Tote Bag Large",
+      "handle": "rolling-teacher-tote-bag-large-tote-bag-with-detachable-wheels-trolley-15-6-inch-laptop-wheeled-teacher-bag-for-work-office",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S00c99a770bb14eaf880893abb02cbc65R.webp?v=1781986250",
+      "imageAlt": "Rolling Teacher Tote Bag Large",
+      "price": 219.99
     },
     {
-      "id": "gid://shopify/Product/8059442495587",
-      "title": "300g Locion Corporal De Para Hombres",
-      "handle": "300g-locion-corporal-de-para-hombres-y-mujeres-fragancia-hidratante-corporal-locion-corporal-exfoliante-iluminadora",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2e53b2667f2640ecac287d07d33a2a5dh.webp?v=1783515275",
-      "imageAlt": "300g Locion Corporal De Para Hombres",
-      "price": 179.99
+      "id": "gid://shopify/Product/8068257513571",
+      "title": "Airpods 4 Wireless Bluetooth Earbuds With Anc",
+      "handle": "2025-for-airpods-4generation-airpods-4-bluetooth-earphones-anc-wireless-headphones-earbuds-noise-cancelling-transparent-tpu-case",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S328dff1466d54e53bcae8348eb3a210d4.webp?v=1784121608",
+      "imageAlt": "Airpods 4 Wireless Bluetooth Earbuds With Anc",
+      "price": 44.99
     },
     {
-      "id": "gid://shopify/Product/7619881566307",
-      "title": "10 Piece Pots And Pans Set",
-      "handle": "10-piece-pots-and-pans-set-for-kitchen-accessories",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5473caa370714f35a18f8b0a65a19fd4y.webp?v=1754983283",
-      "imageAlt": "10 Piece Pots And Pans Set",
-      "price": 209.99
+      "id": "gid://shopify/Product/8059447410787",
+      "title": "Mann Aktiv Creme 50g S Vitality",
+      "handle": "mann-aktiv-creme-50g-men-s-vitality-moisturizing-cream-daily-nourishing-body-lotion-confidence-boost-skin-care-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S04fe02859caa47b58a412a00f3648c2ab.webp?v=1783515503",
+      "imageAlt": "Mann Aktiv Creme 50g S Vitality",
+      "price": 49.99
     }
   ]
 }

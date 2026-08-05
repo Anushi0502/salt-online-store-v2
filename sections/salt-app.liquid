@@ -8,7 +8,7 @@
   data-currency="{{ cart.currency.iso_code | default: shop.currency | escape }}"
 ></div>
 <script>
-  window.SALT_THEME_BUILD = "msflhdlk";
+  window.SALT_THEME_BUILD = "msfpq16t";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_THEME_ASSET_BASE = {{ 'salt-app.js' | asset_url | split: 'salt-app.js' | first | json }};
@@ -31,12 +31,14 @@
     "/data/products-0004.json": {{ 'data-products-0004.json' | asset_url | json }},
     "/data/products-0005.json": {{ 'data-products-0005.json' | asset_url | json }},
     "/data/products-0006.json": {{ 'data-products-0006.json' | asset_url | json }},
+    "/data/products-0007.json": {{ 'data-products-0007.json' | asset_url | json }},
     "/data/product-search-0001.json": {{ 'data-product-search-0001.json' | asset_url | json }},
     "/data/product-search-0002.json": {{ 'data-product-search-0002.json' | asset_url | json }},
     "/data/product-search-0003.json": {{ 'data-product-search-0003.json' | asset_url | json }},
     "/data/product-search-0004.json": {{ 'data-product-search-0004.json' | asset_url | json }},
     "/data/product-search-0005.json": {{ 'data-product-search-0005.json' | asset_url | json }},
     "/data/product-search-0006.json": {{ 'data-product-search-0006.json' | asset_url | json }},
-    "/data/product-search-0007.json": {{ 'data-product-search-0007.json' | asset_url | json }}
+    "/data/product-search-0007.json": {{ 'data-product-search-0007.json' | asset_url | json }},
+    "/data/product-search-0008.json": {{ 'data-product-search-0008.json' | asset_url | json }}
   };
 </script>
