@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-08-03T04:38:18.218Z",
+  "generatedAt": "2026-08-04T11:50:42.307Z",
   "source": "shopify-admin-orders",
   "total": 4,
   "products": [
     {
-      "id": "gid://shopify/Product/8076926189667",
-      "title": "Protective Iphone Case For Iphone 17",
-      "handle": "for-iphone-17-16-15-14-13-12-11-pro-max-mini-se-2020-2022-air-xs-xr-7-8-plus-16e-diy-photo-customized-case-imd-shockproof-cover",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf4e22ce15a9d4d04abcad1127a72a840z.webp?v=1784634237",
-      "imageAlt": "Protective Iphone Case For Iphone 17",
-      "price": 35.99
+      "id": "gid://shopify/Product/8066145484899",
+      "title": "100000MAH Power Bank Pd 100W USB",
+      "handle": "100000mah-power-bank-pd-100w-usb-c-fast-charge-large-capacity-22-5w-with-7-outputs-lcd-display-battery-bank-outdoor-camping",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S62460b5a40d14a049014ce5794a2441fP.webp?v=1784029843",
+      "imageAlt": "100000MAH Power Bank Pd 100W USB",
+      "price": 209.99
     },
     {
-      "id": "gid://shopify/Product/8051857293411",
-      "title": "Centella Asiatica Face Cream Hyaluronic Acid",
-      "handle": "centella-asiatica-face-cream-hyaluronic-acid-moisturizer-nourish-dry-skin-smoothing-rejuvenation-strengthen-barrier-skin-care",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S34092d39f0054408962c5acfd1c36e664.webp?v=1782987331",
-      "imageAlt": "Centella Asiatica Face Cream Hyaluronic Acid",
-      "price": 64.99
+      "id": "gid://shopify/Product/8051167690851",
+      "title": "20pcs Burlap Tote Bags DIY Jute",
+      "handle": "6-20pcs-burlap-tote-bags-diy-jute-bags-with-handles-blank-jute-tote-bridesmaid-gift-bags-for-wedding-bachelorette-beach-party",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1bebc6cdca5c4bcc994d99efcfb509d0Z.webp?v=1782908967",
+      "imageAlt": "20pcs Burlap Tote Bags DIY Jute",
+      "price": 209.99
     },
     {
-      "id": "gid://shopify/Product/8066144632931",
-      "title": "500000MAH Power Bank Built 4 Cables Large Capacity Super Fast",
-      "handle": "500000mah-power-bank-built-4-cables-large-capacity-super-fast-charging-portable-external-battery-for-iphone-huawei-new",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7a1ba880d98a484481a4d1a6123d3c85K.webp?v=1784029831",
-      "imageAlt": "500000MAH Power Bank Built 4 Cables Large Capacity Super Fast",
-      "price": 49.99
+      "id": "gid://shopify/Product/8059442495587",
+      "title": "300g Locion Corporal De Para Hombres",
+      "handle": "300g-locion-corporal-de-para-hombres-y-mujeres-fragancia-hidratante-corporal-locion-corporal-exfoliante-iluminadora",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2e53b2667f2640ecac287d07d33a2a5dh.webp?v=1783515275",
+      "imageAlt": "300g Locion Corporal De Para Hombres",
+      "price": 179.99
     },
     {
-      "id": "gid://shopify/Product/8053935472739",
-      "title": "Adjustable Strap Quilted Duffle Bag Large",
-      "handle": "adjustable-strap-quilted-duffle-bag-large-capacity-3d-quilting-craft-travel-duffel-bag-tote-bags-short-distance-handbag",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0fa1311fe5524e91ad771a963050d242K.webp?v=1783326524",
-      "imageAlt": "Adjustable Strap Quilted Duffle Bag Large",
-      "price": 89.99
+      "id": "gid://shopify/Product/7619881566307",
+      "title": "10 Piece Pots And Pans Set",
+      "handle": "10-piece-pots-and-pans-set-for-kitchen-accessories",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5473caa370714f35a18f8b0a65a19fd4y.webp?v=1754983283",
+      "imageAlt": "10 Piece Pots And Pans Set",
+      "price": 209.99
     }
   ]
 }
