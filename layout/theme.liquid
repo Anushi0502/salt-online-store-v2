@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
-    <!-- SALT finance accuracy bundle 2026-08-10 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=768,initial-scale=1,viewport-fit=cover">
     <meta name="theme-color" content="#1e3a6e">
@@ -13,13 +12,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-f297543659db.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-f297543659db.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-988bec53290d.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-988bec53290d.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-BdtSon2z.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-BdtSon2z.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-BipqTJdJ.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-BipqTJdJ.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-2TKspk1Q.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-2TKspk1Q.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-DNiZUUOo.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DNiZUUOo.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -365,8 +364,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-f297543659db.js" != blank %}
-      <script type="module" src="{{ "salt-entry-f297543659db.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-988bec53290d.js" != blank %}
+      <script type="module" src="{{ "salt-entry-988bec53290d.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
