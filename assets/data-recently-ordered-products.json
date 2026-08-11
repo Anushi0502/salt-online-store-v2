@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T15:42:36.880Z",
+  "generatedAt": "2026-08-11T20:30:54.613Z",
   "source": "shopify-admin-orders-with-deterministic-catalog-floor-fill",
   "total": 300,
   "products": [
@@ -1940,11 +1940,67 @@
       "price": 49.99
     },
     {
-      "id": "gid://shopify/Product/8051178569827",
-      "title": "Sport Smart Watch Fitness Clock Health",
-      "handle": "1-83-sport-smart-watch-fitness-clock-health-monitor-waterproof-smartwatch-wireless-call-watches-for-men-women-ios-android-2025",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa00e884d99284302a2dfb90a761cbe37X.webp?v=1782911253",
-      "imageAlt": "Sport Smart Watch Fitness Clock Health",
+      "id": "gid://shopify/Product/8098809643107",
+      "title": "Newborn Baby Romper Autumn New 100 Cotton Girl Boy 0 18m Cute Spring",
+      "handle": "newborn-baby-romper-autumn-new-100-cotton-girl-boy-0-18m-cute-spring-long-sleeve-soft-infant-clothes",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S90137edd6e5541feaf538d6df9797eb2X.webp?v=1785936940",
+      "imageAlt": "Newborn Baby Romper Autumn New 100 Cotton Girl Boy 0 18m Cute Spring",
+      "price": 41.1
+    },
+    {
+      "id": "gid://shopify/Product/8098809118819",
+      "title": "Newborn Baby Romper For Girls Boys Cotton Clothing Spring Autumn",
+      "handle": "newborn-baby-romper-for-girls-boys-cotton-clothing-spring-autumn-infant-jumpsuit-with-wing-casual-soft-new-born-girl-boy-clothes",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S589d7683efec4d27b91fa7dccca2a1dfa.webp?v=1785936923",
+      "imageAlt": "Newborn Baby Romper For Girls Boys Cotton Clothing Spring Autumn",
+      "price": 48.55
+    },
+    {
+      "id": "gid://shopify/Product/8076742328419",
+      "title": "Renaissance Calendar Wall Art Special",
+      "handle": "renaissance-calendar-2025-wall-calendar-art-special-thick-sturdy-ugly-dog-wall-calendar-for-organizing",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d78e216278146ea9d82b26b63e5ffc06.webp?v=1784631073",
+      "imageAlt": "Renaissance Calendar Wall Art Special",
+      "price": 50.99
+    },
+    {
+      "id": "gid://shopify/Product/8069097619555",
+      "title": "Kawaii Stationery Items Back To School Supplies Ice Cream Pencil",
+      "handle": "kawaii-stationery-items-back-to-school-supplies-ice-cream-pencil-sharpener-for-child-eraser-rubber-cute-things",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sace0ae9a3b814f8dae8f6d82cee79d98o.webp?v=1784205654",
+      "imageAlt": "Kawaii Stationery Items Back To School Supplies Ice Cream Pencil",
+      "price": 45.99
+    },
+    {
+      "id": "gid://shopify/Product/8103726547043",
+      "title": "Men Women Fashion Vintage Simple Solid Color Wide Brim Felt Jazz Cap",
+      "handle": "men-women-fashion-vintage-simple-solid-color-wide-brim-felt-jazz-cap-church-party-travel-hat-accessory-gift",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S145d14dfd0f440d69ce5dfaac80032c7W.webp?v=1786362508",
+      "imageAlt": "Men Women Fashion Vintage Simple Solid Color Wide Brim Felt Jazz Cap",
+      "price": 35
+    },
+    {
+      "id": "gid://shopify/Product/8051179651171",
+      "title": "Classic Womens Digital Watch Love Jewelry",
+      "handle": "5pcs-rectangular-classic-fashion-girls-womens-digital-watch-with-love-jewelry-set-analog-watch-gift",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S875b4b1062514b30b231e2bb70812dbbJ.webp?v=1782911283",
+      "imageAlt": "Classic Womens Digital Watch Love Jewelry",
+      "price": 89.99
+    },
+    {
+      "id": "gid://shopify/Product/8051179421795",
+      "title": "Smart Watch Android IOS Phone Inch",
+      "handle": "2026-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men-new",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7da881c7691744b891b50b5eeff6f62dV.webp?v=1782911276",
+      "imageAlt": "Smart Watch Android IOS Phone Inch",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8051179389027",
+      "title": "Smart Watch Android Phone Inch Color",
+      "handle": "2024-smart-watch-android-phone-1-44-inch-color-screen-bluetooth-call-blood-oxygen-pressure-monitoring-smart-watch-women-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f8b6993000842c0bb5622421859de2bf.webp?v=1782911273",
+      "imageAlt": "Smart Watch Android Phone Inch Color",
       "price": 109.99
     },
     {
@@ -1956,260 +2012,28 @@
       "price": 109.99
     },
     {
-      "id": "gid://shopify/Product/8051173326947",
-      "title": "Khaki Wavy Straw Hat Daisy Ribbon",
-      "handle": "1pcs-girls-khaki-wavy-straw-hat-with-daisy-ribbon-summer-beach-sun-hat-suitable-for-kids-aged-3-8",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S33c98f55832648f8ab67588f0fc8bb1f4.webp?v=1782910446",
-      "imageAlt": "Khaki Wavy Straw Hat Daisy Ribbon",
-      "price": 129.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180175459",
-      "title": "Watch Watches Top Brand",
-      "handle": "2021-new-watch-women-watches-set-top-brand-luxury-gold-waterproof-quartz-wrist-watch-ladies-clock-fashion-simple-women-relogio",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Hd49bb16cc6ec48a3987be5b1a161b82dW.webp?v=1782911295",
-      "imageAlt": "Watch Watches Top Brand",
-      "price": 169.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180109923",
-      "title": "Watch Small Dial Square",
-      "handle": "2023-new-women-watch-luxury-style-small-dial-square-fashion-retro-braided-chain-leather-steel-strap-pointer-quartz-simple-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9ba046bdd2544137819b53b4c5d9ab86p.webp?v=1782911291",
-      "imageAlt": "Watch Small Dial Square",
-      "price": 319.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180765283",
-      "title": "Hot Diamond Watch Elegant Iced Jewelry",
-      "handle": "2024-hot-fashion-diamond-watch-for-women-elegant-iced-jewelry-watches-girl-sport-rubber-strap-tonneau-wristwatch-ladies-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd0a90ce8c9cc447cb909a6e9c6b90e31U.webp?v=1782911411",
-      "imageAlt": "Hot Diamond Watch Elegant Iced Jewelry",
-      "price": 229.99
-    },
-    {
-      "id": "gid://shopify/Product/8051176603747",
-      "title": "Smart Watch Inch Full Touch Screen",
-      "handle": "2024-new-smart-watch-men-1-5-inch-full-touch-screen-bluetooth-call-business-man-watches-fitnes-sports-smartwatch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sab4e4e055b424fd9b5ee88ebdf2ea886B.webp?v=1782911152",
-      "imageAlt": "Smart Watch Inch Full Touch Screen",
-      "price": 129.99
-    },
-    {
-      "id": "gid://shopify/Product/8051179389027",
-      "title": "Smart Watch Android Phone Inch Color",
-      "handle": "2024-smart-watch-android-phone-1-44-inch-color-screen-bluetooth-call-blood-oxygen-pressure-monitoring-smart-watch-women-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f8b6993000842c0bb5622421859de2bf.webp?v=1782911273",
-      "imageAlt": "Smart Watch Android Phone Inch Color",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178668131",
-      "title": "Gps Smart Watch Inch Hd Amoled",
-      "handle": "2025-new-gps-smart-watch-men-1-96-inch-hd-amoled-screen-compass-bluetooth-call-5atm-waterproof-sport-smart-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0c98aa0d64b243a5818db868890eb7d7L.webp?v=1782911254",
-      "imageAlt": "Gps Smart Watch Inch Hd Amoled",
-      "price": 249.99
-    },
-    {
-      "id": "gid://shopify/Product/8051176669283",
-      "title": "Smart Watch Dialing Answering Calls Exercise",
-      "handle": "2025-new-smart-watch-dialing-answering-calls-exercise-tracking-heart-rate-sleep-monitor-bluetooth-smartwatch-man-woman-gift-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b24231156474860aac4278935131a16s.webp?v=1782911153",
-      "imageAlt": "Smart Watch Dialing Answering Calls Exercise",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177160803",
-      "title": "Smart Watch Fitness Sport Bracelet",
-      "handle": "2025-new-smart-watch-for-men-women-fitness-sport-smart-bracelet-heart-rate-blood-oxygen-health-monitor-waterproof-smartwatch-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa5f837cafad0444b827b4f3ef1e272b9O.webp?v=1782911229",
-      "imageAlt": "Smart Watch Fitness Sport Bracelet",
+      "id": "gid://shopify/Product/8051179126883",
+      "title": "Life Inch Large Screen Wireless Calling",
+      "handle": "2026-upgraded-smartwatch-1000mah-long-battery-life-2-04-inch-large-screen-wireless-calling-100-sports-neutral-smartwatch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S27ee1e3d8e7544b696c00eeb788c0fe2d.webp?v=1782911267",
+      "imageAlt": "Life Inch Large Screen Wireless Calling",
       "price": 209.99
     },
     {
-      "id": "gid://shopify/Product/8051178733667",
-      "title": "Smart Watch Camera Take Photos Record",
-      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S102372ff308e423fb414a4d648232020E.webp?v=1782911257",
-      "imageAlt": "Smart Watch Camera Take Photos Record",
-      "price": 179.99
+      "id": "gid://shopify/Product/8094221369443",
+      "title": "LED Book Light Reading Light Eye Caring Clip On USB Rechargeable",
+      "handle": "led-book-light-reading-light-eye-caring-clip-on-usb-rechargeable-dimmable-light-lamp-adjustable-flexible-night-reading-lamp-2",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb4e7d8161b604e56b46a080d64c112e4q.webp?v=1785573705",
+      "imageAlt": "LED Book Light Reading Light Eye Caring Clip On USB Rechargeable",
+      "price": 36.99
     },
     {
-      "id": "gid://shopify/Product/8051178831971",
-      "title": "Smart Watch Camera Take Photos Record",
-      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S288dfddbcaed47d5855e89d82016824fz.webp?v=1782911259",
-      "imageAlt": "Smart Watch Camera Take Photos Record",
-      "price": 209.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178176611",
-      "title": "Display High Definition Screen Android Os",
-      "handle": "2025-new-smartwatch-1-85-inch-display-high-definition-screen-android-os-4g-sim-card-180-rotating-camera-waterproof-wifi-gps",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f2ecfc611d44f71af6c53eb031a728aC.webp?v=1782911244",
-      "imageAlt": "Display High Definition Screen Android Os",
-      "price": 249.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178111075",
-      "title": "Waterproof Smart Watch",
-      "handle": "2025-new-smartwatch-men-for-women-militray-outdoor-gps-track-sport-watches-heart-rate-sleep-waterproof-smart-watch-ios-android",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S08b9ce801bcc429189d29f556d00381e2.webp?v=1782911243",
-      "imageAlt": "Waterproof Smart Watch",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051181191267",
-      "title": "Womens Quartz Watch 3d Floral Dial",
-      "handle": "2025-new-womens-quartz-watch-3d-floral-dial-screw-down-crown-includes-gift-box",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb1a2644539b248b6b3ea0c44e659e30dv.webp?v=1782911415",
-      "imageAlt": "Womens Quartz Watch 3d Floral Dial",
-      "price": 129.99
-    },
-    {
-      "id": "gid://shopify/Product/8051179978851",
-      "title": "Womens Watch Lige Elegant Bracelet Ladies",
-      "handle": "2025-new-womens-watch-lige-fashion-elegant-bracelet-ladies-watch-outdoor-sports-waterproof-quartz-watches-for-women-reloj-mujer",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44094db2a6304589b62121d9990a26d3v.webp?v=1782911289",
-      "imageAlt": "Womens Watch Lige Elegant Bracelet Ladies",
-      "price": 94.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177685091",
-      "title": "Smart Watch Hd Screen Bluetooth Call",
-      "handle": "2025-smart-watch-1-90-hd-screen-bluetooth-call-heart-rate-monitoring-120-sports-modes-waterproof-for-men-woman-smartwatch-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3d0c1c26d0e3454f855c0bef20125169m.webp?v=1782911238",
-      "imageAlt": "Smart Watch Hd Screen Bluetooth Call",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178930275",
-      "title": "Smart Watch Android IOS Phone Inch",
-      "handle": "2025-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S07c4003f235d40939b857c37bc924be4U.webp?v=1782911263",
-      "imageAlt": "Smart Watch Android IOS Phone Inch",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051176505443",
-      "title": "Trending Smartwatch Smart Watch Dial Full",
-      "handle": "2025-trending-smartwatch-2025-smart-watch-dial-full-netcom-4g-kids-1-85in-screen-video-photo-waterproof-positioning-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S65cb8dd190e74925941bdca79a1a0c2b4.webp?v=1782911150",
-      "imageAlt": "Trending Smartwatch Smart Watch Dial Full",
-      "price": 319.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180732515",
-      "title": "Watches Small Round Watch Golden",
-      "handle": "2025-women-watches-small-round-watch-golden-luxury-wristwatches-ladies-fashion-gold-bracelet-watch-female-elegant-clock-women",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d0d1967090d4663a2689f5674cd9b3e8.webp?v=1782911411",
-      "imageAlt": "Watches Small Round Watch Golden",
-      "price": 89.99
-    },
-    {
-      "id": "gid://shopify/Product/8051181224035",
-      "title": "Womens Watch Vintage Classic Dial Casual",
-      "handle": "2025-womens-watch-vintage-classic-fashion-dial-casual-steel-strip-strap-gold-rose-feminine-casual-quartz-wristwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S65355c16cfdd4762b06653b52f06f177F.webp?v=1782911416",
-      "imageAlt": "Womens Watch Vintage Classic Dial Casual",
-      "price": 89.99
-    },
-    {
-      "id": "gid://shopify/Product/8051172245603",
-      "title": "Held Small Square Bag Summer Classic",
-      "handle": "2026-girls-slung-hand-held-small-square-bag-2026-summer-new-classic-children-carrying-one-shoulder-messenger-bag-wallet-keychain",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7c8a7eebe5db4b4eb71dfbaefcf3fe18u.webp?v=1782910420",
-      "imageAlt": "Held Small Square Bag Summer Classic",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051173523555",
-      "title": "Purpose Golf Accessory Bag Firm Structured",
-      "handle": "2026-latest-ladies-golf-shoulder-handbag-multi-purpose-golf-accessory-bag-firm-structured-design-portable-hand-tote-bag",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6a1440080db341bcb5847af9ce75eaeeM.webp?v=1782910451",
-      "imageAlt": "Purpose Golf Accessory Bag Firm Structured",
-      "price": 339.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180240995",
-      "title": "LED Digital Watch Sports Waterproof Watches",
-      "handle": "2026-led-digital-watch-for-kids-boys-sports-waterproof-watches-girls-silicone-digital-watch-casual-childrens-electronic-reloj",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44666fd333e845f69b69e8a1cd09726fH.webp?v=1782911296",
-      "imageAlt": "LED Digital Watch Sports Waterproof Watches",
-      "price": 89.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177521251",
-      "title": "Gps Track Smart Watch Inch Hd",
-      "handle": "2026-new-gps-track-smart-watch-men-1-85-inch-hd-amoled-screen-710-mah-battery-sport-bluetooth-call-smartwatch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4a74ca11bdaf4072b9d44b5ca762acc8a.webp?v=1782911235",
-      "imageAlt": "Gps Track Smart Watch Inch Hd",
-      "price": 229.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177422947",
-      "title": "Phone Tracker Smart Watch Android IOS",
-      "handle": "2026-new-intelligent-for-measuring-for-man-women-band-waterproof-connected-phone-tracker-men-smart-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S74c32d4f7fcd4cb0a347b6fef1634f1cr.webp?v=1782911233",
-      "imageAlt": "Phone Tracker Smart Watch Android IOS",
-      "price": 209.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178897507",
-      "title": "Military Smart Watch Ip67 3atm Outdoor",
-      "handle": "2026-new-military-smart-watch-men-ip67-3atm-outdoor-sports-fitness-tracker-health-monitor-1-44inch-bt-call-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S050641c539314a0a90c8af1efb361d38X.webp?v=1782911261",
-      "imageAlt": "Military Smart Watch Ip67 3atm Outdoor",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177488483",
-      "title": "Smart Watch Inch Hd Screen Bluetooth",
-      "handle": "2026-new-smart-watch-2-01-inch-hd-screen-bluetooth-talk-pedometer-ip68-waterproof-123-sport-modes-man-woman-watch-gift-pk-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05e7cf69d05c410c96a1e7d930b8b4eeg.webp?v=1782911235",
-      "imageAlt": "Smart Watch Inch Hd Screen Bluetooth",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051179880547",
-      "title": "Smart Watch Android IOS Hd Screen",
-      "handle": "2026-new-smart-watch-for-android-ios-2-01-hd-screen-health-monitoring-bluetooth-call-music-control-sport-watch-for-men-women",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb91b88df8874401bbb8c332df417df9aJ.webp?v=1782911287",
-      "imageAlt": "Smart Watch Android IOS Hd Screen",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177029731",
-      "title": "Smart Watch Sport Modes Ip68 Waterproof",
-      "handle": "2026-new-smart-watch-for-men-women-1-38-with-100-sport-modes-ip68-waterproof-pedometer-heart-rate-monitor-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1e6c5a7bc14047699598d6a05b6d847eE.webp?v=1782911226",
-      "imageAlt": "Smart Watch Sport Modes Ip68 Waterproof",
-      "price": 129.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178438755",
-      "title": "Smart Watch Full Touch Screen Waterproof",
-      "handle": "2026-new-smart-watch-for-men-women-1-52-full-touch-screen-waterproof-health-and-sleep-monitor-multi-function-smart-watch-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7b454f6975834d409c7a363ead85f696X.webp?v=1782911250",
-      "imageAlt": "Smart Watch Full Touch Screen Waterproof",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178274915",
-      "title": "Smart Watch Gift Inch Full Touch",
-      "handle": "2026-new-smart-watch-for-women-gift-1-43-inch-full-touch-screen-sports-watches-500-custom-dial-call-waterproof-smartwatch-ladies",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Abd287deb16ab46ad9ebcf571017cbec5Y.webp?v=1782911247",
-      "imageAlt": "Smart Watch Gift Inch Full Touch",
-      "price": 319.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177750627",
-      "title": "Smart Watch Wireless Call Dial Multiple",
-      "handle": "2026-new-smart-watch-wireless-call-dial-multiple-app-reminders-men-and-women-sports-watches-compatible-with-iphone-andriod",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1dadf262419f45d89e330b9afa6b11d2U.webp?v=1782911239",
-      "imageAlt": "Smart Watch Wireless Call Dial Multiple",
-      "price": 109.99
+      "id": "gid://shopify/Product/8103746306147",
+      "title": "Women S Hats For Autumn Winter Comfortable Stylish Versatile Warm",
+      "handle": "womens-hats-for-autumn-winter-comfortable-stylish-versatile-warm-keeping-hairstyle-protecting-knitted-satin-woolen-hats",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sba2ab6502c99469189e54b8c60fa81050.webp?v=1786363028",
+      "imageAlt": "Women S Hats For Autumn Winter Comfortable Stylish Versatile Warm",
+      "price": 35
     },
     {
       "id": "gid://shopify/Product/8051179028579",
@@ -2220,83 +2044,131 @@
       "price": 149.99
     },
     {
-      "id": "gid://shopify/Product/8051177554019",
-      "title": "Smartwatch Amoled Hd Screen Always Display",
-      "handle": "2026-new-smartwatch-women-amoled-hd-screen-always-on-display-bluetooth-call-ip68-waterproof-gps-smart-men-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5435f00aaec149efb123da83e9bb5047O.webp?v=1782911235",
-      "imageAlt": "Smartwatch Amoled Hd Screen Always Display",
-      "price": 249.99
+      "id": "gid://shopify/Product/8094219337827",
+      "title": "Adjustable LED Book Light With Goosenecks Clip 5 Leds AAA Battery",
+      "handle": "adjustable-led-book-light-with-goosenecks-clip-5-leds-aaa-battery-powered-flexible-night-reading-desk-lamp-notebook-cool-white",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/HTB1Y83JXAH0gK0jSZPiq6yvapXa3.webp?v=1785573584",
+      "imageAlt": "Adjustable LED Book Light With Goosenecks Clip 5 Leds AAA Battery",
+      "price": 39.99
     },
     {
-      "id": "gid://shopify/Product/8051176308835",
-      "title": "Sports Smart Watch Hd Screen Bluetooth",
-      "handle": "2026-new-sports-smart-watch-1-39-hd-screen-with-bluetooth-call-ip68-waterproof-health-monitoring-smartwatch-for-android-and-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9894f118afe34326a92552d55a58dd9aD.webp?v=1782911148",
-      "imageAlt": "Sports Smart Watch Hd Screen Bluetooth",
-      "price": 129.99
+      "id": "gid://shopify/Product/8103745585251",
+      "title": "Fashion Bucket Hats For Women Horns Cow Pattern Fisherman S Hat Four",
+      "handle": "fashion-bucket-hats-for-women-horns-cow-pattern-fishermans-hat-four-seasons-sun-hat-outdoor-beach-cap-bob-ladies-panama-hat",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sca0875af2c4b4bc5abc2af5ddb206ef1r.webp?v=1786362996",
+      "imageAlt": "Fashion Bucket Hats For Women Horns Cow Pattern Fisherman S Hat Four",
+      "price": 38.87
     },
     {
-      "id": "gid://shopify/Product/8051177652323",
-      "title": "Sports Smart Watch Modes Ip68 Waterproof",
-      "handle": "2026-new-sports-smart-watch-100-sports-modes-ip68-waterproof-health-monitoring-bluetooth-call-led-flashlight-mens-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S544a7dc50e07447c8e227c8567d8dc184.webp?v=1782911237",
-      "imageAlt": "Sports Smart Watch Modes Ip68 Waterproof",
-      "price": 129.99
+      "id": "gid://shopify/Product/8094220353635",
+      "title": "LED Clip Light With Switch USB LED Light For Reading Study Book",
+      "handle": "led-clip-light-with-switch-usb-led-light-for-reading-study-book-lights-lampara-de-escritorio-table-lamp-desk-decor",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S30aa25b2e947452a9e7736d05feb679eK.webp?v=1785573689",
+      "imageAlt": "LED Clip Light With Switch USB LED Light For Reading Study Book",
+      "price": 44.99
     },
     {
-      "id": "gid://shopify/Product/8051176964195",
-      "title": "Stylish Smart Watch Hd Screen All",
-      "handle": "2026-new-stylish-smart-watch-1-73-hd-screen-all-round-health-management-ai-voice-music-weather-sports-modes-ip68-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S372a9aa26c2d4fbdbe02c53b30552cbfJ.webp?v=1782911226",
-      "imageAlt": "Stylish Smart Watch Hd Screen All",
-      "price": 179.99
+      "id": "gid://shopify/Product/8103744569443",
+      "title": "Womens Hats Spring Seaside Vacations French",
+      "handle": "womens-hats-spring-seaside-vacations-french-sweet-cute-girls-outdoor-headscarves-with-straps-baseball-caps-funny-fashion-hats-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0cb0e5c4a7584a2c9f596d7e06a940c0c_c8214055-4f05-456a-bf9d-294fd3691c98.webp?v=1786362957",
+      "imageAlt": "Womens Hats Spring Seaside Vacations French",
+      "price": 37.71
     },
     {
-      "id": "gid://shopify/Product/8051178209379",
-      "title": "Stylish Smart Watch Hd Screen All",
-      "handle": "2026-new-stylish-smart-watch-1-73-hd-screen-all-round-health-management-ai-voice-music-weather-sports-modes-ip68-smart-watch-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa43c82301d394b12baf61ae8330506d8y.webp?v=1782911245",
-      "imageAlt": "Stylish Smart Watch Hd Screen All",
-      "price": 179.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177062499",
-      "title": "Smart Watch Sports Mode Information Push",
-      "handle": "2026-smart-fashion-watch-1-43-100-sports-mode-information-push-voice-assistant-ip68-waterproof-custom-watch-face-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5f02f1e96e854c32b450cf5e0a714e2bk.webp?v=1782911228",
-      "imageAlt": "Smart Watch Sports Mode Information Push",
-      "price": 169.99
-    },
-    {
-      "id": "gid://shopify/Product/8051176538211",
-      "title": "Smart Watch Android IOS Bluetooth Health",
-      "handle": "2026-smart-watch-10-for-android-ios-bluetooth-health-monitoring-talk-heart-rate-sleep-record-sports-smart-watch-ladies-men-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S17dbbd2894f245029016375f3b51d3b7S.webp?v=1782911152",
-      "imageAlt": "Smart Watch Android IOS Bluetooth Health",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051179421795",
+      "id": "gid://shopify/Product/8051178930275",
       "title": "Smart Watch Android IOS Phone Inch",
-      "handle": "2026-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men-new",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7da881c7691744b891b50b5eeff6f62dV.webp?v=1782911276",
+      "handle": "2025-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S07c4003f235d40939b857c37bc924be4U.webp?v=1782911263",
       "imageAlt": "Smart Watch Android IOS Phone Inch",
       "price": 109.99
     },
     {
-      "id": "gid://shopify/Product/8051176439907",
-      "title": "Smart Watch Original Design Ip68 Waterproof",
-      "handle": "2026-smart-watch-original-design-ip68-waterproof-bluetooth-call-health-monitor-100-sports-modes-flashlight",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4a2695f29c5d4068a64a38f16b452b34D.webp?v=1782911149",
-      "imageAlt": "Smart Watch Original Design Ip68 Waterproof",
-      "price": 129.99
+      "id": "gid://shopify/Product/8051177422947",
+      "title": "Phone Tracker Smart Watch Android IOS",
+      "handle": "2026-new-intelligent-for-measuring-for-man-women-band-waterproof-connected-phone-tracker-men-smart-watch-for-android-ios",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S74c32d4f7fcd4cb0a347b6fef1634f1cr.webp?v=1782911233",
+      "imageAlt": "Phone Tracker Smart Watch Android IOS",
+      "price": 209.99
     },
     {
-      "id": "gid://shopify/Product/8051179126883",
-      "title": "Life Inch Large Screen Wireless Calling",
-      "handle": "2026-upgraded-smartwatch-1000mah-long-battery-life-2-04-inch-large-screen-wireless-calling-100-sports-neutral-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S27ee1e3d8e7544b696c00eeb788c0fe2d.webp?v=1782911267",
-      "imageAlt": "Life Inch Large Screen Wireless Calling",
+      "id": "gid://shopify/Product/8051177488483",
+      "title": "Smart Watch Inch Hd Screen Bluetooth",
+      "handle": "2026-new-smart-watch-2-01-inch-hd-screen-bluetooth-talk-pedometer-ip68-waterproof-123-sport-modes-man-woman-watch-gift-pk-hw12",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05e7cf69d05c410c96a1e7d930b8b4eeg.webp?v=1782911235",
+      "imageAlt": "Smart Watch Inch Hd Screen Bluetooth",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8094218322019",
+      "title": "USB Rechargeable LED Light Book Reading Light Brightness Adjustable",
+      "handle": "usb-rechargeable-led-light-book-reading-light-brightness-adjustable-led-clip-on-book-light-eye-care-book-lamp-kids-read-light",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd4ab6d79ed7f453eb329aa26cf8b9f3eV.webp?v=1785573550",
+      "imageAlt": "USB Rechargeable LED Light Book Reading Light Brightness Adjustable",
+      "price": 39.99
+    },
+    {
+      "id": "gid://shopify/Product/8103743553635",
+      "title": "Women S Hats New Fashion Style Bucket Hat Multicolor Foldable Sun",
+      "handle": "womens-hats-new-fashion-style-bucket-hat-multicolor-foldable-sun-crochet-hat-for-beach-travel-and-vacation-handmade-straw-hat",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdc78f2bd91834e77b2c38b299df4a3d0d.webp?v=1786362938",
+      "imageAlt": "Women S Hats New Fashion Style Bucket Hat Multicolor Foldable Sun",
+      "price": 35
+    },
+    {
+      "id": "gid://shopify/Product/8051178897507",
+      "title": "Military Smart Watch Ip67 3atm Outdoor",
+      "handle": "2026-new-military-smart-watch-men-ip67-3atm-outdoor-sports-fitness-tracker-health-monitor-1-44inch-bt-call-smartwatch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S050641c539314a0a90c8af1efb361d38X.webp?v=1782911261",
+      "imageAlt": "Military Smart Watch Ip67 3atm Outdoor",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8051177193571",
+      "title": "1smart Watch Bluetooth Phone Call Smartwatch",
+      "handle": "7-in-1smart-watch-for-men-women-bluetooth-phone-call-smartwatch-diy-watch-faces-health-fitness-tra-smart-bracelet",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S71194262c4634d4cbcd17a333c755d1ds.webp?v=1782911230",
+      "imageAlt": "1smart Watch Bluetooth Phone Call Smartwatch",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8103739490403",
+      "title": "Painter Berets Pillbox Hat Woven Paper",
+      "handle": "harajuku-retro-artistic-painter-berets-pillbox-hat-woven-paper-straw-sun-hats-for-women-fashion-circle-concave-top-straw-hats",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6712cf3d3e8046c096cf971b864c2664H.webp?v=1786362871",
+      "imageAlt": "Painter Berets Pillbox Hat Woven Paper",
+      "price": 42.11
+    },
+    {
+      "id": "gid://shopify/Product/8094217306211",
+      "title": "LED Reading Lamp Flexible Book Music Lamp Reading Light Student",
+      "handle": "led-reading-lamp-flexible-book-music-lamp-reading-light-student-dormitory-light-with-clip-power-for-book-reading",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdf7bd0a6289340bd8bb792fa8e502c18f.webp?v=1785573519",
+      "imageAlt": "LED Reading Lamp Flexible Book Music Lamp Reading Light Student",
+      "price": 36.51
+    },
+    {
+      "id": "gid://shopify/Product/8058392805475",
+      "title": "Polygonum Multiflorum",
+      "handle": "polygonum-multiflorum-herbal-hair-essence-nourishes-dry-strands-boosts-glossy-look-for-daily-soft-and-smooth-hair-maintenance",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3573c37bfa0a4691aea774eb6b571325z.webp?v=1783499909",
+      "imageAlt": "Polygonum Multiflorum",
+      "price": 89.99
+    },
+    {
+      "id": "gid://shopify/Product/8051177160803",
+      "title": "Smart Watch Fitness Sport Bracelet",
+      "handle": "2025-new-smart-watch-for-men-women-fitness-sport-smart-bracelet-heart-rate-blood-oxygen-health-monitor-waterproof-smartwatch-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa5f837cafad0444b827b4f3ef1e272b9O.webp?v=1782911229",
+      "imageAlt": "Smart Watch Fitness Sport Bracelet",
+      "price": 209.99
+    },
+    {
+      "id": "gid://shopify/Product/8051178831971",
+      "title": "Smart Watch Camera Take Photos Record",
+      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S288dfddbcaed47d5855e89d82016824fz.webp?v=1782911259",
+      "imageAlt": "Smart Watch Camera Take Photos Record",
       "price": 209.99
     },
     {
@@ -2308,100 +2180,228 @@
       "price": 129.99
     },
     {
-      "id": "gid://shopify/Product/8051177783395",
-      "title": "5g Smartwatch Cd20 Global Version Inch",
-      "handle": "5g-smartwatch-cd20-global-version-2-29-inch-amoled-display-with-180-rotating-camera-supports-sim-card-wifi-gps-video-calling",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8129835fc00d4cbc95bdc209495d2db58.webp?v=1782911240",
-      "imageAlt": "5g Smartwatch Cd20 Global Version Inch",
+      "id": "gid://shopify/Product/8094214258787",
+      "title": "Foldable LED Book Light Adjustable USB Rechargeable Study Reading",
+      "handle": "foldable-led-book-light-adjustable-usb-rechargeable-study-reading-table-lamp-for-travel-bedroom-dormitory-reading-night-light",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7053926479f040628076e2e91ab8a6327.webp?v=1785573376",
+      "imageAlt": "Foldable LED Book Light Adjustable USB Rechargeable Study Reading",
+      "price": 36.99
+    },
+    {
+      "id": "gid://shopify/Product/8058390773859",
+      "title": "Anti Hair Loss Hat",
+      "handle": "hair-growth-cap-reduces-oiliness-strengthens-hair-roots-penetrates-deep-into-hair-follicles-relieves-fatigue-anti-hair-loss-hat",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S733440a81fa3462184373ed2883a6ef98.webp?v=1783499884",
+      "imageAlt": "Anti Hair Loss Hat",
+      "price": 259.99
+    },
+    {
+      "id": "gid://shopify/Product/8094216290403",
+      "title": "LED Neck Reading Light Bendable Arms Lamp Flexible Flashlight Hands",
+      "handle": "led-neck-reading-light-bendable-arms-lamp-flexible-flashlight-hands-free-for-reading-in-bed-portable-3-modes-book-lighting",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se5e3edabec73478eafac8a257ba8bf92F.webp?v=1785573499",
+      "imageAlt": "LED Neck Reading Light Bendable Arms Lamp Flexible Flashlight Hands",
+      "price": 46.71
+    },
+    {
+      "id": "gid://shopify/Product/8103734411363",
+      "title": "New Elegant Women Straw Hat Vintage Pointed High Wide Brim Sun Hat",
+      "handle": "new-elegant-women-straw-hat-vintage-pointed-high-wide-brim-sun-hat-casual-natural-wheat-straw-fedoras-ladies-fashion-catwalk-hat",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H12397137a367458babb696de0179d180f.webp?v=1786362697",
+      "imageAlt": "New Elegant Women Straw Hat Vintage Pointed High Wide Brim Sun Hat",
+      "price": 113.99
+    },
+    {
+      "id": "gid://shopify/Product/8051178733667",
+      "title": "Smart Watch Camera Take Photos Record",
+      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S102372ff308e423fb414a4d648232020E.webp?v=1782911257",
+      "imageAlt": "Smart Watch Camera Take Photos Record",
+      "price": 179.99
+    },
+    {
+      "id": "gid://shopify/Product/8051177062499",
+      "title": "Smart Watch Sports Mode Information Push",
+      "handle": "2026-smart-fashion-watch-1-43-100-sports-mode-information-push-voice-assistant-ip68-waterproof-custom-watch-face-smart-watch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5f02f1e96e854c32b450cf5e0a714e2bk.webp?v=1782911228",
+      "imageAlt": "Smart Watch Sports Mode Information Push",
+      "price": 169.99
+    },
+    {
+      "id": "gid://shopify/Product/8058380615779",
+      "title": "Batana Hair Oil from Honduras",
+      "handle": "batana-oil-for-hair-growth-dr-sebi-organic-raw-batana-oil-from-honduras-100-pure-natural-for-thicker-stronger-hair",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S36db83523b994ed49c8adbf8a80bf224J.webp?v=1783499745",
+      "imageAlt": "Batana Hair Oil from Honduras",
+      "price": 49.99
+    },
+    {
+      "id": "gid://shopify/Product/8058382647395",
+      "title": "Grooming Trimmer 60ML Hair Trimmer For Daily Grooming",
+      "handle": "hair-clipper-oil-60ml-oil-for-clippers-hair-clipper-lubricant-oil-lubricant-hair-trimmer-blade-oil-prevent-rusting-sewing-oils",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S211a8b41b95b4e519202bf84bb46abef1.webp?v=1783499752",
+      "imageAlt": "Grooming Trimmer 60ML Hair Trimmer For Daily Grooming",
+      "price": 44.99
+    },
+    {
+      "id": "gid://shopify/Product/8094213242979",
+      "title": "Men S T Shirts A Simple Question Math Teacher Creative Monty Python",
+      "handle": "mens-t-shirts-a-simple-question-math-teacher-creative-monty-python-cotton-t-shirt-unisex-tshirt-fitness-tees-tops-clothing-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdefc7cdbbaf642f68408e0809f9a7564h_6a7d8da4-5604-4db6-afb9-8ea346047d4f.webp?v=1785573360",
+      "imageAlt": "Men S T Shirts A Simple Question Math Teacher Creative Monty Python",
+      "price": 44.99
+    },
+    {
+      "id": "gid://shopify/Product/8103727530083",
+      "title": "Women S Straw Hat Fisherman Hats Summer Outing Seaside Beach",
+      "handle": "womens-straw-hat-fisherman-hats-summer-outing-seaside-beach-vacation-sunhat-foldable",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3fd41d59fc664264a03fddb404f42571X.webp?v=1786362524",
+      "imageAlt": "Women S Straw Hat Fisherman Hats Summer Outing Seaside Beach",
+      "price": 49.99
+    },
+    {
+      "id": "gid://shopify/Product/8051178668131",
+      "title": "Gps Smart Watch Inch Hd Amoled",
+      "handle": "2025-new-gps-smart-watch-men-1-96-inch-hd-amoled-screen-compass-bluetooth-call-5atm-waterproof-sport-smart-watch-for-android-ios",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0c98aa0d64b243a5818db868890eb7d7L.webp?v=1782911254",
+      "imageAlt": "Gps Smart Watch Inch Hd Amoled",
       "price": 249.99
     },
     {
-      "id": "gid://shopify/Product/8051179651171",
-      "title": "Classic Womens Digital Watch Love Jewelry",
-      "handle": "5pcs-rectangular-classic-fashion-girls-womens-digital-watch-with-love-jewelry-set-analog-watch-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S875b4b1062514b30b231e2bb70812dbbJ.webp?v=1782911283",
-      "imageAlt": "Classic Womens Digital Watch Love Jewelry",
-      "price": 89.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177193571",
-      "title": "1smart Watch Bluetooth Phone Call Smartwatch",
-      "handle": "7-in-1smart-watch-for-men-women-bluetooth-phone-call-smartwatch-diy-watch-faces-health-fitness-tra-smart-bracelet",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S71194262c4634d4cbcd17a333c755d1ds.webp?v=1782911230",
-      "imageAlt": "1smart Watch Bluetooth Phone Call Smartwatch",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051178078307",
-      "title": "Aw12 Smart Watch Hd Ips Display",
-      "handle": "aw12-smart-watch-with-1-3-hd-ips-display-full-metal-steel-case-multiple-sports-modes-message-alerts-health-tracking",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S618abe09244f4e1987f541b0254e3b3f7.webp?v=1782911243",
-      "imageAlt": "Aw12 Smart Watch Hd Ips Display",
-      "price": 229.99
-    },
-    {
-      "id": "gid://shopify/Product/8051172606051",
-      "title": "Straw Hat Years Summer Beach Hats",
-      "handle": "baby-girl-straw-hat-3-6-years-girls-summer-beach-hats-with-bowknot-sun-protection-hats-for-kids",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S20c495791c334561b28aa9adbb47e0cch.webp?v=1782910435",
-      "imageAlt": "Straw Hat Years Summer Beach Hats",
-      "price": 94.99
-    },
-    {
-      "id": "gid://shopify/Product/8051173228643",
-      "title": "Bow Knot Velvet Hat Newborn Infant",
-      "handle": "baby-girls-big-bow-knot-velvet-hat-newborn-infant-turban-caps-children-leopard-beanies-photo-props-gifts-hair-accessories",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S22eaec8e61f6458d90bcf80e3143827au.webp?v=1782910445",
-      "imageAlt": "Bow Knot Velvet Hat Newborn Infant",
-      "price": 69.99
-    },
-    {
-      "id": "gid://shopify/Product/8051172868195",
-      "title": "Hat Cute Flower Knot Bunny",
-      "handle": "baby-girls-boys-hat-cute-flower-knot-bunny-ears-hat-cotton-newborn-beanie-caps-for-kids-toddler-infant-hair-accessories",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3e8de9978b044ef2ad1b20181137e6a3m.webp?v=1782910440",
-      "imageAlt": "Hat Cute Flower Knot Bunny",
-      "price": 69.99
-    },
-    {
-      "id": "gid://shopify/Product/8051173261411",
-      "title": "Hats Winter Knitted Warm Infant",
-      "handle": "baby-hats-for-girls-winter-knitted-warm-infant-baby-girl-hat-3m-4years-kids-girls-cap-ear-protection-hats-soft-newborn-bonnet",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H6ba3d2e5af5242c19b32e0ae6c00e13cH.webp?v=1782910446",
-      "imageAlt": "Hats Winter Knitted Warm Infant",
-      "price": 69.99
-    },
-    {
-      "id": "gid://shopify/Product/8051173458019",
-      "title": "Single Shoulder Crossbody Bag Gift Friends",
-      "handle": "ballet-girl-large-appetite-itabag-japanese-two-dimension-single-shoulder-crossbody-bag-gift-for-friends-womens-handbag",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S43eee74a2455450bb891dab4b4fcfc447.webp?v=1782910449",
-      "imageAlt": "Single Shoulder Crossbody Bag Gift Friends",
-      "price": 109.99
-    },
-    {
-      "id": "gid://shopify/Product/8051169394787",
-      "title": "Luminous Geometric Bag",
-      "handle": "bolsa-feminina-boston-handbags-for-girls-women-laser-sequins-luminous-geometric-bag-over-shoulder-crossbody-bags-for-women-2024",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S87c350b80c2d4adfa118e848b1e53efe1.webp?v=1782909017",
-      "imageAlt": "Luminous Geometric Bag",
-      "price": 209.99
-    },
-    {
-      "id": "gid://shopify/Product/8051180929123",
-      "title": "Brand Watch Black Quartz Stainless",
-      "handle": "brand-new-women-watch-luxury-black-quartz-stainless-steel-bracelet-waterproof-ladies-golden-wristwatch-girl-clock-relogio-mujer",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S765c272c4b864b46b3d38f4325bea2bcb.webp?v=1782911411",
-      "imageAlt": "Brand Watch Black Quartz Stainless",
+      "id": "gid://shopify/Product/8051177029731",
+      "title": "Smart Watch Sport Modes Ip68 Waterproof",
+      "handle": "2026-new-smart-watch-for-men-women-1-38-with-100-sport-modes-ip68-waterproof-pedometer-heart-rate-monitor-for-android-ios",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1e6c5a7bc14047699598d6a05b6d847eE.webp?v=1782911226",
+      "imageAlt": "Smart Watch Sport Modes Ip68 Waterproof",
       "price": 129.99
     },
     {
-      "id": "gid://shopify/Product/8051173195875",
-      "title": "Casual Travel Hat For Styling And Daily Use And Everyday Style",
-      "handle": "childrens-hat-boys-girls-fashion-retro-british-versatile-forward-cap-spring-autumn-travel-stylish-casual-beret",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S71b7acda3dc448818a1c7981984a79333.webp?v=1782910445",
-      "imageAlt": "Casual Travel Hat For Styling And Daily Use And Everyday Style",
+      "id": "gid://shopify/Product/8058377568355",
+      "title": "African Layden Oil Made Ancient Methods",
+      "handle": "african-layden-oil-made-by-ancient-methods-grow-your-hair-faster-longer-visible-results-stop-breakage-promotes-hair-growth",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8fd988d3b18445439ef5b0f37b7f7517J.webp?v=1783499717",
+      "imageAlt": "African Layden Oil Made Ancient Methods",
+      "price": 64.99
+    },
+    {
+      "id": "gid://shopify/Product/8094212227171",
+      "title": "T Shirt For Men Funny My Wife Is Perfect Graphic Tops Gift Summer",
+      "handle": "t-shirt-for-men-funny-my-wife-is-perfect-graphic-tops-gift-summer-fashion-mens-tee-t-shirts-tops-short-sleeve-clothing-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf1763499d5bf4d4cbd3f2cb67da256bdN_e26c986c-1da7-42ee-93f7-4b992ca70df7.webp?v=1785573270",
+      "imageAlt": "T Shirt For Men Funny My Wife Is Perfect Graphic Tops Gift Summer",
+      "price": 46.99
+    },
+    {
+      "id": "gid://shopify/Product/8103725269091",
+      "title": "Women Foldable Sun Hat Crochet Design Uv Protection Wide Brim Beach",
+      "handle": "women-foldable-sun-hat-crochet-design-uv-protection-wide-brim-beach-hat-packable-lightweight-cap-for-summer-travel-use",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb82ff5d15b7f4e2780a8facbbadc7731w.webp?v=1786362480",
+      "imageAlt": "Women Foldable Sun Hat Crochet Design Uv Protection Wide Brim Beach",
+      "price": 35
+    },
+    {
+      "id": "gid://shopify/Product/8051178569827",
+      "title": "Sport Smart Watch Fitness Clock Health",
+      "handle": "1-83-sport-smart-watch-fitness-clock-health-monitor-waterproof-smartwatch-wireless-call-watches-for-men-women-ios-android-2025",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa00e884d99284302a2dfb90a761cbe37X.webp?v=1782911253",
+      "imageAlt": "Sport Smart Watch Fitness Clock Health",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8052503150691",
+      "title": "Color Pink Lip Balm Changing Moisturizing",
+      "handle": "2-color-pink-lip-balm-color-changing-moisturizing-lipstick-hydrating-non-sticky-gloss-for-natural-daily-wear-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6c40d9c59a3e4a2dad19170197ac2eb73_8022cdda-c188-4c15-95f1-139613265664.webp?v=1783070178",
+      "imageAlt": "Color Pink Lip Balm Changing Moisturizing",
+      "price": 64.99
+    },
+    {
+      "id": "gid://shopify/Product/8051176964195",
+      "title": "Stylish Smart Watch Hd Screen All",
+      "handle": "2026-new-stylish-smart-watch-1-73-hd-screen-all-round-health-management-ai-voice-music-weather-sports-modes-ip68-smart-watch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S372a9aa26c2d4fbdbe02c53b30552cbfJ.webp?v=1782911226",
+      "imageAlt": "Stylish Smart Watch Hd Screen All",
+      "price": 179.99
+    },
+    {
+      "id": "gid://shopify/Product/8103725072483",
+      "title": "Fashion New Women Men New York Couple Caps Hats Female Male Sport",
+      "handle": "fashion-new-women-men-new-york-couple-caps-hats-female-male-sport-visors-snapback-cap-sun-hat-for-women-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2af69fc0192144b2af2bd8a66dde196d0.webp?v=1786362474",
+      "imageAlt": "Fashion New Women Men New York Couple Caps Hats Female Male Sport",
+      "price": 35
+    },
+    {
+      "id": "gid://shopify/Product/8052504166499",
+      "title": "Ouhoe Lip Repair Balm Moisturizing Hydrating",
+      "handle": "ouhoe-lip-repair-balm-lip-moisturizing-and-hydrating-chapped-and-cracked-to-prevent-dryness-and-lighten-lip-lines-care-balm",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S17712f486c5e45c19ab11593f733b244I.webp?v=1783070539",
+      "imageAlt": "Ouhoe Lip Repair Balm Moisturizing Hydrating",
+      "price": 64.99
+    },
+    {
+      "id": "gid://shopify/Product/8051176603747",
+      "title": "Smart Watch Inch Full Touch Screen",
+      "handle": "2024-new-smart-watch-men-1-5-inch-full-touch-screen-bluetooth-call-business-man-watches-fitnes-sports-smartwatch-for-android-ios",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sab4e4e055b424fd9b5ee88ebdf2ea886B.webp?v=1782911152",
+      "imageAlt": "Smart Watch Inch Full Touch Screen",
+      "price": 129.99
+    },
+    {
+      "id": "gid://shopify/Product/8051176669283",
+      "title": "Smart Watch Dialing Answering Calls Exercise",
+      "handle": "2025-new-smart-watch-dialing-answering-calls-exercise-tracking-heart-rate-sleep-monitor-bluetooth-smartwatch-man-woman-gift-hw12",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b24231156474860aac4278935131a16s.webp?v=1782911153",
+      "imageAlt": "Smart Watch Dialing Answering Calls Exercise",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8051178438755",
+      "title": "Smart Watch Full Touch Screen Waterproof",
+      "handle": "2026-new-smart-watch-for-men-women-1-52-full-touch-screen-waterproof-health-and-sleep-monitor-multi-function-smart-watch-hw12",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7b454f6975834d409c7a363ead85f696X.webp?v=1782911250",
+      "imageAlt": "Smart Watch Full Touch Screen Waterproof",
+      "price": 109.99
+    },
+    {
+      "id": "gid://shopify/Product/8052501119075",
+      "title": "Lip Enhancer Lip Gloss",
+      "handle": "instant-volumising-lip-plumper-oil-lip-enhancer-lip-gloss-plumping-serum-moisturizing-anti-wrinkle-lipstick-sexy-lip-care-makeup",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sda4f854dba8f42f2855ffb9bfe4da6b19.webp?v=1783070128",
+      "imageAlt": "Lip Enhancer Lip Gloss",
+      "price": 64.99
+    },
+    {
+      "id": "gid://shopify/Product/8052502134883",
+      "title": "Lip Plumper Oil Instantly Volumising Increase",
+      "handle": "lip-plumper-oil-instantly-volumising-increase-lip-elasticity-long-lasting-moisturize-lip-plumper-gloss-sexy-beauty-makeup-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S29514e0a4f974fceb3e793e4328ac92az.webp?v=1783070150",
+      "imageAlt": "Lip Plumper Oil Instantly Volumising Increase",
       "price": 69.99
+    },
+    {
+      "id": "gid://shopify/Product/8103724253283",
+      "title": "Equipment Hiking Camping Hats",
+      "handle": "mens-baseball-cap-with-fun-printed-patterns-for-daily-leisure-and-outdoor-travel-equipment-hiking-and-camping-hats-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S74493de19c9c4153bdd1dc9a26a4e053d_4dfe487f-8a2e-4241-938e-52a956e4ee81.webp?v=1786362460",
+      "imageAlt": "Equipment Hiking Camping Hats",
+      "price": 35
+    },
+    {
+      "id": "gid://shopify/Product/8051178274915",
+      "title": "Smart Watch Gift Inch Full Touch",
+      "handle": "2026-new-smart-watch-for-women-gift-1-43-inch-full-touch-screen-sports-watches-500-custom-dial-call-waterproof-smartwatch-ladies",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Abd287deb16ab46ad9ebcf571017cbec5Y.webp?v=1782911247",
+      "imageAlt": "Smart Watch Gift Inch Full Touch",
+      "price": 319.99
+    },
+    {
+      "id": "gid://shopify/Product/8051176538211",
+      "title": "Smart Watch Android IOS Bluetooth Health",
+      "handle": "2026-smart-watch-10-for-android-ios-bluetooth-health-monitoring-talk-heart-rate-sleep-record-sports-smart-watch-ladies-men-gift",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S17dbbd2894f245029016375f3b51d3b7S.webp?v=1782911152",
+      "imageAlt": "Smart Watch Android IOS Bluetooth Health",
+      "price": 109.99
     }
   ],
   "recentOrderProducts": 242,
