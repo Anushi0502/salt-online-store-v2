@@ -1,0 +1,15 @@
+{% for group in robots.default_groups %}
+{{- group.user_agent_name -}}
+{% for rule in group.rules %}
+{{- rule -}}
+{% endfor %}
+{%- if group.sitemap != blank -%}
+{{ group.sitemap }}
+{%- endif -%}
+{% endfor %}
+
+# Private SALT operations routes
+User-agent: *
+Disallow: /pages/finance
+Disallow: /apps:finance
+Disallow: /apps/finance
