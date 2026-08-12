@@ -4,7 +4,91 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=768,initial-scale=1,viewport-fit=cover">
     <meta name="theme-color" content="#1e3a6e">
-    <title>{{ page_title }}</title>
+    {% assign salt_route = request.path %}
+    {% assign salt_seo_title = page_title | default: shop.name %}
+    {% assign salt_seo_description = page_description | default: shop.description | default: 'Shop curated cookware, gifts, apparel, and everyday essentials from SALT Online Store.' %}
+    {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
+    {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
+    {% assign salt_custom_canonical = false %}
+
+    {% if salt_route == '/shop' %}
+      {% assign salt_seo_title = 'Shop All Products | SALT Online Store' %}
+      {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
+      {% assign salt_custom_canonical = true %}
+      {% if request.query_string contains 'resource=hub' %}
+        {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
+        {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
+        {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/resources' %}
+      {% elsif request.query_string != blank %}
+        {% assign salt_seo_robots = 'noindex,follow' %}
+      {% endif %}
+    {% elsif salt_route == '/search' %}
+      {% assign salt_seo_title = 'Search SALT Online Store' %}
+      {% assign salt_seo_description = 'Search the live SALT catalog for products, collections, and everyday essentials.' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/search' %}
+      {% assign salt_custom_canonical = true %}
+    {% elsif salt_route contains '/collections/' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: salt_route %}
+      {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/cart' or salt_route == '/wishlist' or salt_route == '/recently-viewed' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% elsif salt_route == '/pages/wishlist' %}
+      {% assign salt_seo_title = 'Wishlist | SALT Online Store' %}
+      {% assign salt_seo_description = 'Save SALT products for later and keep track of items you love.' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% elsif salt_route == '/pages/resources' %}
+      {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
+      {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
+    {% elsif salt_route == '/pages/faq' %}
+      {% assign salt_seo_title = 'FAQ | SALT Online Store' %}
+      {% assign salt_seo_description = 'Quick answers about SALT ordering, shipping, returns, and product support.' %}
+    {% elsif salt_route == '/pages/contact-us' %}
+      {% assign salt_seo_title = 'Contact Support | SALT Online Store' %}
+      {% assign salt_seo_description = 'Reach the SALT support team for delivery questions, product advice, returns, or order help.' %}
+    {% elsif salt_route == '/pages/about-us' %}
+      {% assign salt_seo_title = 'About SALT Online Store' %}
+      {% assign salt_seo_description = 'Learn how SALT makes practical products easy to discover, save, and buy.' %}
+    {% elsif request.page_type == '404' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% endif %}
+
+    <title>{{ salt_seo_title | escape }}</title>
+    {% if salt_seo_description != blank %}
+      <meta name="description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
+    {% endif %}
+    <meta name="robots" content="{{ salt_seo_robots }}">
+    <meta name="googlebot" content="{{ salt_seo_robots }}">
+    <meta property="og:title" content="{{ salt_seo_title | escape }}">
+    <meta property="og:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ shop.name | escape }}">
+    {% if salt_custom_canonical %}
+      <link rel="canonical" href="{{ salt_seo_canonical | escape }}">
+    {% endif %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": {{ shop.name | json }},
+        "url": "https://{{ request.host }}/",
+        "logo": {{ 'brand-salt-logo.png' | asset_url | json }}
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ shop.name | json }},
+        "url": "https://{{ request.host }}/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://{{ request.host }}/shop?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
     <link rel="icon" href="{{ 'favicon.ico' | asset_url }}" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | asset_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | asset_url }}">
@@ -12,13 +96,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-b8f702223de9.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-b8f702223de9.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-b2a3267d0b3f.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-b2a3267d0b3f.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-DFbReH8L.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-DFbReH8L.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-B9zFMTT6.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-B9zFMTT6.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-CXRSgpeD.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CXRSgpeD.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-C_X_zPDJ.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-C_X_zPDJ.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -260,7 +344,13 @@
         }
       })();
     </script>
-    {{ content_for_header }}
+    {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
+    {% if salt_custom_canonical %}
+      {% assign salt_native_canonical_tag = '<link rel="canonical" href="' | append: canonical_url | append: '">' %}
+      {{ salt_content_for_header | remove: salt_native_canonical_tag }}
+    {% else %}
+      {{ salt_content_for_header }}
+    {% endif %}
     {% if request.page_type == 'product' %}
       <script>
         (function () {
@@ -287,7 +377,7 @@
     {% if request.page_type == 'index' %}
       <script>
         (function () {
-          window.__SALT_HOME_PREFETCH__ = {"generatedAt":"2026-08-11T20:06:56.290Z","source":"https://0309d3-72.myshopify.com","total":0,"sources":{"bestSellerProducts":"appplaza-best-sellers","quirkyGiftPicks":"gifts","everydayEssentialProducts":"garden-tools"},"bestSellerProducts":[],"quirkyGiftPicks":[],"everydayEssentialProducts":[]};
+          window.__SALT_HOME_PREFETCH__ = {"generatedAt":"2026-08-12T08:13:08.506Z","source":"https://0309d3-72.myshopify.com","total":0,"sources":{"bestSellerProducts":"appplaza-best-sellers","quirkyGiftPicks":"gifts","everydayEssentialProducts":"garden-tools"},"bestSellerProducts":[],"quirkyGiftPicks":[],"everydayEssentialProducts":[]};
         })();
       </script>
     {% endif %}
@@ -364,8 +454,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-b8f702223de9.js" != blank %}
-      <script type="module" src="{{ "salt-entry-b8f702223de9.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-b2a3267d0b3f.js" != blank %}
+      <script type="module" src="{{ "salt-entry-b2a3267d0b3f.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
