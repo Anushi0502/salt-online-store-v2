@@ -10,8 +10,18 @@
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
+    {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
+    {% assign salt_request_url = salt_content_for_header | split: '"pageurl":"' | last | split: '"' | first | replace: '/', '/' %}
 
-    {% if salt_route == '/pages/finance' or salt_route == '/apps:finance' or salt_route == '/apps/finance' or request.query_string contains 'finance=1' %}
+    {% if salt_route == '/' %}
+      {% assign salt_seo_title = 'SALT Online Store | Curated essentials and giftable finds' %}
+      {% assign salt_seo_description = 'Shop practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/' %}
+      {% assign salt_custom_canonical = true %}
+      {% if salt_request_url contains '?' %}
+        {% assign salt_seo_robots = 'noindex,follow' %}
+      {% endif %}
+    {% elsif salt_route == '/pages/finance' or salt_route == '/apps:finance' or salt_route == '/apps/finance' or salt_request_url contains 'finance=1' %}
       {% assign salt_seo_title = 'SALT Finance | Private Operations' %}
       {% assign salt_seo_description = 'Private SALT operations workspace.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
@@ -20,12 +30,12 @@
       {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
       {% assign salt_custom_canonical = true %}
-      {% if request.query_string contains 'resource=hub' %}
+      {% if salt_request_url contains 'resource=hub' %}
         {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
         {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
         {% assign salt_seo_robots = 'noindex,follow' %}
         {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/resources' %}
-      {% elsif request.query_string != blank %}
+      {% elsif salt_request_url contains '?' %}
         {% assign salt_seo_robots = 'noindex,follow' %}
       {% endif %}
     {% elsif salt_route == '/search' %}
@@ -124,13 +134,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-b2a3267d0b3f.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-b2a3267d0b3f.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-f646f5ebbcd8.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-f646f5ebbcd8.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-CXRSgpeD.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-CXRSgpeD.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-C_X_zPDJ.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-C_X_zPDJ.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-DmxeMNWj.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-DmxeMNWj.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-DDkSaerm.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DDkSaerm.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {% if product.featured_image %}
@@ -372,7 +382,6 @@
         }
       })();
     </script>
-    {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
     {% if salt_custom_canonical %}
       {% assign salt_native_canonical_tag = '<link rel="canonical" href="' | append: canonical_url | append: '">' %}
       {{ salt_content_for_header | remove: salt_native_canonical_tag }}
@@ -482,8 +491,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-b2a3267d0b3f.js" != blank %}
-      <script type="module" src="{{ "salt-entry-b2a3267d0b3f.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-f646f5ebbcd8.js" != blank %}
+      <script type="module" src="{{ "salt-entry-f646f5ebbcd8.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
