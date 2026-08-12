@@ -10,20 +10,12 @@
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
-    {% assign salt_has_query = false %}
-    {% if canonical_url contains '?' %}
-      {% assign salt_has_query = true %}
-    {% endif %}
-    {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
 
     {% if salt_route == '/' %}
       {% assign salt_seo_title = 'SALT Online Store | Curated essentials and giftable finds' %}
       {% assign salt_seo_description = 'Shop practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/' %}
       {% assign salt_custom_canonical = true %}
-      {% if salt_has_query %}
-        {% assign salt_seo_robots = 'noindex,follow' %}
-      {% endif %}
     {% elsif salt_route == '/pages/finance' or salt_route == '/apps:finance' or salt_route == '/apps/finance' %}
       {% assign salt_seo_title = 'SALT Finance | Private Operations' %}
       {% assign salt_seo_description = 'Private SALT operations workspace.' %}
@@ -33,14 +25,6 @@
       {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
       {% assign salt_custom_canonical = true %}
-      {% if canonical_url contains 'resource=hub' %}
-        {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
-        {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
-        {% assign salt_seo_robots = 'noindex,follow' %}
-        {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/resources' %}
-      {% elsif salt_has_query %}
-        {% assign salt_seo_robots = 'noindex,follow' %}
-      {% endif %}
     {% elsif salt_route == '/search' %}
       {% assign salt_seo_title = 'Search SALT Online Store' %}
       {% assign salt_seo_description = 'Search the live SALT catalog for products, collections, and everyday essentials.' %}
@@ -108,6 +92,44 @@
     {% if salt_custom_canonical %}
       <link rel="canonical" href="{{ salt_seo_canonical | escape }}">
     {% endif %}
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var query = window.location.search;
+        var hasQuery = query.length > 1;
+        var isFinance = path === '/pages/finance' || path === '/apps:finance' || path === '/apps/finance' || (path === '/' && /(?:^|&)finance=1(?:&|$)/.test(query.slice(1)));
+        var isQuerySurface = path === '/' || path === '/shop' || path === '/search';
+        if (!isFinance && !(hasQuery && isQuerySurface)) return;
+
+        function ensureMeta(name, content) {
+          var tag = document.querySelector('meta[name="' + name + '"]');
+          if (!tag) {
+            tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            document.head.appendChild(tag);
+          }
+          tag.setAttribute('content', content);
+        }
+
+        ensureMeta('robots', 'noindex,follow');
+        ensureMeta('googlebot', 'noindex,follow');
+
+        var canonicalPath = path;
+        if (path === '/shop' && /(?:^|&)resource=hub(?:&|$)/.test(query.slice(1))) {
+          canonicalPath = '/pages/resources';
+        } else if (path !== '/pages/finance' && path !== '/apps:finance' && path !== '/apps/finance') {
+          canonicalPath = path || '/';
+        }
+
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          canonical = document.createElement('link');
+          canonical.setAttribute('rel', 'canonical');
+          document.head.appendChild(canonical);
+        }
+        canonical.setAttribute('href', window.location.origin + canonicalPath);
+      })();
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
