@@ -1,1 +1,0 @@
-import{ai as a,r as t}from"./salt-entry-b62b5f0725f0.js";import{scheduleMetaPixelTask as r,trackMetaPixelPageView as o}from"./meta-pixel-Cq-t8JW1.js";const i=()=>{const e=a();return t.useEffect(()=>r(o),[e.pathname,e.search]),null};export{i as default};
