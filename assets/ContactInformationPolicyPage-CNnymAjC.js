@@ -1,4 +1,4 @@
-import{c as o,j as e,S as i}from"./salt-entry-f646f5ebbcd8.js";import{O as n}from"./OpenContentPageShell-CZy9TwCB.js";import{M as l}from"./mail-FTZw-kMu.js";import"./InnerBreadcrumbs-CY26eafV.js";/**
+import{c as o,j as e,S as i}from"./index-BGwJnijN.js";import{O as n}from"./OpenContentPageShell-CZy9TwCB.js";import{M as l}from"./mail-FTZw-kMu.js";import"./InnerBreadcrumbs-CY26eafV.js";/**
  * @license lucide-react v0.462.0 - ISC
  *
  * This source code is licensed under the ISC license.

@@ -1,4 +1,4 @@
-import{c as e}from"./salt-entry-f646f5ebbcd8.js";/**
+import{c as e}from"./index-BGwJnijN.js";/**
  * @license lucide-react v0.462.0 - ISC
  *
  * This source code is licensed under the ISC license.

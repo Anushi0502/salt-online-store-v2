@@ -80,6 +80,22 @@
       {% assign salt_seo_robots = 'noindex,follow' %}
     {% endif %}
 
+    {% if request.page_type == 'product' and product %}
+      {%- comment -%}
+        Shopify's native SEO fields belong to the product, but the selected
+        variant is available during Liquid rendering. Include its identity in
+        the request-time metadata so a backpack/bottle/lunch-box variant does
+        not inherit an unrelated product-only title or description.
+      {%- endcomment -%}
+      {% assign salt_selected_variant = product.selected_or_first_available_variant %}
+      {% assign salt_variant_label = salt_selected_variant.title | default: '' | strip %}
+      {% unless salt_variant_label == blank or salt_variant_label == 'Default Title' %}
+        {% assign salt_seo_title = product.title | append: ' - ' | append: salt_variant_label | append: ' | SALT Online Store' %}
+        {% assign salt_variant_description = product.description | strip_html | strip_newlines | truncate: 115 %}
+        {% assign salt_seo_description = salt_variant_description | append: ' Selected option: ' | append: salt_variant_label | append: '.' %}
+      {% endunless %}
+    {% endif %}
+
     <title>{{ salt_seo_title | escape }}</title>
     {% if salt_seo_description != blank %}
       <meta name="description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
@@ -88,6 +104,9 @@
     <meta name="googlebot" content="{{ salt_seo_robots }}">
     <meta property="og:title" content="{{ salt_seo_title | escape }}">
     <meta property="og:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
+    {% if request.page_type == 'product' and salt_selected_variant and salt_selected_variant.featured_image %}
+      <meta property="og:image" content="{{ salt_selected_variant.featured_image | image_url: width: 1200 | escape }}">
+    {% endif %}
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ shop.name | escape }}">
     {% if salt_custom_canonical %}
@@ -160,25 +179,20 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-f646f5ebbcd8.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-f646f5ebbcd8.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-1a0f2a8bb8df.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-1a0f2a8bb8df.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-DmxeMNWj.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-DmxeMNWj.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-DDkSaerm.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-DDkSaerm.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-DDgXYKH_.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-DDgXYKH_.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-BdqwsnkC.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-BdqwsnkC.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
-      {% if product.featured_image %}
-        <link
-          rel="preload"
-          as="image"
-          href="{{ product.featured_image | image_url: width: 960 }}"
-          imagesrcset="{{ product.featured_image | image_url: width: 640 }} 640w, {{ product.featured_image | image_url: width: 960 }} 960w, {{ product.featured_image | image_url: width: 1280 }} 1280w"
-          imagesizes="(min-width: 1024px) 52vw, 100vw"
-          fetchpriority="high"
-        >
-      {% endif %}
+      {%- comment -%}
+        The React PDP selects the live featured image and its responsive URL after
+        the product payload arrives. Preloading product.featured_image here can
+        fetch a different CDN variant and creates a wasted-preload warning.
+      {%- endcomment -%}
       <link rel="preconnect" href="https://magecomp.us" crossorigin>
       <link rel="dns-prefetch" href="//magecomp.us">
       <script>
@@ -440,7 +454,7 @@
     {% if request.page_type == 'index' %}
       <script>
         (function () {
-          window.__SALT_HOME_PREFETCH__ = {"generatedAt":"2026-08-12T08:13:08.506Z","source":"https://0309d3-72.myshopify.com","total":0,"sources":{"bestSellerProducts":"appplaza-best-sellers","quirkyGiftPicks":"gifts","everydayEssentialProducts":"garden-tools"},"bestSellerProducts":[],"quirkyGiftPicks":[],"everydayEssentialProducts":[]};
+          window.__SALT_HOME_PREFETCH__ = {"generatedAt":"2026-08-13T11:07:49.251Z","source":"https://0309d3-72.myshopify.com","total":0,"sources":{"bestSellerProducts":"appplaza-best-sellers","quirkyGiftPicks":"gifts","everydayEssentialProducts":"garden-tools"},"bestSellerProducts":[],"quirkyGiftPicks":[],"everydayEssentialProducts":[]};
         })();
       </script>
     {% endif %}
@@ -517,8 +531,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-f646f5ebbcd8.js" != blank %}
-      <script type="module" src="{{ "salt-entry-f646f5ebbcd8.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-1a0f2a8bb8df.js" != blank %}
+      <script type="module" src="{{ "salt-entry-1a0f2a8bb8df.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
