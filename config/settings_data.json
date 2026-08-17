@@ -26,8 +26,6 @@
           "background_color": "#FFFFFF",
           "font_color": "#000000",
           "button_color": "#000000",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
@@ -44,6 +42,16 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "16265478094627758095": {
+        "type": "shopify://apps/avada-estimated-delivery-date/blocks/app-embed/019d9af8-5592-7f52-a533-082d8f06d58b",
+        "disabled": false,
+        "settings": {}
+      },
+      "10431957531522714341": {
+        "type": "shopify://apps/seowill-page-speed/blocks/pagespeed-preloading/b6edaf80-ee08-4404-951c-d8f577b5c1b1",
         "disabled": false,
         "settings": {}
       }
