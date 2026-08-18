@@ -13,7 +13,7 @@
     "blocks": {
       "6986023734925475395": {
         "type": "shopify://apps/avada-affiliate-marketing/blocks/avada-affiliate/019d766f-ee92-73f3-9dcc-936a05227dd6",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "15683396631634586217": {
@@ -52,7 +52,7 @@
       },
       "10431957531522714341": {
         "type": "shopify://apps/seowill-page-speed/blocks/pagespeed-preloading/b6edaf80-ee08-4404-951c-d8f577b5c1b1",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }

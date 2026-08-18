@@ -184,30 +184,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if request.page_type == 'index' %}
-      <script>
-        (function () {
-          // Start the live homepage catalog request before the React route chunk
-          // evaluates. HomeHero renders a stable shell until this promise is
-          // ready, so a previous curated fallback can never flash first.
-          var homeCollectionUrl = {{ 'data-home-collection-products.json' | asset_url | json }};
-          window.__SALT_HOME_COLLECTION_PREFETCH__ = fetch(homeCollectionUrl, {
-            cache: 'no-cache',
-            credentials: 'same-origin'
-          }).then(function (response) {
-            if (!response.ok) throw new Error('Homepage collection preload failed (' + response.status + ')');
-            return response.json();
-          });
-        })();
-      </script>
+    {% if "salt-entry-8f2df34a6d12.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-8f2df34a6d12.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if "salt-entry-8c4ab5caadc2.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-8c4ab5caadc2.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-BY8GMXTb.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-BY8GMXTb.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-VCbm4ySj.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-VCbm4ySj.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-7Y_dKU7e.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-7Y_dKU7e.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-B1nI-Ts4.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-B1nI-Ts4.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -457,18 +440,14 @@
           if (!match) return;
 
           var handle = decodeURIComponent(match[1]);
-          var url = '/products/' + encodeURIComponent(handle) + '.js';
           var inlineProduct = {{ product | json }};
           window.__SALT_PRODUCT_PREFETCH__ = {
             handle: handle.toLowerCase(),
             raw: inlineProduct && inlineProduct.id ? inlineProduct : null,
-            // Use the inline payload for the first paint, but always revalidate
-            // the direct product endpoint so storefront prices cannot remain
-            // stuck on an older document snapshot.
-            payload: fetch(url, { cache: 'no-cache', credentials: 'same-origin' }).then(function (response) {
-              if (!response.ok) throw new Error('Product preload failed (' + response.status + ')');
-              return response.json();
-            }),
+            // The request-time Liquid payload is already available to React.
+            // Do not start a second unused .js request before the PDP mounts;
+            // intentional pointer/focus navigation can still warm the live
+            // product query when the shopper actually chooses a product.
           };
         })();
       </script>
@@ -553,8 +532,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-8c4ab5caadc2.js" != blank %}
-      <script type="module" src="{{ "salt-entry-8c4ab5caadc2.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-8f2df34a6d12.js" != blank %}
+      <script type="module" src="{{ "salt-entry-8f2df34a6d12.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}

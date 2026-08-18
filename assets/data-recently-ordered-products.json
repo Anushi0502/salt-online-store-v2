@@ -1,8 +1,32 @@
 {
-  "generatedAt": "2026-08-17T10:17:04.951Z",
+  "generatedAt": "2026-08-18T10:36:14.321Z",
   "source": "shopify-admin-orders-with-deterministic-catalog-floor-fill",
   "total": 300,
   "products": [
+    {
+      "id": "gid://shopify/Product/8066146074723",
+      "title": "500000MAH Power Bank 120W Fast Charging Large Capacity Power Bank Pd",
+      "handle": "500000mah-power-bank-120w-fast-charging-large-capacity-power-bank-pd-20w-suitable-for-all-mobile-phones-long-endurance",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Saeff1af4e72f4a8fbed5d113afa3cdf2a.webp?v=1784029856",
+      "imageAlt": "500000MAH Power Bank 120W Fast Charging Large Capacity Power Bank Pd",
+      "price": 50.99
+    },
+    {
+      "id": "gid://shopify/Product/8058568999011",
+      "title": "Comb Anime Kpop Demon Hunters Air",
+      "handle": "comb-anime-kpop-demon-hunters-air-cushion-comb-series-cute-cartoon-peripheral-household-fashion-girl-student-comb-fan-club-gifts",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S78c61ab85fa84c88959b6fd66296fe09j.webp?v=1783503204",
+      "imageAlt": "Comb Anime Kpop Demon Hunters Air",
+      "price": 69.99
+    },
+    {
+      "id": "gid://shopify/Product/8059448885347",
+      "title": "Mens Health Cream Deep Hydration Nourishment",
+      "handle": "엄지발가mens-health-cream-deep-hydration-nourishment-active-energy-moisturiser-for-health-fast-absorbing-massage-body-cream-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdf694c59477e4439ba231591a2411564q.webp?v=1783515539",
+      "imageAlt": "Mens Health Cream Deep Hydration Nourishment",
+      "price": 59.99
+    },
     {
       "id": "gid://shopify/Product/8058369704035",
       "title": "Haircare Essential Oil Hair Spray Moisturizing",
@@ -68,20 +92,12 @@
       "price": 74.99
     },
     {
-      "id": "gid://shopify/Product/8059448885347",
-      "title": "Mens Health Cream Deep Hydration Nourishment",
-      "handle": "엄지발가mens-health-cream-deep-hydration-nourishment-active-energy-moisturiser-for-health-fast-absorbing-massage-body-cream-for-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdf694c59477e4439ba231591a2411564q.webp?v=1783515539",
-      "imageAlt": "Mens Health Cream Deep Hydration Nourishment",
-      "price": 59.99
-    },
-    {
       "id": "gid://shopify/Product/8094187061347",
       "title": "Business Mens Trousers Formal Groom Tuxedo",
       "handle": "business-mens-trousers-formal-groom-tuxedo-party-prom-regualr-tall-fit-pants-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbf926746b42940f7921a2065dd2a7eb9O.webp?v=1785572419",
       "imageAlt": "Business Mens Trousers Formal Groom Tuxedo",
-      "price": 46.99
+      "price": 50.29
     },
     {
       "id": "gid://shopify/Product/8060554510435",
@@ -417,7 +433,7 @@
       "handle": "6-color-blush-palette-large-size-natural-contouring-makeup-matte-blush-beauty-palette-long-lasting-coverage",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
       "imageAlt": "Color Blush Palette Large Size Natural",
-      "price": 40.11
+      "price": 45.7
     },
     {
       "id": "gid://shopify/Product/8055589109859",
@@ -545,7 +561,7 @@
       "handle": "1-4-10-20-pair-of-football-socks-mens-sports-socks-mid-calf-socks-silicone-non-slip-dot-socks-basketball-yoga-socks-for-women",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3c8f2458adb047e0a60dcf5d409470d7b.webp?v=1784030492",
       "imageAlt": "1 4 10 20 Pair Of Football Socks Men S Sports Socks Mid Calf",
-      "price": 45.99
+      "price": 47.73
     },
     {
       "id": "gid://shopify/Product/8076868943971",
@@ -688,7 +704,7 @@
       "title": "Slim Fit Casual Trousers",
       "handle": "stretch-jean-mens-slim-fit-casual-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se98c844ba52d4ce0ac5b0610bf9f95f01.webp?v=1744354281",
-      "imageAlt": "Slim Fit Casual Trousers",
+      "imageAlt": "Slim Fit Casual Trousers jeans",
       "price": 64.99
     },
     {
@@ -1224,7 +1240,7 @@
       "title": "Slim Fit Denim Pants",
       "handle": "mens-stretch-loose-straight-jeans-casual-elastic-slim-fit-denim-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S24d35093ad8e4db9942e61d2b71aba1fT.webp?v=1765531816",
-      "imageAlt": "Slim Fit Denim Pants",
+      "imageAlt": "Slim Fit Denim Pants jeans",
       "price": 69.99
     },
     {
@@ -1232,7 +1248,7 @@
       "title": "Slim Stretch Denim Trousers",
       "handle": "mens-fashion-business-jeans-classic-style-slim-stretch-denim-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S67209f09f78c427aa41cb18524aaf3bcI.webp?v=1744354274",
-      "imageAlt": "Slim Stretch Denim Trousers",
+      "imageAlt": "Slim Stretch Denim Trousers jeans",
       "price": 54.99
     },
     {
@@ -1280,7 +1296,7 @@
       "title": "Men S Long Sleeve Dress For Daily And Casual Outfit Styling Men S S",
       "handle": "mens-embroidered-islamic-thobe-long-sleeved-arabic-loose-robe-dress",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S45e194a9edd9462fad26aa5cbe09cdc0u.webp?v=1765791750",
-      "imageAlt": "Men S Long Sleeve Dress For Daily And Casual Outfit Styling Men S S",
+      "imageAlt": "Men S Long Sleeve Dress For Daily And Casual Outfit Styling Men S S men's thobe robe",
       "price": 84.99
     },
     {
@@ -1304,7 +1320,7 @@
       "title": "Men S Casual Wide Leg Pants For Daily And Casual Outfit Styling",
       "handle": "mens-wide-leg-baggy-jeans-retro-blue-denim-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S557c6a7f6c434fcf8bb1cf1090812afc1.webp?v=1744023673",
-      "imageAlt": "Men S Casual Wide Leg Pants For Daily And Casual Outfit Styling",
+      "imageAlt": "Men S Casual Wide Leg Pants For Daily And Casual Outfit Styling jeans",
       "price": 109.99
     },
     {
@@ -1328,7 +1344,7 @@
       "title": "10 Piece Pots And Pans Set",
       "handle": "10-piece-pots-and-pans-set-for-kitchen-accessories",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5473caa370714f35a18f8b0a65a19fd4y.webp?v=1754983283",
-      "imageAlt": "10 Piece Pots And Pans Set",
+      "imageAlt": "10 Piece Pots And Pans Set cookware set",
       "price": 209.99
     },
     {
@@ -1376,7 +1392,7 @@
       "title": "Spring Casual Pants Mens Straight Fit",
       "handle": "new-spring-casual-pants-mens-straight-fit-stretch-chino-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seb4c0aa04e3842cdaada107c35dbae94L.webp?v=1746007827",
-      "imageAlt": "Spring Casual Pants Mens Straight Fit",
+      "imageAlt": "Spring Casual Pants Mens Straight Fit trousers",
       "price": 109.99
     },
     {
@@ -1504,7 +1520,7 @@
       "title": "Slim Fit Denim Trousers",
       "handle": "mens-elastic-slim-white-jeans-korean-fashion-slim-fit-denim-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H87ed56fb66c847c6b523d2443a6a9cacF.webp?v=1746008952",
-      "imageAlt": "Slim Fit Denim Trousers",
+      "imageAlt": "Slim Fit Denim Trousers jeans",
       "price": 129.99
     },
     {
@@ -1559,8 +1575,8 @@
       "id": "gid://shopify/Product/7769707151459",
       "title": "Slim Fit Casual Pants Business Stretch",
       "handle": "mens-cotton-slim-fit-casual-pants-business-fashion-stretch-trousers",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S45e52529be324a20a62380f98b8432eaQ.webp?v=1744717550",
-      "imageAlt": "Slim Fit Casual Pants Business Stretch",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa1089cf6cfbd41c7bd65394c6a9fdf3cp.webp?v=1744717551",
+      "imageAlt": "Slim Fit Casual Pants Business Stretch trousers",
       "price": 109.99
     },
     {
@@ -1616,7 +1632,7 @@
       "title": "Men S Classic Casual Shirt For Daily And Casual Outfit Styling T T T",
       "handle": "classic-civic-type-r-t-shirt-jdm-legends-summer-print",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8a3c365ca39e43c89ddab35f288a26d7b.webp?v=1743674027",
-      "imageAlt": "Men S Classic Casual Shirt For Daily And Casual Outfit Styling T T T",
+      "imageAlt": "Men S Classic Casual Shirt For Daily And Casual Outfit Styling T T T t-shirt",
       "price": 50.99
     },
     {
@@ -1776,7 +1792,7 @@
       "title": "Wooden Dog Nail File",
       "handle": "wooden-dog-nail-file-manual-scratching-board-for-puppy-nail-care",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb2a1e9b2c34847e1a2bd4f6ceaa58733L.webp?v=1740739488",
-      "imageAlt": "Wooden Dog Nail File",
+      "imageAlt": "Wooden Dog Nail File pet",
       "price": 44.99
     },
     {
@@ -1920,7 +1936,7 @@
       "title": "Slim Stretch Denim Trousers",
       "handle": "mens-fashion-business-jeans-classic-style-slim-stretch-denim-trousers-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44b66b69da3a4b6a948bf9674d38ce7au_1a9ae467-0a22-47a5-b106-5d170c0d0a81.webp?v=1744354277",
-      "imageAlt": "Slim Stretch Denim Trousers",
+      "imageAlt": "Slim Stretch Denim Trousers jeans",
       "price": 64.99
     },
     {
@@ -1992,7 +2008,7 @@
       "title": "Stretch Skinny Denim Pants Harajuku Hip",
       "handle": "mens-stretch-skinny-denim-pants-harajuku-hip-hop-style",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se00033c3bc854a6abbb1b7c9a1a8bddaW.webp?v=1744023674",
-      "imageAlt": "Stretch Skinny Denim Pants Harajuku Hip",
+      "imageAlt": "Stretch Skinny Denim Pants Harajuku Hip jeans",
       "price": 109.99
     },
     {
@@ -2020,390 +2036,374 @@
       "price": 54.99
     },
     {
-      "id": "gid://shopify/Product/8051178569827",
-      "title": "Sport Smart Watch Fitness Clock Health",
-      "handle": "1-83-sport-smart-watch-fitness-clock-health-monitor-waterproof-smartwatch-wireless-call-watches-for-men-women-ios-android-2025",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa00e884d99284302a2dfb90a761cbe37X.webp?v=1782911253",
-      "imageAlt": "Sport Smart Watch Fitness Clock Health",
-      "price": 109.99
+      "id": "gid://shopify/Product/8094212816995",
+      "title": "Men T Shirts You Deserve Sunshine Scott Hunter Kip Grady Cotton Tee",
+      "handle": "men-t-shirts-you-deserve-sunshine-scott-hunter-kip-grady-cotton-tee-shirt-short-sleeve-heated-rivalry-t-shirt-printing",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9a5d79b57b694f52b225007b70c3a4d80.webp?v=1785573299",
+      "imageAlt": "Men T Shirts You Deserve Sunshine Scott Hunter Kip Grady Cotton Tee",
+      "price": 48.99
     },
     {
-      "id": "gid://shopify/Product/8051179061347",
-      "title": "Waterproof Smart Watch",
-      "handle": "1-83-waterproof-smart-watch-with-message-answer-call-sleep-monitoring-sports-pedometer-information-alerts-for-iphone-android",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S434f9dc9faa24d7a8b6e8744e0d5e89aj.webp?v=1782911265",
-      "imageAlt": "Waterproof Smart Watch",
-      "price": 109.99
+      "id": "gid://shopify/Product/8055605035107",
+      "title": "Mens Casual Long Sleeve Button Down",
+      "handle": "mens-casual-long-sleeve-button-down-shirts-cotton-linen-blend-chest-pockets-regular-fit-work-shirt-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S99116545abda4d4ca5efd3cfd0c28477P.webp?v=1783412662",
+      "imageAlt": "Mens Casual Long Sleeve Button Down",
+      "price": 64.99
     },
     {
-      "id": "gid://shopify/Product/8051173326947",
-      "title": "Khaki Wavy Straw Hat Daisy Ribbon",
-      "handle": "1pcs-girls-khaki-wavy-straw-hat-with-daisy-ribbon-summer-beach-sun-hat-suitable-for-kids-aged-3-8",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S33c98f55832648f8ab67588f0fc8bb1f4.webp?v=1782910446",
-      "imageAlt": "Khaki Wavy Straw Hat Daisy Ribbon",
-      "price": 129.99
+      "id": "gid://shopify/Product/8094212718691",
+      "title": "T Shirt For Men 2023 Summer Hip Hop Anime New Fashion Clothing",
+      "handle": "t-shirt-for-men-2023-summer-hip-hop-anime-new-fashion-clothing-harajuku-retro-oversized-manga-goth-streetwear-vintage-t-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H7f1b8c384bd144d9a826e40fdd4fced6s.webp?v=1785573292",
+      "imageAlt": "T Shirt For Men 2023 Summer Hip Hop Anime New Fashion Clothing",
+      "price": 40.99
     },
     {
-      "id": "gid://shopify/Product/8051180175459",
-      "title": "Watch Watches Top Brand",
-      "handle": "2021-new-watch-women-watches-set-top-brand-luxury-gold-waterproof-quartz-wrist-watch-ladies-clock-fashion-simple-women-relogio",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Hd49bb16cc6ec48a3987be5b1a161b82dW.webp?v=1782911295",
-      "imageAlt": "Watch Watches Top Brand",
-      "price": 169.99
+      "id": "gid://shopify/Product/8111372402787",
+      "title": "Solid Color Off Shoulder Sleeveless Maxi Dress",
+      "handle": "solid-color-off-shoulder-sleeveless-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/7ebe6c23-da37-49bd-baca-34dbabaac999.jpg?v=1786991873",
+      "imageAlt": "Solid Color Off Shoulder Sleeveless Maxi Dress",
+      "price": 59.99
     },
     {
-      "id": "gid://shopify/Product/8051180109923",
-      "title": "Watch Small Dial Square",
-      "handle": "2023-new-women-watch-luxury-style-small-dial-square-fashion-retro-braided-chain-leather-steel-strap-pointer-quartz-simple-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9ba046bdd2544137819b53b4c5d9ab86p.webp?v=1782911291",
-      "imageAlt": "Watch Small Dial Square",
-      "price": 319.99
+      "id": "gid://shopify/Product/8111372271715",
+      "title": "Black Long Sleeve Belted Mini Blazer Dress",
+      "handle": "black-long-sleeve-belted-mini-blazer-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/55e15f70-d7a3-4f49-b08e-38b13da4ff45.jpg?v=1786991829",
+      "imageAlt": "Black Long Sleeve Belted Mini Blazer Dress",
+      "price": 87.48
     },
     {
-      "id": "gid://shopify/Product/8051180765283",
-      "title": "Hot Diamond Watch Elegant Iced Jewelry",
-      "handle": "2024-hot-fashion-diamond-watch-for-women-elegant-iced-jewelry-watches-girl-sport-rubber-strap-tonneau-wristwatch-ladies-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd0a90ce8c9cc447cb909a6e9c6b90e31U.webp?v=1782911411",
-      "imageAlt": "Hot Diamond Watch Elegant Iced Jewelry",
-      "price": 229.99
+      "id": "gid://shopify/Product/8111371124835",
+      "title": "Butt Lifting High Waisted Nude Feel Yoga Pants For Women",
+      "handle": "butt-lifting-high-waisted-nude-feel-yoga-pants-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/91b6c435-ed44-4add-8045-03b21ceefe3e_trans.jpg?v=1786991528",
+      "imageAlt": "Butt-lifting High-waisted Nude-feel Yoga Pants For Women",
+      "price": 82.11
     },
     {
-      "id": "gid://shopify/Product/8051176603747",
-      "title": "Smart Watch Inch Full Touch Screen",
-      "handle": "2024-new-smart-watch-men-1-5-inch-full-touch-screen-bluetooth-call-business-man-watches-fitnes-sports-smartwatch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sab4e4e055b424fd9b5ee88ebdf2ea886B.webp?v=1782911152",
-      "imageAlt": "Smart Watch Inch Full Touch Screen",
-      "price": 129.99
+      "id": "gid://shopify/Product/8111372927075",
+      "title": "Denim Utility Jeans With Knot Tied Elements",
+      "handle": "denim-utility-jeans-with-knot-tied-elements",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/c8da12bb-7af2-4dde-959f-380d42015181.jpg?v=1786991997",
+      "imageAlt": "Denim Utility Jeans With Knot Tied Elements",
+      "price": 69.85
     },
     {
-      "id": "gid://shopify/Product/8051179389027",
-      "title": "Smart Watch Android Phone Inch Color",
-      "handle": "2024-smart-watch-android-phone-1-44-inch-color-screen-bluetooth-call-blood-oxygen-pressure-monitoring-smart-watch-women-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f8b6993000842c0bb5622421859de2bf.webp?v=1782911273",
-      "imageAlt": "Smart Watch Android Phone Inch Color",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111373942883",
+      "title": "Elegant Solid Color Belted Blazer High Waist Pants Set",
+      "handle": "elegant-solid-color-belted-blazer-high-waist-pants-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/bf55db0f-55c4-4a20-b3fd-f97aa65b1fea.jpg?v=1786992294",
+      "imageAlt": "Elegant Solid Color Belted Blazer High Waist Pants Set",
+      "price": 128.85
     },
     {
-      "id": "gid://shopify/Product/8051178668131",
-      "title": "Gps Smart Watch Inch Hd Amoled",
-      "handle": "2025-new-gps-smart-watch-men-1-96-inch-hd-amoled-screen-compass-bluetooth-call-5atm-waterproof-sport-smart-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0c98aa0d64b243a5818db868890eb7d7L.webp?v=1782911254",
-      "imageAlt": "Gps Smart Watch Inch Hd Amoled",
-      "price": 249.99
+      "id": "gid://shopify/Product/8111371911267",
+      "title": "Halter Neck Mesh Beaded Suspender Dress Two Piece Set",
+      "handle": "halter-neck-mesh-beaded-suspender-dress-two-piece-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/5500e0e0-2cd1-4aa1-8252-5ef0e95946a0.jpg?v=1786991746",
+      "imageAlt": "Halter Neck Mesh Beaded Suspender Dress Two Piece Set",
+      "price": 76.28
     },
     {
-      "id": "gid://shopify/Product/8051176669283",
-      "title": "Smart Watch Dialing Answering Calls Exercise",
-      "handle": "2025-new-smart-watch-dialing-answering-calls-exercise-tracking-heart-rate-sleep-monitor-bluetooth-smartwatch-man-woman-gift-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b24231156474860aac4278935131a16s.webp?v=1782911153",
-      "imageAlt": "Smart Watch Dialing Answering Calls Exercise",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111374172259",
+      "title": "Light Gray V Neck Asymmetrical Button Top Wide Leg Pants Set",
+      "handle": "light-gray-v-neck-asymmetrical-button-top-wide-leg-pants-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/0261cf98-4c7e-4c54-ad90-67ba9fbf13a5.jpg?v=1786992348",
+      "imageAlt": "Light Gray V Neck Asymmetrical Button Top Wide Leg Pants Set",
+      "price": 123.17
     },
     {
-      "id": "gid://shopify/Product/8051177160803",
-      "title": "Smart Watch Fitness Sport Bracelet",
-      "handle": "2025-new-smart-watch-for-men-women-fitness-sport-smart-bracelet-heart-rate-blood-oxygen-health-monitor-waterproof-smartwatch-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa5f837cafad0444b827b4f3ef1e272b9O.webp?v=1782911229",
-      "imageAlt": "Smart Watch Fitness Sport Bracelet",
-      "price": 209.99
+      "id": "gid://shopify/Product/8111374958691",
+      "title": "Sequin Bodice Mermaid Evening Gown",
+      "handle": "sequin-bodice-mermaid-evening-gown",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/b4ac6877-fc1f-4658-8abf-365327e422fb.jpg?v=1786992465",
+      "imageAlt": "Sequin Bodice Mermaid Evening Gown 4",
+      "price": 160.3
     },
     {
-      "id": "gid://shopify/Product/8051178733667",
-      "title": "Smart Watch Camera Take Photos Record",
-      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S102372ff308e423fb414a4d648232020E.webp?v=1782911257",
-      "imageAlt": "Smart Watch Camera Take Photos Record",
-      "price": 179.99
+      "id": "gid://shopify/Product/8111371976803",
+      "title": "Solid Color Long Sleeve Slit Maxi Dress",
+      "handle": "solid-color-long-sleeve-slit-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/8d539c15-ac8b-418f-aab5-b609c3177a78.jpg?v=1786991767",
+      "imageAlt": "Solid Color Long Sleeve Slit Maxi Dress",
+      "price": 52.37
     },
     {
-      "id": "gid://shopify/Product/8051178831971",
-      "title": "Smart Watch Camera Take Photos Record",
-      "handle": "2025-new-smart-watch-men-women-camera-take-photos-record-video-health-monitor-sports-fitness-waterproof-bt-call-smartwatch-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S288dfddbcaed47d5855e89d82016824fz.webp?v=1782911259",
-      "imageAlt": "Smart Watch Camera Take Photos Record",
-      "price": 209.99
+      "id": "gid://shopify/Product/8111372140643",
+      "title": "Solid Color Off Shoulder Slit Bodycon Dress",
+      "handle": "solid-color-off-shoulder-slit-bodycon-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/ceecd13f-872d-4ddb-aeab-e13c353553ca.jpg?v=1786991803",
+      "imageAlt": "Solid Color Off Shoulder Slit Bodycon Dress",
+      "price": 64.14
     },
     {
-      "id": "gid://shopify/Product/8051178176611",
-      "title": "Display High Definition Screen Android Os",
-      "handle": "2025-new-smartwatch-1-85-inch-display-high-definition-screen-android-os-4g-sim-card-180-rotating-camera-waterproof-wifi-gps",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f2ecfc611d44f71af6c53eb031a728aC.webp?v=1782911244",
-      "imageAlt": "Display High Definition Screen Android Os",
-      "price": 249.99
+      "id": "gid://shopify/Product/8111373418595",
+      "title": "Womens Autumn Winter Plaid A Line Tiered Skirt",
+      "handle": "womens-autumn-winter-plaid-a-line-tiered-skirt",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/95ca1d42-f7c9-4290-81cc-608d963525b4_fine.jpg?v=1786992164",
+      "imageAlt": "Womens Autumn Winter Plaid A-Line Tiered Skirt",
+      "price": 54.46
     },
     {
-      "id": "gid://shopify/Product/8051178111075",
-      "title": "Waterproof Smart Watch",
-      "handle": "2025-new-smartwatch-men-for-women-militray-outdoor-gps-track-sport-watches-heart-rate-sleep-waterproof-smart-watch-ios-android",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S08b9ce801bcc429189d29f556d00381e2.webp?v=1782911243",
-      "imageAlt": "Waterproof Smart Watch",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111371255907",
+      "title": "2026 European Style Women S Stretch Waist Short Skirt Casual Pants",
+      "handle": "2026-european-style-women-s-stretch-waist-short-skirt-casual-pants-summer-fashion-solid-color-drawstring-sports-shorts",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/d9aafb9b-a627-49b7-ac6f-010fc5061d76.jpg?v=1786991546",
+      "imageAlt": "2026 European Style Women S Stretch Waist Short Skirt Casual Pants Summer Fashion Solid Color Drawstring Sports Shorts",
+      "price": 58.82
     },
     {
-      "id": "gid://shopify/Product/8051181191267",
-      "title": "Womens Quartz Watch 3d Floral Dial",
-      "handle": "2025-new-womens-quartz-watch-3d-floral-dial-screw-down-crown-includes-gift-box",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb1a2644539b248b6b3ea0c44e659e30dv.webp?v=1782911415",
-      "imageAlt": "Womens Quartz Watch 3d Floral Dial",
-      "price": 129.99
+      "id": "gid://shopify/Product/8058370916451",
+      "title": "Inhibitor Oil Long Lasting",
+      "handle": "20pcs-natural-hair-growth-inhibitor-oil-long-lasting-reduction-with-jojoba-almond-oil-for-smooth-silky-skin-all-skin-types",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4eada9e19bf24e75ae0ee06c3ad506ecF_9e69138b-fdf8-4179-9ff9-53782135c3b4.webp?v=1783499448",
+      "imageAlt": "Inhibitor Oil Long Lasting",
+      "price": 189.99
     },
     {
-      "id": "gid://shopify/Product/8051179978851",
-      "title": "Womens Watch Lige Elegant Bracelet Ladies",
-      "handle": "2025-new-womens-watch-lige-fashion-elegant-bracelet-ladies-watch-outdoor-sports-waterproof-quartz-watches-for-women-reloj-mujer",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44094db2a6304589b62121d9990a26d3v.webp?v=1782911289",
-      "imageAlt": "Womens Watch Lige Elegant Bracelet Ladies",
-      "price": 94.99
+      "id": "gid://shopify/Product/8111371616355",
+      "title": "Advertising Gaming Mouse Pad Manufacturers",
+      "handle": "advertising-gaming-mouse-pad-manufacturers",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/e0b97551-1b5b-4633-b37f-a250c13c4bdd.jpg?v=1786991629",
+      "imageAlt": "Advertising Gaming Mouse Pad Manufacturers",
+      "price": 47.39
     },
     {
-      "id": "gid://shopify/Product/8051177685091",
-      "title": "Smart Watch Hd Screen Bluetooth Call",
-      "handle": "2025-smart-watch-1-90-hd-screen-bluetooth-call-heart-rate-monitoring-120-sports-modes-waterproof-for-men-woman-smartwatch-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3d0c1c26d0e3454f855c0bef20125169m.webp?v=1782911238",
-      "imageAlt": "Smart Watch Hd Screen Bluetooth Call",
-      "price": 109.99
+      "id": "gid://shopify/Product/8058377568355",
+      "title": "African Layden Oil Made Ancient Methods",
+      "handle": "african-layden-oil-made-by-ancient-methods-grow-your-hair-faster-longer-visible-results-stop-breakage-promotes-hair-growth",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8fd988d3b18445439ef5b0f37b7f7517J.webp?v=1783499717",
+      "imageAlt": "African Layden Oil Made Ancient Methods",
+      "price": 64.99
     },
     {
-      "id": "gid://shopify/Product/8051178930275",
-      "title": "Smart Watch Android IOS Phone Inch",
-      "handle": "2025-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S07c4003f235d40939b857c37bc924be4U.webp?v=1782911263",
-      "imageAlt": "Smart Watch Android IOS Phone Inch",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111372468323",
+      "title": "Black And White Contrast Tube Top Dress",
+      "handle": "black-and-white-contrast-tube-top-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/0aea5f7d-be18-426e-a16c-1bd9794f3db8.jpg?v=1786991882",
+      "imageAlt": "Black And White Contrast Tube Top Dress",
+      "price": 52.94
     },
     {
-      "id": "gid://shopify/Product/8051176505443",
-      "title": "Trending Smartwatch Smart Watch Dial Full",
-      "handle": "2025-trending-smartwatch-2025-smart-watch-dial-full-netcom-4g-kids-1-85in-screen-video-photo-waterproof-positioning-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S65cb8dd190e74925941bdca79a1a0c2b4.webp?v=1782911150",
-      "imageAlt": "Trending Smartwatch Smart Watch Dial Full",
-      "price": 319.99
+      "id": "gid://shopify/Product/8111372632163",
+      "title": "Black Deep V Backless Long Sleeve Dress",
+      "handle": "black-deep-v-backless-long-sleeve-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/ab0e8a12-07b3-4049-a02e-9b0c07b751d1.jpg?v=1786991920",
+      "imageAlt": "Black Deep V Backless Long Sleeve Dress",
+      "price": 65.76
     },
     {
-      "id": "gid://shopify/Product/8051180732515",
-      "title": "Watches Small Round Watch Golden",
-      "handle": "2025-women-watches-small-round-watch-golden-luxury-wristwatches-ladies-fashion-gold-bracelet-watch-female-elegant-clock-women",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d0d1967090d4663a2689f5674cd9b3e8.webp?v=1782911411",
-      "imageAlt": "Watches Small Round Watch Golden",
-      "price": 89.99
+      "id": "gid://shopify/Product/8111372337251",
+      "title": "Black Rhinestone Backless Bodycon Dress",
+      "handle": "black-rhinestone-backless-bodycon-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/0eb68668-4cd5-4e55-b087-3470fc8cadc2.jpg?v=1786991850",
+      "imageAlt": "Black Rhinestone Backless Bodycon Dress",
+      "price": 59.89
     },
     {
-      "id": "gid://shopify/Product/8051181224035",
-      "title": "Womens Watch Vintage Classic Dial Casual",
-      "handle": "2025-womens-watch-vintage-classic-fashion-dial-casual-steel-strip-strap-gold-rose-feminine-casual-quartz-wristwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S65355c16cfdd4762b06653b52f06f177F.webp?v=1782911416",
-      "imageAlt": "Womens Watch Vintage Classic Dial Casual",
-      "price": 89.99
+      "id": "gid://shopify/Product/8111374663779",
+      "title": "Black Sequin Halter Neck Mermaid Gown With Full Sparkle Detail",
+      "handle": "black-sequin-halter-neck-mermaid-gown-with-full-sparkle-detail",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/bebc7725-ed98-4833-a44e-9dad051d7ee9.jpg?v=1786992426",
+      "imageAlt": "Black Sequin Halter Neck Mermaid Gown With Full Sparkle Detail 4",
+      "price": 255.63
     },
     {
-      "id": "gid://shopify/Product/8051172245603",
-      "title": "Held Small Square Bag Summer Classic",
-      "handle": "2026-girls-slung-hand-held-small-square-bag-2026-summer-new-classic-children-carrying-one-shoulder-messenger-bag-wallet-keychain",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7c8a7eebe5db4b4eb71dfbaefcf3fe18u.webp?v=1782910420",
-      "imageAlt": "Held Small Square Bag Summer Classic",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111373910115",
+      "title": "Black Two Piece Beaded Zipper Top Skirt Set",
+      "handle": "black-two-piece-beaded-zipper-top-skirt-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/6f6678a0-6ae9-4e18-baf2-e226a53d9bd8.jpg?v=1786992283",
+      "imageAlt": "Black Two Piece Beaded Zipper Top Skirt Set",
+      "price": 118.07
     },
     {
-      "id": "gid://shopify/Product/8051173523555",
-      "title": "Purpose Golf Accessory Bag Firm Structured",
-      "handle": "2026-latest-ladies-golf-shoulder-handbag-multi-purpose-golf-accessory-bag-firm-structured-design-portable-hand-tote-bag",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6a1440080db341bcb5847af9ce75eaeeM.webp?v=1782910451",
-      "imageAlt": "Purpose Golf Accessory Bag Firm Structured",
-      "price": 339.99
+      "id": "gid://shopify/Product/8111372238947",
+      "title": "Brown Swoosh Collar Sleeveless Maxi Dress",
+      "handle": "brown-swoosh-collar-sleeveless-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/dd02fdd5-6ecc-46bb-bcf0-c2d250eaaa2e.jpg?v=1786991817",
+      "imageAlt": "Brown Swoosh Collar Sleeveless Maxi Dress",
+      "price": 75.71
     },
     {
-      "id": "gid://shopify/Product/8051180240995",
-      "title": "LED Digital Watch Sports Waterproof Watches",
-      "handle": "2026-led-digital-watch-for-kids-boys-sports-waterproof-watches-girls-silicone-digital-watch-casual-childrens-electronic-reloj",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44666fd333e845f69b69e8a1cd09726fH.webp?v=1782911296",
-      "imageAlt": "LED Digital Watch Sports Waterproof Watches",
-      "price": 89.99
+      "id": "gid://shopify/Product/8111371649123",
+      "title": "Bud Shaped Straight Leg Floor Length Pants",
+      "handle": "bud-shaped-straight-leg-floor-length-pants",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/2b5a037d-27fa-4e53-9388-d749ab827142_water.jpg?v=1786991644",
+      "imageAlt": "Bud-shaped Straight-leg Floor-length Pants",
+      "price": 51.09
     },
     {
-      "id": "gid://shopify/Product/8051177521251",
-      "title": "Gps Track Smart Watch Inch Hd",
-      "handle": "2026-new-gps-track-smart-watch-men-1-85-inch-hd-amoled-screen-710-mah-battery-sport-bluetooth-call-smartwatch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4a74ca11bdaf4072b9d44b5ca762acc8a.webp?v=1782911235",
-      "imageAlt": "Gps Track Smart Watch Inch Hd",
-      "price": 229.99
+      "id": "gid://shopify/Product/8111372370019",
+      "title": "Deep V Long Sleeve Pleated Maxi Dress",
+      "handle": "deep-v-long-sleeve-pleated-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/3e4d60ab-2f6b-4577-ac70-333c5693963f.jpg?v=1786991861",
+      "imageAlt": "Deep V Long Sleeve Pleated Maxi Dress",
+      "price": 49.92
     },
     {
-      "id": "gid://shopify/Product/8051177422947",
-      "title": "Phone Tracker Smart Watch Android IOS",
-      "handle": "2026-new-intelligent-for-measuring-for-man-women-band-waterproof-connected-phone-tracker-men-smart-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S74c32d4f7fcd4cb0a347b6fef1634f1cr.webp?v=1782911233",
-      "imageAlt": "Phone Tracker Smart Watch Android IOS",
-      "price": 209.99
+      "id": "gid://shopify/Product/8111370535011",
+      "title": "Elegant Cap Sleeve Satin Wrap Blouse With Sculpted Silhouette",
+      "handle": "elegant-cap-sleeve-satin-wrap-blouse-with-sculpted-silhouette",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/fbfd4622-3822-48b3-b2d5-0738487f11b3.jpg?v=1786991507",
+      "imageAlt": "Elegant Cap Sleeve Satin Wrap Blouse With Sculpted Silhouette",
+      "price": 91.44
     },
     {
-      "id": "gid://shopify/Product/8051178897507",
-      "title": "Military Smart Watch Ip67 3atm Outdoor",
-      "handle": "2026-new-military-smart-watch-men-ip67-3atm-outdoor-sports-fitness-tracker-health-monitor-1-44inch-bt-call-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S050641c539314a0a90c8af1efb361d38X.webp?v=1782911261",
-      "imageAlt": "Military Smart Watch Ip67 3atm Outdoor",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111373025379",
+      "title": "Elegant High Waist Wide Leg Jeans",
+      "handle": "elegant-high-waist-wide-leg-jeans",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/772a75f7-1fdc-4d71-bd87-777a1d965141.jpg?v=1786992027",
+      "imageAlt": "Elegant High Waist Wide Leg Jeans",
+      "price": 60.39
     },
     {
-      "id": "gid://shopify/Product/8051177488483",
-      "title": "Smart Watch Inch Hd Screen Bluetooth",
-      "handle": "2026-new-smart-watch-2-01-inch-hd-screen-bluetooth-talk-pedometer-ip68-waterproof-123-sport-modes-man-woman-watch-gift-pk-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05e7cf69d05c410c96a1e7d930b8b4eeg.webp?v=1782911235",
-      "imageAlt": "Smart Watch Inch Hd Screen Bluetooth",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111373287523",
+      "title": "Elegant Plaid Blazer",
+      "handle": "elegant-plaid-blazer",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/071cd507-b3a7-4a39-95e9-07ec00559f06.jpg?v=1786992113",
+      "imageAlt": "Elegant Plaid Blazer",
+      "price": 163.74
     },
     {
-      "id": "gid://shopify/Product/8051179880547",
-      "title": "Smart Watch Android IOS Hd Screen",
-      "handle": "2026-new-smart-watch-for-android-ios-2-01-hd-screen-health-monitoring-bluetooth-call-music-control-sport-watch-for-men-women",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb91b88df8874401bbb8c332df417df9aJ.webp?v=1782911287",
-      "imageAlt": "Smart Watch Android IOS Hd Screen",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111370502243",
+      "title": "Elegant Pleated Suspender Maxi Dress",
+      "handle": "elegant-pleated-suspender-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/8e9e14aa-62b0-4bb6-b9a8-bd8157fd6e67.jpg?v=1786991496",
+      "imageAlt": "Elegant Pleated Suspender Maxi Dress",
+      "price": 89.05
     },
     {
-      "id": "gid://shopify/Product/8051177029731",
-      "title": "Smart Watch Sport Modes Ip68 Waterproof",
-      "handle": "2026-new-smart-watch-for-men-women-1-38-with-100-sport-modes-ip68-waterproof-pedometer-heart-rate-monitor-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1e6c5a7bc14047699598d6a05b6d847eE.webp?v=1782911226",
-      "imageAlt": "Smart Watch Sport Modes Ip68 Waterproof",
-      "price": 129.99
+      "id": "gid://shopify/Product/8111373615203",
+      "title": "Elegant Striped Blazer High Waist Pants Set",
+      "handle": "elegant-striped-blazer-high-waist-pants-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/a05616f9-3987-4972-83ab-f97a442ef358.jpg?v=1786992233",
+      "imageAlt": "Elegant Striped Blazer & High Waist Pants Set",
+      "price": 86.86
     },
     {
-      "id": "gid://shopify/Product/8051178438755",
-      "title": "Smart Watch Full Touch Screen Waterproof",
-      "handle": "2026-new-smart-watch-for-men-women-1-52-full-touch-screen-waterproof-health-and-sleep-monitor-multi-function-smart-watch-hw12",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7b454f6975834d409c7a363ead85f696X.webp?v=1782911250",
-      "imageAlt": "Smart Watch Full Touch Screen Waterproof",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111372042339",
+      "title": "Elegant Velvet Paneled Sequin Slit Evening Dress",
+      "handle": "elegant-velvet-paneled-sequin-slit-evening-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/31b90ad2-5a90-431d-97f2-157a0e83b5ef.jpg?v=1786991782",
+      "imageAlt": "Elegant Velvet Paneled Sequin Slit Evening Dress",
+      "price": 69.49
     },
     {
-      "id": "gid://shopify/Product/8051178274915",
-      "title": "Smart Watch Gift Inch Full Touch",
-      "handle": "2026-new-smart-watch-for-women-gift-1-43-inch-full-touch-screen-sports-watches-500-custom-dial-call-waterproof-smartwatch-ladies",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Abd287deb16ab46ad9ebcf571017cbec5Y.webp?v=1782911247",
-      "imageAlt": "Smart Watch Gift Inch Full Touch",
-      "price": 319.99
+      "id": "gid://shopify/Product/8111374368867",
+      "title": "Elegant White Pleated Gown With Sheer Cape Overlay",
+      "handle": "elegant-white-pleated-gown-with-sheer-cape-overlay",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/0658a3b1-1017-4e9c-a244-9b519ba24c70.jpg?v=1786992388",
+      "imageAlt": "Elegant White Pleated Gown With Sheer Cape Overlay 4",
+      "price": 238.04
     },
     {
-      "id": "gid://shopify/Product/8051177750627",
-      "title": "Smart Watch Wireless Call Dial Multiple",
-      "handle": "2026-new-smart-watch-wireless-call-dial-multiple-app-reminders-men-and-women-sports-watches-compatible-with-iphone-andriod",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1dadf262419f45d89e330b9afa6b11d2U.webp?v=1782911239",
-      "imageAlt": "Smart Watch Wireless Call Dial Multiple",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111374565475",
+      "title": "Emerald Green Plunging Neckline Gown With Pleated Skirt And Side",
+      "handle": "emerald-green-plunging-neckline-gown-with-pleated-skirt-and-side-slit",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/3caa83cd-3b4b-4c6c-b73d-a9aec1926f67.jpg?v=1786992416",
+      "imageAlt": "Emerald Green Plunging Neckline Gown With Pleated Skirt And Side Slit",
+      "price": 255.63
     },
     {
-      "id": "gid://shopify/Product/8051179028579",
-      "title": "Smartwatch Inch Ips Display Ipx8 Water",
-      "handle": "2026-new-smartwatch-with-1-46-inch-ips-display-ipx8-water-resistance-rating-400-mah-battery-featuring-over-100-activity-modes",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4fd5676b6fc84c86bce1d62301088f8dq.webp?v=1782911266",
-      "imageAlt": "Smartwatch Inch Ips Display Ipx8 Water",
-      "price": 149.99
+      "id": "gid://shopify/Product/8111374467171",
+      "title": "Evening Formal Dress Pleated Off Shoulder Elegant Maxi Dress Mother",
+      "handle": "evening-formal-dress-pleated-off-shoulder-elegant-maxi-dress-mother-of-the-bride-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/bdd2ab38-4517-4ea7-8863-cf201eca0465.jpg?v=1786992402",
+      "imageAlt": "Evening Formal Dress Pleated Off Shoulder Elegant Maxi Dress Mother",
+      "price": 239.23
     },
     {
-      "id": "gid://shopify/Product/8051177554019",
-      "title": "Smartwatch Amoled Hd Screen Always Display",
-      "handle": "2026-new-smartwatch-women-amoled-hd-screen-always-on-display-bluetooth-call-ip68-waterproof-gps-smart-men-watch-for-android-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5435f00aaec149efb123da83e9bb5047O.webp?v=1782911235",
-      "imageAlt": "Smartwatch Amoled Hd Screen Always Display",
-      "price": 249.99
+      "id": "gid://shopify/Product/8111372763235",
+      "title": "Five Pointed Star Hot Diamond Ripped Jeans",
+      "handle": "five-pointed-star-hot-diamond-ripped-jeans",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/86e81443-4f9f-412c-bf65-fda991125b6c.jpg?v=1786991951",
+      "imageAlt": "Five Pointed Star Hot Diamond Ripped Jeans",
+      "price": 62.54
     },
     {
-      "id": "gid://shopify/Product/8051176308835",
-      "title": "Sports Smart Watch Hd Screen Bluetooth",
-      "handle": "2026-new-sports-smart-watch-1-39-hd-screen-with-bluetooth-call-ip68-waterproof-health-monitoring-smartwatch-for-android-and-ios",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9894f118afe34326a92552d55a58dd9aD.webp?v=1782911148",
-      "imageAlt": "Sports Smart Watch Hd Screen Bluetooth",
-      "price": 129.99
+      "id": "gid://shopify/Product/8111371944035",
+      "title": "Hollow Solid Color Maxi Dress",
+      "handle": "hollow-solid-color-maxi-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/7a3c3f42-264c-4e39-bba2-03e0332a1f06.jpg?v=1786991755",
+      "imageAlt": "Hollow Solid Color Maxi Dress",
+      "price": 56.56
     },
     {
-      "id": "gid://shopify/Product/8051177652323",
-      "title": "Sports Smart Watch Modes Ip68 Waterproof",
-      "handle": "2026-new-sports-smart-watch-100-sports-modes-ip68-waterproof-health-monitoring-bluetooth-call-led-flashlight-mens-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S544a7dc50e07447c8e227c8567d8dc184.webp?v=1782911237",
-      "imageAlt": "Sports Smart Watch Modes Ip68 Waterproof",
-      "price": 129.99
+      "id": "gid://shopify/Product/8058379042915",
+      "title": "Horse Care Oil Instant Detangler Smoothing",
+      "handle": "horse-care-oil-instant-detangler-smoothing-mane-conditioner-plant-based-horsehair-oil-for-all-breeds-and-foals-shining-detangling-spray-suitable-for-braiding-bun-making-performances-and-daily-grooming",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se0124dddfc4c4892baf2637455455fd4a.webp?v=1783499737",
+      "imageAlt": "Horse Care Oil Instant Detangler Smoothing",
+      "price": 49.99
     },
     {
-      "id": "gid://shopify/Product/8051176964195",
-      "title": "Stylish Smart Watch Hd Screen All",
-      "handle": "2026-new-stylish-smart-watch-1-73-hd-screen-all-round-health-management-ai-voice-music-weather-sports-modes-ip68-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S372a9aa26c2d4fbdbe02c53b30552cbfJ.webp?v=1782911226",
-      "imageAlt": "Stylish Smart Watch Hd Screen All",
-      "price": 179.99
+      "id": "gid://shopify/Product/8111372730467",
+      "title": "Irregular Rhinestone Jeans",
+      "handle": "irregular-rhinestone-jeans",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/84334e4f-e147-4628-8878-a71dfbdbbc36.jpg?v=1786991938",
+      "imageAlt": "Irregular Rhinestone Jeans",
+      "price": 57.82
     },
     {
-      "id": "gid://shopify/Product/8051178209379",
-      "title": "Stylish Smart Watch Hd Screen All",
-      "handle": "2026-new-stylish-smart-watch-1-73-hd-screen-all-round-health-management-ai-voice-music-weather-sports-modes-ip68-smart-watch-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa43c82301d394b12baf61ae8330506d8y.webp?v=1782911245",
-      "imageAlt": "Stylish Smart Watch Hd Screen All",
-      "price": 179.99
+      "id": "gid://shopify/Product/8111375122531",
+      "title": "Lantern Sleeve Lace Trimmed Blouse With A High Waisted Midi Skirt",
+      "handle": "lantern-sleeve-lace-trimmed-blouse-with-a-high-waisted-midi-skirt",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/56719da8-b398-407b-a85f-f8fb977cd726.jpg?v=1786992498",
+      "imageAlt": "Lantern-sleeve Lace-trimmed Blouse With A High-waisted Midi Skirt",
+      "price": 54.52
     },
     {
-      "id": "gid://shopify/Product/8051177062499",
-      "title": "Smart Watch Sports Mode Information Push",
-      "handle": "2026-smart-fashion-watch-1-43-100-sports-mode-information-push-voice-assistant-ip68-waterproof-custom-watch-face-smart-watch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5f02f1e96e854c32b450cf5e0a714e2bk.webp?v=1782911228",
-      "imageAlt": "Smart Watch Sports Mode Information Push",
-      "price": 169.99
+      "id": "gid://shopify/Product/8111371354211",
+      "title": "Laptop Table Stand Desk Mouse Pad Notebook Folding Ergonomic Design",
+      "handle": "laptop-table-stand-desk-mouse-pad-notebook-folding-ergonomic-design-adjustable-with",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/2223632983628.jpg?v=1786991589",
+      "imageAlt": "Laptop Table Stand Desk Mouse Pad Notebook Folding Ergonomic Design",
+      "price": 86.58
     },
     {
-      "id": "gid://shopify/Product/8051176538211",
-      "title": "Smart Watch Android IOS Bluetooth Health",
-      "handle": "2026-smart-watch-10-for-android-ios-bluetooth-health-monitoring-talk-heart-rate-sleep-record-sports-smart-watch-ladies-men-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S17dbbd2894f245029016375f3b51d3b7S.webp?v=1782911152",
-      "imageAlt": "Smart Watch Android IOS Bluetooth Health",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111371321443",
+      "title": "Men S Shirt Business Button Down Shirt Summer Solid Color Long",
+      "handle": "mens-shirt-business-button-down-shirt-summer-solid-color-long-sleeve-lapel-vacation-shirt-fashion-temperament-casual-tops",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/69c2dfa0-075a-404c-af7b-10b076f18640.jpg?v=1786991568",
+      "imageAlt": "Men's Shirt Business Button Down Shirt Summer Solid Color Long Sleeve Lapel Vacation Shirt Fashion Temperament Casual Tops",
+      "price": 55.85
     },
     {
-      "id": "gid://shopify/Product/8051179421795",
-      "title": "Smart Watch Android IOS Phone Inch",
-      "handle": "2026-smart-watch-android-ios-phone-2-01-inch-color-screen-bluetooth-answer-call-fitness-watches-tracker-smartwatch-women-men-new",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7da881c7691744b891b50b5eeff6f62dV.webp?v=1782911276",
-      "imageAlt": "Smart Watch Android IOS Phone Inch",
-      "price": 109.99
+      "id": "gid://shopify/Product/8111372304483",
+      "title": "Olive Green Satin Slip Dress",
+      "handle": "olive-green-satin-slip-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/110a8303-9a98-4ea8-8a25-f93238747a00.jpg?v=1786991840",
+      "imageAlt": "Olive Green Satin Slip Dress",
+      "price": 52.1
     },
     {
-      "id": "gid://shopify/Product/8051176439907",
-      "title": "Smart Watch Original Design Ip68 Waterproof",
-      "handle": "2026-smart-watch-original-design-ip68-waterproof-bluetooth-call-health-monitor-100-sports-modes-flashlight",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4a2695f29c5d4068a64a38f16b452b34D.webp?v=1782911149",
-      "imageAlt": "Smart Watch Original Design Ip68 Waterproof",
-      "price": 129.99
+      "id": "gid://shopify/Product/8111375220835",
+      "title": "Oversized Faux Fur Coat In Beige Long Plush Winter Outerwear",
+      "handle": "oversized-faux-fur-coat-in-beige-long-plush-winter-outerwear",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/6f37156c-7d59-4220-97e2-858de7262572.jpg?v=1786992516",
+      "imageAlt": "Oversized Faux Fur Coat In Beige Long Plush Winter Outerwear",
+      "price": 108.63
     },
     {
-      "id": "gid://shopify/Product/8051179126883",
-      "title": "Life Inch Large Screen Wireless Calling",
-      "handle": "2026-upgraded-smartwatch-1000mah-long-battery-life-2-04-inch-large-screen-wireless-calling-100-sports-neutral-smartwatch",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S27ee1e3d8e7544b696c00eeb788c0fe2d.webp?v=1782911267",
-      "imageAlt": "Life Inch Large Screen Wireless Calling",
-      "price": 209.99
+      "id": "gid://shopify/Product/8110994423907",
+      "title": "Pet Digital Camera With Display Hd",
+      "handle": "pet-digital-camera-with-display-hd",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/ee62ba8e-a0be-4fae-9806-d3dab1e91fd6.jpg?v=1786901929",
+      "imageAlt": "Pet Digital Camera With Display Hd",
+      "price": 120.49
     },
     {
-      "id": "gid://shopify/Product/8051177095267",
-      "title": "Sports Modes Fitness Watch IOS Android",
-      "handle": "2026-women-smartwatch-1-26-hd-display-wireless-calling-voice-assistant-123-sports-modes-fitness-watch-for-ios-android-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1183b93cf51c41348d2717fc8972fe9b3.webp?v=1782911227",
-      "imageAlt": "Sports Modes Fitness Watch IOS Android",
-      "price": 129.99
-    },
-    {
-      "id": "gid://shopify/Product/8051177783395",
-      "title": "5g Smartwatch Cd20 Global Version Inch",
-      "handle": "5g-smartwatch-cd20-global-version-2-29-inch-amoled-display-with-180-rotating-camera-supports-sim-card-wifi-gps-video-calling",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8129835fc00d4cbc95bdc209495d2db58.webp?v=1782911240",
-      "imageAlt": "5g Smartwatch Cd20 Global Version Inch",
-      "price": 249.99
-    },
-    {
-      "id": "gid://shopify/Product/8051179651171",
-      "title": "Classic Womens Digital Watch Love Jewelry",
-      "handle": "5pcs-rectangular-classic-fashion-girls-womens-digital-watch-with-love-jewelry-set-analog-watch-gift",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S875b4b1062514b30b231e2bb70812dbbJ.webp?v=1782911283",
-      "imageAlt": "Classic Womens Digital Watch Love Jewelry",
-      "price": 89.99
+      "id": "gid://shopify/Product/8111372533859",
+      "title": "Polka Dot Strapless Waist Mini Dress",
+      "handle": "polka-dot-strapless-waist-mini-dress",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/03459d59-8748-414c-925f-2ddc2b0cf39b.jpg?v=1786991894",
+      "imageAlt": "Polka Dot Strapless Waist Mini Dress",
+      "price": 63.28
     }
   ],
-  "recentOrderProducts": 252,
-  "catalogFloorFillProducts": 48
+  "recentOrderProducts": 254,
+  "catalogFloorFillProducts": 46
 }
