@@ -3,15 +3,23 @@
   data-shop-base-url="https://{{ request.host | escape }}"
   data-shop-domain="{{ shop.permanent_domain | escape }}"
   data-shop-name="{{ shop.name | escape }}"
+  data-customer-logged-in="{% if customer %}true{% else %}false{% endif %}"
+  data-customer-display-name="{% if customer %}{{ customer.name | default: customer.first_name | default: customer.email | escape }}{% endif %}"
+  data-customer-email="{% if customer %}{{ customer.email | escape }}{% endif %}"
+  data-account-url="{{ routes.account_url | escape }}"
+  data-account-login-url="{{ routes.account_login_url | escape }}"
+  data-account-register-url="{{ routes.account_register_url | escape }}"
+  data-account-logout-url="{{ routes.account_logout_url | escape }}"
+  data-account-addresses-url="{{ routes.account_addresses_url | escape }}"
   data-judgeme-shop-domain="{{ shop.permanent_domain | escape }}"
   data-judgeme-public-token="TQ0rk940ADN89zj_f83SKuTYIfY"
   data-currency="{{ cart.currency.iso_code | default: shop.currency | escape }}"
 ></div>
 <script>
-  window.SALT_THEME_BUILD = "msxab93h";
+  window.SALT_THEME_BUILD = "msygwe2t";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
-  window.SALT_SHOPIFY_STOREFRONT_TOKEN = "de0d75c86066169335c67d9d151d5977";
+  window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
   window.SALT_THEME_ASSET_BASE = {{ 'salt-app.js' | asset_url | split: 'salt-app.js' | first | json }};
   window.SALT_THEME_ASSETS = {
     "/brand/salt-logo.png": {{ 'brand-salt-logo.png' | asset_url | json }},
