@@ -28,6 +28,16 @@
         { "id": "women-bags-and-wallets", "title": "Women's Bags & Wallets", "url": "/collections/women-bags-and-wallets", "type": "collection_link", "items": [] },
         { "id": "womens-accessories", "title": "Women's Accessories", "url": "/collections/womens-accessories", "type": "collection_link", "items": [] }
       ]
+    },
+    {
+      "id": "kids",
+      "title": "Kids",
+      "url": "/collections/kids",
+      "type": "collection_link",
+      "items": [
+        { "id": "kids-wear", "title": "Kids Wear", "url": "/collections/kids-wear", "type": "collection_link", "items": [] },
+        { "id": "kids-toys-games", "title": "Kids Toys & Games", "url": "/collections/kids-toys-games", "type": "collection_link", "items": [] }
+      ]
     }
   ]
 }
