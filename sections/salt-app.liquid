@@ -44,8 +44,37 @@
     ]
   }
 </script>
+<script type="application/json" id="salt-header-collections">
+  {% assign salt_header_menu = linklists['header-collections'] %}
+  {
+    "handle": "header-collections",
+    "source": "shopify-liquid-menu",
+    "title": {{ salt_header_menu.title | default: 'Header Collections' | json }},
+    "items": [
+      {% for salt_group in salt_header_menu.links %}
+        {
+          "id": {{ salt_group.handle | default: salt_group.title | json }},
+          "title": {{ salt_group.title | json }},
+          "url": {{ salt_group.url | json }},
+          "type": {{ salt_group.type | json }},
+          "items": [
+            {% for salt_child in salt_group.links %}
+              {
+                "id": {{ salt_child.handle | default: salt_child.title | json }},
+                "title": {{ salt_child.title | json }},
+                "url": {{ salt_child.url | json }},
+                "type": {{ salt_child.type | json }},
+                "items": []
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+</script>
 <script>
-  window.SALT_THEME_BUILD = "mszmq0w2";
+  window.SALT_THEME_BUILD = "mszsmaee";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
@@ -59,6 +88,8 @@
     "/data/recently-ordered-products.json": {{ 'data-recently-ordered-products.json' | asset_url | json }},
     "/data/product-search.json": {{ 'data-product-search.json' | asset_url | json }},
     "/data/collections.json": {{ 'data-collections.json' | asset_url | json }},
+    "/data/sidebar-collections.json": {{ 'data-sidebar-collections.json' | asset_url | json }},
+    "/data/header-collections.json": {{ 'data-header-collections.json' | asset_url | json }},
     "/data/collection-products.json": {{ 'data-collection-products.json' | asset_url | json }},
     "/data/about.json": {{ 'data-about.json' | asset_url | json }},
     "/data/blog-posts.json": {{ 'data-blog-posts.json' | asset_url | json }},

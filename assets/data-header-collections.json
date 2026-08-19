@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-19T00:00:00.000Z",
+  "source": "shopify-admin-cache",
+  "handle": "header-collections",
+  "title": "SALT Header Collections",
+  "items": [
+    {
+      "id": "men",
+      "title": "Men",
+      "url": "/collections/men-collection",
+      "type": "collection_link",
+      "items": [
+        { "id": "mens-fashion", "title": "Men's Fashion", "url": "/collections/mens-fashion", "type": "collection_link", "items": [] },
+        { "id": "men-t-shirt", "title": "Men's T-Shirts", "url": "/collections/men-t-shirt", "type": "collection_link", "items": [] },
+        { "id": "mens-bags-wallets", "title": "Men's Bags & Wallets", "url": "/collections/mens-bags-wallets", "type": "collection_link", "items": [] },
+        { "id": "mens-accessories", "title": "Men's Accessories", "url": "/collections/mens-accessories", "type": "collection_link", "items": [] },
+        { "id": "mens-beauty-skincare", "title": "Men's Beauty & Skincare", "url": "/collections/mens-beauty-skincare", "type": "collection_link", "items": [] }
+      ]
+    },
+    {
+      "id": "women",
+      "title": "Women",
+      "url": "/collections/women",
+      "type": "collection_link",
+      "items": [
+        { "id": "womens-fashion", "title": "Women's Fashion", "url": "/collections/womens-fashion", "type": "collection_link", "items": [] },
+        { "id": "womens-beauty-essentials", "title": "Women's Beauty & Skincare", "url": "/collections/womens-beauty-essentials", "type": "collection_link", "items": [] },
+        { "id": "women-bags-and-wallets", "title": "Women's Bags & Wallets", "url": "/collections/women-bags-and-wallets", "type": "collection_link", "items": [] },
+        { "id": "womens-accessories", "title": "Women's Accessories", "url": "/collections/womens-accessories", "type": "collection_link", "items": [] }
+      ]
+    }
+  ]
+}

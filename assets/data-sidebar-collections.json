@@ -1,36 +1,66 @@
 {
-  "generatedAt": "2026-08-19T07:10:00.000Z",
+  "generatedAt": "2026-08-19T00:00:00.000Z",
   "source": "shopify-admin-cache",
   "handle": "sidebar-collections",
   "title": "SALT Sidebar Collections",
   "items": [
     {
-      "id": "home-living",
-      "title": "HOME & LIVING",
-      "url": "/collections/home-decor",
+      "id": "men",
+      "title": "Men",
+      "url": "/collections/men-collection",
       "type": "collection_link",
       "items": [
-        {
-          "id": "kitchen-essentials",
-          "title": "KITCHEN ESSENTIALS",
-          "url": "/collections/cookware",
-          "type": "collection_link",
-          "items": []
-        },
-        {
-          "id": "home-decor",
-          "title": "HOME DECOR",
-          "url": "/collections/home-decor",
-          "type": "collection_link",
-          "items": []
-        },
-        {
-          "id": "garden-tools",
-          "title": "GARDEN TOOLS",
-          "url": "/collections/garden-tools",
-          "type": "collection_link",
-          "items": []
-        }
+        { "id": "mens-fashion", "title": "Men's Fashion", "url": "/collections/mens-fashion", "type": "collection_link", "items": [] },
+        { "id": "men-t-shirt", "title": "Men's T-Shirts", "url": "/collections/men-t-shirt", "type": "collection_link", "items": [] },
+        { "id": "mens-bags-wallets", "title": "Men's Bags & Wallets", "url": "/collections/mens-bags-wallets", "type": "collection_link", "items": [] },
+        { "id": "mens-accessories", "title": "Men's Accessories", "url": "/collections/mens-accessories", "type": "collection_link", "items": [] },
+        { "id": "mens-beauty-skincare", "title": "Men's Beauty & Skincare", "url": "/collections/mens-beauty-skincare", "type": "collection_link", "items": [] }
+      ]
+    },
+    {
+      "id": "women",
+      "title": "Women",
+      "url": "/collections/women",
+      "type": "collection_link",
+      "items": [
+        { "id": "womens-fashion", "title": "Women's Fashion", "url": "/collections/womens-fashion", "type": "collection_link", "items": [] },
+        { "id": "womens-beauty-essentials", "title": "Women's Beauty & Skincare", "url": "/collections/womens-beauty-essentials", "type": "collection_link", "items": [] },
+        { "id": "women-bags-and-wallets", "title": "Women's Bags & Wallets", "url": "/collections/women-bags-and-wallets", "type": "collection_link", "items": [] },
+        { "id": "womens-accessories", "title": "Women's Accessories", "url": "/collections/womens-accessories", "type": "collection_link", "items": [] }
+      ]
+    },
+    {
+      "id": "kids",
+      "title": "Kids",
+      "url": "/collections/kids",
+      "type": "collection_link",
+      "items": [
+        { "id": "kids-wear", "title": "Kids Wear", "url": "/collections/kids-wear", "type": "collection_link", "items": [] },
+        { "id": "kids-toys-games", "title": "Kids Toys & Games", "url": "/collections/kids-toys-games", "type": "collection_link", "items": [] }
+      ]
+    },
+    {
+      "id": "beauty-essentials",
+      "title": "Beauty Essentials",
+      "url": "/collections/beauty-makeup-essentials",
+      "type": "collection_link",
+      "items": [
+        { "id": "beauty-makeup-essentials", "title": "Beauty Makeup Essentials", "url": "/collections/beauty-makeup-essentials", "type": "collection_link", "items": [] },
+        { "id": "womens-beauty-essentials", "title": "Women's Beauty & Skincare", "url": "/collections/womens-beauty-essentials", "type": "collection_link", "items": [] },
+        { "id": "mens-beauty-skincare", "title": "Men's Beauty & Skincare", "url": "/collections/mens-beauty-skincare", "type": "collection_link", "items": [] }
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "Electronics",
+      "url": "/collections/portable-gadgets",
+      "type": "collection_link",
+      "items": [
+        { "id": "audio", "title": "Audio & Earbuds", "url": "/collections/audio", "type": "collection_link", "items": [] },
+        { "id": "earbuds-and-cases", "title": "Earbuds & Cases", "url": "/collections/earbuds-and-cases", "type": "collection_link", "items": [] },
+        { "id": "iphone-cases", "title": "iPhone Cases", "url": "/collections/iphone-cases", "type": "collection_link", "items": [] },
+        { "id": "watches", "title": "Watches", "url": "/collections/watches", "type": "collection_link", "items": [] },
+        { "id": "magsafe-gadgets", "title": "MagSafe Gadgets", "url": "/collections/magsafe-gadgets", "type": "collection_link", "items": [] }
       ]
     }
   ]
