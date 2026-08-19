@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-08-19T07:10:00.000Z",
+  "source": "shopify-admin-cache",
+  "handle": "sidebar-collections",
+  "title": "SALT Sidebar Collections",
+  "items": [
+    {
+      "id": "home-living",
+      "title": "HOME & LIVING",
+      "url": "/collections/home-decor",
+      "type": "collection_link",
+      "items": [
+        {
+          "id": "kitchen-essentials",
+          "title": "KITCHEN ESSENTIALS",
+          "url": "/collections/cookware",
+          "type": "collection_link",
+          "items": []
+        },
+        {
+          "id": "home-decor",
+          "title": "HOME DECOR",
+          "url": "/collections/home-decor",
+          "type": "collection_link",
+          "items": []
+        },
+        {
+          "id": "garden-tools",
+          "title": "GARDEN TOOLS",
+          "url": "/collections/garden-tools",
+          "type": "collection_link",
+          "items": []
+        }
+      ]
+    }
+  ]
+}
