@@ -3,9 +3,14 @@
     "main": {
       "type": "salt-app",
       "settings": {}
+    },
+    "salt-product-data": {
+      "type": "salt-product-data",
+      "settings": {}
     }
   },
   "order": [
+    "salt-product-data",
     "main"
   ]
 }

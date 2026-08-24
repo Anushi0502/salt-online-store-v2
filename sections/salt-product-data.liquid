@@ -1,0 +1,165 @@
+{% if request.page_type == 'collection' and collection %}
+  {% paginate collection.products by 36 %}
+    <script type="application/json" id="salt-product-listing-data">
+      {
+        "generatedAt": {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+        "source": "shopify-liquid-section:collection",
+        "kind": "collection",
+        "handle": {{ collection.handle | downcase | json }},
+        "query": "",
+        "page": {{ paginate.current_page | json }},
+        "pageSize": 36,
+        "total": {{ paginate.items | json }},
+        "totalPages": {{ paginate.pages | json }},
+        "hasPreviousPage": {% if paginate.previous %}true{% else %}false{% endif %},
+        "hasNextPage": {% if paginate.next %}true{% else %}false{% endif %},
+        "productTypes": [
+          {% assign salt_collection_type_written = false %}
+          {% for filter in collection.filters %}
+            {% if filter.param_name == 'filter.p.product_type' %}
+              {% for value in filter.values %}
+                {% if salt_collection_type_written %},{% endif %}{{ value.value | json }}
+                {% assign salt_collection_type_written = true %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        ],
+        "products": [
+          {% for item in collection.products %}
+            {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "body_html": null,
+    "vendor": {{ item.vendor | json }},
+    "product_type": {{ item.type | json }},
+    "tags": {{ item.tags | json }},
+    "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "variants": [
+      {% for variant in item.variants %}
+        {
+          "id": {{ variant.id | json }},
+          "title": {{ variant.title | json }},
+          "price": {{ variant.price | divided_by: 100.0 | json }},
+          "compare_at_price": {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+          "available": {{ variant.available | json }},
+          "sku": {{ variant.sku | json }},
+          "requires_shipping": {{ variant.requires_shipping | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "images": [
+      {% if item.featured_image %}
+        {
+          "id": {{ item.featured_image.id | default: item.id | json }},
+          "src": {{ item.featured_image | image_url: width: 900 | json }},
+          "alt": {{ item.featured_image.alt | default: item.title | json }},
+          "width": {{ item.featured_image.width | json }},
+          "height": {{ item.featured_image.height | json }}
+        }
+      {% endif %}
+    ],
+    "image": {% if item.featured_image %}{
+      "id": {{ item.featured_image.id | default: item.id | json }},
+      "src": {{ item.featured_image | image_url: width: 900 | json }},
+      "alt": {{ item.featured_image.alt | default: item.title | json }},
+      "width": {{ item.featured_image.width | json }},
+      "height": {{ item.featured_image.height | json }}
+    }{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  {% endpaginate %}
+{% elsif request.page_type == 'search' and search.performed %}
+  {% paginate search.results by 36 %}
+    <script type="application/json" id="salt-product-listing-data">
+      {
+        "generatedAt": {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+        "source": "shopify-liquid-section:search",
+        "kind": "search",
+        "handle": "all-products",
+        "query": {{ search.terms | json }},
+        "page": {{ paginate.current_page | json }},
+        "pageSize": 36,
+        "total": {{ paginate.items | json }},
+        "totalPages": {{ paginate.pages | json }},
+        "hasPreviousPage": {% if paginate.previous %}true{% else %}false{% endif %},
+        "hasNextPage": {% if paginate.next %}true{% else %}false{% endif %},
+        "productTypes": [
+          {% assign salt_search_section_type_written = false %}
+          {% for filter in search.filters %}
+            {% if filter.param_name == 'filter.p.product_type' %}
+              {% for value in filter.values %}
+                {% if salt_search_section_type_written %},{% endif %}{{ value.value | json }}
+                {% assign salt_search_section_type_written = true %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        ],
+        "products": [
+          {% assign salt_search_section_product_written = false %}
+          {% for item in search.results %}
+            {% if item.object_type == 'product' %}
+              {% if salt_search_section_product_written %},{% endif %}{
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "body_html": null,
+    "vendor": {{ item.vendor | json }},
+    "product_type": {{ item.type | json }},
+    "tags": {{ item.tags | json }},
+    "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "variants": [
+      {% for variant in item.variants %}
+        {
+          "id": {{ variant.id | json }},
+          "title": {{ variant.title | json }},
+          "price": {{ variant.price | divided_by: 100.0 | json }},
+          "compare_at_price": {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+          "available": {{ variant.available | json }},
+          "sku": {{ variant.sku | json }},
+          "requires_shipping": {{ variant.requires_shipping | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "images": [
+      {% if item.featured_image %}
+        {
+          "id": {{ item.featured_image.id | default: item.id | json }},
+          "src": {{ item.featured_image | image_url: width: 900 | json }},
+          "alt": {{ item.featured_image.alt | default: item.title | json }},
+          "width": {{ item.featured_image.width | json }},
+          "height": {{ item.featured_image.height | json }}
+        }
+      {% endif %}
+    ],
+    "image": {% if item.featured_image %}{
+      "id": {{ item.featured_image.id | default: item.id | json }},
+      "src": {{ item.featured_image | image_url: width: 900 | json }},
+      "alt": {{ item.featured_image.alt | default: item.title | json }},
+      "width": {{ item.featured_image.width | json }},
+      "height": {{ item.featured_image.height | json }}
+    }{% else %}null{% endif %}
+  }
+              {% assign salt_search_section_product_written = true %}
+            {% endif %}
+          {% endfor %}
+        ]
+      }
+    </script>
+  {% endpaginate %}
+{% else %}
+  <script type="application/json" id="salt-product-listing-data">
+    {"generatedAt": null, "source": "shopify-liquid-section:empty", "kind": "collection", "handle": "all-products", "query": "", "page": 1, "pageSize": 36, "total": 0, "totalPages": 1, "hasPreviousPage": false, "hasNextPage": false, "productTypes": [], "products": []}
+  </script>
+{% endif %}
+
+{% schema %}
+{"name":"SALT live product data","settings":[]}
+{% endschema %}

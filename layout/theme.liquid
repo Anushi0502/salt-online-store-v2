@@ -184,13 +184,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-1dc841ec06b4.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-1dc841ec06b4.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-c873055276a8.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-c873055276a8.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-B_BC76ml.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-B_BC76ml.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-BPmEIiqN.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-BPmEIiqN.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-DEgj_H-I.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-DEgj_H-I.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.page_type == 'index' and "HomePage-LX1_80d9.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-LX1_80d9.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -433,6 +433,9 @@
     {% else %}
       {{ salt_content_for_header }}
     {% endif %}
+    {% if request.page_type == 'index' and "anime-collectables-square-pavaBsJg.webp" != blank %}
+      {{ "anime-collectables-square-pavaBsJg.webp" | asset_url | preload_tag: as: 'image' }}
+    {% endif %}
     {% if request.page_type == 'product' %}
       <script>
         (function () {
@@ -455,12 +458,124 @@
     {% if request.page_type == 'index' %}
       <script>
         (function () {
-          window.__SALT_HOME_PREFETCH__ = {"generatedAt":"2026-08-17T10:02:32.611Z","source":"https://0309d3-72.myshopify.com","total":0,"sources":{"bestSellerProducts":"appplaza-best-sellers","quirkyGiftPicks":"gifts","everydayEssentialProducts":"garden-tools"},"bestSellerProducts":[],"quirkyGiftPicks":[],"everydayEssentialProducts":[]};
+          window.__SALT_HOME_COLLECTION_PREFETCH__ = {
+            generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+            source: 'shopify-liquid:home-collections',
+            sections: {
+              "animeCollectables": {
+    "title": "Anime Collectables",
+    "handle": "anime-collectables",
+    "products": [
+      {% assign salt_home_collection = collections["anime-collectables"] %}
+      {% for item in salt_home_collection.products limit: 12 %}
+        {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+"creatorEssentials": {
+    "title": "Creator Essentials",
+    "handle": "creator-essentials",
+    "products": [
+      {% assign salt_home_collection = collections["creator-essentials"] %}
+      {% for item in salt_home_collection.products limit: 12 %}
+        {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+"lipCare": {
+    "title": "Lip Care",
+    "handle": "lips-and-care",
+    "products": [
+      {% assign salt_home_collection = collections["lips-and-care"] %}
+      {% for item in salt_home_collection.products limit: 12 %}
+        {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+"watches": {
+    "title": "Watches",
+    "handle": "watches",
+    "products": [
+      {% assign salt_home_collection = collections["watches"] %}
+      {% for item in salt_home_collection.products limit: 12 %}
+        {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+"glamEyePalettes": {
+    "title": "Glam Eye Palettes",
+    "handle": "glam-eye-palettes",
+    "products": [
+      {% assign salt_home_collection = collections["glam-eye-palettes"] %}
+      {% for item in salt_home_collection.products limit: 12 %}
+        {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+            }
+          };
+
+          {% assign salt_best_sellers = collections["best-sellers"] %}
+          window.__SALT_HOME_PREFETCH__ = {
+            generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+            source: 'shopify-liquid:best-sellers',
+            total: {{ salt_best_sellers.products_count | default: 0 | json }},
+            sources: { bestSellerProducts: 'best-sellers' },
+            bestSellerProducts: [
+              {% for item in salt_best_sellers.products limit: 12 %}
+                {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            quirkyGiftPicks: [],
+            everydayEssentialProducts: []
+          };
         })();
       </script>
     {% endif %}
     {% if request.page_type == 'collection' and collection %}
-      {% paginate collection.products by 250 %}
+      {% paginate collection.products by 36 %}
         <script>
           (function () {
             // Shopify renders this payload inside the uploaded theme. It is a
@@ -468,50 +583,50 @@
             // prices, availability, and newly added first-page products before
             // its modules execute and without a storefront API round-trip.
             var liveProducts = [
-              {% for item in collection.products limit: 24 %}
+              {% for item in collection.products %}
                 {
-                  id: {{ item.id | json }},
-                  title: {{ item.title | json }},
-                  handle: {{ item.handle | json }},
-                  body_html: null,
-                  vendor: {{ item.vendor | json }},
-                  product_type: {{ item.type | json }},
-                  tags: {{ item.tags | json }},
-                  created_at: {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-                  published_at: {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-                  updated_at: {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-                  variants: [
-                    {% for variant in item.variants %}
-                      {
-                        id: {{ variant.id | json }},
-                        title: {{ variant.title | json }},
-                        price: {{ variant.price | json }},
-                        compare_at_price: {% if variant.compare_at_price %}{{ variant.compare_at_price | json }}{% else %}null{% endif %},
-                        available: {{ variant.available | json }},
-                        sku: {{ variant.sku | json }},
-                        requires_shipping: {{ variant.requires_shipping | json }}
-                      }{% unless forloop.last %},{% endunless %}
-                    {% endfor %}
-                  ],
-                  images: [
-                    {% if item.featured_image %}
-                      {
-                        id: {{ item.featured_image.id | default: item.id | json }},
-                        src: {{ item.featured_image | image_url: width: 900 | json }},
-                        alt: {{ item.featured_image.alt | default: item.title | json }},
-                        width: {{ item.featured_image.width | json }},
-                        height: {{ item.featured_image.height | json }}
-                      }
-                    {% endif %}
-                  ],
-                  image: {% if item.featured_image %}{
-                    id: {{ item.featured_image.id | default: item.id | json }},
-                    src: {{ item.featured_image | image_url: width: 900 | json }},
-                    alt: {{ item.featured_image.alt | default: item.title | json }},
-                    width: {{ item.featured_image.width | json }},
-                    height: {{ item.featured_image.height | json }}
-                  }{% else %}null{% endif %}
-                }{% unless forloop.last %},{% endunless %}
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "body_html": null,
+    "vendor": {{ item.vendor | json }},
+    "product_type": {{ item.type | json }},
+    "tags": {{ item.tags | json }},
+    "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "variants": [
+      {% for variant in item.variants %}
+        {
+          "id": {{ variant.id | json }},
+          "title": {{ variant.title | json }},
+          "price": {{ variant.price | divided_by: 100.0 | json }},
+          "compare_at_price": {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+          "available": {{ variant.available | json }},
+          "sku": {{ variant.sku | json }},
+          "requires_shipping": {{ variant.requires_shipping | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "images": [
+      {% if item.featured_image %}
+        {
+          "id": {{ item.featured_image.id | default: item.id | json }},
+          "src": {{ item.featured_image | image_url: width: 900 | json }},
+          "alt": {{ item.featured_image.alt | default: item.title | json }},
+          "width": {{ item.featured_image.width | json }},
+          "height": {{ item.featured_image.height | json }}
+        }
+      {% endif %}
+    ],
+    "image": {% if item.featured_image %}{
+      "id": {{ item.featured_image.id | default: item.id | json }},
+      "src": {{ item.featured_image | image_url: width: 900 | json }},
+      "alt": {{ item.featured_image.alt | default: item.title | json }},
+      "width": {{ item.featured_image.width | json }},
+      "height": {{ item.featured_image.height | json }}
+    }{% else %}null{% endif %}
+  }{% unless forloop.last %},{% endunless %}
               {% endfor %}
             ];
 
@@ -520,7 +635,7 @@
               generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
               complete: {% if paginate.pages == 1 %}true{% else %}false{% endif %},
               currentPage: {{ paginate.current_page | json }},
-              total: {{ collection.products_count | json }},
+              total: {{ paginate.items | json }},
               productIds: [
                 {% for item in collection.products %}
                   {{ item.id | json }}{% unless forloop.last %},{% endunless %}
@@ -532,8 +647,91 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-1dc841ec06b4.js" != blank %}
-      <script type="module" src="{{ "salt-entry-1dc841ec06b4.js" | asset_url | split: '?' | first }}"></script>
+    {% if request.page_type == 'search' and search.performed %}
+      {% paginate search.results by 36 %}
+        <script>
+          (function () {
+            window.__SALT_SEARCH_PREFETCH__ = {
+              generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+              source: 'shopify-liquid:search',
+              kind: 'search',
+              handle: 'all-products',
+              query: {{ search.terms | json }},
+              page: {{ paginate.current_page | json }},
+              pageSize: 36,
+              total: {{ paginate.items | json }},
+              totalPages: {{ paginate.pages | json }},
+              hasPreviousPage: {% if paginate.previous %}true{% else %}false{% endif %},
+              hasNextPage: {% if paginate.next %}true{% else %}false{% endif %},
+              productTypes: [
+                {% assign salt_search_type_written = false %}
+                {% for filter in search.filters %}
+                  {% if filter.param_name == 'filter.p.product_type' %}
+                    {% for value in filter.values %}
+                      {% if salt_search_type_written %},{% endif %}{{ value.value | json }}
+                      {% assign salt_search_type_written = true %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+              ],
+              products: [
+                {% assign salt_search_product_written = false %}
+                {% for item in search.results %}
+                  {% if item.object_type == 'product' %}
+                    {% if salt_search_product_written %},{% endif %}{
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "body_html": null,
+    "vendor": {{ item.vendor | json }},
+    "product_type": {{ item.type | json }},
+    "tags": {{ item.tags | json }},
+    "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "variants": [
+      {% for variant in item.variants %}
+        {
+          "id": {{ variant.id | json }},
+          "title": {{ variant.title | json }},
+          "price": {{ variant.price | divided_by: 100.0 | json }},
+          "compare_at_price": {% if variant.compare_at_price %}{{ variant.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+          "available": {{ variant.available | json }},
+          "sku": {{ variant.sku | json }},
+          "requires_shipping": {{ variant.requires_shipping | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "images": [
+      {% if item.featured_image %}
+        {
+          "id": {{ item.featured_image.id | default: item.id | json }},
+          "src": {{ item.featured_image | image_url: width: 900 | json }},
+          "alt": {{ item.featured_image.alt | default: item.title | json }},
+          "width": {{ item.featured_image.width | json }},
+          "height": {{ item.featured_image.height | json }}
+        }
+      {% endif %}
+    ],
+    "image": {% if item.featured_image %}{
+      "id": {{ item.featured_image.id | default: item.id | json }},
+      "src": {{ item.featured_image | image_url: width: 900 | json }},
+      "alt": {{ item.featured_image.alt | default: item.title | json }},
+      "width": {{ item.featured_image.width | json }},
+      "height": {{ item.featured_image.height | json }}
+    }{% else %}null{% endif %}
+  }
+                    {% assign salt_search_product_written = true %}
+                  {% endif %}
+                {% endfor %}
+              ]
+            };
+          })();
+        </script>
+      {% endpaginate %}
+    {% endif %}
+    {% if "salt-entry-c873055276a8.js" != blank %}
+      <script type="module" src="{{ "salt-entry-c873055276a8.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
