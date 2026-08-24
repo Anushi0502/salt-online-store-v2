@@ -189,7 +189,7 @@
     {% endif %}
     {% if request.page_type == 'product' and "ProductPage-CpLR6bR9.js" != blank %}
       <link rel="modulepreload" href="{{ "ProductPage-CpLR6bR9.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.page_type == 'index' and "HomePage-Cpiao8BG.js" != blank %}
+    {% elsif request.path == '/' and "HomePage-Cpiao8BG.js" != blank %}
       <link rel="modulepreload" href="{{ "HomePage-Cpiao8BG.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
@@ -433,7 +433,7 @@
     {% else %}
       {{ salt_content_for_header }}
     {% endif %}
-    {% if request.page_type == 'index' and "anime-collectables-square-pavaBsJg.webp" != blank %}
+    {% if request.path == '/' and "anime-collectables-square-pavaBsJg.webp" != blank %}
       {{ "anime-collectables-square-pavaBsJg.webp" | asset_url | preload_tag: as: 'image' }}
     {% endif %}
     {% if request.page_type == 'product' %}
@@ -455,7 +455,7 @@
         })();
       </script>
     {% endif %}
-    {% if request.page_type == 'index' %}
+    {% if request.path == '/' %}
       <script>
         (function () {
           window.__SALT_HOME_COLLECTION_PREFETCH__ = {
