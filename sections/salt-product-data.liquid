@@ -26,7 +26,10 @@
         ],
         "products": [
           {% for item in collection.products %}
-            {
+            {% assign salt_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_judgeme_rating = salt_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_judgeme_review_count = salt_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
     "id": {{ item.id | json }},
     "title": {{ item.title | json }},
     "handle": {{ item.handle | json }},
@@ -37,6 +40,8 @@
     "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "average_rating": {% if salt_judgeme_badge contains "data-average-rating='" %}{{ salt_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "total_reviews": {% if salt_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %},
     "variants": [
       {% for variant in item.variants %}
         {
@@ -104,7 +109,10 @@
           {% assign salt_search_section_product_written = false %}
           {% for item in search.results %}
             {% if item.object_type == 'product' %}
-              {% if salt_search_section_product_written %},{% endif %}{
+              {% if salt_search_section_product_written %},{% endif %}{% assign salt_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_judgeme_rating = salt_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_judgeme_review_count = salt_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
     "id": {{ item.id | json }},
     "title": {{ item.title | json }},
     "handle": {{ item.handle | json }},
@@ -115,6 +123,8 @@
     "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "average_rating": {% if salt_judgeme_badge contains "data-average-rating='" %}{{ salt_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "total_reviews": {% if salt_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %},
     "variants": [
       {% for variant in item.variants %}
         {

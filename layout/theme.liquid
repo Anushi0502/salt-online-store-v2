@@ -184,13 +184,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-558d530ac31c.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-558d530ac31c.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-0e89cff173b4.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-0e89cff173b4.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-CpLR6bR9.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-CpLR6bR9.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-Cpiao8BG.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-Cpiao8BG.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-DMXZOaXD.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-DMXZOaXD.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-DQYmrOG4.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DQYmrOG4.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -437,6 +437,9 @@
       {{ "anime-collectables-square-pavaBsJg.webp" | asset_url | preload_tag: as: 'image' }}
     {% endif %}
     {% if request.page_type == 'product' %}
+      {% assign salt_product_judgeme_badge = product.metafields.judgeme.badge | default: '' %}
+      {% assign salt_product_judgeme_rating = salt_product_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+      {% assign salt_product_judgeme_review_count = salt_product_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
       <script>
         (function () {
           var match = window.location.pathname.match(/^\/products?\/([^\/?#]+)\/?$/);
@@ -444,6 +447,10 @@
 
           var handle = decodeURIComponent(match[1]);
           var inlineProduct = {{ product | json }};
+          if (inlineProduct && inlineProduct.id) {
+            inlineProduct.average_rating = {% if salt_product_judgeme_badge contains "data-average-rating='" %}{{ salt_product_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %};
+            inlineProduct.total_reviews = {% if salt_product_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_product_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %};
+          }
           window.__SALT_PRODUCT_PREFETCH__ = {
             handle: handle.toLowerCase(),
             raw: inlineProduct && inlineProduct.id ? inlineProduct : null,
@@ -584,7 +591,10 @@
             // its modules execute and without a storefront API round-trip.
             var liveProducts = [
               {% for item in collection.products %}
-                {
+                {% assign salt_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_judgeme_rating = salt_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_judgeme_review_count = salt_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
     "id": {{ item.id | json }},
     "title": {{ item.title | json }},
     "handle": {{ item.handle | json }},
@@ -595,6 +605,8 @@
     "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "average_rating": {% if salt_judgeme_badge contains "data-average-rating='" %}{{ salt_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "total_reviews": {% if salt_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %},
     "variants": [
       {% for variant in item.variants %}
         {
@@ -678,7 +690,10 @@
                 {% assign salt_search_product_written = false %}
                 {% for item in search.results %}
                   {% if item.object_type == 'product' %}
-                    {% if salt_search_product_written %},{% endif %}{
+                    {% if salt_search_product_written %},{% endif %}{% assign salt_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_judgeme_rating = salt_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_judgeme_review_count = salt_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
     "id": {{ item.id | json }},
     "title": {{ item.title | json }},
     "handle": {{ item.handle | json }},
@@ -689,6 +704,8 @@
     "created_at": {{ item.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "published_at": {{ item.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
     "updated_at": {{ item.updated_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "average_rating": {% if salt_judgeme_badge contains "data-average-rating='" %}{{ salt_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "total_reviews": {% if salt_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %},
     "variants": [
       {% for variant in item.variants %}
         {
@@ -730,8 +747,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-558d530ac31c.js" != blank %}
-      <script type="module" src="{{ "salt-entry-558d530ac31c.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-0e89cff173b4.js" != blank %}
+      <script type="module" src="{{ "salt-entry-0e89cff173b4.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
