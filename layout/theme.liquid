@@ -107,10 +107,11 @@
     <meta name="googlebot" content="{{ salt_seo_robots }}">
     <meta property="og:title" content="{{ salt_seo_title | escape }}">
     <meta property="og:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
+    <meta property="og:url" content="{{ salt_seo_canonical | escape }}">
     {% if request.page_type == 'product' and salt_selected_variant and salt_selected_variant.featured_image %}
       <meta property="og:image" content="{{ salt_selected_variant.featured_image | image_url: width: 1200 | escape }}">
     {% endif %}
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{% if request.page_type == 'product' %}product{% else %}website{% endif %}">
     <meta property="og:site_name" content="{{ shop.name | escape }}">
     {% if salt_custom_canonical %}
       <link rel="canonical" href="{{ salt_seo_canonical | escape }}">
@@ -177,6 +178,51 @@
         }
       }
     </script>
+    {% if request.page_type == 'product' and product %}
+      {% assign salt_schema_url = 'https://' | append: request.host | append: '/products/' | append: product.handle %}
+      {% assign salt_schema_product_name = product.title %}
+      {% assign salt_schema_description = product.description | strip_html | strip_newlines | truncate: 500 %}
+      {% assign salt_schema_variant = product.selected_or_first_available_variant %}
+      {% assign salt_schema_variant_label = salt_schema_variant.title | default: '' | strip %}
+      {% unless salt_schema_variant_label == blank or salt_schema_variant_label == 'Default Title' %}
+        {% assign salt_schema_product_name = product.title | append: ' - ' | append: salt_schema_variant_label %}
+      {% endunless %}
+      {% assign salt_schema_judgeme_badge = product.metafields.judgeme.badge | default: '' %}
+      {% assign salt_schema_judgeme_rating = salt_schema_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+      {% assign salt_schema_judgeme_review_count = salt_schema_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "@id": {{ salt_schema_url | append: '#product' | json }},
+          "mainEntityOfPage": {{ salt_schema_url | json }},
+          "name": {{ salt_schema_product_name | json }},
+          "description": {{ salt_schema_description | json }},
+          {% if salt_schema_variant.featured_image %}
+            "image": [{{ salt_schema_variant.featured_image | image_url: width: 1200 | json }}],
+          {% endif %}
+          "brand": {
+            "@type": "Brand",
+            "name": {{ product.vendor | default: shop.name | json }}
+          },
+          "sku": {{ salt_schema_variant.sku | default: product.handle | json }},
+          "url": {{ salt_schema_url | json }},
+          "offers": {
+            "@type": "Offer",
+            "url": {{ salt_schema_url | json }},
+            "priceCurrency": {{ shop.currency | json }},
+            "price": {{ salt_schema_variant.price | divided_by: 100.0 | json }},
+            "availability": "{% if salt_schema_variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+            "itemCondition": "https://schema.org/NewCondition"
+          }{% if salt_schema_judgeme_badge contains "data-average-rating='" and salt_schema_judgeme_badge contains "data-number-of-reviews='" %},
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": {{ salt_schema_judgeme_rating | plus: 0 | json }},
+            "reviewCount": {{ salt_schema_judgeme_review_count | plus: 0 | json }}
+          }{% endif %}
+        }
+      </script>
+    {% endif %}
     <link rel="icon" href="{{ 'favicon.ico' | asset_url }}" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | asset_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | asset_url }}">
