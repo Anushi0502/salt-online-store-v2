@@ -38,6 +38,8 @@
       {% assign salt_collection_handle = salt_collection_segments | last %}
       {% if salt_collection_handle == 'holiday-gifts' %}
         {% assign salt_collection_handle = 'gifts' %}
+      {% elsif salt_collection_handle == 'winter-wear' or salt_collection_handle == 'clearance-archive' %}
+        {% assign salt_collection_handle = 'under-50' %}
       {% endif %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/collections/' | append: salt_collection_handle %}
       {% assign salt_custom_canonical = true %}
@@ -141,8 +143,13 @@
           tag.setAttribute('content', content);
         }
 
-        var isHolidayGiftsAlias = /^/(?:[a-z]{2}(?:-[a-z]{2})?/)?collections/holiday-gifts/?$/i.test(path);
-        if (isHolidayGiftsAlias) {
+        var collectionAliasTarget = '';
+        if (/^/(?:[a-z]{2}(?:-[a-z]{2})?/)?collections/holiday-gifts/?$/i.test(path)) {
+          collectionAliasTarget = '/collections/gifts';
+        } else if (/^/(?:[a-z]{2}(?:-[a-z]{2})?/)?collections/(?:winter-wear|clearance-archive)/?$/i.test(path)) {
+          collectionAliasTarget = '/collections/under-50';
+        }
+        if (collectionAliasTarget) {
           var indexableRobots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
           ensureMeta('robots', indexableRobots);
           ensureMeta('googlebot', indexableRobots);
@@ -152,7 +159,7 @@
             aliasCanonical.setAttribute('rel', 'canonical');
             document.head.appendChild(aliasCanonical);
           }
-          aliasCanonical.setAttribute('href', window.location.origin + '/collections/gifts');
+          aliasCanonical.setAttribute('href', window.location.origin + collectionAliasTarget);
           return;
         }
 
@@ -251,13 +258,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-e9f2825b871b.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-e9f2825b871b.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-0e3caf9eee62.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-0e3caf9eee62.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-DxBVZzHe.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-DxBVZzHe.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-gTlx9SYc.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-gTlx9SYc.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-CFFtUuZ9.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CFFtUuZ9.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-QxE_XaeJ.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-QxE_XaeJ.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -844,8 +851,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-e9f2825b871b.js" != blank %}
-      <script type="module" src="{{ "salt-entry-e9f2825b871b.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-0e3caf9eee62.js" != blank %}
+      <script type="module" src="{{ "salt-entry-0e3caf9eee62.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
