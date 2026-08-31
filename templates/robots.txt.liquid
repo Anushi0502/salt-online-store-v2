@@ -13,3 +13,7 @@ User-agent: *
 Disallow: /pages/finance
 Disallow: /apps:finance
 Disallow: /apps/finance
+
+# Let Google re-crawl the account entry redirect and honor the login surface's
+# noindex response without exposing authenticated order pages to indexing.
+Allow: /account/orders
