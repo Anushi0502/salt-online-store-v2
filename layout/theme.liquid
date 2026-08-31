@@ -36,6 +36,9 @@
       {% assign salt_collection_path = salt_route | split: '/collections/' | last %}
       {% assign salt_collection_segments = salt_collection_path | split: '/' %}
       {% assign salt_collection_handle = salt_collection_segments | last %}
+      {% if salt_collection_handle == 'holiday-gifts' %}
+        {% assign salt_collection_handle = 'gifts' %}
+      {% endif %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/collections/' | append: salt_collection_handle %}
       {% assign salt_custom_canonical = true %}
     {% elsif request.page_type == 'product' and product %}
@@ -233,13 +236,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-363dfb44cd31.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-363dfb44cd31.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-18a52013f129.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-18a52013f129.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-Cm7V9Cqg.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-Cm7V9Cqg.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-BQKShfvv.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-BQKShfvv.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-BE1EcQt-.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-BE1EcQt-.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-B7Du0Yit.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-B7Du0Yit.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -826,8 +829,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-363dfb44cd31.js" != blank %}
-      <script type="module" src="{{ "salt-entry-363dfb44cd31.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-18a52013f129.js" != blank %}
+      <script type="module" src="{{ "salt-entry-18a52013f129.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
