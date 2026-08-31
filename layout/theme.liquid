@@ -33,7 +33,10 @@
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/search' %}
       {% assign salt_custom_canonical = true %}
     {% elsif salt_route contains '/collections/' %}
-      {% assign salt_seo_canonical = 'https://' | append: request.host | append: salt_route %}
+      {% assign salt_collection_path = salt_route | split: '/collections/' | last %}
+      {% assign salt_collection_segments = salt_collection_path | split: '/' %}
+      {% assign salt_collection_handle = salt_collection_segments | last %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/collections/' | append: salt_collection_handle %}
       {% assign salt_custom_canonical = true %}
     {% elsif request.page_type == 'product' and product %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: product.handle %}
@@ -230,13 +233,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-a64c3c098beb.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-a64c3c098beb.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-363dfb44cd31.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-363dfb44cd31.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-3rAD6OyN.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-3rAD6OyN.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-CbLFtAd3.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-CbLFtAd3.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-Cm7V9Cqg.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-Cm7V9Cqg.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-BQKShfvv.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-BQKShfvv.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -295,7 +298,7 @@
     <script>
       (function () {
         var selector = '#svelte-bundle-widget, #pumper_bundle_svelte';
-        var pending = /^\/products?(?:\/|$)/.test(window.location.pathname);
+        var pending = /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products?(?:\/|$)/i.test(window.location.pathname);
         var observer = null;
         var originalDisplays = new WeakMap();
 
@@ -488,7 +491,7 @@
       {% assign salt_product_judgeme_review_count = salt_product_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
       <script>
         (function () {
-          var match = window.location.pathname.match(/^\/products?\/([^\/?#]+)\/?$/);
+          var match = window.location.pathname.match(/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products?\/([^\/?#]+)\/?$/i);
           if (!match) return;
 
           var handle = decodeURIComponent(match[1]);
@@ -823,8 +826,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-a64c3c098beb.js" != blank %}
-      <script type="module" src="{{ "salt-entry-a64c3c098beb.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-363dfb44cd31.js" != blank %}
+      <script type="module" src="{{ "salt-entry-363dfb44cd31.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}
