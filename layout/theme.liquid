@@ -28,9 +28,13 @@
       {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
       {% assign salt_custom_canonical = true %}
-      {% if request.query_string != blank %}
-        {% assign salt_seo_robots = 'noindex,follow' %}
-      {% endif %}
+      {% comment %}
+        Shopify does not expose a reliable documented arbitrary query-string
+        property on the Liquid request object. Keep this app-owned aggregate
+        route out of the index; indexable discovery happens through the
+        canonical collection and product URLs in the sitemap.
+      {% endcomment %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
     {% elsif salt_route == '/search' %}
       {% assign salt_seo_title = 'Search SALT Online Store' %}
       {% assign salt_seo_description = 'Search the live SALT catalog for products, collections, and everyday essentials.' %}
