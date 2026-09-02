@@ -15,6 +15,14 @@
   data-judgeme-public-token="TQ0rk940ADN89zj_f83SKuTYIfY"
   data-currency="{{ cart.currency.iso_code | default: shop.currency | escape }}"
 ></div>
+<noscript>
+  <main>
+    <h1>{{ page_title | default: shop.name | escape }}</h1>
+    {% if page_description != blank %}
+      <p>{{ page_description | strip_html | escape }}</p>
+    {% endif %}
+  </main>
+</noscript>
 <script type="application/json" id="salt-sidebar-collections">
   {% assign salt_sidebar_menu = linklists['sidebar-collections'] %}
   {
@@ -74,7 +82,7 @@
   }
 </script>
 <script>
-  window.SALT_THEME_BUILD = "mtkiik9t";
+  window.SALT_THEME_BUILD = "mtkiw7th";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
