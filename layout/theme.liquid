@@ -149,9 +149,9 @@
         }
 
         var collectionAliasTarget = '';
-        if (/^/(?:[a-z]{2}(?:-[a-z]{2})?/)?collections/holiday-gifts/?$/i.test(path)) {
+        if (/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?collections\/holiday-gifts\/?$/i.test(path)) {
           collectionAliasTarget = '/collections/gifts';
-        } else if (/^/(?:[a-z]{2}(?:-[a-z]{2})?/)?collections/(?:winter-wear|clearance-archive)/?$/i.test(path)) {
+        } else if (/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?collections\/(?:winter-wear|clearance-archive)\/?$/i.test(path)) {
           collectionAliasTarget = '/collections/under-50';
         }
         if (collectionAliasTarget) {
