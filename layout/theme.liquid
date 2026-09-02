@@ -10,6 +10,7 @@
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
+    {% assign salt_social_image = 'brand-salt-logo.png' | asset_url %}
     {% # theme-check-disable ContentForHeaderModification %}
     {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
     {% # theme-check-enable ContentForHeaderModification %}
@@ -52,6 +53,10 @@
       {% endif %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/collections/' | append: salt_collection_handle %}
       {% assign salt_custom_canonical = true %}
+      {% assign salt_social_collection = collections[salt_collection_handle] %}
+      {% if salt_social_collection and salt_social_collection.image %}
+        {% assign salt_social_image = salt_social_collection.image | image_url: width: 1200 %}
+      {% endif %}
     {% elsif request.page_type == 'product' and product %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: product.handle %}
       {% assign salt_custom_canonical = true %}
@@ -108,6 +113,11 @@
         not inherit an unrelated product-only title or description.
       {%- endcomment -%}
       {% assign salt_selected_variant = product.selected_or_first_available_variant %}
+      {% if salt_selected_variant and salt_selected_variant.featured_image %}
+        {% assign salt_social_image = salt_selected_variant.featured_image | image_url: width: 1200 %}
+      {% elsif product.featured_image %}
+        {% assign salt_social_image = product.featured_image | image_url: width: 1200 %}
+      {% endif %}
       {% assign salt_variant_label = salt_selected_variant.title | default: '' | strip %}
       {% unless salt_variant_label == blank or salt_variant_label == 'Default Title' %}
         {% assign salt_seo_title = product.title | append: ' - ' | append: salt_variant_label | append: ' | SALT Online Store' %}
@@ -125,11 +135,16 @@
     <meta property="og:title" content="{{ salt_seo_title | escape }}">
     <meta property="og:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
     <meta property="og:url" content="{{ salt_seo_canonical | escape }}">
-    {% if request.page_type == 'product' and salt_selected_variant and salt_selected_variant.featured_image %}
-      <meta property="og:image" content="{{ salt_selected_variant.featured_image | image_url: width: 1200 | escape }}">
-    {% endif %}
+    <meta property="og:image" content="{{ salt_social_image | escape }}">
+    <meta property="og:image:alt" content="{{ salt_seo_title | escape }}">
     <meta property="og:type" content="{% if request.page_type == 'product' %}product{% else %}website{% endif %}">
     <meta property="og:site_name" content="{{ shop.name | escape }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ salt_seo_title | escape }}">
+    <meta name="twitter:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
+    <meta name="twitter:url" content="{{ salt_seo_canonical | escape }}">
+    <meta name="twitter:image" content="{{ salt_social_image | escape }}">
+    <meta name="twitter:image:alt" content="{{ salt_seo_title | escape }}">
     {% if salt_custom_canonical %}
       <link rel="canonical" href="{{ salt_seo_canonical | escape }}">
     {% endif %}
@@ -215,6 +230,48 @@
         }
       }
     </script>
+    {% if salt_route == '/pages/faq' %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": {{ 'How do I find the right collection?' | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ 'Start from the Collections index or the header dropdown, then narrow into the subcategory that matches the shopping intent.' | json }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ 'How do I check my order?' | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ 'Use the Track Order link in the footer or open the Shopify customer portal: https://shopify.com/58076594275/account/orders.' | json }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ 'Where is shipping and return information?' | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ 'Shipping, return, and privacy details are available in the footer policy section and remain synced to the current store setup.' | json }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ 'What should I do if I still need help?' | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ 'Use the Contact Us link for a support message and the team can route the request cleanly.' | json }}
+              }
+            }
+          ]
+        }
+      </script>
+    {% endif %}
     {% if salt_route contains '/collections/' %}
       {% assign salt_schema_collection = collections[salt_collection_handle] %}
       {% if salt_schema_collection %}
