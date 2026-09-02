@@ -125,6 +125,9 @@
         {% assign salt_seo_description = salt_variant_description | append: ' Selected option: ' | append: salt_variant_label | append: '.' %}
       {% endunless %}
     {% endif %}
+    {% unless salt_social_image contains '://' %}
+      {% assign salt_social_image = 'https:' | append: salt_social_image %}
+    {% endunless %}
 
     <title>{{ salt_seo_title | escape }}</title>
     {% if salt_seo_description != blank %}
@@ -136,6 +139,7 @@
     <meta property="og:description" content="{{ salt_seo_description | strip_html | strip_newlines | escape }}">
     <meta property="og:url" content="{{ salt_seo_canonical | escape }}">
     <meta property="og:image" content="{{ salt_social_image | escape }}">
+    <meta property="og:image:secure_url" content="{{ salt_social_image | escape }}">
     <meta property="og:image:alt" content="{{ salt_seo_title | escape }}">
     <meta property="og:type" content="{% if request.page_type == 'product' %}product{% else %}website{% endif %}">
     <meta property="og:site_name" content="{{ shop.name | escape }}">
