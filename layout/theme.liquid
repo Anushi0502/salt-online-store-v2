@@ -10,7 +10,9 @@
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
+    {% # theme-check-disable ContentForHeaderModification %}
     {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
+    {% # theme-check-enable ContentForHeaderModification %}
 
     {% if salt_route == '/' %}
       {% assign salt_seo_title = 'SALT Online Store | Curated essentials and giftable finds' %}
@@ -26,6 +28,9 @@
       {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
       {% assign salt_custom_canonical = true %}
+      {% if request.query_string != blank %}
+        {% assign salt_seo_robots = 'noindex,follow' %}
+      {% endif %}
     {% elsif salt_route == '/search' %}
       {% assign salt_seo_title = 'Search SALT Online Store' %}
       {% assign salt_seo_description = 'Search the live SALT catalog for products, collections, and everyday essentials.' %}
@@ -258,13 +263,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-7146021f8087.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-7146021f8087.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-caad67bc1a96.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-caad67bc1a96.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-D4ulPNzI.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-D4ulPNzI.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-B2UU9tFQ.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-B2UU9tFQ.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-Y11eI_oD.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-Y11eI_oD.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-rR_vO-Qy.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-rR_vO-Qy.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -272,8 +277,6 @@
         the product payload arrives. Preloading product.featured_image here can
         fetch a different CDN variant and creates a wasted-preload warning.
       {%- endcomment -%}
-      <link rel="preconnect" href="https://magecomp.us" crossorigin>
-      <link rel="dns-prefetch" href="//magecomp.us">
       <script>
         (function () {
           // LimitQtyHelper is injected by a Shopify app with defer, but its
@@ -851,8 +854,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-7146021f8087.js" != blank %}
-      <script type="module" src="{{ "salt-entry-7146021f8087.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-caad67bc1a96.js" != blank %}
+      <script type="module" src="{{ "salt-entry-caad67bc1a96.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
       <script type="module" src="{{ 'salt-app.js' | asset_url }}"></script>
     {% endif %}

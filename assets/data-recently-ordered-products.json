@@ -1,8 +1,120 @@
 {
-  "generatedAt": "2026-08-30T15:18:42.582Z",
+  "generatedAt": "2026-09-02T13:14:23.224Z",
   "source": "shopify-admin-orders-with-deterministic-catalog-floor-fill",
   "total": 300,
   "products": [
+    {
+      "id": "gid://shopify/Product/8094179197027",
+      "title": "Mens Jeans 2024 Overalls Men Pockets Casual Loose Long Denim Pants",
+      "handle": "mens-jeans-2024-overalls-men-pockets-casual-loose-long-denim-pants-slim-splice-straight-rompers-autumn-plus-size-long-jeans-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfdd2d5617e954a9a97b7b770ef3dae40F.webp?v=1785572077",
+      "imageAlt": "Mens Jeans 2024 Overalls Men Pockets Casual Loose Long Denim Pants",
+      "price": 52.99
+    },
+    {
+      "id": "gid://shopify/Product/8051172212835",
+      "title": "Business Single Shoulder Bag Polo Vertical",
+      "handle": "the-leisure-business-single-shoulder-bag-polo-vertical-bag-man-trend-inclined-shoulder-bag",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sed0f5ba94fc14fa28ecf27642b4c992dM.webp?v=1782910419",
+      "imageAlt": "Business Single Shoulder Bag Polo Vertical",
+      "price": 52.99
+    },
+    {
+      "id": "gid://shopify/Product/7769707151459",
+      "title": "Slim Fit Casual Pants Business Stretch",
+      "handle": "mens-cotton-slim-fit-casual-pants-business-fashion-stretch-trousers",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc5548c43ece2434882c6fcac3362b1e2J.webp?v=1744717550",
+      "imageAlt": "Slim Fit Casual Pants Business Stretch",
+      "price": 65.99
+    },
+    {
+      "id": "gid://shopify/Product/8058392969315",
+      "title": "Horse Hair Care Oil 100ML Mane",
+      "handle": "horse-hair-care-oil-100ml-mane-shine-essential-oil-with-plant-ingredients-nourishing-coat-treatment-easy-carry-for-all-breeds",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa4c4a9f2cf844368bca425ccb409227aU.webp?v=1783499912",
+      "imageAlt": "Horse Hair Care Oil 100ML Mane",
+      "price": 45.99
+    },
+    {
+      "id": "gid://shopify/Product/8094172971107",
+      "title": "Mens Jeans Print High Waist Straight Leg Denim Pants Harajuku Unisex",
+      "handle": "mens-jeans-print-high-waist-straight-leg-denim-pants-harajuku-unisex-loose-fit-tapered-casual-streetwear-fashion-trend-arrival",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S86b9b76ab18b44f58b6ef571cc48fae6j.webp?v=1785571880",
+      "imageAlt": "Mens Jeans Print High Waist Straight Leg Denim Pants Harajuku Unisex",
+      "price": 75.99
+    },
+    {
+      "id": "gid://shopify/Product/8066252013667",
+      "title": "Original Pen Drive 16TB USB 3 2 Flash Drive High Speed Pen Type C",
+      "handle": "original-pen-drive-16tb-usb-3-2-flash-drive-high-speed-pen-drive-type-c-metal-usb-memory-for-computer-storage-devices-1",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc5a5e0e36b474edea2ac0ec1874057ffo.webp?v=1784031600",
+      "imageAlt": "Original Pen Drive 16TB USB 3 2 Flash Drive High Speed Pen Type C",
+      "price": 61.99
+    },
+    {
+      "id": "gid://shopify/Product/8058571292771",
+      "title": "Professional Hairdressing Carbon Comb Anti Static",
+      "handle": "professional-hairdressing-carbon-comb-anti-static-hair-comb-haircut-tools-hairdresser-cutting-comb-barber-styling-hair-comb-set",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H8333b34618eb4e92a7b40b11b88b2a059.webp?v=1783503234",
+      "imageAlt": "Professional Hairdressing Carbon Comb Anti Static",
+      "price": 46.99
+    },
+    {
+      "id": "gid://shopify/Product/7704067506275",
+      "title": "Piece Square Dinner Set",
+      "handle": "40-piece-everyday-square-dinnerware-set-for-dining-table",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd8b4a86ae34f4465848caa5acd1e6570h.webp?v=1753177274",
+      "imageAlt": "Piece Square Dinner Set",
+      "price": 157.99
+    },
+    {
+      "id": "gid://shopify/Product/8052514455651",
+      "title": "Makeup Organizer Large Capacity Cosmetic",
+      "handle": "makeup-organizer-large-capacity-cosmetic-organizer-with-transparent-drawer-multi-functional-lipstick-cosmetic-organizer",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S03897f1ea5cc44b28117af95b26d8d796.webp?v=1783072078",
+      "imageAlt": "Makeup Organizer Large Capacity Cosmetic",
+      "price": 52.99
+    },
+    {
+      "id": "gid://shopify/Product/8055603789923",
+      "title": "Mens Party Nightclubs Trousers Incerun American",
+      "handle": "mens-party-nightclubs-trousers-incerun-2024-american-style-stylish-sexy-male-glittering-fabric-perspective-thin-long-pants-s-5xl",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S037f7f1b8fbc438994d4628a8f0377ab0.webp?v=1783412647",
+      "imageAlt": "Mens Party Nightclubs Trousers Incerun American",
+      "price": 52.99
+    },
+    {
+      "id": "gid://shopify/Product/8055562960995",
+      "title": "Mens Leather Magic Wallets Portable Money Bag",
+      "handle": "hot-sale-mens-leather-magic-wallets-portable-money-clips-with-credit-card-slot-cash-holder-purse-for-man-brown-coffee",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/HTB1NFN9SwDqK1RjSZSyq6yxEVXaf.webp?v=1783411406",
+      "imageAlt": "Mens Leather Magic Wallets Portable Money Bag",
+      "price": 40.99
+    },
+    {
+      "id": "gid://shopify/Product/8058392641635",
+      "title": "Original Restoria Discreet Colour Restoring Lotion",
+      "handle": "original-restoria-discreet-colour-restoring-lotion-hair-care-250ml-reduce-hair-for-men-and-women-hair-treatments",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sabfad23dd1744a4f907ae1f6f843f004L.webp?v=1783499907",
+      "imageAlt": "Original Restoria Discreet Colour Restoring Lotion",
+      "price": 57.99
+    },
+    {
+      "id": "gid://shopify/Product/8053911158883",
+      "title": "Reversible Travel Tote Bag Large Capacity",
+      "handle": "reversible-travel-tote-bag-large-capacity-foldable-carry-on-duffle-bag-canvas-shoulder-luggage-packing-bag-for-women-men",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S660fe44d696d433285a40e6e9fa0dbafj.webp?v=1783325506",
+      "imageAlt": "Reversible Travel Tote Bag Large Capacity",
+      "price": 59.99
+    },
+    {
+      "id": "gid://shopify/Product/8051905167459",
+      "title": "LED Digital Watch Stainless Steel",
+      "handle": "luxury-led-digital-watch-for-men-stainless-steel-mens-electronic-wristwatch-simple-business-gold-sliver-mens-watch-reloj-hombre",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6caa0c63a4a04e609192084f633a76f6C.webp?v=1782988061",
+      "imageAlt": "LED Digital Watch Stainless Steel",
+      "price": 43.99
+    },
     {
       "id": "gid://shopify/Product/8060585934947",
       "title": "Mouse USB Mouse Jiggler",
@@ -74,14 +186,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0aa24ccbabc5465fa4ad2b0db1bf7193W.webp?v=1783515490",
       "imageAlt": "Defense Beef Tallow Balm Moisturizer Face",
       "price": 61.99
-    },
-    {
-      "id": "gid://shopify/Product/8058392641635",
-      "title": "Original Restoria Discreet Colour Restoring Lotion",
-      "handle": "original-restoria-discreet-colour-restoring-lotion-hair-care-250ml-reduce-hair-for-men-and-women-hair-treatments",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sabfad23dd1744a4f907ae1f6f843f004L.webp?v=1783499907",
-      "imageAlt": "Original Restoria Discreet Colour Restoring Lotion",
-      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/8059444101219",
@@ -1812,14 +1916,6 @@
       "price": 56.99
     },
     {
-      "id": "gid://shopify/Product/7769707151459",
-      "title": "Slim Fit Casual Pants Business Stretch",
-      "handle": "mens-cotton-slim-fit-casual-pants-business-fashion-stretch-trousers",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3a57be13c3424a37a4a192b27aacfdcfc.webp?v=1744717550",
-      "imageAlt": "Slim Fit Casual Pants Business Stretch",
-      "price": 65.99
-    },
-    {
       "id": "gid://shopify/Product/7738902184035",
       "title": "Artificial Peony Rose Bouquet Silk Flowers",
       "handle": "artificial-peony-rose-bouquet-silk-flowers-for-home-wedding-decor",
@@ -2276,134 +2372,38 @@
       "price": 46.99
     },
     {
-      "id": "gid://shopify/Product/8069097554019",
-      "title": "1 Set Stationery DIY Leisure Cat Series Cute Paper Memo Pad Sticker",
-      "handle": "1-set-stationery-diy-leisure-cat-series-cute-paper-memo-pad-sticker-post-sticky-notes-notepad-school-office-supplies",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc088fc8f090d424dbe6a217698d355e56.webp?v=1784205654",
-      "imageAlt": "1 Set Stationery DIY Leisure Cat Series Cute Paper Memo Pad Sticker",
+      "id": "gid://shopify/Product/8128427032675",
+      "title": "Protein Powder Container Portable Small Pill Box Fitness Supplement",
+      "handle": "protein-powder-container-portable-small-pill-box-fitness-supplement-storage-5x5x8cm-food-grade-pp-leakproof-bottles-travel",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa0f54e17f217483f9241d4d5a2371530G.webp?v=1788250898",
+      "imageAlt": "Protein Powder Container Portable Small Pill Box Fitness Supplement",
       "price": 40.99
     },
     {
-      "id": "gid://shopify/Product/8052555743331",
-      "title": "Briefcase Canvas Shoulder Bag Documents Large",
-      "handle": "mens-handbags-briefcase-canvas-shoulder-bag-man-for-documents-large-capacity-tote-laptop-bag-crossbody-travel-bags-vintage-k004",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S57bad93890bc410b9dcdef732c787d17b.webp?v=1783082180",
-      "imageAlt": "Briefcase Canvas Shoulder Bag Documents Large",
-      "price": 77.99
+      "id": "gid://shopify/Product/8128426999907",
+      "title": "1 2pcs Heart Rate Monitor Chest Strap Replacement Belt For Garmin",
+      "handle": "1-2pcs-heart-rate-monitor-chest-strap-replacement-belt-for-garmin-coospo-wahoo-magene-sensor-transmitter-fitness-accessory",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4913424871f54097917b5a72e5fb47f3L.webp?v=1788250897",
+      "imageAlt": "1 2pcs Heart Rate Monitor Chest Strap Replacement Belt For Garmin",
+      "price": 45.99
     },
     {
-      "id": "gid://shopify/Product/8097473757283",
-      "title": "Tacvasen Short Sleeve Crew Neck Cotton T Shirts Mens Breathable",
-      "handle": "tacvasen-short-sleeve-crew-neck-cotton-t-shirts-mens-breathable-casual-t-shirt-sports-pullover-basic-tee-shirts-tops-clothing",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd2b044e26f7842c4b8b0a452f62b4559L.webp?v=1785836481",
-      "imageAlt": "Tacvasen Short Sleeve Crew Neck Cotton T Shirts Mens Breathable",
-      "price": 60.99
+      "id": "gid://shopify/Product/8128426967139",
+      "title": "1 5cm Fitness Pilate Mat Non Slip Yoga Knee Pad Foam Yoga Pads",
+      "handle": "1-5cm-fitness-pilate-mat-non-slip-yoga-knee-pad-foam-yoga-pads-workout-sport-plank-cushion-gym-equipment",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2a6deef14a934a08906fa2f5043d44b9J.webp?v=1788250897",
+      "imageAlt": "1 5cm Fitness Pilate Mat Non Slip Yoga Knee Pad Foam Yoga Pads",
+      "price": 45.99
     },
     {
-      "id": "gid://shopify/Product/8068264591459",
-      "title": "35 Key Wired RGB Gaming Keyboard",
-      "handle": "35keys-one-handedly-single-hand-mini-gaming-keyboard-usb-ultra-slim-wired-backlight-keyboard-for-laptop-desktop-pc-smartphone",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se3aa1ab7f5c246bab69229ebc6ca86aeD.webp?v=1784121871",
-      "imageAlt": "35 Key Wired RGB Gaming Keyboard",
+      "id": "gid://shopify/Product/8128426934371",
+      "title": "Waist Support Sports Safety Belt Protection Fitness Deep Squat Hard",
+      "handle": "waist-support-sports-safety-belt-protection-fitness-deep-squat-hard-pull-weightlifting-belt-fitness-belt-protection",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0df57a514f614dfc8a72ce79f4db62dfY.webp?v=1788250898",
+      "imageAlt": "Waist Support Sports Safety Belt Protection Fitness Deep Squat Hard",
       "price": 51.99
-    },
-    {
-      "id": "gid://shopify/Product/8097472872547",
-      "title": "Summer T Shirts Woman O Neck Short Sleeves Tees Satin Klein Blue",
-      "handle": "summer-t-shirts-woman-o-neck-short-sleeves-tees-satin-klein-blue-champagne-solid-color-loose-womensoversized-t-shirt-silk-tops",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6aa5bd72b6e5472aa9d121d89a2a4537k.webp?v=1785836462",
-      "imageAlt": "Summer T Shirts Woman O Neck Short Sleeves Tees Satin Klein Blue",
-      "price": 59.99
-    },
-    {
-      "id": "gid://shopify/Product/8068263837795",
-      "title": "Keyboard Stand For Desktop Use",
-      "handle": "104-keys-wired-keyboard-rgb-colorful-gaming-keyboard-mechanical-feel-keyboard-standard-keyboard-for-windows-laptop-computer",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6004c5b9c4064d5084d964712e6b827cc.webp?v=1784121791",
-      "imageAlt": "Keyboard Stand For Desktop Use",
-      "price": 50.99
-    },
-    {
-      "id": "gid://shopify/Product/7755136139363",
-      "title": "Adjustable Aluminum Alloy Phone Tablet Stand",
-      "handle": "adjustable-aluminum-alloy-phone-tablet-stand-cooling-support-for-laptops",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S78c297a9b9e040dbb70188142ead455bq.webp?v=1742291069",
-      "imageAlt": "Adjustable Aluminum Alloy Phone Tablet Stand",
-      "price": 67.99
-    },
-    {
-      "id": "gid://shopify/Product/7744557940835",
-      "title": "Anti Clogging Drain Mat Suction Cup Kitchen Accessories",
-      "handle": "anti-clogging-drain-mat-suction-cup-hair-filter-for-kitchen-bath",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3b63213e311f4001b25b463a546fc931Y.webp?v=1745931262",
-      "imageAlt": "Anti Clogging Drain Mat Suction Cup Kitchen Accessories",
-      "price": 43.99
-    },
-    {
-      "id": "gid://shopify/Product/8094203379811",
-      "title": "Crazy Cotton Tee Shirt Short Sleeve",
-      "handle": "mens-t-shirts-the-truth-is-out-there-crazy-100-cotton-tee-shirt-short-sleeve-the-x-files-t-shirt-crewneck-tops-new-arrival-1",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S33fcb9af9ca3406287d7b2978c2311ceu_ae6cfb4b-2c9a-44fd-acad-9fa6e209eef7.webp?v=1785573024",
-      "imageAlt": "Crazy Cotton Tee Shirt Short Sleeve",
-      "price": 56.99
-    },
-    {
-      "id": "gid://shopify/Product/7744556793955",
-      "title": "Pet Spray Brush Steam Massage Hair Comb",
-      "handle": "3-in-1-pet-spray-brush-steam-massage-hair-removal-comb",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3c86d19fae8e4990bd48435078327599M.webp?v=1746597640",
-      "imageAlt": "Pet Spray Brush Steam Massage Hair Comb",
-      "price": 44.99
-    },
-    {
-      "id": "gid://shopify/Product/7743036063843",
-      "title": "Trimmer Hair Trimmer For Daily Grooming And Daily Care Pet",
-      "handle": "adjustable-hole-pet-nail-trimmer-cat-dog-nail-clippers",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S577b4fd94cbd45fabfcc58cc49219e072.webp?v=1740556797",
-      "imageAlt": "Trimmer Hair Trimmer For Daily Grooming And Daily Care Pet",
-      "price": 43.99
-    },
-    {
-      "id": "gid://shopify/Product/7755130568803",
-      "title": "Aluminum Alloy Laptop Bracket Rotation Foldable",
-      "handle": "aluminum-alloy-laptop-bracket-360-rotation-foldable-stand",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S48645ee682f24511bccccc4799f87606f.webp?v=1742290321",
-      "imageAlt": "Aluminum Alloy Laptop Bracket Rotation Foldable",
-      "price": 44.99
-    },
-    {
-      "id": "gid://shopify/Product/8068263739491",
-      "title": "Musical Drum And Piano Toy With Lights And Sound For Toddlers",
-      "handle": "baby-toys-drum-piano-keys-musical-instrument-kids-toys-rotating-keyboard-with-lights-sound-toddlers-educational-christmas-gifts",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa773117a73fb4ff4a77c0ba6c12c13505.webp?v=1784121789",
-      "imageAlt": "Musical Drum And Piano Toy With Lights And Sound For Toddlers",
-      "price": 48.99
-    },
-    {
-      "id": "gid://shopify/Product/8123571404899",
-      "title": "Bathroom Soap Dishes Drain Hole Design Soap Dishes Non Slip Base",
-      "handle": "bathroom-soap-dishes-drain-hole-design-soap-dishes-non-slip-base-long-lasting-soap-saver-soap-tray-for-family-traveling-gym",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S49a20e1df75d4a95aa11ecdc19a7ab139.webp?v=1787831034",
-      "imageAlt": "Bathroom Soap Dishes Drain Hole Design Soap Dishes Non Slip Base",
-      "price": 40.99
-    },
-    {
-      "id": "gid://shopify/Product/8123569733731",
-      "title": "First Aid Kit Multi Purpose Emergency",
-      "handle": "first-aid-kit-multi-purpose-emergency-medical-portable-medical-bag-outdoor-multi-functional-home-emergency-edc-camping-hiking",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S90e5da1c2d4943cd9604a6acb5c10a4fs.webp?v=1787830952",
-      "imageAlt": "First Aid Kit Multi Purpose Emergency",
-      "price": 52.99
-    },
-    {
-      "id": "gid://shopify/Product/7751156793443",
-      "title": "Piece Nail Art Tool Manicure Pedicure",
-      "handle": "19-piece-nail-art-tool-set-manicure-pedicure-kit",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc0ffb806893840edab24d920170c18766.webp?v=1741675317",
-      "imageAlt": "Piece Nail Art Tool Manicure Pedicure",
-      "price": 46.99
     }
   ],
-  "recentOrderProducts": 284,
-  "catalogFloorFillProducts": 16
+  "recentOrderProducts": 296,
+  "catalogFloorFillProducts": 4
 }
