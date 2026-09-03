@@ -17,10 +17,43 @@
 ></div>
 <noscript>
   <main>
-    <h1>{{ page_title | default: shop.name | escape }}</h1>
-    {% if page_description != blank %}
-      <p>{{ page_description | strip_html | escape }}</p>
+    {% if request.page_type == 'product' and product %}
+      <h1>{{ product.title | escape }}</h1>
+      {% if product.description != blank %}
+        <p>{{ product.description | strip_html | strip_newlines | truncate: 320 | escape }}</p>
+      {% endif %}
+    {% elsif request.page_type == 'collection' and collection %}
+      <h1>{{ collection.title | escape }}</h1>
+      {% if collection.description != blank %}
+        <p>{{ collection.description | strip_html | strip_newlines | truncate: 320 | escape }}</p>
+      {% endif %}
+    {% elsif request.path contains '/pages/faq' %}
+      <h1>FAQ</h1>
+      <p>Quick answers about SALT ordering, shipping, returns, and product support.</p>
+      <section aria-labelledby="salt-noscript-faq-title">
+        <h2 id="salt-noscript-faq-title">Frequently asked questions</h2>
+        <h3>How do I find the right collection?</h3>
+        <p>Start from the Collections index or the header dropdown, then narrow into the subcategory that matches the shopping intent.</p>
+        <h3>How do I check my order?</h3>
+        <p>Use the Track Order link in the footer or open the Shopify customer portal.</p>
+        <h3>Where is shipping and return information?</h3>
+        <p>Shipping, return, and privacy details are available in the footer policy section and remain synced to the current store setup.</p>
+        <h3>What should I do if I still need help?</h3>
+        <p>Use the Contact Us link for a support message and the team can route the request cleanly.</p>
+      </section>
+    {% else %}
+      <h1>{{ page_title | default: shop.name | escape }}</h1>
+      {% if page_description != blank %}
+        <p>{{ page_description | strip_html | escape }}</p>
+      {% endif %}
     {% endif %}
+    <nav aria-label="SALT Online Store links">
+      <a href="{{ routes.root_url }}">Home</a>
+      <a href="{{ routes.collections_url }}">Collections</a>
+      <a href="{{ routes.all_products_collection_url }}">Shop all products</a>
+      <a href="/pages/faq">FAQ</a>
+      <a href="/pages/contact-us">Contact support</a>
+    </nav>
   </main>
 </noscript>
 <script type="application/json" id="salt-sidebar-collections">
