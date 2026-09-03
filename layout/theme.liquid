@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="theme-color" content="#1e3a6e">
     {% assign salt_route = request.path %}
+    {% assign salt_locale_prefix = '/' | append: request.locale.iso_code %}
+    {% assign salt_normalized_route = salt_route | remove_first: salt_locale_prefix %}
+    {% if salt_normalized_route == blank %}
+      {% assign salt_normalized_route = '/' %}
+    {% endif %}
+    {% assign salt_has_locale_prefix = false %}
+    {% if salt_normalized_route != salt_route %}
+      {% assign salt_has_locale_prefix = true %}
+    {% endif %}
+    {% assign salt_localized_utility_route = false %}
+    {% if salt_has_locale_prefix %}
+      {% if salt_normalized_route == '/shop' or salt_normalized_route == '/search' or salt_normalized_route == '/cart' or salt_normalized_route == '/wishlist' or salt_normalized_route == '/recently-viewed' or salt_normalized_route contains '/pages/' %}
+        {% assign salt_localized_utility_route = true %}
+      {% endif %}
+    {% endif %}
     {% assign salt_seo_title = page_title | default: shop.name %}
     {% assign salt_seo_description = page_description | default: shop.description | default: 'Shop curated cookware, gifts, apparel, and everyday essentials from SALT Online Store.' %}
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
@@ -15,16 +30,18 @@
     {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
     {% # theme-check-enable ContentForHeaderModification %}
 
-    {% if salt_route == '/' %}
+    {% if salt_localized_utility_route %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% elsif salt_normalized_route == '/' %}
       {% assign salt_seo_title = 'SALT Online Store | Curated essentials and giftable finds' %}
       {% assign salt_seo_description = 'Shop practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/' %}
       {% assign salt_custom_canonical = true %}
-    {% elsif salt_route == '/pages/finance' or salt_route == '/apps:finance' or salt_route == '/apps/finance' %}
+    {% elsif salt_normalized_route == '/pages/finance' or salt_normalized_route == '/apps:finance' or salt_normalized_route == '/apps/finance' %}
       {% assign salt_seo_title = 'SALT Finance | Private Operations' %}
       {% assign salt_seo_description = 'Private SALT operations workspace.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route == '/shop' %}
+    {% elsif salt_normalized_route == '/shop' %}
       {% assign salt_seo_title = 'Shop All Products | SALT Online Store' %}
       {% assign salt_seo_description = 'Browse the live SALT catalog of cookware, gifts, apparel, beauty, gadgets, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/shop' %}
@@ -36,20 +53,20 @@
         canonical collection and product URLs in the sitemap.
       {% endcomment %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route == '/search' %}
+    {% elsif salt_normalized_route == '/search' %}
       {% assign salt_seo_title = 'Search SALT Online Store' %}
       {% assign salt_seo_description = 'Search the live SALT catalog for products, collections, and everyday essentials.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/search' %}
       {% assign salt_custom_canonical = true %}
-    {% elsif salt_route contains '/pages/track-order' %}
+    {% elsif salt_normalized_route contains '/pages/track-order' %}
       {% assign salt_seo_title = 'Track Order | SALT Online Store' %}
       {% assign salt_seo_description = 'Use the secure order portal to review your order status and delivery details.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route contains '/pages/wishlist' or salt_route contains '/pages/recently-viewed' %}
+    {% elsif salt_normalized_route contains '/pages/wishlist' or salt_normalized_route contains '/pages/recently-viewed' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route contains '/collections/' %}
-      {% assign salt_collection_path = salt_route | split: '/collections/' | last %}
+    {% elsif salt_normalized_route contains '/collections/' %}
+      {% assign salt_collection_path = salt_normalized_route | split: '/collections/' | last %}
       {% assign salt_collection_segments = salt_collection_path | split: '/' %}
       {% assign salt_collection_handle = salt_collection_segments | last %}
       {% if salt_collection_handle == 'holiday-gifts' %}
@@ -64,7 +81,7 @@
         {% assign salt_social_image = salt_social_collection.image | image_url: width: 1200 %}
       {% endif %}
     {% elsif request.page_type == 'blog' %}
-      {% assign salt_blog_path = salt_route | split: '/blogs/' | last %}
+      {% assign salt_blog_path = salt_normalized_route | split: '/blogs/' | last %}
       {% assign salt_blog_handle = salt_blog_path | split: '/' | first %}
       {% assign salt_seo_title = 'SALT Journal | SALT Online Store' %}
       {% assign salt_seo_description = 'Fresh stories, product education, and practical ideas from SALT.' %}
@@ -82,44 +99,44 @@
     {% elsif request.page_type == 'product' and product %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: product.handle %}
       {% assign salt_custom_canonical = true %}
-    {% elsif salt_route == '/cart' or salt_route == '/wishlist' or salt_route == '/recently-viewed' %}
+    {% elsif salt_normalized_route == '/cart' or salt_normalized_route == '/wishlist' or salt_normalized_route == '/recently-viewed' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route == '/pages/wishlist' %}
+    {% elsif salt_normalized_route == '/pages/wishlist' %}
       {% assign salt_seo_title = 'Wishlist | SALT Online Store' %}
       {% assign salt_seo_description = 'Save SALT products for later and keep track of items you love.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route == '/pages/resources' %}
+    {% elsif salt_normalized_route == '/pages/resources' %}
       {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
       {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
-    {% elsif salt_route == '/pages/faq' %}
+    {% elsif salt_normalized_route == '/pages/faq' %}
       {% assign salt_seo_title = 'FAQ | SALT Online Store' %}
       {% assign salt_seo_description = 'Quick answers about SALT ordering, shipping, returns, and product support.' %}
-    {% elsif salt_route == '/pages/contact-us' %}
+    {% elsif salt_normalized_route == '/pages/contact-us' %}
       {% assign salt_seo_title = 'Contact Support | SALT Online Store' %}
       {% assign salt_seo_description = 'Reach the SALT support team for delivery questions, product advice, returns, or order help.' %}
-    {% elsif salt_route == '/pages/about-us' %}
+    {% elsif salt_normalized_route == '/pages/about-us' %}
       {% assign salt_seo_title = 'About SALT Online Store' %}
       {% assign salt_seo_description = 'Learn how SALT makes practical products easy to discover, save, and buy.' %}
-    {% elsif salt_route == '/pages/blog' %}
+    {% elsif salt_normalized_route == '/pages/blog' %}
       {% assign salt_seo_title = 'SALT Journal | SALT Online Store' %}
       {% assign salt_seo_description = 'Fresh stories, product education, and practical ideas from SALT.' %}
-    {% elsif salt_route == '/pages/affiliate-program' %}
+    {% elsif salt_normalized_route == '/pages/affiliate-program' %}
       {% assign salt_seo_title = 'Affiliate Program | SALT Online Store' %}
       {% assign salt_seo_description = 'Learn how to partner with SALT and share useful products with your audience.' %}
-    {% elsif salt_route == '/pages/mission-vision' %}
+    {% elsif salt_normalized_route == '/pages/mission-vision' %}
       {% assign salt_seo_title = 'Mission & Vision | SALT Online Store' %}
       {% assign salt_seo_description = 'Learn what SALT is building and how we make everyday shopping easier.' %}
-    {% elsif salt_route == '/pages/wholesale-inquiries' %}
+    {% elsif salt_normalized_route == '/pages/wholesale-inquiries' %}
       {% assign salt_seo_title = 'Wholesale Inquiries | SALT Online Store' %}
       {% assign salt_seo_description = 'Contact SALT about wholesale, gifting, and business purchasing opportunities.' %}
-    {% elsif salt_route == '/pages/terms-conditions' %}
+    {% elsif salt_normalized_route == '/pages/terms-conditions' %}
       {% assign salt_seo_title = 'Terms & Conditions | SALT Online Store' %}
       {% assign salt_seo_description = 'Review the terms that apply when using the SALT Online Store.' %}
-    {% elsif salt_route == '/pages/track-order' %}
+    {% elsif salt_normalized_route == '/pages/track-order' %}
       {% assign salt_seo_title = 'Track Order | SALT Online Store' %}
       {% assign salt_seo_description = 'Use the secure order portal to review your order status and delivery details.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route == '/pages/recently-viewed' %}
+    {% elsif salt_normalized_route == '/pages/recently-viewed' %}
       {% assign salt_seo_title = 'Recently Viewed | SALT Online Store' %}
       {% assign salt_seo_description = 'Pick up where you left off with products viewed on this device.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
@@ -312,7 +329,7 @@
         }
       </script>
     {% endif %}
-    {% if salt_route == '/pages/faq' %}
+    {% if salt_normalized_route == '/pages/faq' %}
       <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -354,7 +371,7 @@
         }
       </script>
     {% endif %}
-    {% if salt_route contains '/collections/' %}
+    {% if salt_normalized_route contains '/collections/' %}
       {% assign salt_schema_collection = collections[salt_collection_handle] %}
       {% if salt_schema_collection %}
         {% assign salt_schema_collection_description = salt_schema_collection.description | strip_html | strip_newlines | truncate: 500 %}
