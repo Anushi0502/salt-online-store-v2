@@ -41,6 +41,22 @@
         <h3>What should I do if I still need help?</h3>
         <p>Use the Contact Us link for a support message and the team can route the request cleanly.</p>
       </section>
+    {% elsif request.path == '/pages/about-us' %}
+      <h1>About SALT Online Store</h1>
+      <p>Learn how SALT makes practical products easy to discover, save, and buy.</p>
+    {% elsif request.path == '/pages/contact-us' %}
+      <h1>Contact SALT Support</h1>
+      <p>Reach the SALT support team for delivery questions, product advice, returns, or order help.</p>
+    {% elsif request.path == '/pages/blog' %}
+      <h1>SALT Journal</h1>
+      <p>Fresh stories, product education, and practical ideas from SALT.</p>
+    {% elsif request.page_type == 'blog' and blog %}
+      <h1>{{ blog.title | escape }}</h1>
+      <p>Fresh stories, product education, and practical ideas from SALT.</p>
+    {% elsif request.page_type == 'article' and article %}
+      <h1>{{ article.title | escape }}</h1>
+      {% assign salt_noscript_article_description = article.excerpt | default: article.content | strip_html | strip_newlines | truncate: 320 %}
+      <p>{{ salt_noscript_article_description | escape }}</p>
     {% else %}
       <h1>{{ page_title | default: shop.name | escape }}</h1>
       {% if page_description != blank %}
