@@ -286,6 +286,26 @@
         }
       </script>
     {% endif %}
+    {% if request.page_type == 'blog' and blog %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "@id": {{ salt_seo_canonical | append: '#blog' | json }},
+          "name": {{ blog.title | json }},
+          "url": {{ salt_seo_canonical | json }},
+          "blogPost": [
+            {% for salt_blog_article in blog.articles limit: 12 %}
+              {
+                "@type": "BlogPosting",
+                "headline": {{ salt_blog_article.title | json }},
+                "url": {{ 'https://' | append: request.host | append: salt_blog_article.url | json }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }
+      </script>
+    {% endif %}
     {% if salt_route == '/pages/faq' %}
       <script type="application/ld+json">
         {
