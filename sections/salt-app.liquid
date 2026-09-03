@@ -56,6 +56,49 @@
     </nav>
   </main>
 </noscript>
+<script>
+  (function () {
+    var path = window.location.pathname.replace(/\/+$/, '') || '/';
+    var isHome = path === '/' || /^\/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
+    var isCollection = /\/collections\/[^/]+$/.test(path);
+    if (!isHome && !isCollection) return;
+
+    var root = document.getElementById('root');
+    if (!root) return;
+
+    var attempts = 0;
+    var observer = null;
+    var ensureHeading = function () {
+      if (!root.isConnected) return;
+      if (root.querySelector('h1')) {
+        if (observer) observer.disconnect();
+        return;
+      }
+
+      var shell = root.querySelector('.salt-shop-channel-shell, main, section');
+      if (!shell) {
+        attempts += 1;
+        if (attempts > 120 && observer) observer.disconnect();
+        return;
+      }
+
+      var heading = document.createElement('h1');
+      heading.className = 'sr-only';
+      heading.textContent = isHome
+        ? 'Shop Cookware, Clothing, Decor & Gifts | SALT Online Store'
+        : document.title.replace(/\s*\|\s*SALT Online Store.*$/, '') || 'SALT Collection';
+      shell.insertBefore(heading, shell.firstChild);
+      if (observer) observer.disconnect();
+    };
+
+    observer = new MutationObserver(ensureHeading);
+    observer.observe(root, { childList: true, subtree: true });
+    ensureHeading();
+    window.setTimeout(function () {
+      if (observer) observer.disconnect();
+    }, 12000);
+  })();
+</script>
 <script type="application/json" id="salt-sidebar-collections">
   {% assign salt_sidebar_menu = linklists['sidebar-collections'] %}
   {
