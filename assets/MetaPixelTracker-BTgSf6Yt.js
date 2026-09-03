@@ -1,1 +1,1 @@
-import{a2 as a,r as t}from"./salt-entry-caad67bc1a96.js";import{scheduleMetaPixelTask as r,trackMetaPixelPageView as o}from"./meta-pixel-BcEUGLIN.js";const i=()=>{const e=a();return t.useEffect(()=>r(o),[e.pathname,e.search]),null};export{i as default};
+import{a2 as a,r as t}from"./salt-entry-caad67bc1a96.js?seo=20260903";import{scheduleMetaPixelTask as r,trackMetaPixelPageView as o}from"./meta-pixel-BcEUGLIN.js?seo=20260903";const i=()=>{const e=a();return t.useEffect(()=>r(o),[e.pathname,e.search]),null};export{i as default};
