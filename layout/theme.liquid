@@ -42,6 +42,12 @@
       {% assign salt_seo_robots = 'noindex,follow' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/search' %}
       {% assign salt_custom_canonical = true %}
+    {% elsif salt_route contains '/pages/track-order' %}
+      {% assign salt_seo_title = 'Track Order | SALT Online Store' %}
+      {% assign salt_seo_description = 'Use the secure order portal to review your order status and delivery details.' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% elsif salt_route contains '/pages/wishlist' or salt_route contains '/pages/recently-viewed' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
     {% elsif salt_route contains '/collections/' %}
       {% assign salt_collection_path = salt_route | split: '/collections/' | last %}
       {% assign salt_collection_segments = salt_collection_path | split: '/' %}
