@@ -19,9 +19,20 @@
   <main>
     {% if request.page_type == 'product' and product %}
       <h1>{{ product.title | escape }}</h1>
-      {% if product.description != blank %}
-        <p>{{ product.description | strip_html | strip_newlines | truncate: 320 | escape }}</p>
+      {% if product.featured_image %}
+        <img src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title | escape }}" loading="lazy" width="800" height="800">
       {% endif %}
+      <p>
+        {% if product.vendor != blank %}Brand: {{ product.vendor | escape }}{% endif %}
+        {% if product.type != blank %}{% if product.vendor != blank %} · {% endif %}Category: {{ product.type | escape }}{% endif %}
+      </p>
+      {% if product.description != blank %}
+        <p>{{ product.description | strip_html | strip_newlines | truncate: 600 | escape }}</p>
+      {% endif %}
+      {% assign salt_noscript_variant = product.selected_or_first_available_variant %}
+      <p>Price: {{ salt_noscript_variant.price | money }}</p>
+      <p>Availability: {% if product.available %}In stock{% else %}Currently unavailable{% endif %}</p>
+      <p><a href="{{ product.url }}">View product details</a></p>
     {% elsif request.page_type == 'collection' and collection %}
       <h1>{{ collection.title | escape }}</h1>
       {% if collection.description != blank %}
