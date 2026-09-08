@@ -217,6 +217,7 @@
         var hasQuery = query.length > 1;
         var isFinance = path === '/pages/finance' || path === '/apps:finance' || path === '/apps/finance' || (path === '/' && /(?:^|&)finance=1(?:&|$)/.test(query.slice(1)));
         var isQuerySurface = path === '/' || path === '/shop' || path === '/search';
+        var isProductQueryVariant = hasQuery && /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products?\/[^/]+\/?$/i.test(path);
         var isLocalizedCatalogDuplicate = /^\/(?:[a-z]{2}(?:-[a-z]{2})?)\/(?:products?|collections)(?:\/|$)/i.test(path);
         var isProductReviewRoute = /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products?\/[^/]+\/reviews\/?$/i.test(path);
         var productCanonicalAliases = {
@@ -230,7 +231,7 @@
           '/products/women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands-2': '/products/women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands'
         };
         var productCanonicalAlias = productCanonicalAliases[path] || '';
-        if (!isFinance && !isLocalizedCatalogDuplicate && !isProductReviewRoute && !productCanonicalAlias && !(hasQuery && isQuerySurface)) return;
+        if (!isFinance && !isProductQueryVariant && !isLocalizedCatalogDuplicate && !isProductReviewRoute && !productCanonicalAlias && !(hasQuery && isQuerySurface)) return;
 
         function ensureMeta(name, content) {
           var tag = document.querySelector('meta[name="' + name + '"]');
@@ -283,6 +284,28 @@
           };
           applyProductCanonical();
           new MutationObserver(applyProductCanonical).observe(document.head, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['href', 'rel', 'content']
+          });
+          return;
+        }
+
+        if (isProductQueryVariant) {
+          var applyProductQueryNoIndex = function () {
+            ensureMeta('robots', 'noindex,follow');
+            ensureMeta('googlebot', 'noindex,follow');
+            var productQueryCanonical = document.querySelector('link[rel="canonical"]');
+            if (!productQueryCanonical) {
+              productQueryCanonical = document.createElement('link');
+              productQueryCanonical.setAttribute('rel', 'canonical');
+              document.head.appendChild(productQueryCanonical);
+            }
+            productQueryCanonical.setAttribute('href', window.location.origin + path);
+          };
+          applyProductQueryNoIndex();
+          new MutationObserver(applyProductQueryNoIndex).observe(document.head, {
             childList: true,
             subtree: true,
             attributes: true,
