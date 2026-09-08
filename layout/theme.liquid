@@ -177,6 +177,9 @@
     {% if salt_is_locale_catalog_route or salt_is_product_reviews_route %}
       {% assign salt_seo_robots = 'noindex,follow' %}
     {% endif %}
+    {% if salt_route contains '/pages/track-order' %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% endif %}
     {% if salt_product_canonical_alias != blank %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: salt_product_canonical_alias %}
       {% assign salt_custom_canonical = true %}
