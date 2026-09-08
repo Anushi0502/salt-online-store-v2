@@ -74,9 +74,9 @@
 </noscript>
 <script>
   (function () {
-    var path = window.location.pathname.replace(/\/+$/, '') || '/';
-    var isHome = path === '/' || /^\/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
-    var isCollection = /\/collections\/[^/]+$/.test(path);
+    var path = window.location.pathname.replace(//+$/, '') || '/';
+    var isHome = path === '/' || /^/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
+    var isCollection = //collections/[^/]+$/.test(path);
     if (!isHome && !isCollection) return;
 
     var root = document.getElementById('root');
@@ -102,7 +102,7 @@
       heading.className = 'sr-only';
       heading.textContent = isHome
         ? 'Shop Cookware, Clothing, Decor & Gifts | SALT Online Store'
-        : document.title.replace(/\s*\|\s*SALT Online Store.*$/, '') || 'SALT Collection';
+        : document.title.replace(/s*|s*SALT Online Store.*$/, '') || 'SALT Collection';
       shell.insertBefore(heading, shell.firstChild);
       if (observer) observer.disconnect();
     };
@@ -174,7 +174,7 @@
   }
 </script>
 <script>
-  window.SALT_THEME_BUILD = "mtkjofk9";
+  window.SALT_THEME_BUILD = "mts3jxgj";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";

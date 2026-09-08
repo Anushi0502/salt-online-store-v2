@@ -11,6 +11,21 @@
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
     {% assign salt_social_image = 'brand-salt-logo.png' | asset_url %}
+    {% assign salt_route_segments = salt_route | split: '/' %}
+    {% assign salt_route_first_segment = salt_route_segments[1] | downcase %}
+    {% assign salt_route_second_segment = salt_route_segments[2] | downcase %}
+    {% assign salt_locale_code = request.locale.iso_code | downcase %}
+    {% assign salt_is_locale_catalog_route = false %}
+    {% if salt_route_first_segment == salt_locale_code and salt_route_segments.size > 2 %}
+      {% if salt_route_second_segment == 'product' or salt_route_second_segment == 'products' or salt_route_second_segment == 'collections' %}
+        {% assign salt_is_locale_catalog_route = true %}
+      {% endif %}
+    {% endif %}
+    {% assign salt_is_product_reviews_route = false %}
+    {% if salt_route contains '/products/' and salt_route contains '/reviews' %}
+      {% assign salt_is_product_reviews_route = true %}
+    {% endif %}
+    {% assign salt_product_canonical_alias = '' %}
     {% # theme-check-disable ContentForHeaderModification %}
     {% capture salt_content_for_header %}{{ content_for_header }}{% endcapture %}
     {% # theme-check-enable ContentForHeaderModification %}
@@ -42,12 +57,6 @@
       {% assign salt_seo_robots = 'noindex,follow' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/search' %}
       {% assign salt_custom_canonical = true %}
-    {% elsif salt_route contains '/pages/track-order' %}
-      {% assign salt_seo_title = 'Track Order | SALT Online Store' %}
-      {% assign salt_seo_description = 'Use the secure order portal to review your order status and delivery details.' %}
-      {% assign salt_seo_robots = 'noindex,follow' %}
-    {% elsif salt_route contains '/pages/wishlist' or salt_route contains '/pages/recently-viewed' %}
-      {% assign salt_seo_robots = 'noindex,follow' %}
     {% elsif salt_route contains '/collections/' %}
       {% assign salt_collection_path = salt_route | split: '/collections/' | last %}
       {% assign salt_collection_segments = salt_collection_path | split: '/' %}
@@ -82,6 +91,24 @@
     {% elsif request.page_type == 'product' and product %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: product.handle %}
       {% assign salt_custom_canonical = true %}
+      {% case product.handle %}
+        {% when 'winter-motorcycle-face-mask-balaclava-windproof-thermal-neck-warmer' %}
+          {% assign salt_product_canonical_alias = 'tactical-motorcycle-face-mask-neck-gaiter-windproof-breathable' %}
+        {% when 'ruyi-men-face-cream-moisturizing-nourishing-lotion-face-firming-lifting-anti-puffiness-facial-skin-care-50g-for-men-1' %}
+          {% assign salt_product_canonical_alias = 'ruyi-men-face-cream-moisturizing-nourishing-lotion-face-firming-lifting-anti-puffiness-facial-skin-care-50g-for-men' %}
+        {% when 'children-school-bags-girls-boys-primary-school-backpack-schoolbag-kids-book-bag-mochila-infantil-1' %}
+          {% assign salt_product_canonical_alias = 'children-school-bags-girls-boys-primary-school-backpack-schoolbag-kids-book-bag-mochila-infantil' %}
+        {% when 'black-fashion-adult-waterproof-long-raincoat-women-men-rain-coat-hooded-for-outdoor-hiking-travel-fishing-climbing-thickened-2' %}
+          {% assign salt_product_canonical_alias = 'black-fashion-adult-waterproof-long-raincoat-women-men-rain-coat-hooded-for-outdoor-hiking-travel-fishing-climbing-thickened-3' %}
+        {% when 'anti-frizz-hair-oil-spray-perfumed-smoothing-lightweight-non-greasy-hair-care-oil-for-color-treated-perm-damaged-hair-long-l-2' %}
+          {% assign salt_product_canonical_alias = 'anti-frizz-hair-oil-spray-perfumed-smoothing-lightweight-non-greasy-hair-care-oil-for-color-treated-perm-damaged-hair-long-l' %}
+        {% when 'jackets-for-women-quilted-padded-lightweight-puffer-woman-coat-hoodie-short-yellow-thick-padding-feather-cropped-cute-modern-hot-1' %}
+          {% assign salt_product_canonical_alias = 'jackets-for-women-quilted-padded-lightweight-puffer-woman-coat-hoodie-short-yellow-thick-padding-feather-cropped-cute-modern-hot' %}
+        {% when 'car-battery-trickle-charger-and-maintainer-1-5a-6v-12v-truck-trickle-battery-charger-automatic-tender-maintainer-rv-motorcycle' %}
+          {% assign salt_product_canonical_alias = 'car-battery-trickle-charger-and-maintainer-1-5a-6v-12v-truck-trickle-battery-charger-automatic-tender-maintainer-for-motorcycle' %}
+        {% when 'women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands-2' %}
+          {% assign salt_product_canonical_alias = 'women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands' %}
+      {% endcase %}
     {% elsif salt_route == '/cart' or salt_route == '/wishlist' or salt_route == '/recently-viewed' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
     {% elsif salt_route == '/pages/wishlist' %}
@@ -147,6 +174,13 @@
         {% assign salt_seo_description = salt_variant_description | append: ' Selected option: ' | append: salt_variant_label | append: '.' %}
       {% endunless %}
     {% endif %}
+    {% if salt_is_locale_catalog_route or salt_is_product_reviews_route %}
+      {% assign salt_seo_robots = 'noindex,follow' %}
+    {% endif %}
+    {% if salt_product_canonical_alias != blank %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/products/' | append: salt_product_canonical_alias %}
+      {% assign salt_custom_canonical = true %}
+    {% endif %}
     {% unless salt_social_image contains '://' %}
       {% assign salt_social_image = 'https:' | append: salt_social_image %}
     {% endunless %}
@@ -183,7 +217,20 @@
         var hasQuery = query.length > 1;
         var isFinance = path === '/pages/finance' || path === '/apps:finance' || path === '/apps/finance' || (path === '/' && /(?:^|&)finance=1(?:&|$)/.test(query.slice(1)));
         var isQuerySurface = path === '/' || path === '/shop' || path === '/search';
-        if (!isFinance && !(hasQuery && isQuerySurface)) return;
+        var isLocalizedCatalogDuplicate = /^\/(?:[a-z]{2}(?:-[a-z]{2})?)\/(?:products?|collections)(?:\/|$)/i.test(path);
+        var isProductReviewRoute = /^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?products?\/[^/]+\/reviews\/?$/i.test(path);
+        var productCanonicalAliases = {
+          '/products/winter-motorcycle-face-mask-balaclava-windproof-thermal-neck-warmer': '/products/tactical-motorcycle-face-mask-neck-gaiter-windproof-breathable',
+          '/products/ruyi-men-face-cream-moisturizing-nourishing-lotion-face-firming-lifting-anti-puffiness-facial-skin-care-50g-for-men-1': '/products/ruyi-men-face-cream-moisturizing-nourishing-lotion-face-firming-lifting-anti-puffiness-facial-skin-care-50g-for-men',
+          '/products/children-school-bags-girls-boys-primary-school-backpack-schoolbag-kids-book-bag-mochila-infantil-1': '/products/children-school-bags-girls-boys-primary-school-backpack-schoolbag-kids-book-bag-mochila-infantil',
+          '/products/black-fashion-adult-waterproof-long-raincoat-women-men-rain-coat-hooded-for-outdoor-hiking-travel-fishing-climbing-thickened-2': '/products/black-fashion-adult-waterproof-long-raincoat-women-men-rain-coat-hooded-for-outdoor-hiking-travel-fishing-climbing-thickened-3',
+          '/products/anti-frizz-hair-oil-spray-perfumed-smoothing-lightweight-non-greasy-hair-care-oil-for-color-treated-perm-damaged-hair-long-l-2': '/products/anti-frizz-hair-oil-spray-perfumed-smoothing-lightweight-non-greasy-hair-care-oil-for-color-treated-perm-damaged-hair-long-l',
+          '/products/jackets-for-women-quilted-padded-lightweight-puffer-woman-coat-hoodie-short-yellow-thick-padding-feather-cropped-cute-modern-hot-1': '/products/jackets-for-women-quilted-padded-lightweight-puffer-woman-coat-hoodie-short-yellow-thick-padding-feather-cropped-cute-modern-hot',
+          '/products/car-battery-trickle-charger-and-maintainer-1-5a-6v-12v-truck-trickle-battery-charger-automatic-tender-maintainer-rv-motorcycle': '/products/car-battery-trickle-charger-and-maintainer-1-5a-6v-12v-truck-trickle-battery-charger-and-maintainer-for-motorcycle',
+          '/products/women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands-2': '/products/women-dark-hair-accessories-set-elastic-seamless-ponytail-scrunchies-small-rubber-bands-fashion-hair-ties-headbands'
+        };
+        var productCanonicalAlias = productCanonicalAliases[path] || '';
+        if (!isFinance && !isLocalizedCatalogDuplicate && !isProductReviewRoute && !productCanonicalAlias && !(hasQuery && isQuerySurface)) return;
 
         function ensureMeta(name, content) {
           var tag = document.querySelector('meta[name="' + name + '"]');
@@ -201,7 +248,7 @@
         } else if (/^\/(?:[a-z]{2}(?:-[a-z]{2})?\/)?collections\/(?:winter-wear|clearance-archive)\/?$/i.test(path)) {
           collectionAliasTarget = '/collections/under-50';
         }
-        if (collectionAliasTarget) {
+        if (collectionAliasTarget && !isLocalizedCatalogDuplicate) {
           var indexableRobots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
           ensureMeta('robots', indexableRobots);
           ensureMeta('googlebot', indexableRobots);
@@ -212,6 +259,35 @@
             document.head.appendChild(aliasCanonical);
           }
           aliasCanonical.setAttribute('href', window.location.origin + collectionAliasTarget);
+          return;
+        }
+
+        if (isLocalizedCatalogDuplicate || isProductReviewRoute) {
+          ensureMeta('robots', 'noindex,follow');
+          ensureMeta('googlebot', 'noindex,follow');
+          return;
+        }
+
+        if (productCanonicalAlias) {
+          var canonicalTarget = window.location.origin + productCanonicalAlias;
+          var applyProductCanonical = function () {
+            var canonicalAliasLink = document.querySelector('link[rel="canonical"]');
+            if (!canonicalAliasLink) {
+              canonicalAliasLink = document.createElement('link');
+              canonicalAliasLink.setAttribute('rel', 'canonical');
+              document.head.appendChild(canonicalAliasLink);
+            }
+            canonicalAliasLink.setAttribute('href', canonicalTarget);
+            ensureMeta('robots', 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1');
+            ensureMeta('googlebot', 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1');
+          };
+          applyProductCanonical();
+          new MutationObserver(applyProductCanonical).observe(document.head, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['href', 'rel', 'content']
+          });
           return;
         }
 
@@ -439,13 +515,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-seo-20260903.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-seo-20260903.js" | asset_url | split: '?' | first }}?seo=20260903" fetchpriority="high">
+    {% if "salt-entry-51c19e757eb0.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-51c19e757eb0.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-Y11eI_oD.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-Y11eI_oD.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-rR_vO-Qy.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-rR_vO-Qy.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-BJbDUnqS.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-BJbDUnqS.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-DXvK-IgZ.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DXvK-IgZ.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1030,8 +1106,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-seo-20260903.js" != blank %}
-      <script type="module" src="{{ "salt-entry-seo-20260903.js" | asset_url | split: '?' | first }}?seo=20260903"></script>
+    {% if "salt-entry-51c19e757eb0.js" != blank %}
+      <script type="module" src="{{ "salt-entry-51c19e757eb0.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
