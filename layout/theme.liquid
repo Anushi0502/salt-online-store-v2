@@ -475,6 +475,8 @@
       {% assign salt_schema_judgeme_badge = product.metafields.judgeme.badge | default: '' %}
       {% assign salt_schema_judgeme_rating = salt_schema_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
       {% assign salt_schema_judgeme_review_count = salt_schema_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+      {% assign salt_schema_judgeme_rating_value = salt_schema_judgeme_rating | plus: 0 %}
+      {% assign salt_schema_judgeme_review_count_value = salt_schema_judgeme_review_count | plus: 0 %}
       <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -499,11 +501,11 @@
             "price": {{ salt_schema_variant.price | divided_by: 100.0 | json }},
             "availability": "{% if salt_schema_variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
             "itemCondition": "https://schema.org/NewCondition"
-          }{% if salt_schema_judgeme_badge contains "data-average-rating='" and salt_schema_judgeme_badge contains "data-number-of-reviews='" %},
+          }{% if salt_schema_judgeme_rating_value > 0 and salt_schema_judgeme_review_count_value > 0 %},
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": {{ salt_schema_judgeme_rating | plus: 0 | json }},
-            "reviewCount": {{ salt_schema_judgeme_review_count | plus: 0 | json }}
+            "ratingValue": {{ salt_schema_judgeme_rating_value | json }},
+            "reviewCount": {{ salt_schema_judgeme_review_count_value | json }}
           }{% endif %}
         }
       </script>
