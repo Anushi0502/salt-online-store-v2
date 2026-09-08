@@ -12,16 +12,6 @@
     {% assign salt_custom_canonical = false %}
     {% assign salt_product_canonical_alias = '' %}
     {% assign salt_social_image = 'brand-salt-logo.png' | asset_url %}
-    {% assign salt_route_segments = salt_route | split: '/' %}
-    {% assign salt_route_first_segment = salt_route_segments[1] | downcase %}
-    {% assign salt_route_second_segment = salt_route_segments[2] | downcase %}
-    {% assign salt_locale_code = request.locale.iso_code | downcase %}
-    {% assign salt_is_locale_catalog_route = false %}
-    {% if salt_route_first_segment == salt_locale_code and salt_route_segments.size > 2 %}
-      {% if salt_route_second_segment == 'product' or salt_route_second_segment == 'products' or salt_route_second_segment == 'collections' %}
-        {% assign salt_is_locale_catalog_route = true %}
-      {% endif %}
-    {% endif %}
     {% assign salt_is_product_reviews_route = false %}
     {% if salt_route contains '/products/' and salt_route contains '/reviews' %}
       {% assign salt_is_product_reviews_route = true %}
@@ -204,7 +194,7 @@
         {% assign salt_seo_description = salt_variant_description | append: ' Selected option: ' | append: salt_variant_label | append: '.' %}
       {% endunless %}
     {% endif %}
-    {% if salt_is_locale_catalog_route or salt_is_product_reviews_route %}
+    {% if salt_is_product_reviews_route %}
       {% assign salt_seo_robots = 'noindex,follow' %}
     {% endif %}
     {% if salt_product_canonical_alias != blank %}
@@ -279,7 +269,7 @@
           '/products/blush-palette-makeup-blush-palette-makeup-multi-colored-bright-light-long-lasting-natural-glow-complexion-face-blushes-bright-1': '/products/blush-palette-makeup-blush-palette-makeup-multi-colored-bright-light-long-lasting-natural-glow-complexion-face-blushes-bright'
         };
         var productCanonicalAlias = productCanonicalAliases[path] || '';
-        if (!isFinance && !isProductQueryVariant && !isLocalizedCatalogDuplicate && !isProductReviewRoute && !productCanonicalAlias && !(hasQuery && isQuerySurface)) return;
+        if (!isFinance && !isProductQueryVariant && !isProductReviewRoute && !productCanonicalAlias && !(hasQuery && isQuerySurface)) return;
 
         function ensureMeta(name, content) {
           var tag = document.querySelector('meta[name="' + name + '"]');
@@ -311,7 +301,7 @@
           return;
         }
 
-        if (isLocalizedCatalogDuplicate || isProductReviewRoute) {
+        if (isProductReviewRoute) {
           ensureMeta('robots', 'noindex,follow');
           ensureMeta('googlebot', 'noindex,follow');
           return;
@@ -608,13 +598,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-a8d71bf9f08a.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-a8d71bf9f08a.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-a5e542af2b3a.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-a5e542af2b3a.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-CgoEMmO2.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-CgoEMmO2.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-T7-D-_i0.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-T7-D-_i0.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-Dy0wMPQG.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-Dy0wMPQG.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-Cia7jTi2.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-Cia7jTi2.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1199,8 +1189,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-a8d71bf9f08a.js" != blank %}
-      <script type="module" src="{{ "salt-entry-a8d71bf9f08a.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-a5e542af2b3a.js" != blank %}
+      <script type="module" src="{{ "salt-entry-a5e542af2b3a.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
