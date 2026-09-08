@@ -1,5 +1,5 @@
 {% for group in robots.default_groups %}
-{{- group.user_agent_name -}}
+{{- group.user_agent -}}
 {% for rule in group.rules %}
 {{- rule -}}
 {% endfor %}
