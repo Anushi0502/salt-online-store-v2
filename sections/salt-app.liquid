@@ -85,9 +85,9 @@
 </noscript>
 <script>
   (function () {
-    var path = window.location.pathname.replace(//+$/, '') || '/';
-    var isHome = path === '/' || /^/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
-    var isCollection = //collections/[^/]+$/.test(path);
+    var path = window.location.pathname.replace(/\/+$/, '') || '/';
+    var isHome = path === '/' || /^\/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
+    var isCollection = /\/collections\/[^/]+$/.test(path);
     if (!isHome && !isCollection) return;
 
     var root = document.getElementById('root');
@@ -113,7 +113,7 @@
       heading.className = 'sr-only';
       heading.textContent = isHome
         ? 'Shop Cookware, Clothing, Decor & Gifts | SALT Online Store'
-        : document.title.replace(/s*|s*SALT Online Store.*$/, '') || 'SALT Collection';
+        : document.title.replace(/\s*\|\s*SALT Online Store.*$/, '') || 'SALT Collection';
       shell.insertBefore(heading, shell.firstChild);
       if (observer) observer.disconnect();
     };
