@@ -61,7 +61,7 @@
     {% elsif request.path == '/pages/interactive-stem-assembly-activities-for-kids' %}
       <h1>Interactive STEM Assembly Activities for Kids</h1>
       <p>Explore educational assembly toys and science-inspired build activities for kids, with wooden DIY projects and creative play from SALT.</p>
-      <p><a href="/collections/kids-toys-games">Browse Kids Toys &amp; Games</a></p>
+      <p><a href="{{ routes.collections_url }}/kids-toys-games">Browse Kids Toys &amp; Games</a></p>
     {% elsif request.path == '/pages/digital-circus-lunch-box-for-kids' %}
       <h1>Digital Circus Lunch Box for Kids</h1>
       <p>Explore a current SALT lunch box listing for school, picnic, camping, and travel use. Review the live product details before ordering.</p>
@@ -69,11 +69,11 @@
     {% elsif request.path == '/pages/kitchen-cookware-buying-guide' %}
       <h1>Kitchen &amp; Cookware Buying Guide</h1>
       <p>Use SALT's Kitchen &amp; Cookware collection to compare cookware, food-preparation tools, dining essentials, and practical kitchen helpers by task.</p>
-      <p><a href="/collections/cookware">Browse Kitchen &amp; Cookware</a></p>
+      <p><a href="{{ routes.collections_url }}/cookware">Browse Kitchen &amp; Cookware</a></p>
     {% elsif request.path == '/pages/jeans-denim-fit-guide' %}
       <h1>Jeans &amp; Denim Fit Guide</h1>
       <p>Compare the live SALT Jeans collection by current product-title style signals, then check size details before ordering.</p>
-      <p><a href="/collections/jeans">Browse Jeans</a></p>
+      <p><a href="{{ routes.collections_url }}/jeans">Browse Jeans</a></p>
     {% elsif request.path == '/pages/blog' %}
       <h1>SALT Journal</h1>
       <p>Fresh stories, product education, and practical ideas from SALT.</p>
@@ -203,7 +203,7 @@
   }
 </script>
 <script>
-  window.SALT_THEME_BUILD = "mu1plqjr";
+  window.SALT_THEME_BUILD = "mu1q50vh";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
