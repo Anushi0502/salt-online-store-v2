@@ -173,6 +173,21 @@
       {% assign salt_seo_description = "Compare the SALT Mobwol-handle 40mm quartz watch with current mechanical, smart, and women's watch listings, then review options before ordering." %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/mobwol-watch-guide' %}
       {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/pages/realme-buds-case-compatibility-guide' %}
+      {% assign salt_seo_title = 'Realme Buds Case Compatibility Guide | SALT' %}
+      {% assign salt_seo_description = 'Compare live SALT Realme Buds cases by supported model wording, silicone material, and current options before ordering.' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/realme-buds-case-compatibility-guide' %}
+      {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/pages/salt-earbuds-buying-guide' %}
+      {% assign salt_seo_title = 'Earbuds Buying Guide: Cases, Tips & Wireless Earbuds | SALT' %}
+      {% assign salt_seo_description = 'Compare SALT wireless earbuds, protective cases, and replacement tips by product type, compatibility wording, and listed features.' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/salt-earbuds-buying-guide' %}
+      {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/pages/canvas-belt-sizing-style-guide' %}
+      {% assign salt_seo_title = 'Canvas Belt Sizing & Style Guide | SALT' %}
+      {% assign salt_seo_description = "Compare SALT men's canvas belts by listed length, color option, buckle style, and fit before ordering." %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/canvas-belt-sizing-style-guide' %}
+      {% assign salt_custom_canonical = true %}
     {% elsif salt_route == '/pages/resources' %}
       {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
       {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
@@ -653,13 +668,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-72816ca667d7.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-72816ca667d7.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-ce2afcdeb143.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-ce2afcdeb143.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-1F271PFq.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-1F271PFq.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-C5QxZdb3.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-C5QxZdb3.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-DQz77-Cc.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-DQz77-Cc.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-mEkDfK0w.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-mEkDfK0w.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1244,8 +1259,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-72816ca667d7.js" != blank %}
-      <script type="module" src="{{ "salt-entry-72816ca667d7.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-ce2afcdeb143.js" != blank %}
+      <script type="module" src="{{ "salt-entry-ce2afcdeb143.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
