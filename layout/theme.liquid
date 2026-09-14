@@ -168,6 +168,11 @@
       {% assign salt_seo_description = "Compare the live SALT Jeans collection by the fit and style wording in current product titles, then check size details before ordering." %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/jeans-denim-fit-guide' %}
       {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/pages/mobwol-watch-guide' %}
+      {% assign salt_seo_title = 'Mobwol 40mm Quartz Watch Guide | SALT' %}
+      {% assign salt_seo_description = "Compare the SALT Mobwol-handle 40mm quartz watch with current mechanical, smart, and women's watch listings, then review options before ordering." %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/mobwol-watch-guide' %}
+      {% assign salt_custom_canonical = true %}
     {% elsif salt_route == '/pages/resources' %}
       {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
       {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
