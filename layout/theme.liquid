@@ -316,8 +316,17 @@
         }
 
         if (isLocalizedCatalogDuplicate) {
-          ensureMeta('robots', 'noindex,follow');
-          ensureMeta('googlebot', 'noindex,follow');
+          var applyLocalizedNoIndex = function () {
+            ensureMeta('robots', 'noindex,follow');
+            ensureMeta('googlebot', 'noindex,follow');
+          };
+          applyLocalizedNoIndex();
+          new MutationObserver(applyLocalizedNoIndex).observe(document.head, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: ['name', 'content']
+          });
           return;
         }
 
