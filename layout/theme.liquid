@@ -148,6 +148,16 @@
       {% assign salt_seo_title = 'Wishlist | SALT Online Store' %}
       {% assign salt_seo_description = 'Save SALT products for later and keep track of items you love.' %}
       {% assign salt_seo_robots = 'noindex,follow' %}
+    {% elsif salt_route == '/pages/interactive-stem-assembly-activities-for-kids' %}
+      {% assign salt_seo_title = 'Interactive STEM Assembly Activities for Kids | SALT' %}
+      {% assign salt_seo_description = 'Explore educational assembly toys and science-inspired build activities for kids, with wooden DIY projects and school-friendly creative play from SALT.' %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/interactive-stem-assembly-activities-for-kids' %}
+      {% assign salt_custom_canonical = true %}
+    {% elsif salt_route == '/pages/digital-circus-lunch-box-for-kids' %}
+      {% assign salt_seo_title = 'Amazing Digital Circus Lunch Box for Kids | SALT' %}
+      {% assign salt_seo_description = "Explore SALT's Amazing Digital Circus lunch box listing for school, picnic, camping, and travel use. Review current options and product details before ordering." %}
+      {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/pages/digital-circus-lunch-box-for-kids' %}
+      {% assign salt_custom_canonical = true %}
     {% elsif salt_route == '/pages/resources' %}
       {% assign salt_seo_title = 'Resource Hub | SALT Online Store' %}
       {% assign salt_seo_description = 'Practical guides that help shoppers discover the right SALT products, collections, and everyday solutions.' %}
@@ -628,13 +638,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-9886f036fab9.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-9886f036fab9.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-0854e4ec1b9f.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-0854e4ec1b9f.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-BW39xq70.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-BW39xq70.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-DmynqYDR.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-DmynqYDR.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-ysTA-95G.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-ysTA-95G.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-CQpzlBub.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-CQpzlBub.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1219,8 +1229,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-9886f036fab9.js" != blank %}
-      <script type="module" src="{{ "salt-entry-9886f036fab9.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-0854e4ec1b9f.js" != blank %}
+      <script type="module" src="{{ "salt-entry-0854e4ec1b9f.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
