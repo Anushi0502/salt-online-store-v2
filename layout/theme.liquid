@@ -448,6 +448,14 @@
         "name": {{ shop.name | json }},
         "url": "https://{{ request.host }}/",
         "logo": {{ 'brand-salt-logo.png' | asset_url | json }},
+        "description": "Curated practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "help@saltonlinestore.com",
+          "telephone": "+1 888-835-7211",
+          "availableLanguage": ["English"]
+        },
         "sameAs": [
           "https://instagram.com/saltonlinestore",
           "https://www.facebook.com/profile.php?id=61573199456052",
@@ -668,13 +676,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-e1ac0528dfeb.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-e1ac0528dfeb.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-d31f386d425f.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-d31f386d425f.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-DpVLV4xE.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-DpVLV4xE.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-Dk7_tbMX.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-Dk7_tbMX.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-Bscyv6w3.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-Bscyv6w3.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-DKs-_qyG.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DKs-_qyG.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1259,8 +1267,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-e1ac0528dfeb.js" != blank %}
-      <script type="module" src="{{ "salt-entry-e1ac0528dfeb.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-d31f386d425f.js" != blank %}
+      <script type="module" src="{{ "salt-entry-d31f386d425f.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
