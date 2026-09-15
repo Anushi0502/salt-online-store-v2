@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-08T03:02:02.705Z",
+  "generatedAt": "2026-09-09T01:20:04.386Z",
   "source": "shopify-admin-orders",
-  "total": 307,
+  "total": 306,
   "products": [
     {
       "id": "gid://shopify/Product/8051181584483",
@@ -9,7 +9,7 @@
       "handle": "simple-womens-watches-small-round-girls-belt-watches-quartz-wristwatches-womens-watch-reloj-para-mujer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S79ab93ba90bd4dea893be7719b955346B.webp?v=1782911423",
       "imageAlt": "Quartz Wristwatches Watch",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8066145091683",
@@ -17,7 +17,7 @@
       "handle": "solar-power-bank-100000mah-wireless-fast-charging-portable-charger-built-in-cables-led-flashlight-for-camping-travel-emergency",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S227758397214495992a26f99bda8fc383.webp?v=1784029838",
       "imageAlt": "Solar Power Bank 100000MAH Wireless Fast Charging Portable Charger",
-      "price": 77.99
+      "price": 93.99
     },
     {
       "id": "gid://shopify/Product/8098833989731",
@@ -25,7 +25,7 @@
       "handle": "juno-beastars-anime-t-shirt-unisex-anime-manga-shirt",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sda5145d0eb81494293085dcebf97f165t.webp?v=1785937813",
       "imageAlt": "Juno Beastars Anime T Shirt Unisex Anime Manga Shirt",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8051879706723",
@@ -33,7 +33,7 @@
       "handle": "women-perfume-100ml-caramel-vanilla-flavor-fresh-natural-charming-irresistible-sun-gourmet-longlasting-fragrance-brand-bodyspray",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S441b5950ae5c4d6188885f5cc3b7542eT.webp?v=1782987595",
       "imageAlt": "100ML Unisex Fresh Perfume For Daily Wear And Everyday Fragrance Use",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8055563944035",
@@ -41,7 +41,7 @@
       "handle": "wallet-for-men-2024-new-genuine-leather-zipper-wallet-change-card-bag-all-in-one-wallet-trendy-short-clip-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8f9ef72700884ea5a43c7187665252d5p.webp?v=1783411420",
       "imageAlt": "Wallet Genuine Leather Zipper Bag",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/8066251980899",
@@ -49,7 +49,7 @@
       "handle": "original-pen-drive-16tb-usb-3-2-flash-drive-high-speed-pen-drive-type-c-metal-usb-memory-for-computer-storage-devices",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5ce0fdb7208f4a06970130f46c608330Z.webp?v=1784031600",
       "imageAlt": "Original Pen Drive 16TB USB 3 2 Flash Drive High Speed Pen Type C",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/8076873433187",
@@ -57,7 +57,7 @@
       "handle": "cute-water-bottle-with-straw-the-amazing-digitals-circus-900ml-cup-kids-outdoor-sports-large-capacity-mug-children-birthday-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S48cdd5445334494988fc22b45d59e9e7m.webp?v=1784633569",
       "imageAlt": "Cute Water Bottle With Straw The Amazing Digitals Circus 900ML Cup",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8068255580259",
@@ -65,7 +65,7 @@
       "handle": "bosecxt-ultra-air-7-bluetooth-earphones-tws-smart-touch-control-hifi-wireless-headphone-waterproof-game-motion-earbuds-with-mic",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S63289b77fef94032a694f60fc6829e36A.webp?v=1784121556",
       "imageAlt": "Bosecxt Ultra Air 7 Wireless Bluetooth Earbuds With Microphone",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/8051173523555",
@@ -73,7 +73,7 @@
       "handle": "2026-latest-ladies-golf-shoulder-handbag-multi-purpose-golf-accessory-bag-firm-structured-design-portable-hand-tote-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S15bcef662d8b49fc93db9a22259faf94g.webp?v=1782910450",
       "imageAlt": "Purpose Golf Accessory Bag Firm Structured Purpose Accessory Bag",
-      "price": 119.99
+      "price": 143.99
     },
     {
       "id": "gid://shopify/Product/8052506689635",
@@ -81,7 +81,7 @@
       "handle": "electric-lint-remover-fabric-shaver-digital-display-electric-pellet-fluff-remover-usb-rechargeable-ergonomic-for-clothes-sweater",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6e0e52a20bb84df2a9043beb76285722u.webp?v=1783070590",
       "imageAlt": "Electric Lint Remover Fabric Shaver Digital Tool",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8055560208483",
@@ -89,7 +89,7 @@
       "handle": "bat-id-wallet-for-men-leather-slim-card-holder-case-cover-with-cutout-superhero-face-eyes-mask-gift-for-husband-teens-boy-friend-2",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Safb41b57234f4465b7e798c000ca61e1v.webp?v=1783411281",
       "imageAlt": "Bat Id Wallet Leather Slim Card Bag",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8051907985507",
@@ -97,7 +97,7 @@
       "handle": "mens-fashion-mechanical-watches-business-automatic-wristwatch-stainless-steel-luminous-designer-clock-reojes-de-hombre-new-2023",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S573c0437417d4f22977d902da46630a5z.webp?v=1782988080",
       "imageAlt": "Mens Mechanical Watches Business Automatic Wristwatch",
-      "price": 154.99
+      "price": 185.99
     },
     {
       "id": "gid://shopify/Product/8066116517987",
@@ -105,7 +105,7 @@
       "handle": "children-educational-toys-montessori-materials-biology-wooden-skeleton-puzzle-frog-horse-tortiose-fish-bird-animal-toys-for-boy",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H753a395379f34defad2874abd3d93dd2f.webp?v=1784029030",
       "imageAlt": "Children Educational Toys Montessori Materials Biology Wooden",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/8068253745251",
@@ -113,7 +113,7 @@
       "handle": "charger-42-v-2a-85w-5-pin-round-for-36v-batteries-from-fischer-phylion-devron-lifebike-batavus-sparta-and-more",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf0238d41d4794c3cb0814b4c90872517k.webp?v=1784121461",
       "imageAlt": "42V 2A 5 Pin Charger For 36V E Bike Batteries",
-      "price": 81.99
+      "price": 98.99
     },
     {
       "id": "gid://shopify/Product/8052510851171",
@@ -121,7 +121,7 @@
       "handle": "qibest-matte-liquid-lipstick-waterproof-long-lasting-velvet-mate-nude-red-lip-gloss-lint-tube-makeup-cosmetic-lipsticks-lipgloss",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H1e8b8aa65da249f1a6ed6639aaf3ab54x.webp?v=1783070960",
       "imageAlt": "Qibest Matte Liquid Lipstick Waterproof Long",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8051985580131",
@@ -129,7 +129,7 @@
       "handle": "kaleidos-eyeliner-gel-pencil-waterproof-chameleon-colour-long-wear-glitter-metallic-eye-shadows-pen-eye-liner-stamp-makeup",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfed7badd38a548dd8a1552e9469c770cf.webp?v=1782996481",
       "imageAlt": "Kaleidos Eyeliner Gel Pencil Waterproof Chameleon Makeup Product",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/8052548075619",
@@ -137,7 +137,7 @@
       "handle": "nail-airbrush-portable-airbrush-with-compressor-painting-air-brush-mini-compressor-paint-gun-for-nail-art-paint-crafts-modeling",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S321e828f6d33434ebb6b879c6daab359y.webp?v=1783081711",
       "imageAlt": "Nail Airbrush Portable Compressor",
-      "price": 64.99
+      "price": 77.99
     },
     {
       "id": "gid://shopify/Product/8058438549603",
@@ -145,7 +145,7 @@
       "handle": "popular-sports-shoes-for-men-and-women-featuring-a-durable-coated-leather-upper-breathable-and-comfortable-with-a-rubber-sole",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5178ad71e5934cf0ae9e08f3a1fd8071v.webp?v=1783500720",
       "imageAlt": "Sports Shoes Featuring Durable Coated Leather",
-      "price": 128.99
+      "price": 154.99
     },
     {
       "id": "gid://shopify/Product/8051173556323",
@@ -153,7 +153,7 @@
       "handle": "girls-bag-2024-new-fashion-felt-binder-clip-high-capacity-shoulder-bag-handbag-office-lady-women-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf431039300b04d96a0dd24fe5604f64do.webp?v=1782910450",
       "imageAlt": "Bag Felt Binder Clip High",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8060554149987",
@@ -161,15 +161,7 @@
       "handle": "round-tip-beard-tweezers-eyebrow-facial-hair-removal-tool-seamless-grip-precise-trimming-tweezers-durable-beauty-tools-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8fbeabcc690e49118be01a5c24d6844b7.webp?v=1783586687",
       "imageAlt": "Round Tip Beard Tweezers Eyebrow Facial Tool",
-      "price": 43.99
-    },
-    {
-      "id": "gid://shopify/Product/8065630077027",
-      "title": "Kids Sweaters Children Autumn Winter Knitted Clothes Boys Girls Wool",
-      "handle": "kids-sweaters-children-autumn-winter-knitted-clothes-boys-girls-wool-knit-stand-collar-pullover-casual-clothing",
-      "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sad68eaefd8a04a94be71fd4f08d0a266w.webp?v=1784019847",
-      "imageAlt": "Kids Sweaters Children Autumn Winter Knitted Clothes Boys Girls Wool",
-      "price": 46.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8094179197027",
@@ -177,7 +169,7 @@
       "handle": "mens-jeans-2024-overalls-men-pockets-casual-loose-long-denim-pants-slim-splice-straight-rompers-autumn-plus-size-long-jeans-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfdd2d5617e954a9a97b7b770ef3dae40F.webp?v=1785572077",
       "imageAlt": "Mens Jeans 2024 Overalls Men Pockets Casual Loose Long Denim Pants",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8051172212835",
@@ -185,7 +177,7 @@
       "handle": "the-leisure-business-single-shoulder-bag-polo-vertical-bag-man-trend-inclined-shoulder-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sed0f5ba94fc14fa28ecf27642b4c992dM.webp?v=1782910419",
       "imageAlt": "Business Single Shoulder Bag Polo Vertical",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7769707151459",
@@ -193,7 +185,7 @@
       "handle": "mens-cotton-slim-fit-casual-pants-business-fashion-stretch-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc5548c43ece2434882c6fcac3362b1e2J.webp?v=1744717550",
       "imageAlt": "Slim Fit Casual Pants Business Stretch",
-      "price": 65.99
+      "price": 79.99
     },
     {
       "id": "gid://shopify/Product/8058392969315",
@@ -201,7 +193,7 @@
       "handle": "horse-hair-care-oil-100ml-mane-shine-essential-oil-with-plant-ingredients-nourishing-coat-treatment-easy-carry-for-all-breeds",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa4c4a9f2cf844368bca425ccb409227aU.webp?v=1783499912",
       "imageAlt": "Horse Hair Care Oil 100ML Mane",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8094172971107",
@@ -209,7 +201,7 @@
       "handle": "mens-jeans-print-high-waist-straight-leg-denim-pants-harajuku-unisex-loose-fit-tapered-casual-streetwear-fashion-trend-arrival",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S86b9b76ab18b44f58b6ef571cc48fae6j.webp?v=1785571880",
       "imageAlt": "Mens Jeans Print High Waist Straight Leg Denim Pants Harajuku Unisex",
-      "price": 75.99
+      "price": 91.99
     },
     {
       "id": "gid://shopify/Product/8066252013667",
@@ -217,7 +209,7 @@
       "handle": "original-pen-drive-16tb-usb-3-2-flash-drive-high-speed-pen-drive-type-c-metal-usb-memory-for-computer-storage-devices-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc5a5e0e36b474edea2ac0ec1874057ffo.webp?v=1784031600",
       "imageAlt": "Original Pen Drive 16TB USB 3 2 Flash Drive High Speed Pen Type C",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/8058571292771",
@@ -225,7 +217,7 @@
       "handle": "professional-hairdressing-carbon-comb-anti-static-hair-comb-haircut-tools-hairdresser-cutting-comb-barber-styling-hair-comb-set",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H8333b34618eb4e92a7b40b11b88b2a059.webp?v=1783503234",
       "imageAlt": "Professional Hairdressing Carbon Comb Anti Static",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8052514455651",
@@ -233,7 +225,7 @@
       "handle": "makeup-organizer-large-capacity-cosmetic-organizer-with-transparent-drawer-multi-functional-lipstick-cosmetic-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S03897f1ea5cc44b28117af95b26d8d796.webp?v=1783072078",
       "imageAlt": "Makeup Organizer Large Capacity Cosmetic",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8055603789923",
@@ -241,7 +233,7 @@
       "handle": "mens-party-nightclubs-trousers-incerun-2024-american-style-stylish-sexy-male-glittering-fabric-perspective-thin-long-pants-s-5xl",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S037f7f1b8fbc438994d4628a8f0377ab0.webp?v=1783412647",
       "imageAlt": "Mens Party Nightclubs Trousers Incerun American",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8055562960995",
@@ -249,7 +241,7 @@
       "handle": "hot-sale-mens-leather-magic-wallets-portable-money-clips-with-credit-card-slot-cash-holder-purse-for-man-brown-coffee",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/HTB1NFN9SwDqK1RjSZSyq6yxEVXaf.webp?v=1783411406",
       "imageAlt": "Mens Leather Magic Wallets Portable Money Bag",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8058392641635",
@@ -257,7 +249,7 @@
       "handle": "original-restoria-discreet-colour-restoring-lotion-hair-care-250ml-reduce-hair-for-men-and-women-hair-treatments",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sabfad23dd1744a4f907ae1f6f843f004L.webp?v=1783499907",
       "imageAlt": "Original Restoria Discreet Colour Restoring Lotion",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8053911158883",
@@ -265,7 +257,7 @@
       "handle": "reversible-travel-tote-bag-large-capacity-foldable-carry-on-duffle-bag-canvas-shoulder-luggage-packing-bag-for-women-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S660fe44d696d433285a40e6e9fa0dbafj.webp?v=1783325506",
       "imageAlt": "Reversible Travel Tote Bag Large Capacity",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/8051905167459",
@@ -273,7 +265,7 @@
       "handle": "luxury-led-digital-watch-for-men-stainless-steel-mens-electronic-wristwatch-simple-business-gold-sliver-mens-watch-reloj-hombre",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6caa0c63a4a04e609192084f633a76f6C.webp?v=1782988061",
       "imageAlt": "LED Digital Watch Stainless Steel",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8053919809635",
@@ -281,7 +273,7 @@
       "handle": "hot-sale-pu-leather-women-travel-duffel-bag-for-men-large-capacity-waterproof-travel-bag-design-zipper-multifunction-luggage-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Hc8bf761526a64758b2845fdef630ffccj.webp?v=1783325821",
       "imageAlt": "Leather Travel Duffel Bag Large Capacity",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8053937537123",
@@ -289,7 +281,7 @@
       "handle": "children-school-bags-for-girls-kids-satchel-primary-orthopedic-school-backpacks-princess-backpack-teenager-schoolbag-knapsack-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se842a8be81f643c2bc4c2e24d27db943F_5aaacf4f-8ca7-4d94-8cff-f994ca343c34.webp?v=1783326786",
       "imageAlt": "Backpacks Princess Backpack",
-      "price": 73.99
+      "price": 88.99
     },
     {
       "id": "gid://shopify/Product/8052489388131",
@@ -297,7 +289,7 @@
       "handle": "7d-waterproof-mascara-fiber-lashes-with-100-pure-collagen-volumizing-lengthening-curling-smudge-proof-long-lasting",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdc1bf89497f9437e851d69ec6faa8d68L.webp?v=1783065297",
       "imageAlt": "7d Waterproof Mascara",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8098826158179",
@@ -305,7 +297,7 @@
       "handle": "anime-code-geass-ring-lelouch-adjustable-cosplay-unisex-couple-lover-rings-prop-jewelry-gift-accessories",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S30affcc90d064df0a504452e34d9d2ddC.webp?v=1785937503",
       "imageAlt": "Anime Code Geass Ring Lelouch Adjustable Cosplay Unisex Couple Lover",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8059439874147",
@@ -313,7 +305,7 @@
       "handle": "fashion-rain-coat-jackets-hooded-with-belt-waterproof-transparent-plastic-long-ladies-clear-raincoats-women-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se288046c8ff14f2a8bf14e3e3862f7f5s.webp?v=1783515220",
       "imageAlt": "Rain Coat Jackets Hooded Belt Waterproof",
-      "price": 72.99
+      "price": 87.99
     },
     {
       "id": "gid://shopify/Product/8048946151523",
@@ -321,7 +313,7 @@
       "handle": "chic-pu-leather-box-bag-female-glossy-golden-elegant-clutch-ladies-wedding-birthday-party-evening-purse-hard-purse-and-handbag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd358a8fa92cb4b48a3a3c69307bc8f73j.webp?v=1782740350",
       "imageAlt": "Pu Leather Box Bag Female Glossy",
-      "price": 60.99
+      "price": 73.99
     },
     {
       "id": "gid://shopify/Product/8059446591587",
@@ -329,7 +321,7 @@
       "handle": "wrinkle-defense-beef-tallow-balm-for-men-moisturizer-for-face-hydrating-anti-aging-cream-natural-skincare-with-essential-oils",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0aa24ccbabc5465fa4ad2b0db1bf7193W.webp?v=1783515490",
       "imageAlt": "Defense Beef Tallow Balm Moisturizer Face",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/8059444101219",
@@ -337,7 +329,7 @@
       "handle": "adeus-heat-sensation-moisturize-body-cream-repair-damage-firm-skin-non-greasy-refresh-enhance-elasticity-body-massage-cream-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S71799aed304e41eb84a37de603d42bebE_f70c6bd0-d3bf-42ca-ab91-2bd2553e8174.webp?v=1783515340",
       "imageAlt": "Adeus Heat Sensation Moisturize Body Cream",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8051178045539",
@@ -345,7 +337,7 @@
       "handle": "new-ultra-thin-smart-watch-men-1-96-amoled-hd-pixel-display-always-show-time-bt-call-reminder-smartwatch-ladies-for-android-ios",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S84ee128dc0b741b0ad5ccee5eea16a8bU.webp?v=1782911242",
       "imageAlt": "Ultra Thin Smart Watch Amoled Hd",
-      "price": 78.99
+      "price": 94.99
     },
     {
       "id": "gid://shopify/Product/8052509671523",
@@ -353,7 +345,7 @@
       "handle": "lip-plumping-oil-moisturizing-and-hydrating-color-enhancing-base-lip-care-lip-liquid-glass-lip-effect-glossy-mirror-finish-gentle-colorless-lip-oil",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seb089d6c51a04eaf90675063c320c076B.webp?v=1783070926",
       "imageAlt": "Lip Plumping Oil Moisturizing Hydrating Color",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8058390970467",
@@ -361,7 +353,7 @@
       "handle": "1-2pcs-rosemary-hair-growth-shampoo-thickening-hydrolyzed-keratin-dry-frizzy-damaged-repair-moisturizing-scalp-cleaning-shampoo",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc8c762cdfc1b4a11b21063c43172a6beW.webp?v=1783499886",
       "imageAlt": "2pcs Rosemary Shampoo Thickening Hair Care Product",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8052508360803",
@@ -369,7 +361,7 @@
       "handle": "rhod-pocket-blush-lip-stick-lip-and-cheek-hydrating-stick-natural-rouge-powder-blush-cream-lipstick-cheek-easy-to-apply-color-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sca2f20eec6d64cbe9f423c73dffd9300a_4b96f6b3-e144-4e91-a4f1-7b568a036abc.webp?v=1783070906",
       "imageAlt": "Rhod Pocket Blush Lip Stick Cheek",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8055564828771",
@@ -377,7 +369,7 @@
       "handle": "manbang-mens-wallets-rfid-leather-trifold-wallets-for-men-with-id-window-and-credit-card-holder-high-quality",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf9cceac82ea8496fa44e6c4f914cf97f2.webp?v=1783411437",
       "imageAlt": "Manbang Mens Wallets Rfid Leather Trifold Bag",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8052502134883",
@@ -385,7 +377,7 @@
       "handle": "lip-plumper-oil-instantly-volumising-increase-lip-elasticity-long-lasting-moisturize-lip-plumper-gloss-sexy-beauty-makeup-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S29514e0a4f974fceb3e793e4328ac92az.webp?v=1783070150",
       "imageAlt": "Lip Plumper Oil Instantly Volumising Increase",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8113419681891",
@@ -393,7 +385,7 @@
       "handle": "anime-vergil-cosplay-wig-short-silver-grey-slicked-back-hair-heat-resistant-synthetic-hair-wigs",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2f07e3789bd6440590be7e7f1f6a880a7.webp?v=1787212728",
       "imageAlt": "Anime Vergil Cosplay Wig Short Silver Grey Slicked Back Hair Heat",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8052490371171",
@@ -401,7 +393,7 @@
       "handle": "rimel-4d-silk-fiber-eyelash-mascara-waterproof-long-lasting-extra-volume-lengthening-lash-thick-eyelash-black-mascara-cosmetics",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf3ed85962ccc4aeaa5ea86dbf738ce38w.webp?v=1783065319",
       "imageAlt": "Fiber Eyelash Mascara",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8066212266083",
@@ -409,7 +401,7 @@
       "handle": "5-pairs-of-black-and-white-smiling-socks-for-men-and-women-medium-length-socks-high-waisted-couple-sports-socks",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S464532b9f6a9433fa8fe9505448bcfe6O.webp?v=1784030778",
       "imageAlt": "Black White Smiling Socks Medium Length",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8066118910051",
@@ -417,7 +409,7 @@
       "handle": "kids-car-neck-pillow-with-seat-belt-safety-sleep-aid-prevent-leaning-comfortable-head-support-for-back-seat-travel",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S486bf2e94d234a13a63e783a030c6fe2y.webp?v=1784029188",
       "imageAlt": "Kids Car Neck Pillow With Seat Belt Safety Sleep Aid Prevent Leaning",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8094181130339",
@@ -425,7 +417,7 @@
       "handle": "mens-jeans-american-vintage-flocked-flared-denim-pants-harajuku-unisex-loose-fit-high-street-streetwear-ins-style-fashion-new",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S51a45cb474db4bacaf34d24643bef376t.webp?v=1785572117",
       "imageAlt": "Mens Jeans American Vintage Flocked Flared Denim Pants Harajuku",
-      "price": 78.99
+      "price": 94.99
     },
     {
       "id": "gid://shopify/Product/8094181621859",
@@ -433,7 +425,7 @@
       "handle": "mens-ins-style-jeans-fashion-new-american-vintage-flocked-flared-denim-pants-harajuku-unisex-loose-fit-high-street-streetwear",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Saf3ec150e94148088e1b81353ae25c51C.webp?v=1785572136",
       "imageAlt": "Flocked Flared Denim Pants Harajuku Loose",
-      "price": 80.99
+      "price": 97.99
     },
     {
       "id": "gid://shopify/Product/8066033123427",
@@ -441,7 +433,7 @@
       "handle": "kids-kpop-casual-shoes-2026-childrens-new-fashion-hunters-printed-sport-shoes-girls-white-anti-slip-outdoor-breathable-sneakers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S86b7a54870e9461aae7e56651d7e5e83g.webp?v=1784026642",
       "imageAlt": "Kids Kpop Casual Shoes 2026 Children S New Fashion Hunters Printed",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8059448885347",
@@ -449,7 +441,7 @@
       "handle": "엄지발가mens-health-cream-deep-hydration-nourishment-active-energy-moisturiser-for-health-fast-absorbing-massage-body-cream-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdf694c59477e4439ba231591a2411564q.webp?v=1783515539",
       "imageAlt": "Mens Health Cream Deep Hydration Nourishment",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8058437894243",
@@ -457,7 +449,7 @@
       "handle": "marathon-running-shoes-men-carbon-board-speciality-sports-breathable-lightweight-womens-comfortable-athletic-nonskid-sneakers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7c49ba00e0b64ef28bb0812eee92f7525.webp?v=1783500708",
       "imageAlt": "Marathon Running Shoes",
-      "price": 65.99
+      "price": 79.99
     },
     {
       "id": "gid://shopify/Product/8058369540195",
@@ -465,7 +457,7 @@
       "handle": "100ml-hair-growth-oil-india-adivasi-herbal-hair-care-rosemary-repair-damaged-hydrate-moisturize-scalp-reduce-dandruff-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se84689687e7846fca65c71bcf6b0f898J.webp?v=1783499424",
       "imageAlt": "100ML Oil India Adivasi Oil",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8068260790371",
@@ -473,7 +465,7 @@
       "handle": "airs-pro-bluetooth-headset-wireless-earphones-tws-earbuds-with-siri-pop-up-window-waterproof-positioning-touch-control-for-ios",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S186244ce94ea46b8a1f3685bf5c84888i.webp?v=1784121743",
       "imageAlt": "Airs Pro Wireless Bluetooth Earbuds",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8098827141219",
@@ -481,7 +473,7 @@
       "handle": "naruto-shippuden-action-figure-shf-uzumaki-naruto-kurama-figures-16cm-anime-rasengan-movable-model-toys-desktop-ornaments-doll",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd59d8e5e214b49f0b5c8ad3bcaf303be8.webp?v=1785937557",
       "imageAlt": "Naruto Shippuden Action Figure Shf Uzumaki Naruto Kurama Figures Toy",
-      "price": 71.99
+      "price": 86.99
     },
     {
       "id": "gid://shopify/Product/8052555022435",
@@ -489,7 +481,7 @@
       "handle": "persian-mouse-pad-large-xxl-big-office-carpet-mouse-mats-gamer-rug-desk-accessories-computer-table-pads-company-speed-extended",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seac35610cc674c7795e4c6bb8ab01263H.webp?v=1783082108",
       "imageAlt": "Persian Mouse Pad Large Xxl Big Keyboard",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8060587081827",
@@ -497,7 +489,7 @@
       "handle": "gaming-mute-mouse-cute-rgb-gamer-6-buttons-mice-optical-office-computer-mouse-for-desktop-laptop-ergonomic-game-mouse",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S31ef538176924b3aa254c5a7290d4ec2W.webp?v=1783595197",
       "imageAlt": "Gaming Mute Mouse Cute RGB Gamer",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8094186864739",
@@ -505,7 +497,7 @@
       "handle": "business-mens-trousers-formal-groom-tuxedo-party-prom-regualr-tall-fit-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2aaa1641afe8499c90bd6cbbea3365b7n.webp?v=1785572412",
       "imageAlt": "Business Mens Trousers Formal Groom Tuxedo",
-      "price": 66.99
+      "price": 80.99
     },
     {
       "id": "gid://shopify/Product/8069100404835",
@@ -513,7 +505,7 @@
       "handle": "custom-math-rubiks-rubix-cube-caps-thermal-insulated-lunch-bags-resuable-lunch-for-kids-school-children-storage-bento-food-box",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4c37367321ac462f9e8fd6ee97c411a1V.webp?v=1784205695",
       "imageAlt": "Rubiks Rubix Cube Caps Thermal Insulated",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8048946348131",
@@ -521,7 +513,7 @@
       "handle": "women-kisslock-frame-bag-design-black-clasp-pouch-clutch-purse-evening-dinner-party-bag-2026-new-microfibe-leather-shoulder-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S46c5e61295414f2aa41ad6a934c509a9K.webp?v=1782740353",
       "imageAlt": "Kisslock Frame Bag Design Black Clasp",
-      "price": 72.99
+      "price": 87.99
     },
     {
       "id": "gid://shopify/Product/8068254761059",
@@ -529,7 +521,7 @@
       "handle": "for-galaxy-buds-4-pro-military-carbon-fiber-case-anti-drop-lock-with-airbags-shockproof-full-cover-for-galaxy-buds-4-pro-buds-4",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S382fcfe65fd44a0a90b66664c2e94a53w.webp?v=1784121543",
       "imageAlt": "Protective Earbuds Case",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8058436354147",
@@ -537,7 +529,7 @@
       "handle": "sports-insoles-shoes-4d-pu-sole-soft-breathable-shock-absorption-cushion-heavy-duty-support-pain-relief-running-orthopedic-care",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S49a8c1d5bbf14879a57ca8ac168f5f3a5.webp?v=1783500691",
       "imageAlt": "Sports Insoles Shoes",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8066146074723",
@@ -545,7 +537,7 @@
       "handle": "500000mah-power-bank-120w-fast-charging-large-capacity-power-bank-pd-20w-suitable-for-all-mobile-phones-long-endurance",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Saeff1af4e72f4a8fbed5d113afa3cdf2a.webp?v=1784029856",
       "imageAlt": "500000MAH Power Bank 120W Fast Charging Large Capacity Power Bank Pd",
-      "price": 56.99
+      "price": 68.99
     },
     {
       "id": "gid://shopify/Product/8058568999011",
@@ -553,7 +545,7 @@
       "handle": "comb-anime-kpop-demon-hunters-air-cushion-comb-series-cute-cartoon-peripheral-household-fashion-girl-student-comb-fan-club-gifts",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S78c61ab85fa84c88959b6fd66296fe09j.webp?v=1783503204",
       "imageAlt": "Comb Anime Kpop Demon Hunters Air",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8058369704035",
@@ -561,7 +553,7 @@
       "handle": "haircare-essential-oil-hair-oil-spray-moisturizing-softening-essence-nourishing-hair-no-wash-anti-dry-anti-static-hair-products-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S358762889ddd4f00a435afc923eb6805T_5b96fa87-557a-4481-bce9-f699ec6cd362.webp?v=1783499426",
       "imageAlt": "Haircare Essential Oil Hair Spray Moisturizing Hair Care Product",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8093428875363",
@@ -569,7 +561,7 @@
       "handle": "hyperx-cloud-earbuds-ii-2-gaming-earphone-with-mic-immersive-wired-in-game-audio-in-ear-headphone-for-phone-ps4-ps5-xbox-series-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sce36767d218f4edc8dd9f2285ad447dah.webp?v=1785481225",
       "imageAlt": "Hyperx Cloud Earbuds Ii 2 Gaming Earphone With Mic Immersive Wired",
-      "price": 76.99
+      "price": 92.99
     },
     {
       "id": "gid://shopify/Product/8066026700899",
@@ -577,7 +569,7 @@
       "handle": "childrens-sports-shoes-childrens-zero-drop-wide-toed-barefoot-sports-shoes-boys-girls-simple-dance-shoes-walking-shoes",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sffbe42d2c84d4556b66be104299347ffn.webp?v=1784026599",
       "imageAlt": "Children S Sports Shoes Children S Zero Drop Wide Toed Barefoot",
-      "price": 60.99
+      "price": 73.99
     },
     {
       "id": "gid://shopify/Product/8066118385763",
@@ -585,7 +577,7 @@
       "handle": "kids-educational-learning-tablet-toy-for-age-3-early-literacy-math-music-learning-pad-with-electronic-keyboard-birthday-chris",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S127164e7cd774e2bb5bf578505938286n.webp?v=1784029180",
       "imageAlt": "Kids Educational Learning Tablet Toy For Age 3 Early Literacy Math",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/8069101191267",
@@ -593,7 +585,7 @@
       "handle": "heated-lunch-box-rechargeable-portable-warmer-portable-electric-lunch-box-with-stainless-steel-container-for-kids-boys-girls",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdbbbc2902efa48b393bb6eaac423fcf3L.webp?v=1784205708",
       "imageAlt": "Heated Lunch Box Rechargeable Portable Warmer",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8053936914531",
@@ -601,7 +593,7 @@
       "handle": "in-stock-australia-schoolbag-stationery-backpack-genuine-learning-stationery-cartoon-series-school-bag-anime-design-for-students-2",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4b0ed2cf983443dbaa3468522f7667b4s_a199b6a0-e9e2-43aa-be27-dd908a50cbe0.webp?v=1783326777",
       "imageAlt": "Schoolbag Stationery Backpack",
-      "price": 58.99
+      "price": 70.99
     },
     {
       "id": "gid://shopify/Product/8055561093219",
@@ -609,7 +601,7 @@
       "handle": "new-genuine-leather-rfid-bifold-wallets-for-men-vintage-slim-short-credit-card-holder-money-clips-give-gifts-for-him",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6c8d0dbce0064a9f9afa0943ec42605fY.webp?v=1783411304",
       "imageAlt": "Leather Rfid Bifold Wallets Vintage Slim Bag",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8094187061347",
@@ -617,7 +609,7 @@
       "handle": "business-mens-trousers-formal-groom-tuxedo-party-prom-regualr-tall-fit-pants-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbf926746b42940f7921a2065dd2a7eb9O.webp?v=1785572419",
       "imageAlt": "Business Mens Trousers Formal Groom Tuxedo",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/8060554510435",
@@ -625,7 +617,7 @@
       "handle": "vintage-t9-hair-clipper-beard-shaving-body-hair-trimmer-clippers-electric-men-haircut-machine-0mm-barber-shaver",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb95c02afb5f34e5cb7e0ffb1e0f2456aJ.webp?v=1783586698",
       "imageAlt": "Grooming Trimmer 0mm Hair Trimmer For Daily Grooming",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8053901983843",
@@ -633,7 +625,7 @@
       "handle": "new-male-shoulder-bags-travel-crossbody-bags-men-military-chest-bag-for-school-trip-waterproof-nylon-messenger-bag-black-green",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S724988b91af841afa075601bf51c47cao.webp?v=1783325221",
       "imageAlt": "Bags Military Chest Bag School Trip",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7744556859491",
@@ -641,7 +633,7 @@
       "handle": "8pcs-vacuum-storage-bags-space-saver-travel-storage-with-hand-pump",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sac30148f3121453ca78e7b2ad8546e35C.webp?v=1746164838",
       "imageAlt": "8pcs Vacuum Storage Bags Space Saver Vacuum Bags",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8066144469091",
@@ -649,7 +641,7 @@
       "handle": "black-gray-swirl-design-large-mouse-pad-desk-mat-gaming-pad-pc-accessories-computer-keyboard-mouse-pads-office-carpet-maus-pad",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S271c1a3d2ec74115bf5865fc385b3789O.webp?v=1784029830",
       "imageAlt": "Black Gray Swirl Design Large Mouse Pad Desk Mat Gaming Pad Pc",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/7769707216995",
@@ -657,7 +649,7 @@
       "handle": "solid-color-slim-fit-mens-business-trousers-elastic-waist-with-button-closure",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa481f9c851b34b97bc8d68501d089f9fQ.webp?v=1744717549",
       "imageAlt": "Fit Mens Business Trousers Elastic Waist",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8066033877091",
@@ -665,7 +657,7 @@
       "handle": "kids-girls-boys-special-needs-adaptive-clothing-round-neck-short-sleeve-back-invisible-zipper-solid-color-jumpsuit-4-16yrs",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Saecca37f0c704b9597f3b92794eeb1ce7.webp?v=1784026670",
       "imageAlt": "Kids Girls Boys Special Needs Adaptive Clothing Round Neck Short",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8059437908067",
@@ -673,7 +665,7 @@
       "handle": "new-fashion-woman-poncho-with-hat-ladies-waterproof-long-translucent-raincoat-adults-rain-coat-impermeables-para-lluvia-eva",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfea1e2a4f7614b33be0259401f465067s.webp?v=1783515089",
       "imageAlt": "Long Translucent Raincoat",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/8060553789539",
@@ -681,7 +673,7 @@
       "handle": "electric-smart-shaver-digital-display-waterproof-beard-trimmer-for-men-mini-dual-blade-shaver-powerful-beard-trimmer-remover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1c178344137a490f8afe3ee0bf16cf86u.webp?v=1783586679",
       "imageAlt": "Electric Smart Shaver Digital Display Waterproof Tool",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8037092982883",
@@ -689,7 +681,7 @@
       "handle": "rolling-teacher-tote-bag-large-tote-bag-with-detachable-wheels-trolley-15-6-inch-laptop-wheeled-teacher-bag-for-work-office",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S81d2460035ea4f8e9cc763c7d93a7496D.webp?v=1781986251",
       "imageAlt": "Rolling Teacher Tote Bag Large",
-      "price": 127.99
+      "price": 153.99
     },
     {
       "id": "gid://shopify/Product/8055604117603",
@@ -697,7 +689,7 @@
       "handle": "mens-cotton-trousers-man-business-casual-pants-office-black-chino-pants-khaki-grey-navy-trousers-29-40",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S281cdabb5cd24534bfc917687de72c9bS.webp?v=1783412652",
       "imageAlt": "Business Casual Pants",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8066146107491",
@@ -705,7 +697,7 @@
       "handle": "magnetic-power-bank-20000mah-large-capacity-wireless-fast-charging-suitable-for-iphone-xiaomi-huawei-universal-mobile-power-bank",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S46d6573852ea4724920462b96ee9e375Z.webp?v=1784029858",
       "imageAlt": "Magnetic Power Bank 20000MAH Large Capacity Wireless Fast Charging",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/7847080329315",
@@ -713,7 +705,7 @@
       "handle": "super-sharp-grafting-knife-for-fruit-trees",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se50d4e66c762436ab8294071d5b4b2c1W.webp?v=1754296813",
       "imageAlt": "Super Sharp Grafting Knife Fruit Trees Tool",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8052549779555",
@@ -721,7 +713,7 @@
       "handle": "childrens-schoolbag-fashion-tyre-shaped-boys-girls-backpack-3d-cartoon-kindergarten-shoulder-bag-large-capacity-kids-handbag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf3c54a9010d04fe894bac5d1a804276di.webp?v=1783081832",
       "imageAlt": "Schoolbag Tyre Shaped Backpack 3d Cartoon",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8060586360931",
@@ -729,7 +721,7 @@
       "handle": "5v-1a-simulate-mouse-mover-undetectable-mouse-jiggler-wired-wireless-mouse-compatible-for-computer-awakening-for-keeps-pc-active-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8a435f35e8464853a95f5cb80c4cc588f.webp?v=1783595175",
       "imageAlt": "Mover Undetectable Mouse Jiggler",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8076870025315",
@@ -737,7 +729,7 @@
       "handle": "750ml-gradient-color-bottle-sprunki-sprunki-incredibox-sprunki-game-cartoon-drinking-water-cup-kids-birthday-christmas-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S52ab2f27787b476b92bc4e8566305120J.webp?v=1784633464",
       "imageAlt": "750ML Gradient Color Bottle Sprunki Incredibox",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8068257513571",
@@ -745,7 +737,7 @@
       "handle": "2025-for-airpods-4generation-airpods-4-bluetooth-earphones-anc-wireless-headphones-earbuds-noise-cancelling-transparent-tpu-case",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S328dff1466d54e53bcae8348eb3a210d4.webp?v=1784121608",
       "imageAlt": "Transparent TPU Earbuds Case For AirPods 4",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8059447410787",
@@ -753,7 +745,7 @@
       "handle": "mann-aktiv-creme-50g-men-s-vitality-moisturizing-cream-daily-nourishing-body-lotion-confidence-boost-skin-care-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd1ca8f3d14634c7e9856ca65caee7a07T.webp?v=1783515504",
       "imageAlt": "Mann Aktiv Creme 50g S Vitality",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8055558799459",
@@ -761,7 +753,7 @@
       "handle": "mens-street-style-sports-shorts-with-british-signature-print-suitable-for-outdoor-music-festivals-casual-outings-on-the-streets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S43b10ccf725142618802e8f659fba1663.webp?v=1783411259",
       "imageAlt": "Street Sports Shorts",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/8055393779811",
@@ -769,7 +761,7 @@
       "handle": "40-120-180-240-300-cards-id-credit-card-holder-book-case-organizer-business-cards-id-credit-card-holder-case",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfe38118cdc12433198beee0592decf30E.webp?v=1783408110",
       "imageAlt": "Id Credit Card Holder Book Case Bag",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8060562374755",
@@ -777,7 +769,7 @@
       "handle": "pink-bow-pattern-silicone-phone-case-for-iphone-16-17-pro-max-15-14-13-12-11-pro-max-16e-x-xs-xr-7-8-plus-butterfly-charm-cover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sabf999744c65460c8dbc33d7deb96a3be.webp?v=1783587208",
       "imageAlt": "Protective Iphone Case For Iphone 16",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8076841549923",
@@ -785,7 +777,7 @@
       "handle": "5pcs-big-weighted-fat-pens-for-parkinsons-patients-essential-tremors-arthritis-hand-and-low-grip-strength",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S219fefa982bf46f0be7e9aeccf9435ccz.webp?v=1784632295",
       "imageAlt": "5pcs Big Weighted Fat Pens For Parkinsons Patients Essential Tremors",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8060585574499",
@@ -793,7 +785,7 @@
       "handle": "2-4g-usb-wireless-bluetooth-mouse-ergonomic-silent-office-mice-rechargeable-e-sports-backlight-mouse-for-computer-laptop-macbook",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S72cc439b5d8b48d0b29419122f41e953E.webp?v=1783595161",
       "imageAlt": "Wireless Bluetooth Mouse",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8076926189667",
@@ -801,7 +793,7 @@
       "handle": "for-iphone-17-16-15-14-13-12-11-pro-max-mini-se-2020-2022-air-xs-xr-7-8-plus-16e-diy-photo-customized-case-imd-shockproof-cover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S845d1b170efe470ba29978193510cf95h.webp?v=1784634237",
       "imageAlt": "Protective Iphone Case For Iphone 17",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8051857293411",
@@ -809,7 +801,7 @@
       "handle": "centella-asiatica-face-cream-hyaluronic-acid-moisturizer-nourish-dry-skin-smoothing-rejuvenation-strengthen-barrier-skin-care",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S34092d39f0054408962c5acfd1c36e664.webp?v=1782987331",
       "imageAlt": "Centella Asiatica Face Cream Hyaluronic Acid",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8066144632931",
@@ -817,7 +809,7 @@
       "handle": "500000mah-power-bank-built-4-cables-large-capacity-super-fast-charging-portable-external-battery-for-iphone-huawei-new",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5307d3cb1e39439fb1c9e396c0500d70t.webp?v=1784029831",
       "imageAlt": "500000MAH Power Bank Built 4 Cables Large Capacity Super Fast",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/8053935472739",
@@ -825,7 +817,7 @@
       "handle": "adjustable-strap-quilted-duffle-bag-large-capacity-3d-quilting-craft-travel-duffel-bag-tote-bags-short-distance-handbag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S58220095541644659aef3e28e03a79c5r.webp?v=1783326524",
       "imageAlt": "Adjustable Strap Quilted Duffle Bag Large Phone Case",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/8066262663267",
@@ -833,7 +825,7 @@
       "handle": "original-xiaomi-charger-120w-fast-turbo-charge-hypercharge-adapter-xiaomi-12-13-14-15-17-ultra-redmi-note-15-poco-f8-ultra-x7-x8",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seceb365bd0154ebba4bf49c794d567e3K.webp?v=1784031781",
       "imageAlt": "Original Xiaomi Charger 120W Fast Turbo Charge Hypercharge Adapter",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/8068263444579",
@@ -841,7 +833,7 @@
       "handle": "3-keys-1-knob-macro-pad-programmable-mechanical-keyboard-rgb-backlit-custom-shortcut-keypad-for-gaming-editing-office-work",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdc892c599f5a4cdb81ad1f8c47c44b20T.webp?v=1784121783",
       "imageAlt": "3 Key Programmable Mechanical Macro Keypad With Control Knob",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8068229169251",
@@ -849,7 +841,7 @@
       "handle": "thermal-lunch-box-for-adults-kids-stainless-steel-liner-2-tier-leak-proof-bento-meal-prep-container-school-office",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd34a1cc35f6646e099f6285fc777e27fT.webp?v=1784119937",
       "imageAlt": "Thermal Lunch Box For Adults Kids Stainless Steel Liner 2 Tier Leak",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8052553384035",
@@ -857,7 +849,7 @@
       "handle": "newest-man-messenger-bag-men-pu-leather-shoulder-bags-business-crossbody-casual-bag-vintage-handbag-free-shipping",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1b89496a6ae9462aa24ac0dcb3789418B.webp?v=1783082067",
       "imageAlt": "Newest Messenger Bag Pu Leather Shoulder",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8068254924899",
@@ -865,7 +857,7 @@
       "handle": "bow-frog-earbud-case-for-airpods-1-2-3-4-pro-1-2-3-bluetooth-compatible-earphone-charging-case-cover-headphone-protective-shell",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0f14d12d7f2d4f5aa445b29d0c7d5e98G.webp?v=1784121546",
       "imageAlt": "Protective Case For Wireless Earbuds",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8055559913571",
@@ -873,7 +865,7 @@
       "handle": "mens-key-wallet-multi-functional-key-holder-for-coins-keys-cards-mini-purse-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S937abffbe3a94f3ba765130ed848acacw.webp?v=1783411275",
       "imageAlt": "Mens Key Wallet Multi Functional Holder Bag",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8065633452131",
@@ -881,7 +873,7 @@
       "handle": "2025-winter-ks-children-cotton-lamb-wool-warm-outerwear-clothes-girls-print-coats-baby-boys-plus-fleece-jackets-kids-clothing",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S29c57e66df5545249902a5b4a2da3950G.webp?v=1784020000",
       "imageAlt": "2025 Winter Ks Children Cotton Lamb Wool Warm Outerwear Clothes",
-      "price": 85.99
+      "price": 103.99
     },
     {
       "id": "gid://shopify/Product/8051980238947",
@@ -889,7 +881,7 @@
       "handle": "6-color-blush-palette-large-size-natural-contouring-makeup-matte-blush-beauty-palette-long-lasting-coverage",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S138f76c94fb54b11849edf72b4e76617f.webp?v=1782992948",
       "imageAlt": "Color Blush Palette Large Size Natural Makeup Product",
-      "price": 55.99
+      "price": 67.99
     },
     {
       "id": "gid://shopify/Product/8055589109859",
@@ -897,7 +889,7 @@
       "handle": "chch-high-quality-men-shirt-long-sleeve-causal-formal-business-shirt-brand-man-dress-shirts",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2e0d40850aaa44ad83a8a987dec1cc1du.webp?v=1783412323",
       "imageAlt": "Chch Shirt Long Sleeve Shirt",
-      "price": 86.99
+      "price": 104.99
     },
     {
       "id": "gid://shopify/Product/8059448688739",
@@ -905,7 +897,7 @@
       "handle": "mens-daily-moisturizing-body-care-cream-nourishing-revitalizing-lotion-for-all-skin-boosts-vitality-body-care-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se0fc063dc50e4a528807fb2e76cba567E.webp?v=1783515534",
       "imageAlt": "Mens Moisturizing Body Care Cream Nourishing",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8068231463011",
@@ -913,7 +905,7 @@
       "handle": "lunch-box-with-handle-and-latch-vintage-metal-lunchbox-retro-metal-containers-for-office-picnic-hiking-beach",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S756e3a99f88a43d5b1e117c052ccfe5eI.webp?v=1784120042",
       "imageAlt": "Lunch Box Handle Latch Vintage Metal",
-      "price": 87.99
+      "price": 105.99
     },
     {
       "id": "gid://shopify/Product/8058440581219",
@@ -921,7 +913,7 @@
       "handle": "sports-shoes-for-men-high-top-sneakers-casual-shoes-running-shoes-men-2026-sneakers-for-men-luxury-sneakers-мужские-кр",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4546bb1abc3b412c8b51f506ebd02e867.webp?v=1783500757",
       "imageAlt": "Sports Shoes High Top Sneakers Casual Shirt",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8065635713123",
@@ -929,7 +921,7 @@
       "handle": "kids-down-jackets-for-3-14-years-autumn-winter-boys-girls-warm-solid-down-coats-teens-hooded-zipper-outerwear-children-clothing",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S23fbd264ad0a41bcb6154d30456eb2c1r.webp?v=1784020012",
       "imageAlt": "Kids Down Jackets For 3 14 Years Autumn Winter Boys Girls Warm Solid",
-      "price": 62.99
+      "price": 75.99
     },
     {
       "id": "gid://shopify/Product/8052541784163",
@@ -937,7 +929,7 @@
       "handle": "9-colors-eyeshadow-palette-dark-black-grey-silvery-color-shimmer-matte-glitter-finish-smokey-style",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbc62ea82b74b47368000f950260393e6i.webp?v=1783081140",
       "imageAlt": "Colors Eyeshadow Palette Dark Black Grey",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/7771812659299",
@@ -945,7 +937,7 @@
       "handle": "summer-ice-silk-face-mask-uv-protection-half-face-mask",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa12c3efc9f134c428d220c3a164107bcP.webp?v=1744888054",
       "imageAlt": "Ice Silk Face Mask Uv Protection",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8059448164451",
@@ -953,7 +945,7 @@
       "handle": "champagne-firming-body-cream-with-pepperslim-anti-wrinkle-skin-tightening-cream-daily-hydrating-body-lotion-for-men-and-women",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfab38080641f49739af236a383b5c23bM.webp?v=1783515518",
       "imageAlt": "Champagne Firming Body Cream Pepperslim Anti",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8007252705379",
@@ -961,7 +953,7 @@
       "handle": "three-hole-balaclava-face-mask-outdoor-sunscreen-head-cover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9ff2599da6474724945005a90f452e5ep.webp?v=1778061813",
       "imageAlt": "Hole Balaclava Face Mask Outdoor Sunscreen",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8051879805027",
@@ -969,7 +961,7 @@
       "handle": "luxury-unisex-perfume-100ml-fresh-elegant-aromatic-citrus-floral-fragrance-long-lasting-smooth-warm-scent-niche-style-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf65aa6943b4f43ba88ab9da7856d0540w.webp?v=1782987597",
       "imageAlt": "100ML Unisex Citrus Fresh Perfume For Daily Wear And",
-      "price": 65.99
+      "price": 79.99
     },
     {
       "id": "gid://shopify/Product/8059450982499",
@@ -977,7 +969,7 @@
       "handle": "1pair-knee-pads-with-thick-eva-foam-padding-for-sports-dance-volleyball-gardening-house-cleaning-construction-work-flooring",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S90d9fe405d8942e19a0720cdc4c1d31bk.webp?v=1783515629",
       "imageAlt": "1pair Knee Pads Thick Eva Foam",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/8055493427299",
@@ -985,7 +977,7 @@
       "handle": "leather-40-120-180-240-300-cards-id-credit-card-holder-book-case-organizer-business-cards-id-credit-card-holder-case",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seea040b2918042cf83e6c8ffff1235fa0.webp?v=1783409771",
       "imageAlt": "Id Credit Card Holder Book Case Bag",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8051858079843",
@@ -993,7 +985,7 @@
       "handle": "50ml-time-reverse-cream-with-centella-collagen-anti-aging-moisturizer-reduces-wrinkles-firms-hydrates-mature-dry-skin-moisturize",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbd6cbb1164c84cb798ecd14e1dfda528v.webp?v=1782987341",
       "imageAlt": "50ML Time Reverse Cream Centella Collagen",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/7751121502307",
@@ -1001,7 +993,7 @@
       "handle": "320ml-hot-water-bottle-mini-hand-warmer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S22666b3db784466ab0dcd83ad45c5761o.webp?v=1741672539",
       "imageAlt": "320ML Hot Water Bottle Mini Hand",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/8066188509283",
@@ -1009,7 +1001,7 @@
       "handle": "1-4-10-20-pair-of-football-socks-mens-sports-socks-mid-calf-socks-silicone-non-slip-dot-socks-basketball-yoga-socks-for-women",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3c8f2458adb047e0a60dcf5d409470d7b.webp?v=1784030492",
       "imageAlt": "1 4 10 20 Pair Of Football Socks Men S Sports Socks Mid Calf Pair",
-      "price": 58.99
+      "price": 70.99
     },
     {
       "id": "gid://shopify/Product/8076868943971",
@@ -1017,7 +1009,7 @@
       "handle": "game-poppys-playtime-water-bottle-kids-anime-huggy-wuggy-650ml-cup-boys-girls-outdoor-sports-mug-children-plastic-kettle-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbe6f489378c94e15b2eafb600bc08b8aR.webp?v=1784633432",
       "imageAlt": "Game Poppys Playtime Water Bottle Kids Anime Huggy Wuggy 650ML Cup",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8048949198947",
@@ -1025,7 +1017,7 @@
       "handle": "keratin-protein-hair-straightening-cream-long-lasting-smoothing-effect-for-frizz-control-silky-smooth-hair-hair-care-treatment-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2b786044ece244d1b89de6485b7fe5d5r_428c5afb-d1c4-42e0-b74d-a8f91b372c91.webp?v=1782740866",
       "imageAlt": "Keratin Protein Hair Straightening Cream Long",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8065637318755",
@@ -1033,7 +1025,7 @@
       "handle": "toddler-boys-clothing-set-summer-kids-wedding-suits-for-children-birthday-party-decorations-1-2-3-4-6-years-shirt-shorts-costume",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8e54e638290243488a6a18901725ba77O.webp?v=1784020033",
       "imageAlt": "Toddler Boys Clothing Set Summer Kids Wedding Suits For Children",
-      "price": 64.99
+      "price": 77.99
     },
     {
       "id": "gid://shopify/Product/8065667137635",
@@ -1041,7 +1033,7 @@
       "handle": "kid-wide-width-barefoot-shoes-boys-girls-minimalist-elastic-opening-sneakers-flexible-zero-drop-sole-outdoor-children-shoes",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sad15388145b04497befac7380f89fa891.webp?v=1784020368",
       "imageAlt": "Kid Wide Width Barefoot Shoes Boys Girls Minimalist Elastic Opening",
-      "price": 83.99
+      "price": 100.99
     },
     {
       "id": "gid://shopify/Product/8065626734691",
@@ -1049,7 +1041,7 @@
       "handle": "kids-wide-barefoot-shoes-boys-girls-minimalist-sneakers-lightweight-non-slip-natural-children-walking-shoes-skate-flat",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb9fe922d983647df9fb2585d08fd1c4fq.webp?v=1784019782",
       "imageAlt": "Kids Wide Barefoot Shoes Boys Girls Minimalist Sneakers Lightweight",
-      "price": 70.99
+      "price": 85.99
     },
     {
       "id": "gid://shopify/Product/8055393353827",
@@ -1057,7 +1049,7 @@
       "handle": "bat-id-card-holder-marvel-comics-surrounding-personalized-meal-card-campus-card-holder-carry-on-certificate-holder",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4069331e661046cbbefe75b9ec5f5bf2i.webp?v=1783408097",
       "imageAlt": "Bat Id Card Holder Marvel Comics",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8068256202851",
@@ -1065,7 +1057,7 @@
       "handle": "2026-new-buds4-pro-wireless-bluetooth-earphones-with-high-sound-quality-long-battery-life-and-5-4-chip",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd38393930beb41c7930914fc1d260a411.webp?v=1784121568",
       "imageAlt": "Buds4 Pro Wireless Bluetooth Earbuds",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8051180142691",
@@ -1073,7 +1065,7 @@
       "handle": "2025-womens-watch-simple-fashion-women-luxury-brand-waterproof-quartz-watches-ultra-thin-design-ladies-wristwatches-reloj-mujer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H7e69f43888e2437d91784d6e873edefde.webp?v=1782911295",
       "imageAlt": "Womens Watch Simple Brand Waterproof",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/8051183845475",
@@ -1081,7 +1073,7 @@
       "handle": "women-for-watches-fashion-white-green-silicone-jelly-student-clocks-casual-luxury-girl-watch-zegarek-damski-reloj-mujer-часы",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8760aee5fa004da8af0a5463e8629892V.webp?v=1782911473",
       "imageAlt": "Clocks Casual Watch Zegarek Damski Casual Watch",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8053848703075",
@@ -1089,7 +1081,7 @@
       "handle": "waterproof-swimming-cap-high-elasticity-ears-protection-large-silicone-diving-cap-for-enhanced-comfort-and-durability",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2cfa94966edb46fa8fb57aee3364fc64S.webp?v=1783323749",
       "imageAlt": "Waterproof Swimming Cap High Elasticity Ears",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8051859685475",
@@ -1097,7 +1089,7 @@
       "handle": "cc-cream-hydrating-foundation-liquid-spf43-even-skin-tone-brightening-lightweight-moisturizer-long-lasting-natural-finish-makeup",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc22a57e9fa9e4059a96293bfa7285382E.webp?v=1782987369",
       "imageAlt": "Cc Cream Hydrating Foundation Liquid Spf43 Makeup Product",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8048948478051",
@@ -1105,7 +1097,7 @@
       "handle": "hair-dye-shampoo-for-gray-hair-for-women-men-natural-hair-dye-kit-semi-permanent-hair-dye-shampoo-black-brown-purple-200ml",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1963a79878814f4e99a2d2f569d7b88dK.webp?v=1782740856",
       "imageAlt": "200ml Hair Dye Shampoo for Gray Hair",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8066146205795",
@@ -1113,7 +1105,7 @@
       "handle": "magnetic-power-bank-50000mah-large-capacity-wireless-fast-charging-suitable-for-iphone-xiaomi-huawei-universal-mobile-power-bank-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8758876bb1d84516843979137138da01J.webp?v=1784029860",
       "imageAlt": "Magnetic Power Bank 50000MAH Large Capacity Wireless Fast Charging",
-      "price": 60.99
+      "price": 73.99
     },
     {
       "id": "gid://shopify/Product/8058392182883",
@@ -1121,7 +1113,7 @@
       "handle": "rosemary-oil-hair-essential-coconut-oil-improve-hair-loss-and-nourishes-strengthen-hair-roots-scalp-treatment-hair-care",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7847753bcb004f43b263ecf970ba38baJ.webp?v=1783499901",
       "imageAlt": "Rosemary Oil Hair Essential Coconut",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8060557983843",
@@ -1129,7 +1121,7 @@
       "handle": "for-iphone-17-pro-case-cover-for-iphone-17-pro-high-quality-soft-tpu-anti-fingerprint-camera-protection-case-cover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S90183bea81374329893a1cf49d6b1219l.webp?v=1783586984",
       "imageAlt": "Protective Iphone Case For Iphone 17 Pro",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8065668546659",
@@ -1137,7 +1129,7 @@
       "handle": "2026-kids-sneakers-boys-basketball-shoes-childrens-casual-shoes-outdoor-training-running-sneakers-child-non-slip-comfortable-8",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sea4fbd5e8a1442e19d9eae32b36580ebs.webp?v=1784020391",
       "imageAlt": "2026 Kids Sneakers Boys Basketball Shoes Children S Casual Shoes",
-      "price": 72.99
+      "price": 87.99
     },
     {
       "id": "gid://shopify/Product/7767959535715",
@@ -1145,7 +1137,7 @@
       "handle": "stretch-jean-mens-slim-fit-casual-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6d83e815018949538e37ad7cdd7a421bU.webp?v=1744354281",
       "imageAlt": "Slim Fit Casual Trousers",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8065665466467",
@@ -1153,7 +1145,7 @@
       "handle": "kids-high-top-sneakers-girls-boys-leather-children-shoes-luxury-lace-up-casual-spring-streetwear-black-white-boots",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd20357a88ed64226ba77ae3d5cb49058s.webp?v=1784020357",
       "imageAlt": "Kids High Top Sneakers Girls Boys Leather Children Shoes Lace Up",
-      "price": 158.99
+      "price": 190.99
     },
     {
       "id": "gid://shopify/Product/8066120712291",
@@ -1161,7 +1153,7 @@
       "handle": "kids-comic-enlightenment-books-children-leadership-street-smart-growth-educational-picture-book-parent-child-reading-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc2bf4445937d40329bd8e94a165f5fdfo.webp?v=1784029226",
       "imageAlt": "Kids Comic Enlightenment Books Children Leadership Street Smart",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8066253783139",
@@ -1169,7 +1161,7 @@
       "handle": "electric-scooter-charger-42v-2a-hoverboard-charger-scooter-battery-chargers-with-5-connectors-electric-scooter-charger",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d2d397310a04cf3a308b690be5b4b89y.webp?v=1784031621",
       "imageAlt": "Electric Scooter Charger 42V 2A Hoverboard Charger Scooter Battery",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8068260102243",
@@ -1177,7 +1169,7 @@
       "handle": "1-2-4pair-ear-hooks-designed-for-airpods-proairpods-pro-designed-for-airpods-3earbuds-accessories-anti-slip-ergonomic-design",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfba37f5cd0904143b57143a89e9e9c0b9.webp?v=1784121736",
       "imageAlt": "Anti Lost Ear Hooks For Wireless Earbuds",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8052514717795",
@@ -1185,7 +1177,7 @@
       "handle": "vanity-makeup-mirror-with-lights-adjustable-brightness-3-colors-leds-flexible-multi-angle-for-makeup-and-valentines-day-gifts",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6ecbc463258e4aa2a0b1283457029ca5c.webp?v=1783072081",
       "imageAlt": "Vanity Makeup Mirror",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8055563452515",
@@ -1193,7 +1185,7 @@
       "handle": "mens-wallet-genuine-leather-men-wallets-premium-product-real-cowhide-wallets-for-man-short-black-walet-portefeuille-homme-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb43d767f85e54f0cb17e972ddbdad42bM.webp?v=1783411413",
       "imageAlt": "Mens Wallet Genuine Leather Wallets Real Bag",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8052506493027",
@@ -1201,7 +1193,7 @@
       "handle": "lint-roller-fabric-shaver-dust-removal-pellet-eliminator-electric-home-pet-hair-remover-removes-lint-from-clothes-take-out",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05d7a7953f8840a2bcfaeb383bcbd9c8L.webp?v=1783070584",
       "imageAlt": "Lint Roller Fabric Shaver Dust Removal Tool",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7744557809763",
@@ -1209,7 +1201,7 @@
       "handle": "easy-limescale-eraser-stainless-steel-rust-remover-for-kitchen-bathroom",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf19f9bb92861473db7221cdedf9657ab9.webp?v=1746703509",
       "imageAlt": "Rust Remover Kitchen Kitchen Accessories Tool",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8051921879139",
@@ -1217,7 +1209,7 @@
       "handle": "1pcs-reusable-puff-powder-subpackage-empty-loose-powder-jars-white-cap-macaron-dispersion-powder-box-mini-5g-cosmetics-container",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S72392fbe99a0402d9809fb1d74a075f01.webp?v=1782988676",
       "imageAlt": "1pcs Reusable Puff Powder Subpackage Empty",
-      "price": 38.99
+      "price": 46.99
     },
     {
       "id": "gid://shopify/Product/8052545945699",
@@ -1225,7 +1217,7 @@
       "handle": "500ml-lansyade-aha-brightening-body-lotion-arbutin-moisturizing-firming-body-cream-vitamin-c-soften-skin-essence-lotion",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S9dbfb9ed6e404934ada54258cfd85972x.webp?v=1783081663",
       "imageAlt": "500ML Lansyade Aha Brightening Body Lotion",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/8051976011875",
@@ -1233,7 +1225,7 @@
       "handle": "new-blush-stick-3-in-1-cheek-lip-tinted-moistured-blush-stick-silky-brighten-blush-cream-blusher-cosmetics-tubes-matte-contour",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd8fb52d0aac240a18ed1c5ddcb23ac9an.webp?v=1782992744",
       "imageAlt": "Blush Stick Cheek Lip Tinted Makeup Product",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/8060557623395",
@@ -1241,7 +1233,7 @@
       "handle": "nnbili-3pcs-full-cover-matte-privacy-screen-protector-for-iphone-17-16-15-14-13-12-11-pro-max-plus-mini-x-xs-anti-peeping-glass",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44027d38f6cb4c709da0dc9653b9c413o.webp?v=1783586978",
       "imageAlt": "Protective Iphone Case For Iphone 17",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8051167297635",
@@ -1249,7 +1241,7 @@
       "handle": "cute-woven-shoulder-bag-rattan-handmade-braid-tote-bags-large-capacity-big-handbags-for-women-girls",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4b321fe338324418b33ec4fa35d260816.webp?v=1782908960",
       "imageAlt": "Cute Woven Shoulder Bag Rattan Handmade",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8052519993443",
@@ -1257,7 +1249,7 @@
       "handle": "waterproof-4d-mascara-thick-long-smudge-proof-plump-encrypted-long-lasting-curling-large-eye-makeup-makeup-tools-2",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S303f413ca1fd408297dfa5e1715b6b248.webp?v=1783072225",
       "imageAlt": "Waterproof 4d Mascara",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8052521107555",
@@ -1265,7 +1257,7 @@
       "handle": "steel-tube-mascara-special-spiral-brush-waterproof-longlasting-silk-fiber-mascara-keep-each-eyelash-curled-for-along-time-makeup-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S46e95e4b89b342158f4c1facb9af5b5c5.webp?v=1783072255",
       "imageAlt": "Steel Tube Mascara Special Spiral Brush",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8048940286051",
@@ -1273,7 +1265,7 @@
       "handle": "hair-removal-cream-for-ladies-women-depilation-cream-pain-without-underarm-lip-hair-wax-skin-care-facial-hair-removal-cream-tool",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S54ed846c2df54126ac810d3fcd3b1c1eW.webp?v=1782736417",
       "imageAlt": "Hair Removal Cream Ladies Depilation Tool",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/8051903070307",
@@ -1281,7 +1273,7 @@
       "handle": "fashion-mens-watches-date-high-end-luxury-casual-sport-clock-classic-business-quartz-male-stainless-steel-wristwatches",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0b482c795bfc4eed8b380d2b377346dbi.webp?v=1782988029",
       "imageAlt": "Mens Watches Date High End",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/8043092672611",
@@ -1289,7 +1281,7 @@
       "handle": "3pcs-lattice-pattern-adult-mealtime-bib-adjustable-waterproof-eldly-dining-bib-with-crumb-catcher-protector-disability-aid-apron",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S57f181cd80994fcea5db3d18dd38c783u.webp?v=1782222927",
       "imageAlt": "Lattice Pattern Mealtime Bib Adjustable Waterproof",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/8052519305315",
@@ -1297,7 +1289,7 @@
       "handle": "waterproof-4d-mascara-thick-long-smudge-proof-plump-encrypted-long-lasting-curling-large-eye-makeup-makeup-tools-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S53b99a87813d409d93fe4b091c518676r.webp?v=1783072214",
       "imageAlt": "Waterproof 4d Mascara Pack Of 2",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8055559848035",
@@ -1305,7 +1297,7 @@
       "handle": "bat-id-wallet-for-men-leather-slim-card-holder-case-cover-with-cutout-superhero-face-eyes-mask-gift-for-husband-teens-boy-friend-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2365e5dea49240cdbc0748ec13ac1075G.webp?v=1783411274",
       "imageAlt": "Bat Id Wallet Leather Slim Pack Of 2 Bag",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8052516618339",
@@ -1313,7 +1305,7 @@
       "handle": "6-colors-matte-embossed-blush-rosy-blusher-facial-blush-powder-high-pigmented-pink-rouged-for-cheeks-smooth-cosmetics",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa8e901ff566d4b9bbf1f74cbd19ac9a5p.webp?v=1783072125",
       "imageAlt": "Colors Matte Embossed Blush Rosy Blusher Pack Of 2 Makeup Product",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8051977191523",
@@ -1329,7 +1321,7 @@
       "handle": "shop-womens-plus-size-kaftan-beach-cover-up-dress",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6b8caf300a42435ea592e655f038e20du.webp?v=1783772514",
       "imageAlt": "Size Kaftan Beach Cover Up Dress",
-      "price": 71.99
+      "price": 86.99
     },
     {
       "id": "gid://shopify/Product/8036972527715",
@@ -1337,7 +1329,7 @@
       "handle": "12pcs-pink-stainless-steel-cookware-set-6-pots-6-lids-nonstick-soup-pots-and-pans-ideal-for-steak-pasta-seafood-soups",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd395e4c3fe804fdebb19b871b02a37d31.webp?v=1781943860",
       "imageAlt": "Stainless Steel Cookware Pck Of 2",
-      "price": 57.99
+      "price": 69.99
     },
     {
       "id": "gid://shopify/Product/8058395426915",
@@ -1345,7 +1337,7 @@
       "handle": "100ml-persimmon-body-wash-exfoliating-shower-gel-moisturizing-skin-cleaning-smooth-soft-body-odor-remover-bath-products",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb2144f7fcacb4412995dcf7a99976dc3a.webp?v=1783499933",
       "imageAlt": "100ML Persimmon Body Wash Exfoliating Shower",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8052482965603",
@@ -1353,7 +1345,7 @@
       "handle": "rose-smoke-powder-bright-starry-sky-glossy-velvet-texture-durable-make-your-lips-shiny-waterproof-anti-fouling",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb73e9979d5e24a3ea1c858acebe7bda3q.webp?v=1783064924",
       "imageAlt": "Rose Smoke Powder Bright Starry Sky Pack Of 2 Lip Product",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/8055558930531",
@@ -1361,7 +1353,7 @@
       "handle": "shorts-men-hole-jeans-streetwear-mid-waist-washed-distressed-pockets-knee-length-vintage-ripped-denims-straight-short-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7f8b9c9b70bf42b98d844e992cc015cey.webp?v=1783411260",
       "imageAlt": "Straight Short Pants",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/8055494443107",
@@ -1369,7 +1361,7 @@
       "handle": "business-card-holder-card-organizer-large-capacity-can-hold-500-2-2x3-6-inch-cards-with-4-dividers-and-a-z-index-cards",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7764034fb211403394281050f5623729I.webp?v=1783409795",
       "imageAlt": "Business Card Holder Organizer Large Capacity Bag",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/8055455252579",
@@ -1377,7 +1369,7 @@
       "handle": "holder-binder-anime-portable-zipper-trading-card-protector-albums-collections-folder-400pcs-card-hold-book-kids-fans-toys-gifts",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0d931695dd874db5bb9b4debfc84c6a50.webp?v=1783408965",
       "imageAlt": "Holder Binder Anime Portable Zipper",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8051882197091",
@@ -1385,7 +1377,7 @@
       "handle": "smael-8109-new-mens-watch-multifunctional-sports-50m-waterproof-dual-display-led-night-light-leisure-student-electronic-watch",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S61a04959b82e4ab6a538f268fd827fc70.webp?v=1782987649",
       "imageAlt": "Smael Mens Watch Multifunctional Sports 50m",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/8050007015523",
@@ -1393,7 +1385,7 @@
       "handle": "elegant-women-shawls-wraps-for-evening-dresses-bridal-bridesmaid-wedding-shawl-solid-color-party-capes-decoration-scarf-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sebf1b690e1494ee990d06044e55b9c17W.webp?v=1782822093",
       "imageAlt": "Elegant Shawls Wraps Evening Dresses Bridal",
-      "price": 53.99
+      "price": 64.99
     },
     {
       "id": "gid://shopify/Product/8052555907171",
@@ -1401,7 +1393,7 @@
       "handle": "men-canvas-shoulder-bags-casual-tote-travel-mens-crossbody-bag-luxury-messenger-bags-fashion-high-quality-handbag-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc6990637f16f4b52a8238f0411429759R.webp?v=1783082181",
       "imageAlt": "Shoulder Bags Casual Tote Travel Mens",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/8048940220515",
@@ -1409,7 +1401,7 @@
       "handle": "facial-hair-remover-cream-kit-for-women-for-coarse-fine-stubborn-hair-on-chin-upper-lip-sideburns-gentle-depilatory-cream",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S64378944d7704512875a0e879dce5624F.webp?v=1782736417",
       "imageAlt": "Hair Remover Cream Kit Coarse Fine",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/8051973062755",
@@ -1425,7 +1417,7 @@
       "handle": "sense-perfume-75ml-2-5fl-oz-pink-leopard-eau-de-parfum-middle-east-dubai-arabian-perfume-for-women-perfect-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S605e77b1febd4742a02202650a41d764L.webp?v=1782987489",
       "imageAlt": "75ML Unisex Perfume For Daily Wear And Everyday Fragrance Use",
-      "price": 92.99
+      "price": 111.99
     },
     {
       "id": "gid://shopify/Product/8048929374307",
@@ -1433,7 +1425,7 @@
       "handle": "professional-sports-sunglasses-polarized-windproof-uv400-for-cycling-running-outdoor-enthusiasts-uv400",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S28ab87823cc64b439ee0a5d07506fe23o.webp?v=1782732432",
       "imageAlt": "Professional Sports Sunglasses Polarized Windproof Uv400",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8051181879395",
@@ -1441,7 +1433,7 @@
       "handle": "loving-heart-gold-women-dress-watch-new-ladies-hand-knitted-wristwatch-color-sparkling-rhinestone-fabric-clock-sweet-girl-watch",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S23e7374da363487a9413a8c1ea8c1f8eC.webp?v=1782911427",
       "imageAlt": "Loving Heart Gold Dress Watch Ladies",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7751279214691",
@@ -1449,7 +1441,7 @@
       "handle": "lightweight-4-compartment-mini-pill-box-travel-medicine-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1b93b707e65a4ec89f82f0a0207fdcecO.webp?v=1741684307",
       "imageAlt": "Box Travel Medicine Organizer",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7751157153891",
@@ -1457,7 +1449,7 @@
       "handle": "black-nail-clipper-set-stainless-steel-grooming-kit",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa354b507ceb84c3087c4656ade2d349ac.webp?v=1741675322",
       "imageAlt": "Black Nail Clipper Stainless Steel Grooming",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/8028921593955",
@@ -1465,7 +1457,7 @@
       "handle": "led-roller-skates-light-up-quad-skating-shoes",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Saaf455f589be41378ae5fc9c4ad95bdbC.webp?v=1780928337",
       "imageAlt": "Roller Skates Light Shoes",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/7706888142947",
@@ -1473,7 +1465,7 @@
       "handle": "car-clock-luminous-automobiles-internal-stick-on-mini-digital-watch-mechanics-quartz-clocks-auto-ornament-car-accessories-gifts-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S758017d910844f7a8b69c6eb05393865Z_81e4dbb7-917c-4807-9297-0558b8b72e37.webp?v=1734772996",
       "imageAlt": "Stick Mini Digital Watch Mechanics Quartz",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8047134703715",
@@ -1481,7 +1473,7 @@
       "handle": "lakerain-color-changing-foundation-stick-high-coverage-oil-control-concealer-skincare-ingredients-concealer-foundation-2-in-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S20b3f000131847d1930ed1882ee0ded8m.webp?v=1782500505",
       "imageAlt": "Stick High Coverage Oil Control Concealer Pack Of 3 Makeup Product",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7802212450403",
@@ -1489,7 +1481,7 @@
       "handle": "unisex-waterproof-running-waist-bag-lightweight-fanny-pack",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H4034219235cb4a4daf1d1dd6072e64e6e.webp?v=1747736849",
       "imageAlt": "Waterproof Running Waist Bag Lightweight Fanny",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7751321223267",
@@ -1497,7 +1489,7 @@
       "handle": "14-grid-7-day-pill-box-weekly-organizer-for-vitamins-medicine",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S27bc591dc42e480091996e64954e7210C_3e2440dd-7bc7-4b1d-be79-abed92d7fb90.webp?v=1741690190",
       "imageAlt": "Pill Box Weekly Organizer Vitamins Medicine",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7744558039139",
@@ -1505,7 +1497,7 @@
       "handle": "colorful-flexible-drinking-straws-wedding-party-supplies",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S29f3a932744f45a59ddda8e761a2b79bo_3184125d-996c-4d27-a7a3-f061720274ff.webp?v=1746104236",
       "imageAlt": "Wedding Party Kitchen Dining Accessories",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7771802959971",
@@ -1513,7 +1505,7 @@
       "handle": "cycling-face-mask-uv-protection-breathable-neck-gaiter",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc082919f6b1c489199ff1478ddc249adR.webp?v=1744886081",
       "imageAlt": "Cycling Face Mask Uv Protection Breathable",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/8009809723491",
@@ -1521,7 +1513,7 @@
       "handle": "foot-callus-remover-tool-stainless-steel-pedicure-scraper-file",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdadf78f470ff4a24b3849b3cff7528b0D.webp?v=1778587210",
       "imageAlt": "Foot Callus Remover Tool Stainless Steel",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7771803189347",
@@ -1529,7 +1521,7 @@
       "handle": "summer-full-face-mask-with-brim-sun-protection-beach-facekini",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb299e00314b8409e978cc0d207133d26h.webp?v=1744886084",
       "imageAlt": "Summer Full Face Mask Brim Sun",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7701884698723",
@@ -1537,7 +1529,7 @@
       "handle": "large-waterproof-adult-mealtime-bibs-disability-clothes-bib-cook-protector-tool",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Hed5fc407d5314f91a8fec9e39b7c6b2bC.webp?v=1733931752",
       "imageAlt": "Bibs Disability Clothes Bib Cook Protector Tool",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7701884895331",
@@ -1545,7 +1537,7 @@
       "handle": "1pc-silicone-waterproof-adult-bib-reusable-anti-oil-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd6fb7f665a504812b959888c3ec3c29fT_67597a6c-7e7f-4a58-9431-9097ff72c7d4.webp?v=1733931755",
       "imageAlt": "1pc Silicone Waterproof Bib Reusable Anti",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7802247512163",
@@ -1553,7 +1545,7 @@
       "handle": "waterproof-golf-shoe-bag-travel-organizer-with-ventilation",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S54dab7741329448ea93c83cf15a30b37N.webp?v=1747737502",
       "imageAlt": "Waterproof Golf Shoe Bag Travel Organizer",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7750510903395",
@@ -1561,7 +1553,7 @@
       "handle": "hot-water-bottle-bag-warm-belly-hands-feet",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S87a2ee2299384d0997c8807944c47464J.webp?v=1741611303",
       "imageAlt": "Hot Water Bottle Bag Warm Belly",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7799196352611",
@@ -1569,7 +1561,7 @@
       "handle": "smart-thermal-bottle-hot-cold-450ml-mug-cup",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/wMI46BEsD6G40Os7yoTG_8a1cf33b-d344-46ec-a68c-9a4b9db53870.webp?v=1747394683",
       "imageAlt": "Smart Thermal Bottle",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/8007252279395",
@@ -1577,7 +1569,7 @@
       "handle": "full-face-balaclava-mask-breathable-windproof-riding-hood",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se4451eed189b470baa25304556ad751fx.webp?v=1778061808",
       "imageAlt": "Face Balaclava Mask Face Mask",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7723692556387",
@@ -1585,7 +1577,7 @@
       "handle": "fashion-casual-anti-scratch-windbreaker-jacket-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S611d101a9b214a169f2f9d0cef703628q.webp?v=1737828481",
       "imageAlt": "Unisex Casual Jacket For Daily And Casual Outfit Styling Anti",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/8007253000291",
@@ -1593,7 +1585,7 @@
       "handle": "motorcycle-riding-goggles-detachable-face-mask-anti-wind",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd35342dc1e4348029fd17c5e0ca180ccF.webp?v=1778061816",
       "imageAlt": "Goggles Detachable Face Mask Anti Wind Travel",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7743311609955",
@@ -1601,7 +1593,7 @@
       "handle": "absorbent-pet-feeding-mat-waterproof-quick-dry-for-dogs-cats",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S1e5ec680a9734398a4242420dc675469B.webp?v=1740559750",
       "imageAlt": "Absorbent Pet Feeding Mat Waterproof Quick",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7751320666211",
@@ -1609,7 +1601,7 @@
       "handle": "portable-weekly-pill-box-8-grids-health-care-travel-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H757f2831a16846aa9ae8fddc86914b66t.webp?v=1741690186",
       "imageAlt": "Health Care Travel Organizer",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7771813150819",
@@ -1617,7 +1609,7 @@
       "handle": "ladies-and-mens-summer-full-face-hyaluronic-acid-sunscreen-mask-upf-500-uv-protection-breathable-ice-silk-mask-for-outdoor-spor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5749660103404bbdaa108950c6f48798m.webp?v=1744888061",
       "imageAlt": "Hyaluronic Acid Sunscreen Mask Upf Uv",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7746751627363",
@@ -1625,7 +1617,7 @@
       "handle": "fruit-protection-bags-insect-proof-reusable-garden-tool",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44bf589e1e4647c4a25eeea90bab6096k.webp?v=1741066356",
       "imageAlt": "Fruit Protection Bags Insect Proof Reusable",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/7738902216803",
@@ -1633,7 +1625,7 @@
       "handle": "kawaii-hello-kitty-doll-with-artificial-flowers-sanrio-bouquet-gift",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S2bfe0ddb2a69471e926a7d6df3a9f7254.webp?v=1739952293",
       "imageAlt": "Kawaii Hello Kitty Doll Artificial Flowers Bouquet",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7751227605091",
@@ -1641,7 +1633,7 @@
       "handle": "adjustable-folding-walking-cane-for-seniors",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S86c2e8c6066341a99d95db6cbb4f5b25m.webp?v=1741680598",
       "imageAlt": "Adjustable Folding Walking Cane Seniors",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7738900643939",
@@ -1649,7 +1641,7 @@
       "handle": "artificial-rose-garland-wedding-home-wall-decor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5de43df7b33f49c68357a7235c4df969U.webp?v=1739951808",
       "imageAlt": "Artificial Rose Garland Wedding Wall Decor",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7799306846307",
@@ -1657,7 +1649,7 @@
       "handle": "solar-animal-repeller-ultrasonic-pest-control-led",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/xfsQ8csj7RQoi9V.webp?v=1755082660",
       "imageAlt": "Solar Animal Home Decor",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/7746744615011",
@@ -1665,7 +1657,7 @@
       "handle": "stretchable-grafting-tape-pe-film-for-fruit-garden-plants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sffabb0cb9cf5476b9ca50ed6034fa3b24.webp?v=1741065547",
       "imageAlt": "Stretchable Grafting Tape Pe Film Fruit Tool",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7767959306339",
@@ -1673,7 +1665,7 @@
       "handle": "mens-stretch-loose-straight-jeans-casual-elastic-slim-fit-denim-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d3b23b7f7994a01b08ec30f2a966531M.webp?v=1765531795",
       "imageAlt": "Slim Fit Denim Pants",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7767959175267",
@@ -1681,7 +1673,7 @@
       "handle": "mens-fashion-business-jeans-classic-style-slim-stretch-denim-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S67209f09f78c427aa41cb18524aaf3bcI.webp?v=1744354274",
       "imageAlt": "Slim Stretch Denim Trousers",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7847102185571",
@@ -1689,7 +1681,7 @@
       "handle": "grafting-pruning-tool-professional-branch-cutter-secateur",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdd74c98905574107bc5997613ffaeaa9P.webp?v=1754308951",
       "imageAlt": "Kitchen Tool For Daily Kitchen Use And Daily Use Pruning Shears",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/7751279083619",
@@ -1697,7 +1689,7 @@
       "handle": "portable-pill-cutter-with-invisible-storage-box",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5e886eff562f48aa968aa96025025d95i.webp?v=1741684306",
       "imageAlt": "Portable Pill Pill Cutter",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7743314821219",
@@ -1705,7 +1697,7 @@
       "handle": "nylon-braided-dog-leash-durable-traction-rope-for-large-dogs",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb5876bfdab834a279e95beb312f4cc7eY.webp?v=1740560445",
       "imageAlt": "Nylon Braided Dog Leash Durable Traction",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7801986777187",
@@ -1713,7 +1705,7 @@
       "handle": "hollowfly-graduation-money-box-pull-out-cash-gift-holder",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/jZRMfbH7vk1J9P0O.webp?v=1747720633",
       "imageAlt": "Out Cash Gift Holder",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/7705215402083",
@@ -1721,7 +1713,7 @@
       "handle": "adjustable-bottle-cap-opener-wrench-stainless-steel-lids-off-jar-opener-labor-saving-screw-can-removing-tool-kitchen-gadget",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S55a9b21de23f418c976d31c40be0b7df4.webp?v=1734522835",
       "imageAlt": "Adjustable Bottle Cap Opener Wrench Stainless",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7939373564003",
@@ -1729,7 +1721,7 @@
       "handle": "mens-embroidered-islamic-thobe-long-sleeved-arabic-loose-robe-dress",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S45e194a9edd9462fad26aa5cbe09cdc0u.webp?v=1765791750",
       "imageAlt": "Men S Long Sleeve Dress For Daily And Casual Outfit Styling Men S S",
-      "price": 56.99
+      "price": 68.99
     },
     {
       "id": "gid://shopify/Product/7752511389795",
@@ -1737,7 +1729,7 @@
       "handle": "coolcold-a9-rgb-laptop-cooler-6-fans-2-usb-ports-13-18-inch",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S804758528e6045a0a912212073e69278j.webp?v=1741872232",
       "imageAlt": "Coolcold A9 RGB Laptop Cooler Fans",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/7970535964771",
@@ -1745,7 +1737,7 @@
       "handle": "products-living-legacy-planner-for-seniors",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/The_Living_Legacy_Planner_2nd_Edition.png?v=1772179925",
       "imageAlt": "Living Legacy Planner Seniors",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7766140125283",
@@ -1753,7 +1745,7 @@
       "handle": "mens-wide-leg-baggy-jeans-retro-blue-denim-pants",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S557c6a7f6c434fcf8bb1cf1090812afc1.webp?v=1744023673",
       "imageAlt": "Men S Casual Wide Leg Pants For Daily And Casual Outfit Styling",
-      "price": 66.99
+      "price": 80.99
     },
     {
       "id": "gid://shopify/Product/7751316078691",
@@ -1761,7 +1753,7 @@
       "handle": "mini-portable-8-grids-pill-box-wheat-sealed-medicine-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se396d7d2bf32469482b1ae16906ec5f4L.webp?v=1741688515",
       "imageAlt": "Wheat Sealed Medicine Organizer",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7751227539555",
@@ -1769,7 +1761,7 @@
       "handle": "ultralight-carbon-fiber-t-handle-walking-stick-219g",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H59701c5aa0b04746ae9761432bd4bec5j.webp?v=1741680597",
       "imageAlt": "Ultralight Carbon Fiber T Handle Walking",
-      "price": 90.99
+      "price": 109.99
     },
     {
       "id": "gid://shopify/Product/7619881566307",
@@ -1777,7 +1769,7 @@
       "handle": "10-piece-pots-and-pans-set-for-kitchen-accessories",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5473caa370714f35a18f8b0a65a19fd4y.webp?v=1754983283",
       "imageAlt": "10 Piece Pots And Pans Set",
-      "price": 95.99
+      "price": 115.99
     },
     {
       "id": "gid://shopify/Product/7771803025507",
@@ -1785,7 +1777,7 @@
       "handle": "summer-new-upf-50-face-mask-3d-seamless-ice-silk-full-face-cover",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S438f6887e53e47a78a82eb9f628a6e04b.webp?v=1744886082",
       "imageAlt": "Silk Full Cover Face Mask",
-      "price": 39.99
+      "price": 47.99
     },
     {
       "id": "gid://shopify/Product/7755135778915",
@@ -1793,7 +1785,7 @@
       "handle": "flexible-arm-tripod-for-phone-stand-360-rotation",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Safa0c1d148504be997ceb0af71b1249cV.webp?v=1765532268",
       "imageAlt": "Flexible Arm Tripod Phone Stand Rotation",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7704044011619",
@@ -1801,7 +1793,7 @@
       "handle": "mens-summer-v-neck-pajamas-short-sleeve-comfort-homewear-nightgown",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5da635580f854b7fb8227902203f9395t.webp?v=1734368328",
       "imageAlt": "Pajamas Short Sleeve Robe",
-      "price": 56.99
+      "price": 68.99
     },
     {
       "id": "gid://shopify/Product/7853850853475",
@@ -1809,7 +1801,7 @@
       "handle": "creative-bird-led-wall-sconce-with-touch-switch",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S4a6374c7e075413f90d43e1a8e565ec30.webp?v=1754653574",
       "imageAlt": "Creative Bird LED Wall Sconce Touch Wall Lamp",
-      "price": 105.99
+      "price": 127.99
     },
     {
       "id": "gid://shopify/Product/7701884665955",
@@ -1817,7 +1809,7 @@
       "handle": "stain-resistant-adjustable-adult-bibs",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5d4e9f54fa1e4b258fa20c2a7e9866e5d_c49d9353-a4ef-4a48-a663-5bc1b1ccf574.webp?v=1733931751",
       "imageAlt": "Stain Resistant Adjustable Bibs Health Wellness",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7769707315299",
@@ -1825,7 +1817,7 @@
       "handle": "new-spring-casual-pants-mens-straight-fit-stretch-chino-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Seb4c0aa04e3842cdaada107c35dbae94L.webp?v=1746007827",
       "imageAlt": "Spring Casual Pants Mens Straight Fit",
-      "price": 71.99
+      "price": 86.99
     },
     {
       "id": "gid://shopify/Product/7751279116387",
@@ -1833,7 +1825,7 @@
       "handle": "7-day-travel-pill-organizer-with-14-grids",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S51ef13978cd249c19d7f836cc5d3833fQ.webp?v=1741684308",
       "imageAlt": "Travel Pill Organizer",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7738932363363",
@@ -1841,7 +1833,7 @@
       "handle": "mini-electric-heater-stove-500w-multi-functional-kitchen-appliance",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S31e01189f4db4acbb8e4f34c21f66d4cM.webp?v=1746100131",
       "imageAlt": "Mini Multi Use Kitchen Tool For Daily Kitchen Use And Daily Electric",
-      "price": 59.99
+      "price": 71.99
     },
     {
       "id": "gid://shopify/Product/7771802992739",
@@ -1849,7 +1841,7 @@
       "handle": "summer-women-sunscreen-mask-double-layer-ice-silk-mask",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sbedb8347fe974994acb7b183ca217e1eD.webp?v=1744886082",
       "imageAlt": "Sunscreen Mask Face Mask",
-      "price": 38.99
+      "price": 46.99
     },
     {
       "id": "gid://shopify/Product/7751279247459",
@@ -1857,7 +1849,7 @@
       "handle": "7-day-pill-organizer-with-21-grids-large-compartments",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S47e6e81362144d6091785b40da517bf0k.webp?v=1741684308",
       "imageAlt": "Day Pill Organizer Grids Large Compartments",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7749219549283",
@@ -1865,7 +1857,7 @@
       "handle": "hello-kitty-shopping-bag-foldable-eco-friendly-tote-bag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0a6261d1b1fe475a80996e1c609458a55.webp?v=1741352283",
       "imageAlt": "Hello Kitty Shopping Bag Foldable Eco",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7755136106595",
@@ -1873,7 +1865,7 @@
       "handle": "magsafe-extension-bracket-laptop-side-phone-holder",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S48a56115415b4f6582d8a4c71051590fx.webp?v=1742291070",
       "imageAlt": "Laptop Side Phone Holder",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7742497325155",
@@ -1881,7 +1873,7 @@
       "handle": "adjustable-mesh-cat-harness-with-lead-leash-small-medium-dogs-kittens",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfa99d001810a48ca824c48cc0ad523a7F.webp?v=1740485432",
       "imageAlt": "Adjustable Mesh Cat Harness Lead Leash",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7776172408931",
@@ -1889,7 +1881,7 @@
       "handle": "fashion-burlap-tote-bag-vintage-jute-beach-shopping-handbag",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0eac3b906b4e41ad84079dc3be134989l.webp?v=1746160181",
       "imageAlt": "Burlap Tote Bag Jute Bags",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7746984902755",
@@ -1897,7 +1889,7 @@
       "handle": "plastic-wrap-dispenser-with-cutter-foil-film-storage-holder",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S57700972185e491f85ea37aeb0b001ddt.webp?v=1741068645",
       "imageAlt": "Foil Film Storage Holder",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7704044372067",
@@ -1905,7 +1897,7 @@
       "handle": "summer-mens-pajamas-robe-modal-cardigan-sleepwear-loose-bathrobe-male-shirt-dress-casual-draped-home-clothes-for-men",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S736e4a9bfaba46178893d3f4d0e5753bm.webp?v=1734368333",
       "imageAlt": "Male Shirt Dress Robe",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7705215664227",
@@ -1913,7 +1905,7 @@
       "handle": "electric-bottle-opener-easy-electric-binaural-can-opener-one-button-automatic-bottle-cap-opening-for-home-use",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se0925bd7f08948d5ac9d265816695731B.webp?v=1734522838",
       "imageAlt": "Electric Bottle Opener Easy Binaural",
-      "price": 79.99
+      "price": 95.99
     },
     {
       "id": "gid://shopify/Product/7827854098531",
@@ -1921,7 +1913,7 @@
       "handle": "stripe-pillar-candle-mold-silicone-ribbed-conical-diy-mold",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3e43758f896e4181a8b740f50b20cb20T.webp?v=1751022635",
       "imageAlt": "Stripe Pillar Candle Mold Silicone Ribbed Candles",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7746751660131",
@@ -1929,7 +1921,7 @@
       "handle": "portable-bottle-cap-sprinkler-garden-seedling-irrigation-tool",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S949cae134cd74bc7b2b312bc223eee797.webp?v=1741066356",
       "imageAlt": "Portable Bottle Cap Sprinkler Garden Seedling",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7771812724835",
@@ -1937,7 +1929,7 @@
       "handle": "breathable-scarf-half-face-mask-quick-drying-neck-gaiter",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf17d2b5cc7ff480a90da183cc39d6ac6C.webp?v=1744888054",
       "imageAlt": "Scarf For Styling And Daily Use And Everyday Style Face Mask",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7766140190819",
@@ -1945,7 +1937,7 @@
       "handle": "summer-thin-soft-lyocell-fabric-jeans-men-loose-straight-wide-leg-pants-drawstring-elastic-waist-casual-trousers-plus-size-m-5xl",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Scaba6a5413924bc8bf6c67bb9eb8d943K.webp?v=1765532265",
       "imageAlt": "Men S Casual Wide Leg Pants For Daily And Casual Outfit Styling",
-      "price": 66.99
+      "price": 80.99
     },
     {
       "id": "gid://shopify/Product/7767959666787",
@@ -1953,7 +1945,7 @@
       "handle": "mens-elastic-slim-white-jeans-korean-fashion-slim-fit-denim-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H87ed56fb66c847c6b523d2443a6a9cacF.webp?v=1746008952",
       "imageAlt": "Slim Fit Denim Trousers",
-      "price": 77.99
+      "price": 93.99
     },
     {
       "id": "gid://shopify/Product/7750511231075",
@@ -1961,7 +1953,7 @@
       "handle": "rechargeable-electric-hot-water-bag-hand-warmer-heat-pack",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd9cb712cfa5343ea90f85ff963f3148ab.webp?v=1741611305",
       "imageAlt": "Electric Hot Water Bag Hand Warmer Bottle",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7750511100003",
@@ -1969,7 +1961,7 @@
       "handle": "kawaii-hot-water-bottle-plush-rubber-belly-warmer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd114c18528744d6691a79ce7383aab57i.webp?v=1741611305",
       "imageAlt": "Kawaii Hot Water Bottle Plush Rubber",
-      "price": 48.99
+      "price": 58.99
     },
     {
       "id": "gid://shopify/Product/7704043946083",
@@ -1977,7 +1969,7 @@
       "handle": "mens-casual-long-sleeve-v-neck-pajamas-loose-fit-premium-homewear-nightgown",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/H8aaf27176a5848a5b800e1af21fd520aQ.webp?v=1734368330",
       "imageAlt": "Casual Long Sleeve Robe",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/7751320830051",
@@ -1985,7 +1977,7 @@
       "handle": "tcare-travel-pill-organizer-moisture-proof-daily-pill-case",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S64157a807c87455ba6dae97b23250a263.webp?v=1765532286",
       "imageAlt": "Travel Pill Organizer",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7747141894243",
@@ -1993,7 +1985,7 @@
       "handle": "9-in-1-vegetable-cutter-multi-functional-grater-shredder",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf3dcd933382b488b8d623da52039d1a2m.webp?v=1745921154",
       "imageAlt": "Vegetable Cutter Multi Functional Grater Shredder",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7765004484707",
@@ -2001,7 +1993,7 @@
       "handle": "versatile-vests-for-spring-autumn-summer-jeep-mens-wear",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S47975dc1bc8542a79a154a8ef433d7d8Y.webp?v=1743673642",
       "imageAlt": "Versatile Vests Spring Autumn Summer Jeep T Shirt",
-      "price": 56.99
+      "price": 68.99
     },
     {
       "id": "gid://shopify/Product/7738902184035",
@@ -2009,7 +2001,7 @@
       "handle": "artificial-peony-rose-bouquet-silk-flowers-for-home-wedding-decor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc36e1dba542a4ba784786cce3950bd56G.webp?v=1755072030",
       "imageAlt": "Artificial Peony Rose Bouquet Silk Flowers",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7847096254563",
@@ -2017,7 +2009,7 @@
       "handle": "deli-8-garden-pruning-shears",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S15f8c59515fa4e5297efb66abd4c130ej.webp?v=1754305703",
       "imageAlt": "Deli 8 Garden Pruning Shears Tool",
-      "price": 47.99
+      "price": 57.99
     },
     {
       "id": "gid://shopify/Product/7749225021539",
@@ -2025,7 +2017,7 @@
       "handle": "air-humidifier-250ml-essential-oil-diffuser-jellyfish-smoke-ring-spray-aroma-diffuser-titanic-ship-model-decoration-for-home",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc236e1b1eed747dd908230b094bbe8c2U.webp?v=1741353764",
       "imageAlt": "250ML Air Humidifier And Aroma Diffuser",
-      "price": 68.99
+      "price": 82.99
     },
     {
       "id": "gid://shopify/Product/7744556892259",
@@ -2033,7 +2025,7 @@
       "handle": "3-in-1-pet-steam-brush-spray-massage-hair-removal-comb",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5bff93b4fe2f4230a1f3a26039119f6eJ.webp?v=1740725902",
       "imageAlt": "Pet Steam Brush Spray Massage Hair Comb",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7738936033379",
@@ -2041,7 +2033,7 @@
       "handle": "mountain-river-incense-burner-backflow-aroma-zen-decor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd95313e17d1c44ec828dab3e7a393abaN.webp?v=1746514996",
       "imageAlt": "Mountain River Incense Burner Backflow Aroma",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7764965589091",
@@ -2049,7 +2041,7 @@
       "handle": "mens-casual-short-sleeve-shirts-solid-color-vintage-vacation-blouse",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Hd4b2679ce5c1479e9cbed00e5fa8f9bfn.webp?v=1743669310",
       "imageAlt": "Unisex Solid Color Casual Blouse For Work And Weekend Looks T Shirt",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7765005140067",
@@ -2057,7 +2049,7 @@
       "handle": "classic-civic-type-r-t-shirt-jdm-legends-summer-print",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8a3c365ca39e43c89ddab35f288a26d7b.webp?v=1743674027",
       "imageAlt": "Men S Classic Casual Shirt For Daily And Casual Outfit Styling T T T",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7750388580451",
@@ -2065,7 +2057,7 @@
       "handle": "stretchy-twist-turban-caps-muslim-hijab-chemo-beanies",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8983dc0fa0944d14b16bbee6204691f7r.webp?v=1741603712",
       "imageAlt": "Stretchy Twist Turban Caps Muslim Hijab",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7705848414307",
@@ -2073,7 +2065,7 @@
       "handle": "silk-rose-petals-for-wedding-valentines-day-decoration",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb3f6418485b84e468b1f9b29f70799556.webp?v=1734604976",
       "imageAlt": "Silk Rose Petals Wedding Valentines Day",
-      "price": 38.99
+      "price": 46.99
     },
     {
       "id": "gid://shopify/Product/7751156891747",
@@ -2081,7 +2073,7 @@
       "handle": "nail-art-19-piece-set-manicure-pedicure-tools",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc0ffb806893840edab24d920170c18766_53ff5ddf-1abc-4ab1-97f9-a5d0ab2a2083.webp?v=1741675318",
       "imageAlt": "Nail Art Piece Manicure Pedicure Tool",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7702490251363",
@@ -2089,7 +2081,7 @@
       "handle": "mens-luxury-long-hooded-robe-thick-coral-fleece-winter-bathrobe-loungewear",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sdd19c57c20d046fda4522447c8c8e802n.webp?v=1764835914",
       "imageAlt": "Mens Long Hooded Robe Thick",
-      "price": 62.99
+      "price": 75.99
     },
     {
       "id": "gid://shopify/Product/7705885933667",
@@ -2097,7 +2089,7 @@
       "handle": "mini-square-analog-alarm-clock-silent-non-ticking-design",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf8ec3b1d65b44358a64ccfd9837a3537n.webp?v=1734614698",
       "imageAlt": "Mini Square Analog Alarm Clock Silent",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7702490087523",
@@ -2105,7 +2097,7 @@
       "handle": "mens-belt-flannel-bath-robe-hooded-warm-sleepwear-with-pockets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6e775a31dc524056855351d22a743578N.webp?v=1734015686",
       "imageAlt": "Mens Belt Flannel Bath Robe Hooded",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7746751791203",
@@ -2113,7 +2105,7 @@
       "handle": "reusable-plant-stem-support-no-stake-trellis-organizer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S3f85dba4a52c43cca1867b8df0a42c18K.webp?v=1741066360",
       "imageAlt": "No Stake Trellis Organizer",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7847080656995",
@@ -2121,7 +2113,7 @@
       "handle": "succulent-bonsai-mini-garden-planter-tool-set",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/uses_of_the_tools.webp?v=1757336175",
       "imageAlt": "Succulent Bonsai Mini Garden Planter Tool Gardening Tools",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7738891960419",
@@ -2129,7 +2121,7 @@
       "handle": "silicone-insulated-cup-protective-sleeve-non-slip-boot-for-40oz-30oz-20oz-bottles",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sed734afd8de44468b854d3fc75c61612o.webp?v=1746706489",
       "imageAlt": "Silicone Insulated Cup Protective Sleeve Non",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7733156642915",
@@ -2137,7 +2129,7 @@
       "handle": "2pcs-electric-pepper-salt-grinder-set-battery-powered-adjustable-mill",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa2613320c2f843fe8194fb65ab4abd57k.webp?v=1739183497",
       "imageAlt": "Pepper Salt Kitchen Accessories",
-      "price": 62.99
+      "price": 75.99
     },
     {
       "id": "gid://shopify/Product/7744579403875",
@@ -2145,7 +2137,7 @@
       "handle": "laser-damascus-knife-set-chef-meat-fruit-knives-scissors",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf75bb3784e8e455ab74554cc458b73f1Z.webp?v=1740728235",
       "imageAlt": "Chef Meat Kitchen Accessories",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/7767957962851",
@@ -2153,7 +2145,7 @@
       "handle": "street-elastic-jeans-mens-denim-cargo-pants-with-multi-pockets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S59847b50c15e48beb2220c7cac63e823A.webp?v=1744352736",
       "imageAlt": "Men S Casual Pants For Daily And Casual Outfit Styling Jeans",
-      "price": 58.99
+      "price": 70.99
     },
     {
       "id": "gid://shopify/Product/7744579338339",
@@ -2161,7 +2153,7 @@
       "handle": "strong-magnetic-hooks-multi-purpose-storage-for-home-kitchen",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S777e9b31e17f466d8b6edfc6ba0eaecev.webp?v=1740728235",
       "imageAlt": "Multi Use Kitchen Tool For Daily Kitchen Use And Daily",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7702398566499",
@@ -2169,7 +2161,7 @@
       "handle": "unisex-thicken-long-robe-soft-flannel-coral-fleece-winter-warm-sleepwear-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5d809997543b437db53cc7a64fa720c6U_8a54afbb-7f77-4717-81b6-34940f3f2a48.webp?v=1764842631",
       "imageAlt": "Unisex Sleepwear For Daily And Casual Outfit Styling Robe",
-      "price": 61.99
+      "price": 74.99
     },
     {
       "id": "gid://shopify/Product/7743311511651",
@@ -2177,7 +2169,7 @@
       "handle": "cute-puppy-birthday-scarf-hat-set-perfect-for-small-medium-pets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S06a11056c7384b1e958513a00efb122dC.webp?v=1746534883",
       "imageAlt": "Puppy Birthday Scarf Hat Perfect Small",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/7802940129379",
@@ -2185,7 +2177,7 @@
       "handle": "manual-garlic-onion-chopper-handheld-vegetable-slicer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfcfde0d87d454580a1514170da5eb7ea6.webp?v=1747830037",
       "imageAlt": "Manual Garlic Onion Chopper Handheld Vegetable Kitchen Accessories",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7702490185827",
@@ -2193,7 +2185,7 @@
       "handle": "mens-solid-color-coral-fleece-long-robe-ultra-soft-bathrobe-gown-with-pockets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S05a386916c244529bb96950ad1620079K.webp?v=1734015688",
       "imageAlt": "Mens Solid Color Coral Fleece Long Robe",
-      "price": 52.99
+      "price": 63.99
     },
     {
       "id": "gid://shopify/Product/7765358379107",
@@ -2201,7 +2193,7 @@
       "handle": "mens-spring-summer-cargo-jeans",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S70ebd6dda5e34c838df525e102687a5fj.webp?v=1758011281",
       "imageAlt": "Mens Spring Summer Cargo Jeans Pants",
-      "price": 58.99
+      "price": 70.99
     },
     {
       "id": "gid://shopify/Product/7731039764579",
@@ -2209,7 +2201,7 @@
       "handle": "17pcs-stainless-steel-mixing-bowl-set-with-lids-grater",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sad12ca8055a2489c8a78eacc2311359ek_8634fee0-a629-4344-ad7f-65f10e1b9842.webp?v=1738932801",
       "imageAlt": "17 Piece Industrial Machine For Mixing And Filling Tasks Bowl Set",
-      "price": 80.99
+      "price": 97.99
     },
     {
       "id": "gid://shopify/Product/7744022544483",
@@ -2217,7 +2209,7 @@
       "handle": "wooden-dog-nail-file-manual-scratching-board-for-puppy-nail-care",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sb2a1e9b2c34847e1a2bd4f6ceaa58733L.webp?v=1740739488",
       "imageAlt": "Wooden Dog Nail File",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7803550269539",
@@ -2225,7 +2217,7 @@
       "handle": "silicon-sealing-dust-proof-cup-lid-reusable-clear-seal-suction-cup-mugs-cover-dustproof-leakproof-tea-coffee-lid-cup-accessories",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S032001dcb4554d769ccf18be2e6513ecf.webp?v=1747902596",
       "imageAlt": "Sealing Dust Proof Cup Lid Reusable",
-      "price": 36.99
+      "price": 44.99
     },
     {
       "id": "gid://shopify/Product/7776173031523",
@@ -2233,7 +2225,7 @@
       "handle": "women-foldable-shopping-bag-reusable-eco-tote-grocery-bag-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S193adf7ba5b646b88c7461cbb3edbf31s.webp?v=1745818920",
       "imageAlt": "Foldable Shopping Bag Jute Bags",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7751121404003",
@@ -2241,7 +2233,7 @@
       "handle": "usb-rechargeable-hand-warmer-3-heat-levels-soft-portable",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S968d0debb2824433be009c471f0bdc70h.webp?v=1741672537",
       "imageAlt": "Hand Warmer Rechargeable Hand Warmer Bottle",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7767959470179",
@@ -2249,7 +2241,7 @@
       "handle": "autumn-slim-fit-mens-jeans-black-classic-fashion-denim-skinny-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/He1b4d48b0ecc43fba57c191e525f70942.webp?v=1744354277",
       "imageAlt": "Men S Classic Casual Pants For Daily And Casual Outfit Styling Jeans",
-      "price": 54.99
+      "price": 65.99
     },
     {
       "id": "gid://shopify/Product/7744557973603",
@@ -2257,7 +2249,7 @@
       "handle": "silicone-faucet-mat-sink-tray-with-soap-sponge-storage",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S01cccc9544504a80beac21690b68ff88b.webp?v=1745928873",
       "imageAlt": "Silicone Faucet Mat Sink Tray Soap Kitchen Accessories",
-      "price": 43.99
+      "price": 52.99
     },
     {
       "id": "gid://shopify/Product/7832809799779",
@@ -2265,7 +2257,7 @@
       "handle": "microfiber-ceiling-fan-duster-extendable-long-handle-cleaning-brush",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7d745191e33d43c5aa4918ef96319fcfZ.webp?v=1751870830",
       "imageAlt": "Fan Duster Fan Accessories Tool",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7764937998435",
@@ -2273,7 +2265,7 @@
       "handle": "mens-summer-embroidered-polo-shirt-breathable-casual-top",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sf3855fd5a3c44ccab71cf5b07c9c7834S.webp?v=1743667808",
       "imageAlt": "Men S Casual Shirt For Daily And Casual Outfit Styling T Shirt",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7705215631459",
@@ -2281,7 +2273,7 @@
       "handle": "can-opener-adjustable-stainless-steel-non-slip-manual-jar-bottle-bottle-lid-opener-gadget-home-kitchen-professional-gadgets-tool",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc4b4a00f017c4712a40c3fcc3515e0a6N.webp?v=1734522838",
       "imageAlt": "Slip Manual Jar Bottle Lid Opener",
-      "price": 46.99
+      "price": 56.99
     },
     {
       "id": "gid://shopify/Product/7751227637859",
@@ -2289,7 +2281,7 @@
       "handle": "golden-freemasonry-walking-cane-93cm-gentlemans-fashion-stick",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S39a8ffae2f3e4469b207a4cd348bfe825.webp?v=1765532292",
       "imageAlt": "Golden Freemasonry Walking Cane 93cm Gentlemans",
-      "price": 76.99
+      "price": 92.99
     },
     {
       "id": "gid://shopify/Product/7751279149155",
@@ -2297,7 +2289,7 @@
       "handle": "portable-10-grids-pill-organizer-perfect-for-travel",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfdcfecc1275a40378ee393124b7df886c.webp?v=1741684306",
       "imageAlt": "Portable Grids Pill Organizer Perfect Travel",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7705215467619",
@@ -2305,7 +2297,7 @@
       "handle": "6-in-1-bottle-opener-multifunctional-screw-cap-jar-can-openers-lid-grip-opener-home-camping-safety-can-opener-kitchen-gadgets",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sba452a45fd41463c855f69d888143e6fE.webp?v=1734522836",
       "imageAlt": "Bottle Opener Multifunctional Screw Cap",
-      "price": 45.99
+      "price": 55.99
     },
     {
       "id": "gid://shopify/Product/7847080362083",
@@ -2313,7 +2305,7 @@
       "handle": "premium-carved-stainless-steel-utility-knife",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S73e2f4e19d284574b1ea4eb865e5e966P.webp?v=1754296814",
       "imageAlt": "Carved Stainless Steel Utility Knife Tool",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7767959404643",
@@ -2321,7 +2313,7 @@
       "handle": "mens-light-luxury-stretch-slim-fit-denim-trousers",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S0f523746693d408d87e6170ea5044d51n.webp?v=1744354277",
       "imageAlt": "Mens Light Stretch Slim Fit",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/7701884797027",
@@ -2329,7 +2321,7 @@
       "handle": "1-4pcs-adult-bibs-stain-resistant-apron-for-men-women",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S58e80c1a728a44ed8970e8eb7ee430670.webp?v=1733931754",
       "imageAlt": "Stain Resistant Apron Health Wellness",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7751321124963",
@@ -2337,7 +2329,7 @@
       "handle": "7-day-pill-organizer-box-travel-friendly-medicine-dispenser",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sd94527ab26954156bf50e65fbc81c9e67.webp?v=1765532272",
       "imageAlt": "Day Pill Organizer Box Travel Friendly",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7747141959779",
@@ -2345,7 +2337,7 @@
       "handle": "artificial-potted-plant-desktop-home-office-decor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S6e855f44521d4596bb5710382255d232L.webp?v=1746524351",
       "imageAlt": "Artificial Potted Plant Desktop Office Decor",
-      "price": 42.99
+      "price": 51.99
     },
     {
       "id": "gid://shopify/Product/7705215926371",
@@ -2353,7 +2345,7 @@
       "handle": "2-6-pcs-handheld-bottle-opener-simple-seal-can-duster-does-not-hurt-the-hands-of-the-beverage-bottle-opener-easy-can-duster",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sc7bf2ba877c24a61be05829738c045b0A.webp?v=1734522843",
       "imageAlt": "Pcs Handheld Bottle Opener Simple Seal",
-      "price": 38.99
+      "price": 46.99
     },
     {
       "id": "gid://shopify/Product/7767959437411",
@@ -2361,7 +2353,7 @@
       "handle": "mens-fashion-business-jeans-classic-style-slim-stretch-denim-trousers-1",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S44b66b69da3a4b6a948bf9674d38ce7au_1a9ae467-0a22-47a5-b106-5d170c0d0a81.webp?v=1744354277",
       "imageAlt": "Slim Stretch Denim Trousers",
-      "price": 49.99
+      "price": 59.99
     },
     {
       "id": "gid://shopify/Product/7744022249571",
@@ -2369,7 +2361,7 @@
       "handle": "interactive-treat-leaking-toy-slow-feeder-for-small-dogs",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sa0b4ae1fac6a47f4b022dff2c412fbc77.webp?v=1746598613",
       "imageAlt": "Interactive Treat Leaking Toy Slow Feeder",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7702398369891",
@@ -2377,7 +2369,7 @@
       "handle": "luxury-winter-thicken-long-robe-unisex-coral-fleece-flannel-bathrobe-gown",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S60295c99c6eb4c4bb78bc6d9e07446e2r_ac5b39d5-d737-482b-ad4e-b7ffb92d1298.webp?v=1733998890",
       "imageAlt": "Winter Thicken Long Robe Coral",
-      "price": 67.99
+      "price": 81.99
     },
     {
       "id": "gid://shopify/Product/7750061949027",
@@ -2385,7 +2377,7 @@
       "handle": "african-print-turban-cap-chemotherapy-headwear-for-women",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S62b8916172374fc8a627df341d19d0d2E.webp?v=1741594899",
       "imageAlt": "African Print Turban Cap Chemotherapy Headwear",
-      "price": 50.99
+      "price": 61.99
     },
     {
       "id": "gid://shopify/Product/7723634950243",
@@ -2393,7 +2385,7 @@
       "handle": "winter-cycling-gloves-for-men-women-waterproof-thermal-non-slip",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S5145c3eeeb984915b94a607be72ffbf8u_328b332b-e61e-44c9-b66a-4190a0cbe6a1.webp?v=1737823111",
       "imageAlt": "Winter Cycling Gloves",
-      "price": 40.99
+      "price": 49.99
     },
     {
       "id": "gid://shopify/Product/7702490120291",
@@ -2401,7 +2393,7 @@
       "handle": "mens-ultra-soft-fleece-long-bath-robe-with-pockets-warm-winter-sleepwear-coat",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Ha212bb9d97394a9db3dfb698fdb7a044Z.webp?v=1734015687",
       "imageAlt": "Mens Ultra Soft Fleece Long Bath Robe",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7749216174179",
@@ -2409,7 +2401,7 @@
       "handle": "manganese-steel-weeding-rake-4-6-11-teeth-manual-excavator",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Scaafcf4af7fb454380c32c50048ff37co.webp?v=1741351239",
       "imageAlt": "Manganese Steel Weeding Rake Teeth Manual Tool",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7799757471843",
@@ -2417,7 +2409,7 @@
       "handle": "solar-led-floating-light-rgb-pool-garden-decor",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/RY101EBRRK0e6e3.webp?v=1747304761",
       "imageAlt": "Solar LED Floating Light RGB Pool",
-      "price": 51.99
+      "price": 62.99
     },
     {
       "id": "gid://shopify/Product/7766167126115",
@@ -2425,7 +2417,7 @@
       "handle": "mens-summer-lyocell-jeans",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Se25df44165ae462da7284514bf4061fdA.webp?v=1744026220",
       "imageAlt": "Mens Summer Lyocell Jeans Pants",
-      "price": 66.99
+      "price": 80.99
     },
     {
       "id": "gid://shopify/Product/7766139994211",
@@ -2433,7 +2425,7 @@
       "handle": "mens-stretch-skinny-denim-pants-harajuku-hip-hop-style",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S666fb89bb6af484ebd0d92dfca88dbfdb.webp?v=1758011343",
       "imageAlt": "Stretch Skinny Denim Pants Harajuku Hip",
-      "price": 64.99
+      "price": 77.99
     },
     {
       "id": "gid://shopify/Product/7700418003043",
@@ -2441,7 +2433,7 @@
       "handle": "compression-arthritis-gloves-wrist-support-carpal-tunnel-pain-relief",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/Sfd554010233b46168e51a5bcf981d54cV_b2d72643-2efc-4ced-aa6b-948fb0a63704.webp?v=1733769773",
       "imageAlt": "Compression Arthritis Gloves Health Wellness",
-      "price": 44.99
+      "price": 53.99
     },
     {
       "id": "gid://shopify/Product/7733157953635",
@@ -2449,7 +2441,7 @@
       "handle": "electric-milk-frother-coffee-cappuccino-foamer-mixer",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S7a1784847dea46a0bb2b6833ff4f146a8.webp?v=1739183691",
       "imageAlt": "Electric Milk Frother Coffee Cappuccino Foamer",
-      "price": 41.99
+      "price": 50.99
     },
     {
       "id": "gid://shopify/Product/7702339715171",
@@ -2457,7 +2449,7 @@
       "handle": "thermal-underwear-set-for-men-fleece-lined-top-bottom-for-winter",
       "image": "https://cdn.shopify.com/s/files/1/0580/7659/4275/files/S8eb4f009868f40bb882118bd60aa5fe7w.webp?v=1733994650",
       "imageAlt": "Thermal Underwear Fleece Lined Top Bottom Shirt",
-      "price": 46.99
+      "price": 56.99
     }
   ]
 }

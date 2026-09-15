@@ -58,6 +58,38 @@
     {% elsif request.path == '/pages/contact-us' %}
       <h1>Contact SALT Support</h1>
       <p>Reach the SALT support team for delivery questions, product advice, returns, or order help.</p>
+    {% elsif request.path == '/pages/interactive-stem-assembly-activities-for-kids' %}
+      <h1>Interactive STEM Assembly Activities for Kids</h1>
+      <p>Explore educational assembly toys and science-inspired build activities for kids, with wooden DIY projects and creative play from SALT.</p>
+      <p><a href="{{ routes.collections_url }}/kids-toys-games">Browse Kids Toys &amp; Games</a></p>
+    {% elsif request.path == '/pages/digital-circus-lunch-box-for-kids' %}
+      <h1>Digital Circus Lunch Box for Kids</h1>
+      <p>Explore a current SALT lunch box listing for school, picnic, camping, and travel use. Review the live product details before ordering.</p>
+      <p><a href="/products/the-amazing-digital-circus-lunch-box-for-kids-school-cute-food-storage-containers-boys-girls-picnic-bento-children-birthday-gift">View the live lunch-box listing</a></p>
+    {% elsif request.path == '/pages/kitchen-cookware-buying-guide' %}
+      <h1>Kitchen &amp; Cookware Buying Guide</h1>
+      <p>Use SALT's Kitchen &amp; Cookware collection to compare cookware, food-preparation tools, dining essentials, and practical kitchen helpers by task.</p>
+      <p><a href="{{ routes.collections_url }}/cookware">Browse Kitchen &amp; Cookware</a></p>
+    {% elsif request.path == '/pages/jeans-denim-fit-guide' %}
+      <h1>Jeans &amp; Denim Fit Guide</h1>
+      <p>Compare the live SALT Jeans collection by current product-title style signals, then check size details before ordering.</p>
+      <p><a href="{{ routes.collections_url }}/jeans">Browse Jeans</a></p>
+    {% elsif request.path == '/pages/mobwol-watch-guide' %}
+      <h1>Mobwol 40mm Watch Guide</h1>
+      <p>Compare the SALT Mobwol-handle 40mm quartz watch with current watch listings, then review options and supplied details before ordering.</p>
+      <p><a href="{{ routes.collections_url }}/watches">Browse Watches</a></p>
+    {% elsif request.path == '/pages/realme-buds-case-compatibility-guide' %}
+      <h1>Realme Buds Case Compatibility Guide</h1>
+      <p>Compare live SALT Realme Buds cases by model wording, then review the selected option and supplied details before ordering.</p>
+      <p><a href="{{ routes.collections_url }}/audio">Browse Audio</a></p>
+    {% elsif request.path == '/pages/salt-earbuds-buying-guide' %}
+      <h1>Earbuds Buying Guide: Cases, Tips &amp; Wireless Earbuds</h1>
+      <p>Separate complete wireless earbuds from protective cases and replacement tips, then review the live listing before ordering.</p>
+      <p><a href="{{ routes.collections_url }}/audio">Browse Audio</a></p>
+    {% elsif request.path == '/pages/canvas-belt-sizing-style-guide' %}
+      <h1>Canvas Belt Sizing &amp; Style Guide</h1>
+      <p>Compare the live canvas belt listing by length and option wording, then check the selected details before ordering.</p>
+      <p><a href="{{ routes.collections_url }}/mens-accessories">Browse Men's Accessories</a></p>
     {% elsif request.path == '/pages/blog' %}
       <h1>SALT Journal</h1>
       <p>Fresh stories, product education, and practical ideas from SALT.</p>
@@ -85,10 +117,11 @@
 </noscript>
 <script>
   (function () {
-    var path = window.location.pathname.replace(//+$/, '') || '/';
-    var isHome = path === '/' || /^/[a-z]{2}(?:-[a-z]{2})?$/.test(path);
-    var isCollection = //collections/[^/]+$/.test(path);
-    if (!isHome && !isCollection) return;
+    var path = window.location.pathname;
+    while (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
+    var pathParts = path.split('/').filter(Boolean);
+    var isCollection = pathParts.length === 2 && pathParts[0] === 'collections' && pathParts[1].length > 0;
+    if (!isCollection) return;
 
     var root = document.getElementById('root');
     if (!root) return;
@@ -111,9 +144,7 @@
 
       var heading = document.createElement('h1');
       heading.className = 'sr-only';
-      heading.textContent = isHome
-        ? 'Shop Cookware, Clothing, Decor & Gifts | SALT Online Store'
-        : document.title.replace(/s*|s*SALT Online Store.*$/, '') || 'SALT Collection';
+      heading.textContent = document.title.split('|')[0].trim() || 'SALT Collection';
       shell.insertBefore(heading, shell.firstChild);
       if (observer) observer.disconnect();
     };
@@ -185,8 +216,8 @@
   }
 </script>
 <script>
-  window.SALT_THEME_BUILD = "mttf8ijm";
-  window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2.vercel.app";
+  window.SALT_THEME_BUILD = "mu2c5b7q";
+  window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
   window.SALT_THEME_ASSET_BASE = {{ 'salt-app.js' | asset_url | split: 'salt-app.js' | first | json }};
