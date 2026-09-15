@@ -676,13 +676,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-1e8519aca571.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-1e8519aca571.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-e82d0f91000c.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-e82d0f91000c.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-BBlNdSIh.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-BBlNdSIh.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-CJgD4XRG.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-CJgD4XRG.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-uF6UNxbV.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-uF6UNxbV.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-DcT2CNho.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DcT2CNho.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1073,11 +1073,16 @@
           };
 
           {% assign salt_best_sellers = collections["best-sellers"] %}
+          {% assign salt_under_fifty = collections["under-50"] %}
+          {% assign salt_gift_collection = collections["gifts"] %}
           window.__SALT_HOME_PREFETCH__ = {
             generatedAt: {{ 'now' | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
             source: 'shopify-liquid:best-sellers',
             total: {{ salt_best_sellers.products_count | default: 0 | json }},
-            sources: { bestSellerProducts: 'best-sellers' },
+            sources: {
+              bestSellerProducts: 'best-sellers',
+              giftFinderProducts: 'under-50+gifts+best-sellers'
+            },
             bestSellerProducts: [
               {% for item in salt_best_sellers.products limit: 12 %}
                 {% assign salt_home_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
@@ -1096,7 +1101,58 @@
               {% endfor %}
             ],
             quirkyGiftPicks: [],
-            everydayEssentialProducts: []
+            everydayEssentialProducts: [],
+            giftFinderProducts: [
+              {% assign salt_gift_candidate_written = false %}
+              {% for item in salt_under_fifty.products limit: 24 %}
+                {% if salt_gift_candidate_written %},{% endif %}{% assign salt_home_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_home_judgeme_rating = salt_home_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_home_judgeme_review_count = salt_home_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+    "averageRating": {% if salt_home_judgeme_badge contains "data-average-rating='" %}{{ salt_home_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "reviewCount": {% if salt_home_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_home_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %}
+  }
+                {% assign salt_gift_candidate_written = true %}
+              {% endfor %}
+              {% for item in salt_gift_collection.products limit: 12 %}
+                {% if salt_gift_candidate_written %},{% endif %}{% assign salt_home_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_home_judgeme_rating = salt_home_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_home_judgeme_review_count = salt_home_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+    "averageRating": {% if salt_home_judgeme_badge contains "data-average-rating='" %}{{ salt_home_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "reviewCount": {% if salt_home_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_home_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %}
+  }
+                {% assign salt_gift_candidate_written = true %}
+              {% endfor %}
+              {% for item in salt_best_sellers.products limit: 12 %}
+                {% if salt_gift_candidate_written %},{% endif %}{% assign salt_home_judgeme_badge = item.metafields.judgeme.badge | default: '' %}
+    {% assign salt_home_judgeme_rating = salt_home_judgeme_badge | split: "data-average-rating='" | last | split: "'" | first %}
+    {% assign salt_home_judgeme_review_count = salt_home_judgeme_badge | split: "data-number-of-reviews='" | last | split: "'" | first %}
+    {
+    "id": {{ item.id | json }},
+    "title": {{ item.title | json }},
+    "handle": {{ item.handle | json }},
+    "image": {{ item.featured_image | image_url: width: 720 | json }},
+    "price": {{ item.price | divided_by: 100.0 | json }},
+    "compareAtPrice": {% if item.compare_at_price and item.compare_at_price > item.price %}{{ item.compare_at_price | divided_by: 100.0 | json }}{% else %}null{% endif %},
+    "averageRating": {% if salt_home_judgeme_badge contains "data-average-rating='" %}{{ salt_home_judgeme_rating | plus: 0 | json }}{% else %}null{% endif %},
+    "reviewCount": {% if salt_home_judgeme_badge contains "data-number-of-reviews='" %}{{ salt_home_judgeme_review_count | plus: 0 | json }}{% else %}null{% endif %}
+  }
+                {% assign salt_gift_candidate_written = true %}
+              {% endfor %}
+            ]
           };
         })();
       </script>
@@ -1267,8 +1323,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-1e8519aca571.js" != blank %}
-      <script type="module" src="{{ "salt-entry-1e8519aca571.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-e82d0f91000c.js" != blank %}
+      <script type="module" src="{{ "salt-entry-e82d0f91000c.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
