@@ -691,13 +691,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-2cc12e8a8ea0.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-2cc12e8a8ea0.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-57dd2e466af6.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-57dd2e466af6.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-D17-DaqA.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-D17-DaqA.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-DXfG8VgL.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-DXfG8VgL.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-BO5HSV88.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-BO5HSV88.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-CY0LqWlt.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-CY0LqWlt.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1338,8 +1338,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-2cc12e8a8ea0.js" != blank %}
-      <script type="module" src="{{ "salt-entry-2cc12e8a8ea0.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-57dd2e466af6.js" != blank %}
+      <script type="module" src="{{ "salt-entry-57dd2e466af6.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
