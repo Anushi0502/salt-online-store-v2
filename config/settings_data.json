@@ -8,5 +8,34 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "content_for_index": [],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "16265478094627758095": {
+        "type": "shopify://apps/avada-estimated-delivery-date/blocks/app-embed/019d9af8-5592-7f52-a533-082d8f06d58b",
+        "disabled": false,
+        "settings": {}
+      },
+      "14041968213898805026": {
+        "type": "shopify://apps/aov-ai-free-gift-bxgy/blocks/app-embed-free-gift/de98edfe-90fa-4145-8a57-1055e0058723",
+        "disabled": true,
+        "settings": {}
+      },
+      "5134484470793087125": {
+        "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": true,
+        "settings": {}
+      },
+      "10864971697205422121": {
+        "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
 }
