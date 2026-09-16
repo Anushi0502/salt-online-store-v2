@@ -675,7 +675,7 @@
               "returnMethod": "https://schema.org/ReturnByMail",
               "returnFees": "https://schema.org/FreeReturn"
             }
-          }{% if salt_schema_judgeme_rating_value > 0 and salt_schema_judgeme_review_count_value > 0 %},
+          }{% if salt_schema_judgeme_rating_value >= 1 and salt_schema_judgeme_rating_value <= 5 and salt_schema_judgeme_review_count_value > 0 %},
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": {{ salt_schema_judgeme_rating_value | json }},
@@ -691,13 +691,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-dc1224eaeaf2.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-dc1224eaeaf2.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-46f15f91b8f4.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-46f15f91b8f4.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-g9mbHFBq.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-g9mbHFBq.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-2wUQ4Pj_.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-2wUQ4Pj_.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-CArYwnDr.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CArYwnDr.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-DMnIoXZj.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-DMnIoXZj.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1338,8 +1338,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-dc1224eaeaf2.js" != blank %}
-      <script type="module" src="{{ "salt-entry-dc1224eaeaf2.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-46f15f91b8f4.js" != blank %}
+      <script type="module" src="{{ "salt-entry-46f15f91b8f4.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
