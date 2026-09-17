@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#1e3a6e">
     {% assign salt_route = request.path %}
     {% assign salt_seo_title = page_title | default: shop.name %}
-    {% assign salt_seo_description = page_description | default: shop.description | default: 'Shop curated cookware, gifts, apparel, and everyday essentials from SALT Online Store.' %}
+      {% assign salt_seo_description = page_description | default: shop.description | default: 'SALT is a curated online store for practical, giftable finds across home, kitchen, travel, pet care, wellness, style, and everyday essentials.' %}
     {% assign salt_seo_robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' %}
     {% assign salt_seo_canonical = canonical_url | split: '?' | first %}
     {% assign salt_custom_canonical = false %}
@@ -34,7 +34,7 @@
 
     {% if salt_route == '/' %}
       {% assign salt_seo_title = 'SALT Online Store | Curated essentials and giftable finds' %}
-      {% assign salt_seo_description = 'Shop practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.' %}
+      {% assign salt_seo_description = 'SALT is a curated online store for practical, giftable finds across home, kitchen, travel, pet care, wellness, style, and everyday essentials.' %}
       {% assign salt_seo_canonical = 'https://' | append: request.host | append: '/' %}
       {% assign salt_custom_canonical = true %}
     {% elsif salt_route == '/pages/finance' or salt_route == '/apps:finance' or salt_route == '/apps/finance' %}
@@ -448,7 +448,7 @@
         "name": {{ shop.name | json }},
         "url": "https://{{ request.host }}/",
         "logo": {{ 'brand-salt-logo.png' | asset_url | json }},
-        "description": "Curated practical, giftable finds across cookware, home, beauty, apparel, gadgets, and everyday essentials.",
+        "description": "SALT is a curated online store for practical, giftable finds across home, kitchen, travel, pet care, wellness, style, and everyday essentials.",
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer support",
@@ -691,13 +691,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-9412eac35f18.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-9412eac35f18.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-a7153f249450.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-a7153f249450.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-Dy0zxwwJ.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-Dy0zxwwJ.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-BVFG0_K3.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-BVFG0_K3.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-CKJ5JDV3.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CKJ5JDV3.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-Cr63l60y.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-Cr63l60y.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1338,8 +1338,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-9412eac35f18.js" != blank %}
-      <script type="module" src="{{ "salt-entry-9412eac35f18.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-a7153f249450.js" != blank %}
+      <script type="module" src="{{ "salt-entry-a7153f249450.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>

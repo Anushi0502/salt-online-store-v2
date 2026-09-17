@@ -1,1 +1,0 @@
-function o(t){return Object.fromEntries(Object.entries(t).filter(([,n])=>n!=null&&n!==""))}function c(t,n={}){var i,r;if(typeof window>"u")return;const e=o(n);(i=window.dataLayer)==null||i.push({event:t,...e}),(r=window.gtag)==null||r.call(window,"event",t,e)}export{c as t};
