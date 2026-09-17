@@ -242,7 +242,11 @@
 </style>
 <script>
   (function () {
+    if (window.__saltReservedNavigationOverride) return;
+    window.__saltReservedNavigationOverride = true;
+
     var reservedLabels = { "Best Sellers": true, "New Arrivals": true };
+    var scheduled = false;
 
     function isReservedControl(control) {
       return reservedLabels[(control.textContent || "").replace(/\s+/g, " ").trim()] === true;
@@ -270,11 +274,24 @@
       }
     }
 
-    var observer = new MutationObserver(hideReservedNavigation);
+    function scheduleHideReservedNavigation() {
+      if (scheduled) return;
+      scheduled = true;
+      var run = function () {
+        scheduled = false;
+        hideReservedNavigation();
+      };
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(run);
+      } else {
+        window.setTimeout(run, 0);
+      }
+    }
+
+    var observer = new MutationObserver(scheduleHideReservedNavigation);
     observer.observe(document.body, { childList: true, subtree: true });
     hideReservedNavigation();
-    window.setTimeout(function () {
-      observer.disconnect();
-    }, 15000);
+    document.addEventListener("click", scheduleHideReservedNavigation, true);
+    document.addEventListener("keydown", scheduleHideReservedNavigation, true);
   })();
 </script>
