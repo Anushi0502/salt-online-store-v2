@@ -234,3 +234,47 @@
     "/data/shop.json": {{ 'data-shop.json' | asset_url | json }}
   };
 </script>
+<style>
+  button[aria-label="Close menu"] {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+</style>
+<script>
+  (function () {
+    var reservedLabels = { "Best Sellers": true, "New Arrivals": true };
+
+    function isReservedControl(control) {
+      return reservedLabels[(control.textContent || "").replace(/\s+/g, " ").trim()] === true;
+    }
+
+    function hideReservedNavigation() {
+      var drawer = document.getElementById("salt-header-menu");
+      if (drawer) {
+        drawer.querySelectorAll("a, button").forEach(function (control) {
+          if (!isReservedControl(control)) return;
+          var row = control.parentElement;
+          if (row && row !== drawer) {
+            row.style.display = "none";
+          } else {
+            control.style.display = "none";
+          }
+        });
+      }
+
+      var secondaryNavigation = document.querySelector("nav.salt-header-secondary-nav");
+      if (secondaryNavigation) {
+        secondaryNavigation.querySelectorAll("a, button").forEach(function (control) {
+          if (isReservedControl(control)) control.style.display = "none";
+        });
+      }
+    }
+
+    var observer = new MutationObserver(hideReservedNavigation);
+    observer.observe(document.body, { childList: true, subtree: true });
+    hideReservedNavigation();
+    window.setTimeout(function () {
+      observer.disconnect();
+    }, 15000);
+  })();
+</script>
