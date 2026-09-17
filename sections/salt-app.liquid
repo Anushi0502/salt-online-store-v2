@@ -216,7 +216,7 @@
   }
 </script>
 <script>
-  window.SALT_THEME_BUILD = "mu5b8o44";
+  window.SALT_THEME_BUILD = "mu5dni8d";
   window.SALT_FINANCE_API_ORIGIN = "https://salt-online-storev2-gcs1124s-projects.vercel.app";
   window.SALT_SHOPIFY_APP_KEY = "8b71b8f5e5349a4352259e3bc6522c14";
   window.SALT_SHOPIFY_STOREFRONT_TOKEN = "";
@@ -233,65 +233,4 @@
     "/data/blog-posts.json": {{ 'data-blog-posts.json' | asset_url | json }},
     "/data/shop.json": {{ 'data-shop.json' | asset_url | json }}
   };
-</script>
-<style>
-  button[aria-label="Close menu"] {
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
-  }
-</style>
-<script>
-  (function () {
-    if (window.__saltReservedNavigationOverride) return;
-    window.__saltReservedNavigationOverride = true;
-
-    var reservedLabels = { "Best Sellers": true, "New Arrivals": true };
-    var scheduled = false;
-
-    function isReservedControl(control) {
-      return reservedLabels[(control.textContent || "").replace(/\s+/g, " ").trim()] === true;
-    }
-
-    function hideReservedNavigation() {
-      var drawer = document.getElementById("salt-header-menu");
-      if (drawer) {
-        drawer.querySelectorAll("a, button").forEach(function (control) {
-          if (!isReservedControl(control)) return;
-          var row = control.parentElement;
-          if (row && row !== drawer) {
-            row.style.display = "none";
-          } else {
-            control.style.display = "none";
-          }
-        });
-      }
-
-      var secondaryNavigation = document.querySelector("nav.salt-header-secondary-nav");
-      if (secondaryNavigation) {
-        secondaryNavigation.querySelectorAll("a, button").forEach(function (control) {
-          if (isReservedControl(control)) control.style.display = "none";
-        });
-      }
-    }
-
-    function scheduleHideReservedNavigation() {
-      if (scheduled) return;
-      scheduled = true;
-      var run = function () {
-        scheduled = false;
-        hideReservedNavigation();
-      };
-      if (window.requestAnimationFrame) {
-        window.requestAnimationFrame(run);
-      } else {
-        window.setTimeout(run, 0);
-      }
-    }
-
-    var observer = new MutationObserver(scheduleHideReservedNavigation);
-    observer.observe(document.body, { childList: true, subtree: true });
-    hideReservedNavigation();
-    document.addEventListener("click", scheduleHideReservedNavigation, true);
-    document.addEventListener("keydown", scheduleHideReservedNavigation, true);
-  })();
 </script>
