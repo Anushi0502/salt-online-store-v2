@@ -1,11 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "salt-app",
       "settings": {}
+    },
+    "1790848967d1a4af5b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bf5491e_PUQE8G": {
+          "type": "ai_gen_block_bf5491e",
+          "settings": {
+            "heading": "Shipping estimate",
+            "delivery_text": "Estimated delivery: 7–14 business days",
+            "note": "Delivery timing may vary by destination.",
+            "desktop_width_percent": 100,
+            "padding": 16,
+            "border_radius": 8,
+            "heading_size": 16,
+            "background_color": "#F7F7F5",
+            "text_color": "#242424",
+            "border_color": "#D8D8D4",
+            "icon_color": "#242424"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bf5491e_PUQE8G"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "1790848967d1a4af5b"
   ]
 }
