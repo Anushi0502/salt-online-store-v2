@@ -1,6 +1,280 @@
+{% doc %}
+  @prompt
+    A magazine-style editorial layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-editorial-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    align-items: center;
+    gap: clamp(28px, 5vw, 76px);
+  }
+
+  .ai-editorial-{{ ai_gen_id }}--image-right .ai-editorial-{{ ai_gen_id }}__media {
+    order: 2;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__media {
+    min-width: 0;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    background: #f0efed;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__media img,
+  .ai-editorial-{{ ai_gen_id }}__placeholder svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__placeholder {
+    position: relative;
+    height: 100%;
+    min-height: 320px;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__placeholder svg {
+    color: #777;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__empty-state {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #303030;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__content {
+    padding: clamp(12px, 2vw, 28px) 0;
+    max-width: 520px;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__eyebrow {
+    margin: 0 0 18px;
+    color: {{ block.settings.accent_color }};
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__heading {
+    margin: 0 0 22px;
+    color: inherit;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(34px, 5vw, {{ block.settings.heading_size }}px);
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    line-height: 1.04;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__copy {
+    max-width: 450px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__copy p {
+    margin: 0 0 14px;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid currentColor;
+    color: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .ai-editorial-{{ ai_gen_id }}__link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 5px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-editorial-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-editorial-{{ ai_gen_id }}__layout {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ai-editorial-{{ ai_gen_id }}--image-right .ai-editorial-{{ ai_gen_id }}__media {
+      order: 0;
+    }
+
+    .ai-editorial-{{ ai_gen_id }}__media {
+      aspect-ratio: 4 / 3;
+    }
+
+    .ai-editorial-{{ ai_gen_id }}__content {
+      padding: 0 6px 10px;
+    }
+
+    .ai-editorial-{{ ai_gen_id }}__heading {
+      font-size: clamp(32px, 9vw, {{ block.settings.heading_size }}px);
+    }
+  }
+{% endstyle %}
+
+<div class="ai-editorial-{{ ai_gen_id }} ai-editorial-{{ ai_gen_id }}--image-{{ block.settings.image_position }}" {{ block.shopify_attributes }}>
+  <div class="ai-editorial-{{ ai_gen_id }}__layout">
+    <div class="ai-editorial-{{ ai_gen_id }}__media">
+      {% if block.settings.image != blank %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1800 }}"
+          alt="{{ block.settings.image.alt | default: block.settings.heading | escape }}"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="ai-editorial-{{ ai_gen_id }}__placeholder">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-editorial-{{ ai_gen_id }}__empty-state">Add an editorial image to complete this feature</div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="ai-editorial-{{ ai_gen_id }}__content">
+      {% if block.settings.eyebrow != blank %}
+        <p class="ai-editorial-{{ ai_gen_id }}__eyebrow">{{ block.settings.eyebrow | escape }}</p>
+      {% endif %}
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-editorial-{{ ai_gen_id }}__heading">{{ block.settings.heading | escape }}</h2>
+      {% endif %}
+      {% if block.settings.body != blank %}
+        <div class="ai-editorial-{{ ai_gen_id }}__copy">{{ block.settings.body }}</div>
+      {% endif %}
+      {% if block.settings.link_label != blank and block.settings.link_url != blank %}
+        <a class="ai-editorial-{{ ai_gen_id }}__link" href="{{ block.settings.link_url }}">
+          {{ block.settings.link_label | escape }} <span aria-hidden="true">→</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Editorial feature",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "The edit"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A considered point of view"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body copy",
+      "default": "<p>Discover the pieces, ideas, and details shaping the season. Thoughtfully selected for everyday living and lasting style.</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "Explore the story"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 36,
+      "max": 72,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#222222"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#5B493F"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial feature"
+    }
+  ],
+  "tag": null,
+  "class": "editorial-feature-block"
+}
 {% endschema %}
