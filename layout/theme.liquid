@@ -691,13 +691,13 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
-    {% if "salt-entry-9fc318b87fdc.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-9fc318b87fdc.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% if "salt-entry-554eb5198a1e.js" != blank %}
+      <link rel="modulepreload" href="{{ "salt-entry-554eb5198a1e.js" | asset_url | split: '?' | first }}" fetchpriority="high">
     {% endif %}
-    {% if request.page_type == 'product' and "ProductPage-B8WSWIkC.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-B8WSWIkC.js" | asset_url | split: '?' | first }}" fetchpriority="high">
-    {% elsif request.path == '/' and "HomePage-CP0_Opa0.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-CP0_Opa0.js" | asset_url | split: '?' | first }}">
+    {% if request.page_type == 'product' and "ProductPage-CcOn13J2.js" != blank %}
+      <link rel="modulepreload" href="{{ "ProductPage-CcOn13J2.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+    {% elsif request.path == '/' and "HomePage-Ufe9pMde.js" != blank %}
+      <link rel="modulepreload" href="{{ "HomePage-Ufe9pMde.js" | asset_url | split: '?' | first }}">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -938,8 +938,8 @@
     {% else %}
       {{ salt_content_for_header }}
     {% endif %}
-    {% if request.path == '/' and "anime-collectables-square-pavaBsJg.webp" != blank %}
-      {{ "anime-collectables-square-pavaBsJg.webp" | asset_url | preload_tag: as: 'image' }}
+    {% if request.path == '/' and "" != blank %}
+      {{ "" | asset_url | preload_tag: as: 'image' }}
     {% endif %}
     {% if request.page_type == 'product' %}
       {% assign salt_product_judgeme_badge = product.metafields.judgeme.badge | default: '' %}
@@ -1338,8 +1338,8 @@
         </script>
       {% endpaginate %}
     {% endif %}
-    {% if "salt-entry-9fc318b87fdc.js" != blank %}
-      <script type="module" src="{{ "salt-entry-9fc318b87fdc.js" | asset_url | split: '?' | first }}"></script>
+    {% if "salt-entry-554eb5198a1e.js" != blank %}
+      <script type="module" src="{{ "salt-entry-554eb5198a1e.js" | asset_url | split: '?' | first }}"></script>
     {% else %}
     {% endif %}
   </head>
