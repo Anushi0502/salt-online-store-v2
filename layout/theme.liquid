@@ -691,13 +691,34 @@
     <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     {{ 'salt-app.css' | asset_url | stylesheet_tag }}
+    <script>
+      (function () {
+        var saltPreloadRetryKey = 'salt-vite-preload-retry';
+
+        function recoverFromPreloadError() {
+          try {
+            if (sessionStorage.getItem(saltPreloadRetryKey) === '1') return;
+            sessionStorage.setItem(saltPreloadRetryKey, '1');
+          } catch (error) {}
+
+          var retryUrl = new URL(window.location.href);
+          retryUrl.searchParams.set('salt_asset_refresh', Date.now().toString(36));
+          window.location.replace(retryUrl.href);
+        }
+
+        window.addEventListener('vite:preloadError', function (event) {
+          event.preventDefault();
+          recoverFromPreloadError();
+        });
+      })();
+    </script>
     {% if "salt-entry-4e90a46176fb.js" != blank %}
-      <link rel="modulepreload" href="{{ "salt-entry-4e90a46176fb.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+      <link rel="modulepreload" href="{{ "salt-entry-4e90a46176fb.js" | asset_url | split: '?' | first }}?v=muzlc018" fetchpriority="high">
     {% endif %}
     {% if request.page_type == 'product' and "ProductPage-VhCxyd97.js" != blank %}
-      <link rel="modulepreload" href="{{ "ProductPage-VhCxyd97.js" | asset_url | split: '?' | first }}" fetchpriority="high">
+      <link rel="modulepreload" href="{{ "ProductPage-VhCxyd97.js" | asset_url | split: '?' | first }}?v=muzlc018" fetchpriority="high">
     {% elsif request.path == '/' and "HomePage-BL4VNNsI.js" != blank %}
-      <link rel="modulepreload" href="{{ "HomePage-BL4VNNsI.js" | asset_url | split: '?' | first }}">
+      <link rel="modulepreload" href="{{ "HomePage-BL4VNNsI.js" | asset_url | split: '?' | first }}?v=muzlc018">
     {% endif %}
     {% if request.page_type == 'product' %}
       {%- comment -%}
@@ -1361,7 +1382,7 @@
       {% endpaginate %}
     {% endif %}
     {% if "salt-entry-4e90a46176fb.js" != blank %}
-      <script type="module" src="{{ "salt-entry-4e90a46176fb.js" | asset_url | split: '?' | first }}"></script>
+      <script type="module" src="{{ "salt-entry-4e90a46176fb.js" | asset_url | split: '?' | first }}?v=muzlc018"></script>
     {% else %}
     {% endif %}
   </head>
