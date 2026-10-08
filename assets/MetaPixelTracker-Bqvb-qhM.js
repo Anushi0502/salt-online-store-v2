@@ -1,0 +1,1 @@
+import{aa as a,r as t}from"./salt-entry-a03a0782eb1c.js";import{scheduleMetaPixelTask as r,trackMetaPixelPageView as o}from"./meta-pixel-C5z_ISoI.js";import"./analytics-events-ClNYvOar.js";const l=()=>{const e=a();return t.useEffect(()=>r(o),[e.pathname,e.search]),null};export{l as default};
